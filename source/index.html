@@ -1,12 +1,299 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img
+          class="page-header__logo-image"
+          width="100px"
+          height="19px"
+          alt="Погнали?"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="catalog.html">Попутчики</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Направления</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list contacts-list">
+          <li class="contacts-list__item">
+            <a>8 800 555-86-28</a>
+          </li>
+          <li class="contacts-list__item">
+            <a>mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">Авторизация</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">"Погнали" - сервис для поиска попутчиков</h1>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <section class="guide">
+        <h2 class="visually-hidden">Как пользоваться сервисом</h2>
+        <ol>
+          <li>Выберите направление</li>
+          <li>Изучите идеи для путешественников</li>
+          <li>Найдите тех, кто похож на вас</li>
+          <li>Путешествуйте вместе!</li>
+        </ol>
+      </section>
 
+      <section class="about">
+        <h2 class="section-header about__header">О сервисе</h2>
+        <p class="section-description about__description">
+          Любое путешествие веселее с попутчиками, которые на одной волне с
+          тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
+          чужих.
+        </p>
+        <p class="slogan about__slogan">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный
+          трип!
+        </p>
+      </section>
+
+      <section class="destinations">
+        <h2 class="section-header destinations__header">Направления</h2>
+        <p class="section-description destinations__description">
+          Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах,
+          куда хотели бы отправиться и чем можно там заняться.
+        </p>
+
+        <article class="destinations__item country">
+          <img
+            class="country__photo"
+            width="270px"
+            height="110px"
+            alt="Тайланд"
+          />
+          <div class="country__wrapper">
+            <img
+              class="country__flag flag"
+              width="35px"
+              height="24px"
+              alt="Тайланд"
+            />
+            <h3 class="country__name">Тайланд</h3>
+            <span class="country__visitors">18321</span>
+            <p class="country__description">Джугли зовут!</p>
+          </div>
+        </article>
+
+        <article class="destinations__item country">
+          <img
+            class="country__photo"
+            width="270px"
+            height="110px"
+            alt="Франция"
+          />
+          <div class="country__wrapper">
+            <img
+              class="country__flag flag"
+              width="35px"
+              height="24px"
+              alt="Франция"
+            />
+            <h3 class="country__name">Франция</h3>
+            <span class="country__visitors">12518</span>
+            <p class="country__description">Трэ бьен, манифик!</p>
+          </div>
+        </article>
+
+        <article class="destinations__item country">
+          <img
+            class="country__photo"
+            width="270px"
+            height="110px"
+            alt="Чехия"
+          />
+          <div class="country__wrapper">
+            <img
+              class="country__flag flag"
+              width="35px"
+              height="24px"
+              alt="Чехия"
+            />
+            <h3 class="country__name">Чехия</h3>
+            <span class="country__visitors">5326</span>
+            <p class="country__description">Закоулки старой Европы</p>
+          </div>
+        </article>
+
+        <a class="button" href="#">Показать все</a>
+      </section>
+
+      <section class="companions">
+        <h2 class="section-header companions__header">Попутчики</h2>
+        <p class="section-description companins__description">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <p class="slogan companions__slogan">
+          Теперь можно легко найти единомышленников!
+        </p>
+
+        <article class="companion">
+          <span class="companion__level">
+            <span class="companion__level-number">99</span>
+            level
+          </span>
+          <img
+            class="companion__photo"
+            width="270px"
+            height="270px"
+            alt="Фото попутчика"
+          />
+          <ul class="companion__countries">
+            <li class="flag flag-sri-lanka"></li>
+            <li class="flag flag-thailand"></li>
+            <li class="flag flag-seychelles"></li>
+          </ul>
+          <h3 class="companion__name">Таня Фирсова</h3>
+          <p class="companion__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <ul class="companion__transport transport">
+            <li
+              class="transport__item transport__item-plane transport__item--selected"
+              aria-label="plane"
+            ></li>
+            <li
+              class="transport__item transport__item-bus"
+              aria-label="bus"
+            ></li>
+            <li
+              class="transport__item transport__item-bike"
+              aria-label="bike"
+            ></li>
+            <li
+              class="transport__item transport__item-hike"
+              aria-label="hike"
+            ></li>
+          </ul>
+        </article>
+
+        <article class="companion">
+          <span class="companion__level">
+            <span class="companion__level-number">80</span>
+            level
+          </span>
+          <img
+            class="companion__photo"
+            width="270px"
+            height="270px"
+            alt="Фото попутчика"
+          />
+          <ul class="companion__countries">
+            <li class="flag flag-germany"></li>
+            <li class="flag flag-czech"></li>
+          </ul>
+          <h3 class="companion__name">Петя Демин</h3>
+          <p class="companion__tags">#бургер #бар #футбол #концерт #крафт</p>
+          <ul class="companion__transport transport">
+            <li
+              class="transport__item transport__item-plane transport__item--selected"
+              aria-label="plane"
+            ></li>
+            <li
+              class="transport__item transport__item-bus  transport__item--selected"
+              aria-label="bus"
+            ></li>
+            <li
+              class="transport__item transport__item-bike"
+              aria-label="bike"
+            ></li>
+            <li
+              class="transport__item transport__item-hike transport__item--selected"
+              aria-label="hike"
+            ></li>
+          </ul>
+        </article>
+
+        <a class="button" href="#">Показать всех</a>
+      </section>
+
+      <section class="plans">
+        <h2 class="section-header plans__header">Добавьте свой профиль</h2>
+        <ol class="plan-features">
+          <li class="plan-features__item option">
+            <span class="option__name">Базовое размещение</span>
+            <span class="option__price">Бесплатно</span>
+          </li>
+          <li class="plan-features__item option">
+            <span class="option__name">Вывод на первых позициях</span>
+            <span class="option__price">99 руб./мес</span>
+          </li>
+          <li class="plan-features__item option">
+            <span class="option__name">Кастомный цвет карточки</span>
+            <span class="option__price">59 руб./мес</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="sign-up">
+        <h2 class="section-header sign-up__header">Заинтересовались?</h2>
+        <p class="section-description sign-up__description">
+          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда
+          скорее <a href="login.html">авторизуйтесь</a>.
+        </p>
+        <form>
+          <input type="text" placeholder="E-mail" name="email" />
+          <button type="submit" aria-label="Зарегистрироваться"></button>
+        </form>
+      </section>
+
+      <section class="location"></section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img />
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a
+            class="social__link social__link--facebook"
+            href="https://www.facebook.com/htmlacademy"
+          >
+            Мы в Фейсбуке
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--vkontakte"
+            href="https://vk.com/htmlacademy"
+          >
+            Мы в Вконтакте
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            class="social__link social__link--instagram"
+            href="https://www.instagram.com/htmlacademy"
+          >
+            Мы в Инстаграме
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a
+          class="copyright__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
+          HTML Academy
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
