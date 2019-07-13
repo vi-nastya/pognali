@@ -100,7 +100,6 @@
       </section>
 
       <article class="review">
-        <h2 class="visually-hidden">В путешествие с крутыми попутчиками!</h2>
         <blockquote class="review__text">
           «Лучшее приложение, что я видел в жизни!»
         </blockquote>
@@ -119,8 +118,7 @@
         </ol>
       </section>
 
-      <section class="about">
-        <h2 class="section-header about__header">О сервисе</h2>
+      <section class="about" aria-label="О сервисе">
         <p class="section-description about__description">
           Любое путешествие веселее с попутчиками, которые на одной волне с
           тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
@@ -205,7 +203,7 @@
           </div>
         </article>
 
-        <a class="button" href="#">Показать все</a>
+        <a class="button destinations__button-more" href="#">Показать все</a>
       </section>
 
       <section class="companions">
@@ -297,7 +295,7 @@
           </ul>
         </article>
 
-        <a class="button" href="#">Показать всех</a>
+        <a class="button companions__button-show-all" href="#">Показать всех</a>
       </section>
 
       <section class="plans">
@@ -353,7 +351,11 @@
         </p>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <input type="text" placeholder="E-mail" name="email" />
-          <button type="submit" aria-label="Зарегистрироваться"></button>
+          <button
+            type="submit"
+            class="sign-up__button"
+            aria-label="Зарегистрироваться"
+          ></button>
         </form>
       </section>
 
