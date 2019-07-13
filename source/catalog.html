@@ -43,9 +43,12 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Поиск попутчиков в сервисе "Погнали"</h1>
-      <section class="filters"></section>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр попутчиков</h2>
+      </section>
 
       <section class="found-companions">
+        <h2 class="visually-hidden">Результаты поиска</h2>
         <article class="found-companion">
           <img class="found-companion__photo" width="70px" height="70px" />
           <h3 class="found-companion__name">Таня Фирсова</h3>
@@ -305,6 +308,27 @@
             </ul>
           </div>
         </article>
+        <button type="button" class="button button--show-more">
+          Показать еще
+        </button>
+        <ul class="companions-navigation">
+          <li class="companions-navigation__item">
+            <a
+              class="companions-navigation__link companions-navigation__link--prev"
+              href="#"
+            >
+              Назад
+            </a>
+          </li>
+          <li class="companions-navigation__item">
+            <a
+              class="companions-navigation__link companions-navigation__link--next"
+              href="#"
+            >
+              Вперед
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
 
