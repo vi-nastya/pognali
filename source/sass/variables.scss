@@ -10,3 +10,9 @@ $blue: #192144;
 $blue--dark: #161c35;
 
 $white: #ffffff;
+
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
