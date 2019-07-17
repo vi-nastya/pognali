@@ -1,0 +1,44 @@
+.guide {
+  background-color: $blue;
+}
+
+.guide__list {
+  @include reset-list;
+  @include container;
+}
+
+.guide__item {
+  box-sizing: border-box;
+  min-height: 80px;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-right: 95px;
+
+
+  font-family: BloggerSans, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+
+  color: $blue--dark;
+}
+
+.guide__item:nth-of-type(1) {
+  background-color: $orange;
+}
+
+.guide__item:nth-of-type(2) {
+  background-color: $orange--light;
+}
+
+.guide__item:nth-of-type(3) {
+  background-color: $yellow--dark;
+}
+
+
+.guide__item:nth-of-type(4) {
+  background-color: $yellow;
+}

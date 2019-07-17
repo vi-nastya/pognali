@@ -18,3 +18,8 @@ $grey: #444444;
   margin: 0;
   list-style: none;
 }
+
+@mixin container {
+  width: 270px;
+  margin: 0 auto;
+}
