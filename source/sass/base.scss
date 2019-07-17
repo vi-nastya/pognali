@@ -1,5 +1,12 @@
 @font-face {
   font-family: BloggerSans;
+  font-weight: 400;
+  src: url("../fonts/bloggersans.woff");
+}
+
+
+@font-face {
+  font-family: BloggerSans;
   font-weight: 300;
   src: url("../fonts/bloggersans-light.woff");
 }
@@ -56,4 +63,13 @@ a {
 
 .container {
   margin: 0 auto;
+}
+
+body {
+  font-family: BloggerSans, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: $blue--light;
+  background-color: $light-blue;
 }
