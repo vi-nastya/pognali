@@ -1,0 +1,19 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 270px;
+  min-height: 62px;
+  padding-left: 24px;
+  padding-top: 22px;
+
+  color: $blue--light;
+  font-family: BloggerSans, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  background-color: $yellow;
+}
