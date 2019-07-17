@@ -1,0 +1,33 @@
+.country {
+  @include container;
+}
+
+.country__wrapper {
+  min-height: 90px;
+  background-color: $white;
+}
+
+.country__name {
+  font-family: BloggerSans, Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: $blue--dark
+}
+
+.country__description,
+.country__visitors {
+  font-family: BloggerSans, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+
+  color: $grey;
+  opacity: 0.3;
+}
