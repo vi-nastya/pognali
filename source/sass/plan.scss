@@ -1,0 +1,44 @@
+.plan__feature-item {
+  display: inline-block;
+  vertical-align: center;
+  width: 185px;
+
+  font-family: BloggerSans, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: $grey;
+}
+
+.plan__button {
+  background: none;
+}
+
+.plan__button-business {
+  font-family: BloggerSans, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $blue;
+}
+
+.plan__button-close {
+  font-family: BloggerSans, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: $blue--light;
+}

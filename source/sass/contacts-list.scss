@@ -1,0 +1,16 @@
+.contacts-list {
+  @include reset-list;
+  @include container;
+}
+
+.contacts-list__item {
+  font-family: BloggerSans, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: $blue;
+}
