@@ -1,0 +1,27 @@
+.sign-up {
+  background-color: $blue;
+}
+
+.sign-up__inner {
+  @include container;
+  padding-top: 72px;
+}
+
+.sign-up__description {
+  color: $white;
+  text-align: center;
+}
+
+.sign-up__link {
+  color: $yellow;
+  text-decoration: underline;
+}
+
+.sign-up__input {
+  background-color: $white;
+  min-height: 62px;
+  width: 270px;
+
+  border: none;
+  border-radius: 10px;
+}
