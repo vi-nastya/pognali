@@ -1,3 +1,11 @@
+.plan__inner {
+  @include container;
+}
+
+.plan__features {
+  @include reset-list;
+}
+
 .plan__feature-item {
   display: inline-block;
   vertical-align: center;

@@ -2,3 +2,7 @@ header {
   color: $white;
   background-color: $blue--dark;
 }
+
+.header__inner {
+  @include container;
+}
