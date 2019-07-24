@@ -11,7 +11,7 @@
   vertical-align: center;
   width: 185px;
 
-  font-family: "BloggerSans", "Arial", sans-serif;
+  font-family: $blogger-sans;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -27,7 +27,7 @@
 }
 
 .plan__button-business {
-  font-family: "BloggerSans", "Arial", sans-serif;
+  font-family: $blogger-sans;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -39,7 +39,7 @@
 }
 
 .plan__button-close {
-  font-family: "BloggerSans", "Arial", sans-serif;
+  font-family: $blogger-sans;
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
