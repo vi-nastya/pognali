@@ -1,5 +1,5 @@
 .guide {
-  background-color: $blue;
+  background-color: $additional-hover-color;
 }
 
 .guide__list {
@@ -23,7 +23,7 @@
   letter-spacing: normal;
   text-align: left;
 
-  color: $blue--dark;
+  color: $additional-accent-color;
 }
 
 .guide__item:nth-of-type(1) {

@@ -35,7 +35,7 @@
   line-height: 1;
   letter-spacing: normal;
   text-align: left;
-  color: $blue;
+  color: $additional-hover-color;
 }
 
 .plan__button-close {
@@ -48,5 +48,5 @@
   letter-spacing: normal;
   text-align: center;
   text-transform: uppercase;
-  color: $blue--light;
+  color: $additional-accent-color;
 }

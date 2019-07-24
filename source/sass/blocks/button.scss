@@ -6,7 +6,7 @@
   padding-left: 24px;
   padding-top: 22px;
 
-  color: $blue--light;
+  color: $additional-accent-color;
   font-family: $main-ffamily;
   font-size: 18px;
   font-weight: $bold;
@@ -18,4 +18,12 @@
   background-color: $accent-color;
 
   border: none;
+}
+
+.button:hover {
+  background-color: $accent-hover-color;
+}
+
+.button:active {
+  color: $additional-accent-active-color;
 }

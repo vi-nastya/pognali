@@ -1,10 +1,12 @@
 
-
 $accent-color: #ffd74b;
-$accent-hover-color: #ff8d30;
+$accent-hover-color: #ffbd30;
+$accent-minor-color: #ffbd30;
+$accent-minor-hover-color: #ff8d30;
 $accent-active-color: rgba(255, 189, 48, 0.3);
 $accent-secondary-color: #ffa530;
 $additional-accent-color: #161c35;
+$additional-accent-active-color: rgba(22, 28, 53, 0.3);
 
 $main-background-color: #edeff6;
 $accent-background-color: #e2e5f2;
@@ -26,10 +28,10 @@ $border-active-color: $additional-accent-color;
 $error-color: #f47e7e;
 $error-background-color: #ffefef;
 
+$main-ffamily: "BloggerSans", "Arial", sans-serif;
 
 $main-ffamily: "BloggerSans", "Arial", sans-serif;
 $light: 300;
 $normal: 400;
 $medium: 500;
 $bold: 700;
-
