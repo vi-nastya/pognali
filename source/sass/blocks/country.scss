@@ -10,7 +10,7 @@
 
 .country__name {
   font-size: 21px;
-  font-weight: 700;
+  font-weight: $bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
@@ -21,7 +21,7 @@
 .country__description,
 .country__visitors {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: $medium;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.13;

@@ -1,7 +1,7 @@
 .found-companion__name {
   font-family: $main-ffamily;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: $bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
@@ -16,7 +16,7 @@
 .found-companion__transport-description {
   font-family: $main-ffamily;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: $normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.2;
@@ -28,7 +28,7 @@
 .found-companion-countries__name {
   font-family: $main-ffamily;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: $medium;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.2;

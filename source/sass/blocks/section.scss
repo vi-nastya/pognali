@@ -1,7 +1,7 @@
 .section-header {
   color: $accent-hover-color;
   font-family: $main-ffamily;
-  font-weight: 700;
+  font-weight: $bold;
   font-size: 24px;
   font-stretch: normal;
   line-height: 1;
@@ -10,9 +10,9 @@
 }
 
 .section-slogan {
-  font-weight: 700;
+  font-weight: $bold;
 }
 
 .section-description {
-  font-weight: 300;
+  font-weight: $light;
 }
