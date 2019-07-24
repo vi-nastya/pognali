@@ -1,0 +1,9 @@
+.companions {
+  background-color: $additional-hover-color;
+  color: $additional-background-color;
+}
+
+.companions__inner {
+  @include container;
+  padding-top: 70px;
+}

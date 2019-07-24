@@ -1,0 +1,52 @@
+.plan__inner {
+  @include container;
+}
+
+.plan__features {
+  @include reset-list;
+}
+
+.plan__feature-item {
+  display: inline-block;
+  vertical-align: center;
+  width: 185px;
+
+  font-family: $main-ffamily;
+  font-size: 16px;
+  font-weight: $light;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: $main-text-color;
+}
+
+.plan__button {
+  background: none;
+}
+
+.plan__button-business {
+  font-family: $main-ffamily;
+  font-size: 16px;
+  font-weight: $bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $additional-hover-color;
+}
+
+.plan__button-close {
+  font-family: $main-ffamily;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: $additional-accent-color;
+}

@@ -1,0 +1,18 @@
+.about {
+  background-color: $additional-hover-color;
+}
+
+.about__inner {
+
+  min-height: 352px;
+  margin-left: 18px;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 53px;
+
+  color: $additional-background-color;
+
+  background-image: url("../img/about-mobile@1x.png");
+  background-size: 292px 352px;
+  background-repeat: no-repeat;
+}

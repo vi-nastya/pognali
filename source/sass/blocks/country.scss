@@ -1,0 +1,32 @@
+.country {
+  @include container;
+}
+
+.country__wrapper {
+  min-height: 90px;
+  padding: 20px 25px;
+  background-color: $additional-background-color;
+}
+
+.country__name {
+  font-size: 21px;
+  font-weight: $bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: $additional-accent-color;
+}
+
+.country__description,
+.country__visitors {
+  font-size: 16px;
+  font-weight: $medium;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+
+  color: $main-text-color;
+  opacity: 0.3;
+}

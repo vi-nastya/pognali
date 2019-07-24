@@ -1,0 +1,8 @@
+header {
+  color: $additional-background-color;
+  background-color: $additional-accent-color;
+}
+
+.header__inner {
+  @include container;
+}

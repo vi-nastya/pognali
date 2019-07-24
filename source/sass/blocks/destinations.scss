@@ -1,0 +1,7 @@
+.destinations__inner {
+  @include container;
+}
+
+.destinations__description {
+  color: $main-text-color;
+}

@@ -3,83 +3,86 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="header__logo">
-        <img
-          src="http://placehold.it/100x19"
-          class="header__logo-image"
-          width="100px"
-          height="19px"
-          alt="Погнали?"
-        />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="header__inner inner">
+        <a href="index.html" class="header__logo">
+          <img
+            src="img/logo-mobile-white@1x.png"
+            class="header__logo-image"
+            width="100px"
+            height="19px"
+            alt="Погнали?"
+          />
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
 
-        <div class="main-nav__menu-wrap">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="service.html">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Направления</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="catalog.html">Попутчики</a>
-            </li>
-          </ul>
+          <div class="main-nav__menu-wrap">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="service.html">О сервисе</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Направления</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link" href="catalog.html">Попутчики</a>
+              </li>
+            </ul>
 
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a
-                class="button user-list__login button__login"
-                href="login.html"
-              >
-                Авторизация
-              </a>
-            </li>
-          </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a
+                  class="button user-list__login button__login"
+                  href="login.html"
+                >
+                  Авторизация
+                </a>
+              </li>
+            </ul>
 
-          <ul class="main-nav__contacts contacts">
-            <li class="contacts__item">
-              <a>8 800 555-86-28</a>
-            </li>
-            <li class="contacts__item">
-              <a>mail@htmlacademy.ru</a>
-            </li>
-          </ul>
+            <ul class="main-nav__contacts contacts-list">
+              <li class="contacts-list__item">
+                <a>8 800 555-86-28</a>
+              </li>
+              <li class="contacts-list__item">
+                <a>mail@htmlacademy.ru</a>
+              </li>
+            </ul>
 
-          <ul class="main-nav__social social">
-            <li class="social__item">
-              <a
-                class="social__link social__link--facebook"
-                href="https://www.facebook.com/htmlacademy"
-              >
-                Мы в Фейсбуке
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social__link--vkontakte"
-                href="https://vk.com/htmlacademy"
-              >
-                Мы в Вконтакте
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social__link--instagram"
-                href="https://www.instagram.com/htmlacademy"
-              >
-                Мы в Инстаграме
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <a class="header__current-section">Попутчики</a>
+            <ul class="main-nav__social social-list">
+              <li class="social-list__item">
+                <a
+                  class="social-list__link social-list__link--facebook"
+                  href="https://www.facebook.com/htmlacademy"
+                >
+                  Мы в Фейсбуке
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  class="social-list__link social-list__link--vkontakte"
+                  href="https://vk.com/htmlacademy"
+                >
+                  Мы в Вконтакте
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a
+                  class="social-list__link social-list__link--instagram"
+                  href="https://www.instagram.com/htmlacademy"
+                >
+                  Мы в Инстаграме
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a class="header__current-section">Попутчики</a>
+      </div>
     </header>
 
     <main class="main">
@@ -89,366 +92,372 @@
       </section>
 
       <section class="found-companions">
-        <h2 class="visually-hidden">Результаты поиска</h2>
-        <article class="found-companion">
-          <div class="found-companion__photo-wrap">
-            <img
-              src="http://placehold.it/70x70"
-              class="found-companion__photo"
-              width="70px"
-              height="70px"
-            />
-          </div>
-          <h3 class="found-companion__name">Таня Фирсова</h3>
-          <div class="found-companion__like found-companion__like--liked"></div>
-          <span class="found-companion__likes">1,5м</span>
-          <div
-            class="found-companion__status found-companion__status--offline"
-          ></div>
-          <p class="found-companion__tags">
-            #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-          </p>
-          <div
-            class="found-companion__countries-section found-companion-countries"
-          >
-            <h4 class="found-companion-countries__description">
-              хочет посетить:
-            </h4>
-            <ul class="found-companion-countries__list">
-              <li class="found-companion-countries__item">
-                <img
-                  src="http://placehold.it/26x18"
-                  class="companion-countries__flag"
-                  width="26px"
-                  height="18px"
-                />
-                <span class="found-companion-countries__name">Шри Ланка</span>
-              </li>
-
-              <li class="found-companion-countries__item">
-                <img
-                  src="http://placehold.it/26x18"
-                  class="found-companion-countries__flag"
-                  width="26px"
-                  height="18px"
-                />
-                <span class="found-companion-countries__name">Тайланд</span>
-              </li>
-
-              <li class="found-companion-countries__item">
-                <img
-                  src="http://placehold.it/26x18"
-                  class="found-companion-countries__flag"
-                  width="26px"
-                  height="18px"
-                />
-                <span class="found-companion-countries__name">Сейшелы</span>
-              </li>
-            </ul>
-          </div>
-          <div class="found-companion__transport">
-            <h4 class="found-companion__transport-description">
-              транспорт:
-            </h4>
-            <ul class="found-companion__transport-list">
-              <li
-                class="found-companion__transport-item found-companion__transport-item--plane found-companion__transport-item--selected"
-                aria-label="plane"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--bus"
-                aria-label="bus"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--bike"
-                aria-label="bike"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--hike"
-                aria-label="hike"
-              ></li>
-            </ul>
-          </div>
-          <span class="found-companion__level">
-            <span class="found-companion__level-number">99</span>
-            level
-          </span>
-          <a href="#" class="button found-companion__button">Позвать!</a>
-        </article>
-
-        <article class="found-companion">
-          <div class="found-companion__photo-wrap">
-            <img
-              src="http://placehold.it/70x70"
-              class="found-companion__photo"
-              width="70px"
-              height="70px"
-            />
-          </div>
-          <h3 class="found-companion__name">Петя Демин</h3>
-          <div class="found-companion__like"></div>
-          <span class="found-companion__likes">150</span>
-          <div
-            class="found-companion__status found-companion__status--offline"
-          ></div>
-          <p class="found-companion__tags">
-            #бургер #бар #футбол #концерт #крафт
-          </p>
-          <div
-            class="found-companion__countries-section found-companion-countries"
-          >
-            <h4 class="found-companion-countries__description">
-              хочет посетить:
-            </h4>
-            <ul class="found-companion-countries__list">
-              <li class="found-companion-countries__item">
-                <img
-                  src="http://placehold.it/26x18"
-                  class="companion-countries__flag"
-                  width="26px"
-                  height="18px"
-                />
-                <span class="found-companion-countries__name">Бельгия</span>
-              </li>
-
-              <li class="found-companion-countries__item">
-                <img
-                  src="http://placehold.it/26x18"
-                  class="found-companion-countries__flag"
-                  width="26px"
-                  height="18px"
-                />
-                <span class="found-companion-countries__name">Чехия</span>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="found-companion__transport-section found-companion-transport"
-          >
-            <h4 class="found-companion-transport__description">
-              транспорт:
-            </h4>
-            <ul class="found-companion__transport-list">
-              <li
-                class="found-companion__transport-item found-companion__transport-item--plane found-companion__transport-item--selected"
-                aria-label="plane"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--bus found-companion__transport-item--selected"
-                aria-label="bus"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--bike"
-                aria-label="bike"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--hike found-companion__transport-item--selected"
-                aria-label="hike"
-              ></li>
-            </ul>
-          </div>
-          <span class="found-companion__level">
-            <span class="found-companion__level-number">80</span>
-            level
-          </span>
-          <a href="#" class="button found-companion__button">Позвать!</a>
-        </article>
-
-        <article class="found-companion">
-          <div class="found-companion__photo-wrap">
-            <img
-              src="http://placehold.it/70x70"
-              class="found-companion__photo"
-              width="70px"
-              height="70px"
-            />
-          </div>
-          <h3 class="found-companion__name">Марк Смолов</h3>
-          <div class="found-companion__like"></div>
-          <span class="found-companion__likes">1700</span>
-          <div
-            class="found-companion__status found-companion__status--offline"
-          ></div>
-          <p class="found-companion__tags">
-            #рэп #тату #хайпбист #кроссовки #суприм
-          </p>
-          <div
-            class="found-companion__countries-section found-companion-countries"
-          >
-            <h4 class="found-companion-countries__description">
-              хочет посетить:
-            </h4>
-            <ul class="found-companion-countries__list">
-              <li class="found-companion-countries__item">
-                <img
-                  src="http://placehold.it/26x18"
-                  class="companion-countries__flag"
-                  width="26px"
-                  height="18px"
-                />
-                <span class="found-companion-countries__name">США</span>
-              </li>
-
-              <li class="found-companion-countries__item">
-                <img
-                  src="http://placehold.it/26x18"
-                  class="found-companion-countries__flag"
-                  width="26px"
-                  height="18px"
-                />
-                <span class="found-companion-countries__name">Австралия</span>
-              </li>
-
-              <li class="found-companion-countries__item">
-                <img
-                  src="http://placehold.it/26x18"
-                  class="found-companion-countries__flag"
-                  width="26px"
-                  height="18px"
-                />
-                <span class="found-companion-countries__name">Доминикана</span>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="found-companion__transport-section found-companion-transport"
-          >
-            <h4 class="found-companion-transport__description">
-              транспорт:
-            </h4>
-            <ul class="found-companion__transport-list">
-              <li
-                class="found-companion__transport-item found-companion__transport-item--plane found-companion__transport-item--selected"
-                aria-label="plane"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--bus"
-                aria-label="bus"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--bike found-companion__transport-item--selected"
-                aria-label="bike"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--hike"
-                aria-label="hike"
-              ></li>
-            </ul>
-          </div>
-          <span class="found-companion__level">
-            <span class="found-companion__level-number">25</span>
-            level
-          </span>
-          <a href="#" class="button found-companion__button">Позвать!</a>
-        </article>
-
-        <article class="found-companion">
-          <div class="found-companion__photo-wrap">
-            <img
-              src="http://placehold.it/70x70"
-              class="found-companion__photo"
-              width="70px"
-              height="70px"
-            />
-          </div>
-          <h3 class="found-companion__name">Лариса Роговая</h3>
-          <div class="found-companion__like"></div>
-          <span class="found-companion__likes">23</span>
-          <div
-            class="found-companion__status found-companion__status--online"
-          ></div>
-          <p class="found-companion__tags">
-            #образование #карьера #учеба #линкедин
-          </p>
-          <div
-            class="found-companion__countries-section found-companion-countries"
-          >
-            <h4 class="found-companion-countries__description">
-              хочет посетить:
-            </h4>
-            <ul class="found-companion-countries__list">
-              <li class="found-companion-countries__item">
-                <img
-                  src="http://placehold.it/26x18"
-                  class="companion-countries__flag"
-                  width="26px"
-                  height="18px"
-                />
-                <span class="found-companion-countries__name"
-                  >Великобритания</span
-                >
-              </li>
-
-              <li class="found-companion-countries__item">
-                <img
-                  src="http://placehold.it/26x18"
-                  class="found-companion-countries__flag"
-                  width="26px"
-                  height="18px"
-                />
-                <span class="found-companion-countries__name">Германия</span>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="found-companion__transport-section found-companion-transport"
-          >
-            <h4 class="found-companion-transport__description">
-              транспорт:
-            </h4>
-            <ul class="found-companion__transport-list">
-              <li
-                class="found-companion__transport-item found-companion__transport-item--plane found-companion__transport-item--selected"
-                aria-label="plane"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--bus found-companion__transport-item--selected"
-                aria-label="bus"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--bike"
-                aria-label="bike"
-              ></li>
-              <li
-                class="found-companion__transport-item found-companion__transport-item--hike"
-                aria-label="hike"
-              ></li>
-            </ul>
-          </div>
-          <span class="found-companion__level">
-            <span class="found-companion__level-number">50</span>
-            level
-          </span>
-          <a href="#" class="button found-companion__button">Позвать!</a>
-        </article>
-
-        <button type="button" class="button found-companions__button-more">
-          Показать еще
-        </button>
-        <ul class="companions-navigation">
-          <li class="companions-navigation__item">
-            <a
-              class="companions-navigation__link companions-navigation__link--prev"
-              href="#"
+        <div class="found-companions__inner inner">
+          <h2 class="visually-hidden">Результаты поиска</h2>
+          <article class="found-companion">
+            <div class="found-companion__photo-wrap">
+              <img
+                src="img/firsova-mobile@1x.jpg"
+                class="found-companion__photo"
+                width="70px"
+                height="70px"
+              />
+            </div>
+            <h3 class="found-companion__name">Таня Фирсова</h3>
+            <div
+              class="found-companion__like found-companion__like--liked"
+            ></div>
+            <span class="found-companion__likes">1,5м</span>
+            <div
+              class="found-companion__status found-companion__status--offline"
+            ></div>
+            <p class="found-companion__tags">
+              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+            </p>
+            <div
+              class="found-companion__countries-section found-companion-countries"
             >
-              Назад
-            </a>
-          </li>
-          <li class="companions-navigation__item">
-            <a
-              class="companions-navigation__link companions-navigation__link--next"
-              href="#"
+              <h4 class="found-companion-countries__description">
+                хочет посетить:
+              </h4>
+              <ul class="found-companion-countries__list">
+                <li class="found-companion-countries__item">
+                  <img
+                    src="http://placehold.it/26x18"
+                    class="companion-countries__flag"
+                    width="26px"
+                    height="18px"
+                  />
+                  <span class="found-companion-countries__name">Шри Ланка</span>
+                </li>
+
+                <li class="found-companion-countries__item">
+                  <img
+                    src="http://placehold.it/26x18"
+                    class="found-companion-countries__flag"
+                    width="26px"
+                    height="18px"
+                  />
+                  <span class="found-companion-countries__name">Тайланд</span>
+                </li>
+
+                <li class="found-companion-countries__item">
+                  <img
+                    src="http://placehold.it/26x18"
+                    class="found-companion-countries__flag"
+                    width="26px"
+                    height="18px"
+                  />
+                  <span class="found-companion-countries__name">Сейшелы</span>
+                </li>
+              </ul>
+            </div>
+            <div class="found-companion__transport">
+              <h4 class="found-companion__transport-description">
+                транспорт:
+              </h4>
+              <ul class="found-companion__transport-list">
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--plane found-companion__transport-item--selected"
+                  aria-label="plane"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--bus"
+                  aria-label="bus"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--bike"
+                  aria-label="bike"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--hike"
+                  aria-label="hike"
+                ></li>
+              </ul>
+            </div>
+            <span class="found-companion__level">
+              <span class="found-companion__level-number">99</span>
+              level
+            </span>
+            <a href="#" class="button found-companion__button">Позвать!</a>
+          </article>
+
+          <article class="found-companion">
+            <div class="found-companion__photo-wrap">
+              <img
+                src="img/demin-mobile@1x.jpg"
+                class="found-companion__photo"
+                width="70px"
+                height="70px"
+              />
+            </div>
+            <h3 class="found-companion__name">Петя Демин</h3>
+            <div class="found-companion__like"></div>
+            <span class="found-companion__likes">150</span>
+            <div
+              class="found-companion__status found-companion__status--offline"
+            ></div>
+            <p class="found-companion__tags">
+              #бургер #бар #футбол #концерт #крафт
+            </p>
+            <div
+              class="found-companion__countries-section found-companion-countries"
             >
-              Вперед
-            </a>
-          </li>
-        </ul>
+              <h4 class="found-companion-countries__description">
+                хочет посетить:
+              </h4>
+              <ul class="found-companion-countries__list">
+                <li class="found-companion-countries__item">
+                  <img
+                    src="http://placehold.it/26x18"
+                    class="companion-countries__flag"
+                    width="26px"
+                    height="18px"
+                  />
+                  <span class="found-companion-countries__name">Бельгия</span>
+                </li>
+
+                <li class="found-companion-countries__item">
+                  <img
+                    src="http://placehold.it/26x18"
+                    class="found-companion-countries__flag"
+                    width="26px"
+                    height="18px"
+                  />
+                  <span class="found-companion-countries__name">Чехия</span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="found-companion__transport-section found-companion-transport"
+            >
+              <h4 class="found-companion__transport-description">
+                транспорт:
+              </h4>
+              <ul class="found-companion__transport-list">
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--plane found-companion__transport-item--selected"
+                  aria-label="plane"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--bus found-companion__transport-item--selected"
+                  aria-label="bus"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--bike"
+                  aria-label="bike"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--hike found-companion__transport-item--selected"
+                  aria-label="hike"
+                ></li>
+              </ul>
+            </div>
+            <span class="found-companion__level">
+              <span class="found-companion__level-number">80</span>
+              level
+            </span>
+            <a href="#" class="button found-companion__button">Позвать!</a>
+          </article>
+
+          <article class="found-companion">
+            <div class="found-companion__photo-wrap">
+              <img
+                src="img/smolov-mobile@1x.jpg"
+                class="found-companion__photo"
+                width="70px"
+                height="70px"
+              />
+            </div>
+            <h3 class="found-companion__name">Марк Смолов</h3>
+            <div class="found-companion__like"></div>
+            <span class="found-companion__likes">1700</span>
+            <div
+              class="found-companion__status found-companion__status--offline"
+            ></div>
+            <p class="found-companion__tags">
+              #рэп #тату #хайпбист #кроссовки #суприм
+            </p>
+            <div
+              class="found-companion__countries-section found-companion-countries"
+            >
+              <h4 class="found-companion-countries__description">
+                хочет посетить:
+              </h4>
+              <ul class="found-companion-countries__list">
+                <li class="found-companion-countries__item">
+                  <img
+                    src="http://placehold.it/26x18"
+                    class="companion-countries__flag"
+                    width="26px"
+                    height="18px"
+                  />
+                  <span class="found-companion-countries__name">США</span>
+                </li>
+
+                <li class="found-companion-countries__item">
+                  <img
+                    src="http://placehold.it/26x18"
+                    class="found-companion-countries__flag"
+                    width="26px"
+                    height="18px"
+                  />
+                  <span class="found-companion-countries__name">Австралия</span>
+                </li>
+
+                <li class="found-companion-countries__item">
+                  <img
+                    src="http://placehold.it/26x18"
+                    class="found-companion-countries__flag"
+                    width="26px"
+                    height="18px"
+                  />
+                  <span class="found-companion-countries__name"
+                    >Доминикана</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="found-companion__transport-section found-companion-transport"
+            >
+              <h4 class="found-companion__transport-description">
+                транспорт:
+              </h4>
+              <ul class="found-companion__transport-list">
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--plane found-companion__transport-item--selected"
+                  aria-label="plane"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--bus"
+                  aria-label="bus"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--bike found-companion__transport-item--selected"
+                  aria-label="bike"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--hike"
+                  aria-label="hike"
+                ></li>
+              </ul>
+            </div>
+            <span class="found-companion__level">
+              <span class="found-companion__level-number">25</span>
+              level
+            </span>
+            <a href="#" class="button found-companion__button">Позвать!</a>
+          </article>
+
+          <article class="found-companion">
+            <div class="found-companion__photo-wrap">
+              <img
+                src="img/rogovaya-mobile@1x.jpg"
+                class="found-companion__photo"
+                width="70px"
+                height="70px"
+              />
+            </div>
+            <h3 class="found-companion__name">Лариса Роговая</h3>
+            <div class="found-companion__like"></div>
+            <span class="found-companion__likes">23</span>
+            <div
+              class="found-companion__status found-companion__status--online"
+            ></div>
+            <p class="found-companion__tags">
+              #образование #карьера #учеба #линкедин
+            </p>
+            <div
+              class="found-companion__countries-section found-companion-countries"
+            >
+              <h4 class="found-companion-countries__description">
+                хочет посетить:
+              </h4>
+              <ul class="found-companion-countries__list">
+                <li class="found-companion-countries__item">
+                  <img
+                    src="http://placehold.it/26x18"
+                    class="companion-countries__flag"
+                    width="26px"
+                    height="18px"
+                  />
+                  <span class="found-companion-countries__name"
+                    >Великобритания</span
+                  >
+                </li>
+
+                <li class="found-companion-countries__item">
+                  <img
+                    src="http://placehold.it/26x18"
+                    class="found-companion-countries__flag"
+                    width="26px"
+                    height="18px"
+                  />
+                  <span class="found-companion-countries__name">Германия</span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="found-companion__transport-section found-companion-transport"
+            >
+              <h4 class="found-companion__transport-description">
+                транспорт:
+              </h4>
+              <ul class="found-companion__transport-list">
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--plane found-companion__transport-item--selected"
+                  aria-label="plane"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--bus found-companion__transport-item--selected"
+                  aria-label="bus"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--bike"
+                  aria-label="bike"
+                ></li>
+                <li
+                  class="found-companion__transport-item found-companion__transport-item--hike"
+                  aria-label="hike"
+                ></li>
+              </ul>
+            </div>
+            <span class="found-companion__level">
+              <span class="found-companion__level-number">50</span>
+              level
+            </span>
+            <a href="#" class="button found-companion__button">Позвать!</a>
+          </article>
+
+          <button type="button" class="found-companions__button-more">
+            Показать еще
+          </button>
+          <ul class="companions-navigation">
+            <li class="companions-navigation__item">
+              <a
+                class="companions-navigation__link companions-navigation__link--prev"
+                href="#"
+              >
+                Назад
+              </a>
+            </li>
+            <li class="companions-navigation__item">
+              <a
+                class="companions-navigation__link companions-navigation__link--next"
+                href="#"
+              >
+                Вперед
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <a href="index.html" class="page-footer__logo">
-        <img src="http://placehold.it/96x15" width="96px" height="15px" />
+        <img src="img/logo-mobile-blue@1x.png" width="96px" height="15px" />
       </a>
       <ul class="footer__social social">
         <li class="social__item">

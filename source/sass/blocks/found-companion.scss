@@ -1,0 +1,39 @@
+.found-companion__name {
+  font-family: $main-ffamily;
+  font-size: 20px;
+  font-weight: $bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: $additional-accent-color;
+}
+
+
+.found-companion__tags,
+.found-companion-countries__description,
+.found-companion__transport-description {
+  font-family: $main-ffamily;
+  font-size: 15px;
+  font-weight: $normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: $main-text-color;
+}
+
+.found-companion-countries__name {
+  font-family: $main-ffamily;
+  font-size: 15px;
+  font-weight: $medium;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: $additional-accent-color;
+}
