@@ -11,7 +11,7 @@
   vertical-align: center;
   width: 185px;
 
-  font-family: $blogger-sans;
+  font-family: $main-ffamily;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -19,7 +19,7 @@
   line-height: 1.38;
   letter-spacing: normal;
   text-align: left;
-  color: $grey;
+  color: $main-text-color;
 }
 
 .plan__button {
@@ -27,7 +27,7 @@
 }
 
 .plan__button-business {
-  font-family: $blogger-sans;
+  font-family: $main-ffamily;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -39,7 +39,7 @@
 }
 
 .plan__button-close {
-  font-family: $blogger-sans;
+  font-family: $main-ffamily;
   font-size: 16px;
   font-weight: bold;
   font-style: normal;

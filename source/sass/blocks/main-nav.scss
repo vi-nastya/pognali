@@ -1,11 +1,11 @@
 .main-nav__menu-wrap {
   box-sizing: border-box;
   min-height: 568px;
-  background: $white;
+  background: $additional-background-color;
 }
 
 .main-menu__close {
   width: 19px;
   height: 19px;
-  background-color: $grey--light;
+  background-color: $main-text-hover-color;
 }

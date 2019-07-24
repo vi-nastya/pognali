@@ -1,17 +1,29 @@
-$yellow: #ffd74b;
-$yellow--dark: #ffbd30;
-$orange--light: #ffa530;
-$orange: #ff8d30;
 
-$light-blue: #edeff6;
-$light-blue--dark:#e2e5f2;
-$blue--light: #1d2e5b;
-$blue: #192144;
-$blue--dark: #161c35;
 
-$white: #ffffff;
+$accent-color: #ffd74b;
+$accent-hover-color: #ff8d30;
+$accent-active-color: rgba(255, 189, 48, 0.3);
+$accent-secondary-color: #ffa530;
+$additional-accent-color: #161c35;
 
-$grey: #444444;
-$grey--light: #cccccc;
+$main-background-color: #edeff6;
+$accent-background-color: #e2e5f2;
+$additional-background-color: #ffffff;
 
-$blogger-sans: "BloggerSans", "Arial", sans-serif;
+$main-text-color: #444444;
+$main-text-hover-color: rgba(68, 68, 68, 0.6);
+$main-text-active-color: rgba(68, 68, 68, 0.3);
+$main-title-color: $accent-hover-color;
+$accent-title-color: #1d2e5b;
+$accent-title-hover-color: rgba(29, 46, 91, 0.7);
+
+$additional-hover-color: #192144;
+
+$border-color: #cbced9;
+$border-hover-color: #aeb4cb;
+$border-active-color: $additional-accent-color;
+
+$error-color: #f47e7e;
+$error-background-color: #ffefef;
+
+$main-ffamily: "BloggerSans", "Arial", sans-serif;

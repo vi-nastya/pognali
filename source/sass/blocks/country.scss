@@ -5,7 +5,7 @@
 .country__wrapper {
   min-height: 90px;
   padding: 20px 25px;
-  background-color: $white;
+  background-color: $additional-background-color;
 }
 
 .country__name {
@@ -27,6 +27,6 @@
   line-height: 1.13;
   letter-spacing: normal;
 
-  color: $grey;
+  color: $main-text-color;
   opacity: 0.3;
 }
