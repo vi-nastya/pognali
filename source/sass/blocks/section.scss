@@ -2,7 +2,7 @@
   color: $accent-hover-color;
   font-family: $main-ffamily;
   font-weight: $bold;
-  font-size: 24px;
+  font-size: $header-fsize-mobile;
   font-stretch: normal;
   line-height: 1;
   letter-spacing: normal;
@@ -11,8 +11,24 @@
 
 .section-slogan {
   font-weight: $bold;
+  font-size: $main-fsize-mobile;
 }
 
 .section-description {
   font-weight: $light;
+  font-size: $main-fsize-mobile;
+}
+
+@media (min-width: $tablet-width) {
+  .section-header {
+    font-size: $header-fsize-tablet;
+  }
+
+  .section-description {
+    font-size: $main-fsize-tablet;
+  }
+
+  .section-slogan {
+    font-size: $additional-fsize-tablet;
+  }
 }
