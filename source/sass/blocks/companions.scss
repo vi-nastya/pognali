@@ -37,6 +37,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .companions__item {
@@ -76,6 +77,8 @@
 
   .companions__list {
     flex-direction: row;
+    align-items: center;
+    width: 618px;
     margin: 0 auto;
     margin-bottom: 110px;
   }
