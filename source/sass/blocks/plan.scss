@@ -1,15 +1,20 @@
 .plan {
   width: 320px;
+  border-radius: 0 0 40px 40px;
+  margin: 0 auto;
 }
 
 
 .plan__inner {
   @include container;
-  width: $mobile-content-width;
+  width: 320px;
+  padding: 50px 82px 26px 35px;
 }
 
 .plan__features {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
 }
 
 .plan__feature-item {
@@ -18,7 +23,7 @@
   width: 185px;
 
   font-family: $main-ffamily;
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   font-weight: $light;
   font-style: normal;
   font-stretch: normal;
@@ -30,11 +35,25 @@
 
 .plan__button {
   background: none;
+  padding: 0;
+}
+
+.plan__button:hover,
+.plan__button:focus {
+  background: none;
+  opacity: 0.7;
+}
+
+.plan__button:active {
+  background: none;
+  opacity: 0.3;
 }
 
 .plan__button-business {
+  width: 220px;
+  margin: 0 auto;
   font-family: $main-ffamily;
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   font-weight: $bold;
   font-style: normal;
   font-stretch: normal;
@@ -46,7 +65,7 @@
 
 .plan__button-close {
   font-family: $main-ffamily;
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -61,10 +80,39 @@
   .plan {
     width: 768px;
   }
+
+  .plan__inner {
+    width: 768px;
+    padding: 130px 150px 40px 85px;
+  }
+
+  .plan__feature-item {
+    width: 562px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: $main-fsize-tablet;
+  }
+
+  .plan__button {
+    font-size: $detail-fsize-tablet;
+  }
+
+  .plan__button-business {
+    width: 275px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .plan {
     width: 1440px;
+  }
+
+  .plan__inner {
+    width: 1440px;
+  }
+
+  .plan__feature-item {
+    width: 812px;
   }
 }
