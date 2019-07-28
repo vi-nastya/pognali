@@ -1,23 +1,122 @@
 .companions {
   width: 320px;
+  margin: 0 auto;
+
+  border-radius: 0 0 40px 40px;
+
   background-color: $additional-hover-color;
   color: $additional-background-color;
 }
 
 .companions__inner {
+  position: relative;
   @include container;
-  width: $mobile-content-width;
+  width: 320px;
   padding-top: 70px;
+}
+
+.companions__header {
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.companins__description {
+  width: 215px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+}
+
+.companions__slogan {
+  width: 193px;
+  margin-bottom: 60px;
+  margin-left: 50px;
+}
+
+.companions__list {
+  @include reset-list;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.companions__button {
+  margin-bottom: 30px;
+  margin-left: 50px;
 }
 
 @media (min-width: $tablet-width) {
   .companions {
     width: 768px;
   }
+
+  .companions__inner {
+    width: 768px;
+  }
+
+  .companions__header {
+    margin-bottom: 60px;
+    margin-left: 75px;
+  }
+
+  .companins__description {
+    width: 425px;
+    margin-bottom: 40px;
+    margin-left: 75px;
+  }
+
+  .companions__slogan {
+    width: 260px;
+    margin-bottom: 60px;
+    margin-left: 75px;
+  }
+
+  .companions__list {
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 110px;
+  }
+
+  .companions__button {
+    margin-bottom: 88px;
+    margin-left: 75px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .companions {
     width: 1440px;
+  }
+
+  .companions__inner {
+    width: 1440px;
+    padding-top: 220px;
+  }
+
+  .companions__header {
+    margin-bottom: 60px;
+    margin-left: 130px;
+  }
+
+  .companins__description {
+    width: 425px;
+    margin-bottom: 40px;
+    margin-left: 130px;
+  }
+
+  .companions__slogan {
+    width: 260px;
+    margin-bottom: 80px;
+    margin-left: 130px;
+  }
+
+  .companions__list {
+    position: absolute;
+    right: 60px;
+    top: 200px;
+  }
+
+  .companions__button {
+    margin-bottom: 135px;
+    margin-left: 130px;
   }
 }
