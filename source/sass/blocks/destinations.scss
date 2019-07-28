@@ -1,5 +1,6 @@
 .destinations {
   width: 320px;
+  @include container;
 }
 
 .destinations__inner {
@@ -18,14 +19,17 @@
 }
 
 .destinations__header {
-  width: 270px;
+  margin-left: 50px;
 }
 
 .destinations__description {
   color: $main-text-color;
-  width: 270px;
+  margin-left: 50px;
 }
 
+.destinations__item {
+  margin-bottom: 10px;
+}
 
 @media (min-width: $tablet-width) {
   .destinations {
@@ -34,6 +38,14 @@
 
   .destinations__inner {
     width: 768px;
+  }
+
+  .destinations__header {
+    margin-left: 75px;
+  }
+
+  .destinations__description {
+    margin-left: 75px;
   }
 }
 
@@ -52,5 +64,9 @@
     width: 560px;
     margin: 0;
     order: -1;
+  }
+
+  .destinations__header {
+    margin-right: 310px;
   }
 }

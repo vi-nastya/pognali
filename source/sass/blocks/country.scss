@@ -9,6 +9,10 @@
   background-color: $additional-background-color;
 }
 
+.country__photo {
+  border-radius: 10px 10px 0 0;
+}
+
 .country__name {
   font-size: 21px;
   font-weight: $bold;
@@ -35,11 +39,27 @@
 @media (min-width: $tablet-width) {
   .country {
     width: 618px;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .country__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .country__photo {
+    border-radius: 0 20px 20px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .country {
     width: 560px;
+  }
+
+  .country__photo {
+    min-width: 185px;
   }
 }
