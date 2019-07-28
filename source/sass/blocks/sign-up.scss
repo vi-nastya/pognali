@@ -1,9 +1,11 @@
 .sign-up {
+  width: 320px;
   background-color: $additional-hover-color;
 }
 
 .sign-up__inner {
   @include container;
+  width: $mobile-content-width;
   padding-top: 72px;
 }
 
@@ -24,4 +26,16 @@
 
   border: none;
   border-radius: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .sign-up {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sign-up {
+    width: 1440px;
+  }
 }

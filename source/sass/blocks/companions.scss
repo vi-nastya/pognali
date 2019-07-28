@@ -1,9 +1,23 @@
 .companions {
+  width: 320px;
   background-color: $additional-hover-color;
   color: $additional-background-color;
 }
 
 .companions__inner {
   @include container;
+  width: $mobile-content-width;
   padding-top: 70px;
+}
+
+@media (min-width: $tablet-width) {
+  .companions {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companions {
+    width: 1440px;
+  }
 }

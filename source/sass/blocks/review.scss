@@ -1,3 +1,20 @@
+.review {
+  width: 320px;
+}
+
 .review__inner {
   @include container;
+  width: $mobile-content-width;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    width: 1440px;
+  }
 }

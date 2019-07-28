@@ -1,7 +1,24 @@
+.destinations {
+  width: 320px;
+}
+
 .destinations__inner {
   @include container;
+  width: $mobile-content-width;
 }
 
 .destinations__description {
   color: $main-text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .destinations {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .destinations {
+    width: 1440px;
+  }
 }

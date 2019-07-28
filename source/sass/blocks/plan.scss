@@ -1,5 +1,11 @@
+.plan {
+  width: 320px;
+}
+
+
 .plan__inner {
   @include container;
+  width: $mobile-content-width;
 }
 
 .plan__features {
@@ -49,4 +55,16 @@
   text-align: center;
   text-transform: uppercase;
   color: $additional-accent-color;
+}
+
+@media (min-width: $tablet-width) {
+  .plan {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan {
+    width: 1440px;
+  }
 }

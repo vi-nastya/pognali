@@ -1,9 +1,9 @@
 .about {
   background-color: $additional-hover-color;
+  width: 320px;
 }
 
 .about__inner {
-
   min-height: 352px;
   margin-left: 18px;
   padding-top: 32px;
@@ -15,4 +15,17 @@
   background-image: url("../img/about-mobile@1x.png");
   background-size: 292px 352px;
   background-repeat: no-repeat;
+}
+
+
+@media (min-width: $tablet-width) {
+  .about {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    width: 1440px;
+  }
 }

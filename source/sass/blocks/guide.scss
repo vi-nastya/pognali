@@ -1,10 +1,12 @@
 .guide {
+  width: 320px;
   background-color: $additional-hover-color;
 }
 
 .guide__list {
   @include reset-list;
   @include container;
+  width: $mobile-content-width;
 }
 
 .guide__item {
@@ -41,4 +43,16 @@
 
 .guide__item:nth-of-type(4) {
   background-color: $accent-color;
+}
+
+@media (min-width: $tablet-width) {
+  .guide {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .guide {
+    width: 1440px;
+  }
 }
