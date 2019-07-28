@@ -1,8 +1,21 @@
-header {
+.header {
   color: $additional-background-color;
   background-color: $additional-accent-color;
+  width: 320px;
 }
 
 .header__inner {
   @include container;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 100%;
+  }
 }
