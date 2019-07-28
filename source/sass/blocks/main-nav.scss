@@ -22,10 +22,15 @@
   .main-nav {
     min-height: 135px;
   }
+
+  .main-nav__menu-wrap {
+    min-height: 768px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__menu-wrap {
-   flex-direction: row;
+    flex-direction: row;
+    min-height: 100px;
   }
 }

@@ -9,13 +9,23 @@
     <header class="header">
       <div class="header__inner inner">
         <a class="header__logo">
-          <img
-            src="img/logo-mobile-white@1x.png"
-            class="header__logo-image"
-            width="100px"
-            height="19px"
-            alt="Погнали?"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/logo-desktop-blue@1x.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/logo-tablet-blue@1x.png"
+            />
+            <img
+              src="img/logo-mobile-white@1x.png"
+              class="header__logo-image"
+              width="100px"
+              height="19px"
+              alt="Погнали?"
+            />
+          </picture>
         </a>
 
         <nav class="main-nav">
