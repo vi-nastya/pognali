@@ -8,6 +8,11 @@
   border-radius: 10px 10px 0 0;
 }
 
+.companion__photo {
+  width: 270px;
+  height: 270px;
+}
+
 .companion__details {
   display: flex;
   flex-direction: column;
@@ -75,8 +80,14 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .companion__details {
     min-height: 198px;
+  }
+
+  .companion__photo {
+    width: 285px;
+    height: 285px;
   }
 
   .companion__name {
