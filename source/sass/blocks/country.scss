@@ -7,6 +7,7 @@
   min-height: 90px;
   padding: 20px 25px;
   background-color: $additional-background-color;
+
 }
 
 .country__photo {
@@ -45,6 +46,7 @@
   }
 
   .country__wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
