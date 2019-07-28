@@ -1,31 +1,54 @@
 .about {
-  background-color: $additional-hover-color;
   width: 320px;
-}
+  margin: 0 auto;
 
-.about__inner {
-  min-height: 352px;
-  margin-left: 18px;
-  padding-top: 32px;
-  padding-left: 32px;
-  padding-right: 53px;
-
-  color: $additional-background-color;
-
+  background-color: $additional-hover-color;
   background-image: url("../img/about-mobile@1x.png");
   background-size: 292px 352px;
   background-repeat: no-repeat;
+  border-radius: 0 0 40px 40px;
 }
 
+.about__inner {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 60px 70px 50px;
+
+  color: $additional-background-color;
+}
+
+.about__header {
+  padding-top: 20px;
+}
+
+.about__button {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .about {
+    width: 768px;
+
+    background-image: url("../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .about__inner {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
+    width: 1440px;
+
+    background-image: url("../img/about-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .about__inner {
     width: 1440px;
   }
 }
