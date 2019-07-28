@@ -4,15 +4,35 @@
 
 .destinations__inner {
   @include container;
-  width: $mobile-content-width;
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.destinations__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destinations__header {
+  width: 270px;
 }
 
 .destinations__description {
   color: $main-text-color;
+  width: 270px;
 }
+
 
 @media (min-width: $tablet-width) {
   .destinations {
+    width: 768px;
+  }
+
+  .destinations__inner {
     width: 768px;
   }
 }
@@ -20,5 +40,17 @@
 @media (min-width: $desktop-width) {
   .destinations {
     width: 1440px;
+  }
+
+  .destinations__inner {
+    width: 1440px;
+    flex-wrap: wrap;
+  }
+
+  .destinations__list {
+    align-items: flex-start;
+    width: 560px;
+    margin: 0;
+    order: -1;
   }
 }

@@ -1,5 +1,6 @@
 .country {
   @include container;
+  width: 270px;
 }
 
 .country__wrapper {
@@ -29,4 +30,16 @@
 
   color: $main-text-color;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .country {
+    width: 618px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country {
+    width: 560px;
+  }
 }
