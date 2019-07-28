@@ -2,3 +2,9 @@
   @include reset-list;
   @include container;
 }
+
+@media (min-width: $desktop-width) {
+  .social-list {
+    display: none;
+  }
+}
