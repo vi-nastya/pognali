@@ -1,16 +1,25 @@
 .guide {
   width: 320px;
+  margin: 0 auto;
   background-color: $additional-hover-color;
+}
+
+.guide__inner {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .guide__list {
   @include reset-list;
   @include container;
-  width: $mobile-content-width;
+  display: flex;
+  flex-direction: column;
 }
 
 .guide__item {
   box-sizing: border-box;
+  width: 270px;
   min-height: 80px;
   padding-left: 25px;
   padding-top: 20px;
@@ -49,10 +58,32 @@
   .guide {
     width: 768px;
   }
+
+  .guide__inner {
+    width: 768px;
+  }
+
+  .guide__list {
+    width: 688px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .guide__item {
+    width: 334px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .guide {
     width: 1440px;
+  }
+
+  .guide__inner {
+    width: 1440px;
+  }
+
+  .guide__item {
+    width: 315px;
   }
 }

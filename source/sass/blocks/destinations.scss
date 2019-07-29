@@ -66,7 +66,10 @@
   }
 
   .destinations__inner {
+    box-sizing: border-box;
     width: 1440px;
+    height: 750px;
+    padding-top: 160px;
     flex-wrap: wrap;
   }
 
@@ -74,11 +77,21 @@
     align-items: flex-start;
     width: 560px;
     margin: 0;
+    margin-left: 130px;
+    margin-right: 170px;
+    margin-bottom: 150px;
     order: -1;
   }
 
   .destinations__header {
-    margin-right: 310px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .destinations__description {
+    width: 340px;
+    margin: 0;
+    margin-bottom: 100px;
   }
 
   .destinations__button {
