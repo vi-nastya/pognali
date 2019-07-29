@@ -12,17 +12,15 @@
           <picture>
             <source
               media="(min-width: 1440px)"
-              srcset="img/logo-desktop-blue@1x.png"
+              srcset="img/logo-desktop-white@1x.png"
             />
             <source
               media="(min-width: 768px)"
-              srcset="img/logo-tablet-blue@1x.png"
+              srcset="img/logo-tablet-white@1x.png"
             />
             <img
               src="img/logo-mobile-white@1x.png"
               class="header__logo-image"
-              width="100px"
-              height="19px"
               alt="Погнали?"
             />
           </picture>
@@ -446,43 +444,59 @@
       <section class="location"></section>
     </main>
     <footer class="footer">
-      <a class="footer__logo">
-        <img src="img/logo-mobile-blue@1x.png" width="96px" height="15px" />
-      </a>
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a
-            class="social__link social__link--facebook"
-            href="https://www.facebook.com/htmlacademy"
-          >
-            Мы в Фейсбуке
-          </a>
-        </li>
-        <li class="social__item">
-          <a
-            class="social__link social__link--vkontakte"
-            href="https://vk.com/htmlacademy"
-          >
-            Мы в Вконтакте
-          </a>
-        </li>
-        <li class="social__item">
-          <a
-            class="social__link social__link--instagram"
-            href="https://www.instagram.com/htmlacademy"
-          >
-            Мы в Инстаграме
-          </a>
-        </li>
-      </ul>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a
-          class="copyright__link"
-          href="https://htmlacademy.ru/intensive/adaptive"
-        >
-          HTML Academy
+      <div class="footer__inner">
+        <a class="footer__logo">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/logo-desktop-blue@1x.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/logo-tablet-blue@1x.png"
+            />
+            <img
+              class="footer__logo"
+              src="img/logo-mobile-blue@1x.png"
+              alt="Погнали"
+            />
+          </picture>
         </a>
+        <ul class="footer__social-list social">
+          <li class="footer__social-item social__item">
+            <a
+              class="footer__social-link social__link social__link--facebook"
+              href="https://www.facebook.com/htmlacademy"
+            >
+              Мы в Фейсбуке
+            </a>
+          </li>
+          <li class="footer__social-item social__item">
+            <a
+              class="footer__social-link social__link social__link--vkontakte"
+              href="https://vk.com/htmlacademy"
+            >
+              Мы в Вконтакте
+            </a>
+          </li>
+          <li class="footer__social-item social__item">
+            <a
+              class="footer__social-link social__link social__link--instagram"
+              href="https://www.instagram.com/htmlacademy"
+            >
+              Мы в Инстаграме
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          >
+            HTML Academy
+          </a>
+        </div>
       </div>
     </footer>
   </body>
