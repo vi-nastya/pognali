@@ -21,6 +21,14 @@
   padding-top: 20px;
 }
 
+.about__description {
+  width: 210px;
+}
+
+.about__slogan {
+  width: 210px;
+}
+
 .about__button {
   display: none;
 }
@@ -37,6 +45,14 @@
   .about__inner {
     width: 768px;
   }
+
+  .about__description {
+    width: 300px;
+  }
+
+  .about__slogan {
+    width: 300px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -50,5 +66,13 @@
 
   .about__inner {
     width: 1440px;
+  }
+
+  .about__description {
+    width: 610px;
+  }
+
+  .about__slogan {
+    width: 410px;
   }
 }
