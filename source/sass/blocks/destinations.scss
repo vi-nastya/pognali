@@ -31,6 +31,12 @@
   margin-bottom: 10px;
 }
 
+.destinations__button {
+  width: 270px;
+  height: 62px;
+  border-radius: 10px;
+}
+
 @media (min-width: $tablet-width) {
   .destinations {
     width: 768px;
@@ -46,6 +52,11 @@
 
   .destinations__description {
     margin-left: 75px;
+  }
+
+  .destinations__button {
+    width: 618px;
+    height: 81px;
   }
 }
 
@@ -68,5 +79,10 @@
 
   .destinations__header {
     margin-right: 310px;
+  }
+
+  .destinations__button {
+    width: 274px;
+    height: 81px;
   }
 }

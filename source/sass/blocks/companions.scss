@@ -47,6 +47,9 @@
 .companions__button {
   margin-bottom: 30px;
   margin-left: 50px;
+  width: 270px;
+  height: 62px;
+  border-radius: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -94,6 +97,8 @@
   .companions__button {
     margin-bottom: 88px;
     margin-left: 75px;
+    width: 618px;
+    height: 81px;
   }
 }
 
@@ -137,5 +142,7 @@
   .companions__button {
     margin-bottom: 135px;
     margin-left: 130px;
+    width: 280px;
+    height: 81px;
   }
 }
