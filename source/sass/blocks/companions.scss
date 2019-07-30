@@ -10,7 +10,8 @@
 
 .companions__inner {
   position: relative;
-  @include container;
+
+  margin: 0 auto;
   width: 320px;
   padding-top: 70px;
 }
