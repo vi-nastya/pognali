@@ -2,20 +2,50 @@
   color: $additional-background-color;
   background-color: $additional-accent-color;
   width: 320px;
+  margin: 0 auto;
 }
 
 .header__inner {
-  @include container;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.header__top {
+  display: flex;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.header__nav-toggle {
+  margin-left: auto;
 }
 
 @media (min-width: $tablet-width) {
   .header {
     width: 768px;
   }
+
+  .header__inner {
+    width: 768px;
+  }
+
+  .header__nav-toggle {
+    margin-left: 170px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .header {
     width: 1440px;
+  }
+
+  .header__inner {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__nav-toggle {
+    display: none;
   }
 }

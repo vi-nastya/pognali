@@ -1,5 +1,6 @@
 .main-nav {
   min-height: 75px;
+  background-color: $additional-background-color;
 }
 
 .main-nav__menu-wrap {
@@ -7,9 +8,6 @@
   min-height: 568px;
   display: flex;
   flex-direction: column;
-
-  background: $additional-background-color;
-
 }
 
 .main-menu__close {
@@ -29,8 +27,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    background-color: $additional-accent-color;
+  }
+
   .main-nav__menu-wrap {
     flex-direction: row;
     min-height: 100px;
+  }
+
+  .main-nav__close {
+    display: none;
   }
 }

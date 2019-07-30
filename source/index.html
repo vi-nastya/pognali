@@ -8,32 +8,36 @@
   <body>
     <header class="header">
       <div class="header__inner inner">
-        <a class="header__logo">
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="img/logo-desktop-white@1x.png"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="img/logo-tablet-white@1x.png"
-            />
-            <img
-              src="img/logo-mobile-white@1x.png"
-              class="header__logo-image"
-              alt="Погнали?"
-            />
-          </picture>
-        </a>
+        <div class="header__top">
+          <a class="header__logo">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/logo-desktop-white@1x.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/logo-tablet-white@1x.png"
+              />
+              <img
+                src="img/logo-mobile-white@1x.png"
+                class="header__logo-image"
+                alt="Погнали?"
+              />
+            </picture>
+          </a>
+
+          <button class="header__nav-toggle" type="button">Открыть меню</button>
+        </div>
 
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-
           <div class="main-nav__menu-wrap">
             <button
-              class="button button--close main-menu__close"
+              class="button button--close main-nav__close"
               aria-label="Закрыть меню"
-            ></button>
+            >
+              Закрыть
+            </button>
             <ul class="main-nav__site-list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="service.html">О сервисе</a>
@@ -99,33 +103,30 @@
 
     <main class="main">
       <section class="intro">
-        <div class="into__inner inner">
-          <h1>В путешествие с крутыми попутчиками!</h1>
+        <div class="intro__inner inner">
+          <h1 class="intro__header">В путешествие с крутыми попутчиками!</h1>
 
-          <ul class="intro__list">
-            <li class="intro__item">
-              <a class="intro__link">Телефон</a>
+          <ul class="intro__contact-list">
+            <li class="intro__contact-item">
+              <a class="intro__contact-link">Телефон</a>
             </li>
-            <li class="intro__item">
-              <a class="intro__link">email</a>
+            <li class="intro__contact-item">
+              <a class="intro__contact-link">email</a>
             </li>
           </ul>
           <a class="button button__login intro__login" href="login.html">
             Авторизация
           </a>
+          <div class="intro__review">
+            <blockquote class="intro__review-text">
+              «Лучшее приложение, что я видел в жизни!»
+            </blockquote>
+            <cite class="intro__review-author">
+              Мурат Эльтазин, главный редактор газеты «гаджетлайф»
+            </cite>
+          </div>
         </div>
       </section>
-
-      <article class="review">
-        <div class="review__inner inner">
-          <blockquote class="review__text">
-            «Лучшее приложение, что я видел в жизни!»
-          </blockquote>
-          <cite class="review__author">
-            Мурат Эльтазин, главный редактор газеты «гаджетлайф»
-          </cite>
-        </div>
-      </article>
 
       <section class="guide">
         <div class="guide__inner inner">
