@@ -27,9 +27,7 @@ $border-active-color: $additional-accent-color;
 $error-color: #f47e7e;
 $error-background-color: #ffefef;
 
-$main-ffamily: "BloggerSans",
-  "Arial",
-  sans-serif;
+$main-ffamily: 'BloggerSans', 'Arial', sans-serif;
 
 $light: 300;
 $normal: 400;
@@ -46,6 +44,7 @@ $accent-fsize-tablet: 24px;
 $additional-fsize-tablet: 21px;
 $detail-fsize-tablet: 20px;
 
+$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 

@@ -62,7 +62,7 @@ a {
 }
 
 body {
-  margin: 0 auto;
+  min-width: $mobile-width;
 
   font-family: $main-ffamily;
   font-weight: $normal;
