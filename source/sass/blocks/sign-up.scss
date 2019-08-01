@@ -1,13 +1,9 @@
 .sign-up {
-  width: 320px;
-  margin: 0 auto;
+  @include section-width;
   background-color: $additional-hover-color;
 }
 
 .sign-up__inner {
-  @include container;
-  width: 320px;
-  margin: 0 auto;
   padding-bottom: 45px;
   display: flex;
   flex-direction: column;
@@ -50,14 +46,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .sign-up {
-    width: 768px;
-  }
-
-  .sign-up__inner {
-    width: 768px;
-  }
-
   .sign-up__description {
     width: 610px;
   }
@@ -76,14 +64,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .sign-up {
-    width: 1440px;
-  }
-
-  .sign-up__inner {
-    width: 1440px;
-  }
-
   .sign-up__input {
     width: 850px;
   }

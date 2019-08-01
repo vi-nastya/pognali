@@ -1,7 +1,6 @@
 .footer {
-  width: 320px;
+  @include section-width;
   min-height: 240px;
-  margin: 0 auto;
   margin-top: -40px;
 
   background-color: $additional-background-color;
@@ -9,9 +8,6 @@
 }
 
 .footer__inner {
-  box-sizing: border-box;
-  width: 320px;
-  margin: 0 auto;
   padding-top: 35px;
   padding-left: 25px;
   padding-right: 25px;
@@ -49,24 +45,14 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    width: 768px;
     min-height: 154px;
   }
 
   .footer__inner {
-    width: 768px;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .footer {
-    width: 1440px;
-  }
-
-  .footer__inner {
-    width: 1440px;
-  }
-}
+@media (min-width: $desktop-width) {}

@@ -1,13 +1,10 @@
 .plan {
-  width: 320px;
+  @include section-width;
   border-radius: 0 0 40px 40px;
-  margin: 0 auto;
 }
 
 
 .plan__inner {
-  @include container;
-  width: 320px;
   padding: 50px 82px 26px 35px;
 }
 
@@ -77,12 +74,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .plan {
-    width: 768px;
-  }
-
   .plan__inner {
-    width: 768px;
     padding: 130px 150px 40px 85px;
   }
 
@@ -104,14 +96,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .plan {
-    width: 1440px;
-  }
-
-  .plan__inner {
-    width: 1440px;
-  }
-
   .plan__feature-item {
     width: 812px;
   }

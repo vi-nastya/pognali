@@ -1,12 +1,8 @@
 .destinations {
-  width: 320px;
-  margin: 0 auto;
+  @include section-width;
 }
 
 .destinations__inner {
-  margin: 0 auto;
-  width: 320px;
-
   display: flex;
   flex-direction: column;
 }
@@ -38,13 +34,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .destinations {
-    width: 768px;
-  }
-
-  .destinations__inner {
-    width: 768px;
-  }
 
   .destinations__header {
     margin-left: 75px;
@@ -61,13 +50,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .destinations {
-    width: 1440px;
-  }
 
   .destinations__inner {
-    box-sizing: border-box;
-    width: 1440px;
     height: 750px;
     padding-top: 160px;
     flex-wrap: wrap;

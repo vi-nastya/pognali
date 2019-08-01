@@ -1,13 +1,7 @@
 .header {
+  @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
-  width: 320px;
-  margin: 0 auto;
-}
-
-.header__inner {
-  width: 320px;
-  margin: 0 auto;
 }
 
 .header__top {
@@ -21,26 +15,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .header {
-    width: 768px;
-  }
-
-  .header__inner {
-    width: 768px;
-  }
-
   .header__nav-toggle {
     margin-left: 170px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .header {
-    width: 1440px;
-  }
-
   .header__inner {
-    width: 1440px;
     display: flex;
     flex-direction: row;
   }

@@ -1,12 +1,9 @@
 .guide {
-  width: 320px;
-  margin: 0 auto;
+  @include section-width;
   background-color: $additional-hover-color;
 }
 
 .guide__inner {
-  width: 320px;
-  margin: 0 auto;
   display: flex;
 }
 
@@ -55,14 +52,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .guide {
-    width: 768px;
-  }
-
-  .guide__inner {
-    width: 768px;
-  }
-
   .guide__list {
     width: 688px;
     flex-direction: row;
@@ -75,14 +64,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .guide {
-    width: 1440px;
-  }
-
-  .guide__inner {
-    width: 1440px;
-  }
-
   .guide__list {
     width: 1260px;
   }
