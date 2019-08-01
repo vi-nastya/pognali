@@ -9,7 +9,9 @@
   background-color: $additional-background-color;
 }
 
-.country__photo {
+.country__photo-wrapper {
+  width: 270px;
+  height: 110px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -50,7 +52,9 @@
     flex-direction: column;
   }
 
-  .country__photo {
+  .country__photo-wrapper {
+    width: 186px;
+    height: 140px;
     border-radius: 0 20px 20px 0;
   }
 }
@@ -59,9 +63,5 @@
   .country {
     width: 560px;
     height: 140px;
-  }
-
-  .country__photo {
-    min-width: 185px;
   }
 }

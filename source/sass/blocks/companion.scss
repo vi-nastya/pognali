@@ -4,7 +4,7 @@
   border-radius: 10px;
 }
 
-.companion__photo {
+.companion__photo-wrapper {
   width: 270px;
   height: 270px;
   border-radius: 10px 10px 0 0;
@@ -79,6 +79,7 @@
 @media (min-width: $tablet-width) {
   .companion__details {
     min-height: 198px;
+    width: 285px;
   }
 
   .companion__photo {
