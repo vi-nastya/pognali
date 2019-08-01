@@ -47,9 +47,21 @@
   color: $additional-accent-color;
 }
 
+.found-companion__photo-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
 @media (min-width: $tablet-width) {
   .found-companion {
     width: 688px;
+  }
+
+  .found-companion__photo-wrapper {
+    width: 190px;
+    height: 190px;
+    border-radius: 10px;
   }
 }
 
@@ -57,4 +69,11 @@
   .found-companion {
     width: 950px;
   }
+
+  .found-companion__photo-wrapper {
+    width: 285px;
+    height: 285px;
+    border-radius: 0;
+  }
+
 }
