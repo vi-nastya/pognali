@@ -43,8 +43,8 @@
 }
 
 .companions__button {
-  margin-bottom: 30px;
-  margin-left: 50px;
+  display: block;
+  margin: 0 auto;
   width: 270px;
   height: 62px;
   border-radius: 10px;
@@ -87,8 +87,6 @@
   }
 
   .companions__button {
-    margin-bottom: 88px;
-    margin-left: 75px;
     width: 618px;
     height: 81px;
   }
