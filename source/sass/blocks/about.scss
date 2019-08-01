@@ -43,6 +43,10 @@
   .about__slogan {
     width: 300px;
   }
+
+  .about__button {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {

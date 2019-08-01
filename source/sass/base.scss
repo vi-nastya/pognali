@@ -61,8 +61,13 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
-  min-width: $mobile-width;
+  @include section-width;
 
   font-family: $main-ffamily;
   font-weight: $normal;
