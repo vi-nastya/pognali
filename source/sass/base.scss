@@ -77,8 +77,14 @@ body {
   background-color: $main-background-color;
 }
 
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .inner {

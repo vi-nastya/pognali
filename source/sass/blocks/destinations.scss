@@ -1,13 +1,15 @@
 .destinations {
   @include section-width;
   position: relative;
+  padding-bottom: 40px;
+  background: linear-gradient($main-background-color 98%, $additional-hover-color 98%);
 }
 
 .destinations::after {
   position: absolute;
   z-index: 2;
   content: "";
-  bottom: -40px;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 40px;

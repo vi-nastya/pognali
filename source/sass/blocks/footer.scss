@@ -3,8 +3,9 @@
 
   @include section-width;
   min-height: 240px;
+  padding-top: 40px;
 
-  background-color: $additional-background-color;
+  background: linear-gradient(transparent 15%, $additional-background-color 15%);
 
   @media (min-width: $tablet-width) {
     min-height: 154px;
@@ -14,7 +15,7 @@
 .footer::before {
   content: "";
   position: absolute;
-  top: -40px;
+  top: 0;
   left: 0;
   background-color: $additional-background-color;
   width: 100%;
