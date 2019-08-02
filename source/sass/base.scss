@@ -61,9 +61,13 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
-  width: 320px;
-  margin: 0 auto;
+  @include section-width;
 
   font-family: $main-ffamily;
   font-weight: $normal;
@@ -71,4 +75,27 @@ body {
 
   color: $additional-accent-color;
   background-color: $main-background-color;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.inner {
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

@@ -1,3 +1,10 @@
+.site-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .site-list__link {
   font-family: $main-ffamily;
   font-size: 30px;
@@ -8,4 +15,26 @@
   letter-spacing: normal;
   text-align: center;
   color: $additional-hover-color;
+}
+
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .site-list__item {
+    margin-right: 35px;
+  }
+
+  .site-list__link {
+    color: $additional-background-color;
+  }
 }

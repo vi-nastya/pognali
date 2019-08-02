@@ -1,11 +1,19 @@
 .country {
   @include container;
+  width: 270px;
 }
 
 .country__wrapper {
   min-height: 90px;
   padding: 20px 25px;
   background-color: $additional-background-color;
+}
+
+.country__photo-wrapper {
+  overflow: hidden;
+  width: 270px;
+  height: 110px;
+  border-radius: 10px 10px 0 0;
 }
 
 .country__name {
@@ -29,4 +37,32 @@
 
   color: $main-text-color;
   opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .country {
+    width: 618px;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .country__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .country__photo-wrapper {
+    width: 186px;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .country {
+    width: 560px;
+    height: 140px;
+  }
 }

@@ -1,5 +1,11 @@
+.found-companions {
+  @include section-width;
+}
+
 .found-companions__inner {
-  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .found-companions__button-more {

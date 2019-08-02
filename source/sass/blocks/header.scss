@@ -1,8 +1,32 @@
-header {
+.header {
+  @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
 }
 
-.header__inner {
-  @include container;
+.header__top {
+  display: flex;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.header__nav-toggle {
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .header__nav-toggle {
+    margin-left: 170px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__nav-toggle {
+    display: none;
+  }
 }

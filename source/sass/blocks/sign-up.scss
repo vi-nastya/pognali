@@ -1,13 +1,17 @@
 .sign-up {
+  @include section-width;
   background-color: $additional-hover-color;
 }
 
 .sign-up__inner {
-  @include container;
-  padding-top: 72px;
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sign-up__description {
+  width: 200px;
   color: $additional-background-color;
   text-align: center;
 }
@@ -17,11 +21,56 @@
   text-decoration: underline;
 }
 
+.sign-up__form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
 .sign-up__input {
   background-color: $additional-background-color;
   min-height: 62px;
-  width: 270px;
+  width: 210px;
+  margin: 0 auto;
+  padding: 0;
 
   border: none;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+.sign-up__button {
+  width: 62px;
+  height: 62px;
+  border-radius: 0 10px 10px 0;
+  font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .sign-up__description {
+    width: 610px;
+  }
+
+  .sign-up__input {
+    min-height: 81px;
+    width: 536px;
+  }
+
+  .sign-up__button {
+    width: 81px;
+    height: 81px;
+    border-radius: 0 10px 10px 0;
+    font-size: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sign-up__input {
+    width: 850px;
+  }
+
+  .sign-up__button {
+    width: 281px;
+    height: 81px;
+    font-size: $accent-fsize-tablet;
+  }
 }

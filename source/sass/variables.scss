@@ -1,6 +1,5 @@
-
 $accent-color: #ffd74b;
-$accent-hover-color: #ffbd30;
+$accent-hover-color: #ff8d30;
 $accent-minor-color: #ffbd30;
 $accent-minor-hover-color: #ff8d30;
 $accent-active-color: rgba(255, 189, 48, 0.3);
@@ -30,8 +29,23 @@ $error-background-color: #ffefef;
 
 $main-ffamily: "BloggerSans", "Arial", sans-serif;
 
-$main-ffamily: "BloggerSans", "Arial", sans-serif;
 $light: 300;
 $normal: 400;
 $medium: 500;
 $bold: 700;
+
+$main-fsize-mobile: 16px;
+$header-fsize-mobile: 24px;
+$accent-fsize-mobile: 21px;
+
+$main-fsize-tablet: 28px;
+$header-fsize-tablet: 45px;
+$accent-fsize-tablet: 24px;
+$additional-fsize-tablet: 21px;
+$detail-fsize-tablet: 20px;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+$mobile-content-width: 270px;

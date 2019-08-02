@@ -7,25 +7,37 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__inner inner">
-        <a class="header__logo">
-          <img
-            src="img/logo-mobile-white@1x.png"
-            class="header__logo-image"
-            width="100px"
-            height="19px"
-            alt="Погнали?"
-          />
-        </a>
+      <div class="inner header__inner">
+        <div class="header__top">
+          <a class="header__logo">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/logo-desktop-white@1x.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/logo-tablet-white@1x.png"
+              />
+              <img
+                src="img/logo-mobile-white@1x.png"
+                class="header__logo-image"
+                alt="Погнали?"
+              />
+            </picture>
+          </a>
+
+          <button class="header__nav-toggle" type="button">Открыть меню</button>
+        </div>
 
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-
           <div class="main-nav__menu-wrap">
             <button
-              class="button button--close main-menu__close"
+              class="button button--close main-nav__close"
               aria-label="Закрыть меню"
-            ></button>
+            >
+              Закрыть
+            </button>
             <ul class="main-nav__site-list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="service.html">О сервисе</a>
@@ -91,36 +103,33 @@
 
     <main class="main">
       <section class="intro">
-        <div class="into__inner inner">
-          <h1>В путешествие с крутыми попутчиками!</h1>
+        <div class="inner intro__inner">
+          <h1 class="intro__header">В путешествие с крутыми попутчиками!</h1>
 
-          <ul class="intro__list">
-            <li class="intro__item">
-              <a class="intro__link">Телефон</a>
+          <ul class="intro__contact-list">
+            <li class="intro__contact-item">
+              <a class="intro__contact-link">Телефон</a>
             </li>
-            <li class="intro__item">
-              <a class="intro__link">email</a>
+            <li class="intro__contact-item">
+              <a class="intro__contact-link">email</a>
             </li>
           </ul>
           <a class="button button__login intro__login" href="login.html">
             Авторизация
           </a>
+          <div class="intro__review">
+            <blockquote class="intro__review-text">
+              «Лучшее приложение, что я видел в жизни!»
+            </blockquote>
+            <cite class="intro__review-author">
+              Мурат Эльтазин, главный редактор газеты «гаджетлайф»
+            </cite>
+          </div>
         </div>
       </section>
 
-      <article class="review">
-        <div class="review__inner inner">
-          <blockquote class="review__text">
-            «Лучшее приложение, что я видел в жизни!»
-          </blockquote>
-          <cite class="review__author">
-            Мурат Эльтазин, главный редактор газеты «гаджетлайф»
-          </cite>
-        </div>
-      </article>
-
       <section class="guide">
-        <div class="guide__inner inner">
+        <div class="inner guide__inner">
           <h2 class="visually-hidden">Как пользоваться сервисом</h2>
           <ol class="guide__list">
             <li class="guide__item">Выберите направление</li>
@@ -132,7 +141,7 @@
       </section>
 
       <section class="about">
-        <div class="about__inner inner">
+        <div class="inner about__inner">
           <h2 class="section-header about__header">О сервисе</h2>
           <p class="section-description about__description">
             Любое путешествие веселее с попутчиками, которые на одной волне с
@@ -143,89 +152,115 @@
             А если найдете кого-то близкого по духу — скорее зовите в совместный
             трип!
           </p>
+          <a class="button about__button" href="/">Подробнее</a>
         </div>
       </section>
 
       <section class="destinations">
-        <div class="destinations__inner inner">
+        <div class="inner destinations__inner">
           <h2 class="section-header destinations__header">Направления</h2>
           <p class="section-description destinations__description">
             Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
             странах, куда хотели бы отправиться и чем можно там заняться.
           </p>
+          <ul class="destinations__list">
+            <li class="destinations__item country">
+              <div class="country__photo-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="img/thailand-desktop@1x.jpg"
+                  />
+                  <img
+                    src="img/thailand-mobile@1x.jpg"
+                    class="country__photo"
+                    width="270px"
+                    height="110px"
+                    alt="Тайланд"
+                  />
+                </picture>
+              </div>
+              <div class="country__wrapper">
+                <img
+                  src="http://placehold.it/35x24"
+                  class="country__flag"
+                  width="35px"
+                  height="24px"
+                  alt="Тайланд"
+                />
+                <h3 class="country__name">Тайланд</h3>
+                <span class="country__visitors">18321</span>
+                <p class="country__description">Джугли зовут!</p>
+              </div>
+            </li>
 
-          <article class="destinations__item country">
-            <img
-              src="img/thailand-mobile@1x.jpg"
-              class="country__photo"
-              width="270px"
-              height="110px"
-              alt="Тайланд"
-            />
-            <div class="country__wrapper">
-              <img
-                src="http://placehold.it/35x24"
-                class="country__flag"
-                width="35px"
-                height="24px"
-                alt="Тайланд"
-              />
-              <h3 class="country__name">Тайланд</h3>
-              <span class="country__visitors">18321</span>
-              <p class="country__description">Джугли зовут!</p>
-            </div>
-          </article>
+            <li class="destinations__item country">
+              <div class="country__photo-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="img/france-desktop@1x.jpg"
+                  />
+                  <img
+                    src="img/france-mobile@1x.jpg"
+                    class="country__photo"
+                    width="270px"
+                    height="110px"
+                    alt="Франция"
+                  />
+                </picture>
+              </div>
+              <div class="country__wrapper">
+                <img
+                  src="http://placehold.it/35x24"
+                  class="country__flag"
+                  width="35px"
+                  height="24px"
+                  alt="Франция"
+                />
+                <h3 class="country__name">Франция</h3>
+                <span class="country__visitors">12518</span>
+                <p class="country__description">Трэ бьен, манифик!</p>
+              </div>
+            </li>
 
-          <article class="destinations__item country">
-            <img
-              src="img/france-mobile@1x.jpg"
-              class="country__photo"
-              width="270px"
-              height="110px"
-              alt="Франция"
-            />
-            <div class="country__wrapper">
-              <img
-                src="http://placehold.it/35x24"
-                class="country__flag"
-                width="35px"
-                height="24px"
-                alt="Франция"
-              />
-              <h3 class="country__name">Франция</h3>
-              <span class="country__visitors">12518</span>
-              <p class="country__description">Трэ бьен, манифик!</p>
-            </div>
-          </article>
+            <li class="destinations__item country">
+              <div class="country__photo-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="img/czech-desktop@1x.jpg"
+                  />
+                  <img
+                    src="img/czech-mobile@1x.jpg"
+                    class="country__photo"
+                    width="270px"
+                    height="110px"
+                    alt="Чехия"
+                  />
+                </picture>
+              </div>
+              <div class="country__wrapper">
+                <img
+                  src="http://placehold.it/35x24"
+                  class="country__flag"
+                  width="35px"
+                  height="24px"
+                  alt="Чехия"
+                />
+                <h3 class="country__name">Чехия</h3>
+                <span class="country__visitors">5326</span>
+                <p class="country__description">Закоулки старой Европы</p>
+              </div>
+            </li>
+          </ul>
 
-          <article class="destinations__item country">
-            <img
-              src="img/czech-mobile@1x.jpg"
-              class="country__photo"
-              width="270px"
-              height="110px"
-              alt="Чехия"
-            />
-            <div class="country__wrapper">
-              <img
-                src="http://placehold.it/35x24"
-                class="country__flag"
-                width="35px"
-                height="24px"
-                alt="Чехия"
-              />
-              <h3 class="country__name">Чехия</h3>
-              <span class="country__visitors">5326</span>
-              <p class="country__description">Закоулки старой Европы</p>
-            </div>
-          </article>
-
-          <a class="button destinations__button-more" href="#">Показать все</a>
+          <a class="button destinations__button" href="#">Показать все</a>
         </div>
       </section>
 
       <section class="companions">
-        <div class="companions__inner inner">
+        <div class="inner companions__inner">
           <h2 class="section-header companions__header">Попутчики</h2>
           <p class="section-description companins__description">
             Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
@@ -235,96 +270,108 @@
             Теперь можно легко найти единомышленников!
           </p>
 
-          <article class="companions__item companion">
-            <span class="companion__level">
-              <span class="companion__level-number">99</span>
-              level
-            </span>
-            <img
-              src="img/firsova-desktop@1x.jpg"
-              class="companion__photo"
-              width="270px"
-              height="270px"
-              alt="Фото попутчика"
-            />
-            <ul class="companion__countries">
-              <li class="companion__countries-flag"></li>
-              <li class="companion__countries-flag"></li>
-              <li class="companion__countries-flag"></li>
-            </ul>
-            <div class="companion__status companion__status--offline"></div>
-            <h3 class="companion__name">Таня Фирсова</h3>
-            <p class="companion__tags">
-              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-            </p>
-            <ul class="companion__transport transport">
-              <li
-                class="transport__item transport__item-plane transport__item--selected"
-                aria-label="plane"
-              ></li>
-              <li
-                class="transport__item transport__item-bus"
-                aria-label="bus"
-              ></li>
-              <li
-                class="transport__item transport__item-bike"
-                aria-label="bike"
-              ></li>
-              <li
-                class="transport__item transport__item-hike"
-                aria-label="hike"
-              ></li>
-            </ul>
-          </article>
+          <ul class="companions__list">
+            <li class="companions__item companion">
+              <span class="companion__level">
+                <span class="companion__level-number">99</span>
+                level
+              </span>
+              <div class="companion__photo-wrapper">
+                <img
+                  src="img/firsova-desktop@1x.jpg"
+                  class="companion__photo"
+                  width="270px"
+                  height="270px"
+                  alt="Фото попутчика"
+                />
+              </div>
+              <div class="companion__details">
+                <ul class="companion__countries">
+                  <li class="companion__countries-flag"></li>
+                  <li class="companion__countries-flag"></li>
+                  <li class="companion__countries-flag"></li>
+                </ul>
+                <div class="companion__status companion__status--offline"></div>
+                <h3 class="companion__name">Таня Фирсова</h3>
+                <p class="companion__tags">
+                  #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+                </p>
+                <ul class="companion__transport transport">
+                  <li
+                    class="transport__item transport__item-plane transport__item--selected"
+                    aria-label="plane"
+                  ></li>
+                  <li
+                    class="transport__item transport__item-bus"
+                    aria-label="bus"
+                  ></li>
+                  <li
+                    class="transport__item transport__item-bike"
+                    aria-label="bike"
+                  ></li>
+                  <li
+                    class="transport__item transport__item-hike"
+                    aria-label="hike"
+                  ></li>
+                </ul>
+              </div>
+            </li>
 
-          <article class="companions__item companion">
-            <span class="companion__level">
-              <span class="companion__level-number">80</span>
-              level
-            </span>
-            <img
-              src="img/demin-desktop@1x.jpg"
-              class="companion__photo"
-              width="270px"
-              height="270px"
-              alt="Фото попутчика"
-            />
-            <ul class="companion__countries">
-              <li class="companion__countries-flag"></li>
-              <li class="companion__countries-flag"></li>
-            </ul>
-            <div class="companion__status companion__status--online"></div>
-            <h3 class="companion__name">Петя Демин</h3>
-            <p class="companion__tags">#бургер #бар #футбол #концерт #крафт</p>
-            <ul class="companion__transport transport">
-              <li
-                class="transport__item transport__item-plane transport__item--selected"
-                aria-label="plane"
-              ></li>
-              <li
-                class="transport__item transport__item-bus  transport__item--selected"
-                aria-label="bus"
-              ></li>
-              <li
-                class="transport__item transport__item-bike"
-                aria-label="bike"
-              ></li>
-              <li
-                class="transport__item transport__item-hike transport__item--selected"
-                aria-label="hike"
-              ></li>
-            </ul>
-          </article>
+            <li class="companions__item companion">
+              <span class="companion__level">
+                <span class="companion__level-number">80</span>
+                level
+              </span>
+              <div class="companion__photo-wrapper">
+                <img
+                  src="img/demin-desktop@1x.jpg"
+                  class="companion__photo"
+                  width="270px"
+                  height="270px"
+                  alt="Фото попутчика"
+                />
+              </div>
+              <div class="companion__details">
+                <ul class="companion__countries">
+                  <li class="companion__countries-flag"></li>
+                  <li class="companion__countries-flag"></li>
+                </ul>
+                <div class="companion__status companion__status--online"></div>
+                <h3 class="companion__name">Петя Демин</h3>
+                <p class="companion__tags">
+                  #бургер #бар #футбол #концерт #крафт
+                </p>
+                <ul class="companion__transport transport">
+                  <li
+                    class="transport__item transport__item-plane transport__item--selected"
+                    aria-label="plane"
+                  ></li>
+                  <li
+                    class="transport__item transport__item-bus  transport__item--selected"
+                    aria-label="bus"
+                  ></li>
+                  <li
+                    class="transport__item transport__item-bike"
+                    aria-label="bike"
+                  ></li>
+                  <li
+                    class="transport__item transport__item-hike transport__item--selected"
+                    aria-label="hike"
+                  ></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
 
-          <a class="button companions__button-show-all" href="#">
+          <a class="button companions__button" href="#">
             Показать всех
           </a>
         </div>
       </section>
 
       <section class="plan">
-        <div class="plan__inner inner">
-          <h2 class="section-header plan__header">Добавьте свой профиль</h2>
+        <div class="inner plan__inner">
+          <h2 class="section-header plan__header">Добавьте свой профиль!</h2>
           <ol class="plan__features">
             <li class="plan__feature-item">
               <span class="plan__feature_name">Базовое размещение</span>
@@ -376,11 +423,11 @@
       </section>
 
       <section class="sign-up">
-        <div class="sign-up__inner inner">
+        <div class="inner sign-up__inner">
           <h2 class="section-header sign-up__header">Заинтересовались?</h2>
           <p class="section-description sign-up__description">
-            Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
-            Тогда скорее
+            Зарегистрируйтесь, это быстро и бесплатно!<br />Уже
+            зарегистрированы? Тогда скорее
             <a class="sign-up__link" href="login.html">авторизуйтесь</a>.
           </p>
           <form
@@ -396,9 +443,11 @@
             />
             <button
               type="submit"
-              class="sign-up__button"
+              class="button sign-up__button"
               aria-label="Зарегистрироваться"
-            ></button>
+            >
+              Регистрация
+            </button>
           </form>
         </div>
       </section>
@@ -406,43 +455,59 @@
       <section class="location"></section>
     </main>
     <footer class="footer">
-      <a class="footer__logo">
-        <img src="img/logo-mobile-blue@1x.png" width="96px" height="15px" />
-      </a>
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a
-            class="social__link social__link--facebook"
-            href="https://www.facebook.com/htmlacademy"
-          >
-            Мы в Фейсбуке
-          </a>
-        </li>
-        <li class="social__item">
-          <a
-            class="social__link social__link--vkontakte"
-            href="https://vk.com/htmlacademy"
-          >
-            Мы в Вконтакте
-          </a>
-        </li>
-        <li class="social__item">
-          <a
-            class="social__link social__link--instagram"
-            href="https://www.instagram.com/htmlacademy"
-          >
-            Мы в Инстаграме
-          </a>
-        </li>
-      </ul>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a
-          class="copyright__link"
-          href="https://htmlacademy.ru/intensive/adaptive"
-        >
-          HTML Academy
+      <div class="inner footer__inner">
+        <a class="footer__logo">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="img/logo-desktop-blue@1x.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/logo-tablet-blue@1x.png"
+            />
+            <img
+              class="footer__logo"
+              src="img/logo-mobile-blue@1x.png"
+              alt="Погнали"
+            />
+          </picture>
         </a>
+        <ul class="footer__social-list social">
+          <li class="footer__social-item social__item">
+            <a
+              class="footer__social-link social__link social__link--facebook"
+              href="https://www.facebook.com/htmlacademy"
+            >
+              Мы в Фейсбуке
+            </a>
+          </li>
+          <li class="footer__social-item social__item">
+            <a
+              class="footer__social-link social__link social__link--vkontakte"
+              href="https://vk.com/htmlacademy"
+            >
+              Мы в Вконтакте
+            </a>
+          </li>
+          <li class="footer__social-item social__item">
+            <a
+              class="footer__social-link social__link social__link--instagram"
+              href="https://www.instagram.com/htmlacademy"
+            >
+              Мы в Инстаграме
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          >
+            HTML Academy
+          </a>
+        </div>
       </div>
     </footer>
   </body>

@@ -5,6 +5,18 @@
 }
 
 @mixin container {
-  width: 270px;
   margin: 0 auto;
+}
+
+
+@mixin section-width {
+  min-width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+  }
 }
