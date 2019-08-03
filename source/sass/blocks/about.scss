@@ -17,11 +17,30 @@
 }
 
 .about__inner {
-  padding: 0 60px 70px 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-image: url("../img/about-mobile@1x.png");
   background-size: 292px 352px;
   background-repeat: no-repeat;
   color: $additional-background-color;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background-image: url("../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    background-image: url("../img/about-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
 }
 
 .about__header {
@@ -41,12 +60,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .about {
-    background-image: url("../img/about-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-
   .about__description {
     width: 300px;
   }
@@ -61,12 +74,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about {
-    background-image: url("../img/about-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-
   .about__description {
     width: 610px;
   }
