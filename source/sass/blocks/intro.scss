@@ -1,7 +1,17 @@
 .intro {
+  position: relative;
   @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
+
+  @media(min-width: $tablet-width) {
+    background-color: $additional-hover-color;
+  }
+
+  @media(min-width: $desktop-width) {
+    background-color: $additional-accent-color;
+    border-radius: 0 0 40px 40px;
+  }
 }
 
 .intro__inner {
@@ -17,16 +27,16 @@
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 100px;
 
     background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 280px 285px, top;
+    background-position: 280px 285px, -380px 210px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
