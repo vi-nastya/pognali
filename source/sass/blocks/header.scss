@@ -5,9 +5,19 @@
 }
 
 .header__inner {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 43px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 60px;
-    padding-right: 59px;
+    padding-right: 60px;
     padding-top: 49px;
     display: flex;
     flex-direction: row;
