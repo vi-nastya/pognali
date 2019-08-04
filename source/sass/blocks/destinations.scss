@@ -2,7 +2,7 @@
   @include section-width;
   position: relative;
   padding-bottom: 40px;
-  background: linear-gradient($main-background-color 98%, $additional-hover-color 98%);
+  background: linear-gradient($main-background-color 96%, $additional-hover-color 96%);
 }
 
 .destinations::after {
@@ -40,12 +40,15 @@
 }
 
 .destinations__item {
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 
 .destinations__button {
   width: 270px;
   height: 62px;
+  margin: 0 auto;
+  margin-top: 25px;
   border-radius: 10px;
 }
 

@@ -1,12 +1,25 @@
 .country {
-  @include container;
   width: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 140px;
+  }
 }
 
 .country__wrapper {
+  position: relative;
   min-height: 90px;
   padding: 20px 25px;
   background-color: $additional-background-color;
+  border-radius: 10px;
 }
 
 .country__photo-wrapper {
@@ -14,9 +27,33 @@
   width: 270px;
   height: 110px;
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 186px;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+.country__flag {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 35px;
+  height: 24px;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: auto;
+    right: -20px;
+    width: 70px;
+    height: 47px;
+  }
 }
 
 .country__name {
+  margin: 0;
+  margin-bottom: 5px;
   font-size: 21px;
   font-weight: $bold;
   font-style: normal;
@@ -28,6 +65,7 @@
 
 .country__description,
 .country__visitors {
+  margin: 0;
   font-size: 16px;
   font-weight: $medium;
   font-style: normal;
@@ -38,6 +76,7 @@
   color: $main-text-color;
   opacity: 0.3;
 }
+
 
 @media (min-width: $tablet-width) {
   .country {
@@ -51,18 +90,5 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-  }
-
-  .country__photo-wrapper {
-    width: 186px;
-    height: 140px;
-    border-radius: 0 20px 20px 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .country {
-    width: 560px;
-    height: 140px;
   }
 }
