@@ -4,6 +4,7 @@
 }
 
 .sign-up__inner {
+  padding-top: 70px;
   padding-bottom: 45px;
   display: flex;
   flex-direction: column;
@@ -36,6 +37,12 @@
 
   border: none;
   border-radius: 10px 0 0 10px;
+}
+
+.sign-up__contact-us {
+  width: 210px;
+  color: $additional-background-color;
+  text-align: center;
 }
 
 .sign-up__button {
