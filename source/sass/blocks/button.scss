@@ -2,9 +2,7 @@
   box-sizing: border-box;
   display: inline-block;
   width: 270px;
-  min-height: 62px;
-  padding-left: 24px;
-  padding-top: 22px;
+  height: 62px;
 
   color: $additional-accent-color;
   font-family: $main-ffamily;
@@ -19,6 +17,10 @@
 
   border: none;
   border-radius: 10px;
+
+  @media(min-width: $tablet-width) {
+    height: 81px;
+  }
 }
 
 .button:hover {
