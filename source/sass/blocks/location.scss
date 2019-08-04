@@ -1,0 +1,5 @@
+.location {
+  @include section-width;
+  color: $additional-hover-color;
+  background-color: $accent-color;
+}
