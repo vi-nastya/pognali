@@ -9,6 +9,11 @@
   width: 270px;
   height: 270px;
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+  }
 }
 
 .companion__details {
@@ -16,9 +21,16 @@
   flex-direction: column;
   align-items: center;
   min-height: 157px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 198px;
+    width: 285px;
+  }
 }
 
 .companion__name {
+  margin: 0;
+  margin-bottom: 15px;
   font-family: $main-ffamily;
   font-size: $accent-fsize-mobile;
   font-weight: $bold;
@@ -28,9 +40,14 @@
   letter-spacing: normal;
   text-align: center;
   color: $additional-accent-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: $accent-fsize-tablet;
+  }
 }
 
 .companion__tags {
+  margin: 0;
   display: inline-block;
   vertical-align: middle;
   width: 185px;
@@ -43,6 +60,11 @@
   letter-spacing: normal;
   text-align: center;
   color: $main-text-color;
+
+  @media (min-width: $tablet-width) {
+    width: 225px;
+    font-size: $detail-fsize-tablet;
+  }
 }
 
 .companion__level {
@@ -75,25 +97,4 @@
 .companion__level-number {
   font-size: 24px;
   font-weight: $bold;
-}
-
-@media (min-width: $tablet-width) {
-  .companion__details {
-    min-height: 198px;
-    width: 285px;
-  }
-
-  .companion__photo {
-    width: 285px;
-    height: 285px;
-  }
-
-  .companion__name {
-    font-size: $accent-fsize-tablet;
-  }
-
-  .companion__tags {
-    width: 225px;
-    font-size: $detail-fsize-tablet;
-  }
 }
