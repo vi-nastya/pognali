@@ -1,11 +1,28 @@
 .plan {
   @include section-width;
+  background-color: $main-background-color;
   border-radius: 0 0 40px 40px;
 }
 
 
 .plan__inner {
   padding: 50px 82px 26px 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 130px 150px 40px 85px;
+  }
+}
+
+.plan__header {
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 150px;
+  }
 }
 
 .plan__features {
@@ -28,11 +45,27 @@
   letter-spacing: normal;
   text-align: left;
   color: $main-text-color;
+
+  @media (min-width: $tablet-width) {
+    width: 562px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: $main-fsize-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 812px;
+  }
 }
 
 .plan__button {
   background: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $detail-fsize-tablet;
+  }
 }
 
 .plan__button:hover,
@@ -62,6 +95,8 @@
   @media (min-width: $tablet-width) {
     position: relative;
     padding-left: 80px;
+    width: 355px;
+    font-size: $detail-fsize-tablet;
 
     &::before {
       position: absolute;
@@ -100,30 +135,6 @@
   color: $additional-accent-color;
 }
 
-@media (min-width: $tablet-width) {
-  .plan__inner {
-    padding: 130px 150px 40px 85px;
-  }
-
-  .plan__feature-item {
-    width: 562px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: $main-fsize-tablet;
-  }
-
-  .plan__button {
-    font-size: $detail-fsize-tablet;
-  }
-
-  .plan__button-business {
-    width: 275px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .plan__feature-item {
-    width: 812px;
-  }
+.plan--business {
+  display: none;
 }
