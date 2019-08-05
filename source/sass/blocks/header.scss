@@ -31,7 +31,10 @@
 }
 
 .header__nav-toggle {
+  width: 25px;
   margin-left: auto;
+  background-color: $additional-accent-color;
+  border: none;
 
   @media (min-width: $tablet-width) {
     margin-left: 170px;
@@ -40,4 +43,8 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.header__nav-toggle svg {
+  fill: $additional-background-color;
 }
