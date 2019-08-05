@@ -18,8 +18,21 @@
   position: relative;
   min-height: 90px;
   padding: 20px 25px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
   background-color: $additional-background-color;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
 }
 
 .country__photo-wrapper {
@@ -53,7 +66,9 @@
 
 .country__name {
   margin: 0;
+  margin-right: 70px;
   margin-bottom: 5px;
+  order: -2;
   font-size: 21px;
   font-weight: $bold;
   font-style: normal;
@@ -79,6 +94,7 @@
 
 .country__visitors {
   position: relative;
+  order: -1;
   padding-left: 20px;
 
   &::before {
@@ -90,19 +106,8 @@
     height: 11px;
     background-image: url("../../img/user.svg");
   }
-}
 
-@media (min-width: $tablet-width) {
-  .country {
-    width: 618px;
-
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .country__wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  @media (min-width: $tablet-width) {
+    order: 0;
   }
 }
