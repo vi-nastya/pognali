@@ -49,37 +49,33 @@
 
 .about__description {
   width: 210px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 620px;
+  }
 }
 
 .about__slogan {
   width: 210px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+  }
 }
 
 .about__button {
   display: none;
-}
 
-@media (min-width: $tablet-width) {
-  .about__description {
-    width: 300px;
-  }
-
-  .about__slogan {
-    width: 300px;
-  }
-
-  .about__button {
+  @media (min-width: $tablet-width) {
     display: block;
     margin-bottom: 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .about__description {
-    width: 610px;
-  }
-
-  .about__slogan {
-    width: 410px;
   }
 }
