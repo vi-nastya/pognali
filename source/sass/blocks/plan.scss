@@ -58,6 +58,33 @@
   letter-spacing: normal;
   text-align: left;
   color: $additional-hover-color;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-left: 80px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0px;
+      width: 67px;
+      height: 67px;
+      background-color: $accent-background-color;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 30px;
+      left: 27px;
+      width: 17px;
+      height: 21px;
+      background-image: url(../../img/business.svg);
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .plan__button-close {
