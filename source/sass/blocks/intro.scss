@@ -51,9 +51,9 @@
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: space-between;
 
     background-image: url("../img/traveller-illustration-desktop@1x.png");
     background-repeat: no-repeat;
@@ -183,4 +183,67 @@
   text-transform: uppercase;
   text-align: center;
   border-radius: 20px;
+}
+
+.intro__guide {
+  @include reset-list;
+  @include container;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1260px;
+    flex-wrap: nowrap;
+  }
+}
+
+.intro__guide-item {
+  box-sizing: border-box;
+  width: 270px;
+  min-height: 80px;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-right: 95px;
+
+
+  font-family: $main-ffamily;
+  font-weight: $bold;
+  font-size: 18px;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+
+  color: $additional-accent-color;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+  }
+
+}
+
+.intro__guide-item:nth-of-type(1) {
+  background-color: $accent-hover-color;
+}
+
+.intro__guide-item:nth-of-type(2) {
+  background-color: $accent-secondary-color;
+}
+
+.intro__guide-item:nth-of-type(3) {
+  background-color: $accent-hover-color;
+}
+
+.intro__guide-item:nth-of-type(4) {
+  background-color: $accent-color;
 }
