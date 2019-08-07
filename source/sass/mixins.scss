@@ -20,3 +20,49 @@
     min-width: $desktop-width;
   }
 }
+
+@mixin main-text {
+  font-family: $main-ffamily;
+  font-size: $main-fsize-mobile;
+  font-weight: $light;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+
+  @media (min-width:$tablet-width) {
+    font-size: $main-fsize-tablet;
+    line-height: 1.18;
+  }
+}
+
+@mixin accent-text {
+  font-family: $main-ffamily;
+  font-size: $main-fsize-mobile;
+  font-weight: $bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+
+  @media (min-width:$tablet-width) {
+    font-size: $additional-fsize-tablet;
+    line-height: 1.19;
+  }
+}
+
+@mixin section-header-text {
+  margin: 0;
+  color: $accent-hover-color;
+  font-family: $main-ffamily;
+  font-weight: $bold;
+  font-size: $header-fsize-mobile;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: $header-fsize-tablet;
+  }
+}

@@ -47,8 +47,13 @@
   }
 }
 
+.about__header {
+  @include section-header-text;
+}
+
 .about__description {
   width: 210px;
+  @include main-text;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -61,6 +66,7 @@
 
 .about__slogan {
   width: 210px;
+  @include accent-text;
 
   @media (min-width: $tablet-width) {
     width: 300px;

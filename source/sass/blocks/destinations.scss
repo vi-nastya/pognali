@@ -33,11 +33,14 @@
 
 .destinations__header {
   margin-left: 50px;
+  @include section-header-text;
 }
 
 .destinations__description {
   color: $main-text-color;
   margin-left: 50px;
+
+  @include main-text;
 }
 
 .destinations__item {

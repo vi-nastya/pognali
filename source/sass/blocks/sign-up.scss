@@ -11,8 +11,13 @@
   align-items: center;
 }
 
+.sign-up__header {
+  @include section-header-text;
+}
+
 .sign-up__description {
   width: 200px;
+  @include main-text;
   color: $additional-background-color;
   text-align: center;
 }
@@ -41,8 +46,13 @@
 
 .sign-up__contact-us {
   width: 210px;
+  @include main-text;
   color: $additional-background-color;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 610px;
+  }
 }
 
 .sign-up__button {
