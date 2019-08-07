@@ -27,7 +27,9 @@ $border-active-color: $additional-accent-color;
 $error-color: #f47e7e;
 $error-background-color: #ffefef;
 
-$main-ffamily: "BloggerSans", "Arial", sans-serif;
+$main-ffamily: "BloggerSans",
+"Arial",
+sans-serif;
 
 $light: 300;
 $normal: 400;
@@ -37,6 +39,7 @@ $bold: 700;
 $main-fsize-mobile: 16px;
 $header-fsize-mobile: 24px;
 $accent-fsize-mobile: 21px;
+$additional-fsize-mobile: 18px;
 
 $main-fsize-tablet: 28px;
 $header-fsize-tablet: 45px;

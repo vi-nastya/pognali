@@ -3,10 +3,12 @@
   display: inline-block;
   width: 270px;
   height: 62px;
+  padding-left: 24px;
+  padding-top: 24px;
 
   color: $additional-accent-color;
   font-family: $main-ffamily;
-  font-size: 18px;
+  font-size: $additional-fsize-mobile;
   font-weight: $bold;
   font-style: normal;
   font-stretch: normal;
@@ -20,6 +22,9 @@
 
   @media(min-width: $tablet-width) {
     height: 81px;
+    font-size: $accent-fsize-tablet;
+    padding-left: 34px;
+    padding-top: 30px;
   }
 }
 
