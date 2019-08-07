@@ -224,6 +224,7 @@
 
   @media (min-width: $tablet-width) {
     width: 334px;
+    min-height: 140px;
   }
 
   @media (min-width: $desktop-width) {
@@ -235,6 +236,10 @@
 .intro__guide-item:nth-of-type(1) {
   background-color: $accent-hover-color;
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 10px 0 0 0;
+  }
 }
 
 .intro__guide-item:nth-of-type(2) {
@@ -249,6 +254,14 @@
     height: 10px;
     background-color: $accent-secondary-color;
     border-radius: 10px 10px 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 10px 0 0;
+
+    &::before {
+      border-radius: 10px 10px 0 0;
+    }
   }
 }
 
@@ -265,6 +278,16 @@
     background-color: $accent-minor-color;
     border-radius: 10px 10px 0 0;
   }
+
+  @media (min-width: $tablet-width) {
+    background: $accent-minor-color;
+    border-radius: 0 0 0 10px;
+
+    &::before {
+      width: 0px;
+      height: 0px;
+    }
+  }
 }
 
 .intro__guide-item:nth-of-type(4) {
@@ -280,5 +303,17 @@
     height: 10px;
     background-color: $accent-color;
     border-radius: 10px 10px 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient($accent-color 130px, $accent-minor-color 130px);
+    border-radius: 0 0 10px 0;
+
+    &::before {
+      top: auto;
+      bottom: 0;
+      border-radius: 0 0 10px 10px;
+    }
+
   }
 }
