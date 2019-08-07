@@ -1,7 +1,7 @@
 .about {
   @include section-width;
   position: relative;
-  background: linear-gradient($additional-hover-color 90%, $main-background-color 90%);
+  background: linear-gradient(to top, $main-background-color 40px, $additional-hover-color 40px);
 }
 
 .about::after {
@@ -23,9 +23,10 @@
   padding-bottom: 80px;
   background-color: $additional-hover-color;
   background-image: url("../img/about-mobile@1x.png");
-  background-size: 292px 352px;
+  background-size: cover;
   background-repeat: no-repeat;
   color: $additional-background-color;
+  border-radius: 0 0 40px 40px;
 
   @media (min-width: $tablet-width) {
     padding-top: 130px;
