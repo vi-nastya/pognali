@@ -222,15 +222,49 @@
 
   color: $additional-accent-color;
 
+  &::after {
+    position: absolute;
+    counter-increment: guide;
+    content: counter(guide);
+    top: 23px;
+    right: 23px;
+
+    font-family: $main-ffamily;
+    font-size: $additional-fsize-mobile;
+    font-weight: $bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    text-align: center;
+    color: $additional-background-color;
+  }
+
   @media (min-width: $tablet-width) {
     width: 334px;
     min-height: 140px;
     font-size: $accent-fsize-tablet;
+
+    &::after {
+      font-size: 30px;
+      left: 34px;
+      bottom: 28px;
+      top: auto;
+      right: auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 315px;
     min-height: 107px;
+
+    &::after {
+      font-size: $accent-fsize-tablet;
+      top: 29px;
+      right: 33px;
+      left: auto;
+      bottom: auto;
+    }
   }
 
 }
