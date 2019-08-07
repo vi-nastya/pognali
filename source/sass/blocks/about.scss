@@ -23,7 +23,7 @@
   padding-bottom: 80px;
   background-color: $additional-hover-color;
   background-image: url("../img/about-mobile@1x.png");
-  background-size: cover;
+  background-size: 292px 352px;
   background-repeat: no-repeat;
   color: $additional-background-color;
   border-radius: 0 0 40px 40px;
@@ -35,6 +35,7 @@
 
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
+    background-size: 350px 450px;
     background-position: right;
   }
 
@@ -43,6 +44,7 @@
     padding-right: 60px;
 
     background-image: url("../img/about-desktop@1x.png");
+    background-size: 630px 665px;
     background-repeat: no-repeat;
     background-position: right;
   }
