@@ -214,7 +214,7 @@
 
   font-family: $main-ffamily;
   font-weight: $bold;
-  font-size: 18px;
+  font-size: $additional-fsize-mobile;
   font-stretch: normal;
   line-height: 1;
   letter-spacing: normal;
@@ -225,6 +225,7 @@
   @media (min-width: $tablet-width) {
     width: 334px;
     min-height: 140px;
+    font-size: $accent-fsize-tablet;
   }
 
   @media (min-width: $desktop-width) {
