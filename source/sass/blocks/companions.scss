@@ -24,26 +24,25 @@
 }
 
 .companions__header {
+  @include section-header-text;
   margin-bottom: 20px;
   margin-left: 50px;
 
-  @include section-header-text;
+
 }
 
 .companins__description {
+  @include main-text;
   width: 215px;
   margin-bottom: 25px;
   margin-left: 50px;
-
-  @include main-text;
 }
 
 .companions__slogan {
+  @include accent-text;
   width: 193px;
   margin-bottom: 60px;
   margin-left: 50px;
-
-  @include accent-text;
 }
 
 .companions__list {

@@ -29,8 +29,9 @@
 }
 
 .sign-up__description {
-  width: 200px;
   @include main-text;
+  width: 200px;
+  margin-bottom: 30px;
   color: $additional-background-color;
   text-align: center;
 }
@@ -44,6 +45,7 @@
   position: relative;
   display: flex;
   align-items: flex-start;
+  margin-bottom: 30px;
 }
 
 .sign-up__input {
@@ -52,6 +54,7 @@
   width: 210px;
   margin: 0 auto;
   padding: 0;
+  padding-left: 24px;
 
   border: none;
   border-radius: 10px 0 0 10px;

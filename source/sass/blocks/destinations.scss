@@ -49,8 +49,8 @@
 }
 
 .destinations__header {
-  margin-left: 50px;
   @include section-header-text;
+  margin-left: 50px;
 
   @media (min-width: $tablet-width) {
     margin-left: 75px;
@@ -63,13 +63,14 @@
 }
 
 .destinations__description {
+  @include main-text;
   color: $main-text-color;
   margin-left: 50px;
-
-  @include main-text;
+  margin-bottom: 65px;
+  width: 200px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 75px;
+    margin-bottom: 110px;
   }
 
   @media (min-width: $desktop-width) {
