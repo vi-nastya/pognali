@@ -2,7 +2,7 @@
   @include section-width;
   position: relative;
   padding-bottom: 40px;
-  background: linear-gradient($additional-hover-color 98%, $main-background-color 98%);
+  background: linear-gradient(to top, $main-background-color 40px, $additional-hover-color 40px);
   color: $additional-background-color;
 }
 
@@ -19,8 +19,8 @@
 
 .companions__inner {
   position: relative;
-
   padding-top: 70px;
+  border-radius: 0 0 40px 40px;
 }
 
 .companions__header {
