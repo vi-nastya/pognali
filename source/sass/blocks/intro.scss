@@ -51,13 +51,10 @@
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 100px;
-    //display: flex;
-    //flex-direction: row;
-    //justify-content: space-between;
 
     background-image: url("../img/traveller-illustration-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 620px 50px;
+    background-position: 620px 10px;
   }
 }
 
@@ -82,8 +79,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: inline-block;
+    vertical-align: top;
     text-align: left;
-    margin-left: 130px;
+    margin-left: 65px;
+    margin-right: 570px;
+    margin-bottom: 100px;
   }
 
 }
@@ -100,8 +101,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0px;
-    margin-right: 25px;
+    margin-left: auto;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -201,6 +203,7 @@
   @media (min-width: $desktop-width) {
     width: 1260px;
     flex-wrap: nowrap;
+    margin-top: 0;
   }
 }
 
