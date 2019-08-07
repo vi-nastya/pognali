@@ -6,7 +6,19 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    position: relative;
     display: flex;
+    margin-left: 145px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 2px;
+      left: -105px;
+      top: 65px;
+      background-color: $additional-background-color;
+    }
   }
 }
 
