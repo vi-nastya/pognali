@@ -92,6 +92,15 @@
   text-align: left;
   color: $additional-hover-color;
 
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     padding-left: 80px;

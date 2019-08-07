@@ -21,10 +21,15 @@
   border-radius: 10px;
 
   @media(min-width: $tablet-width) {
+    width: 618px;
     height: 81px;
     font-size: $accent-fsize-tablet;
     padding-left: 34px;
     padding-top: 30px;
+  }
+
+  @media(min-width: $tablet-width) {
+    width: 274px;
   }
 }
 
