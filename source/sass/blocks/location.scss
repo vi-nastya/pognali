@@ -1,5 +1,6 @@
 .location {
   position: relative;
+
   @include section-width;
   color: $additional-hover-color;
   background: linear-gradient(to top, transparent 40px, $accent-color 40px);
@@ -19,7 +20,7 @@
 .location__inner {
   padding: 35px 25px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 75px;
     padding-bottom: 85px;
   }
@@ -54,7 +55,6 @@
   justify-content: center;
   background-color: $additional-hover-color;
   border-radius: 50%;
-
 }
 
 .location__address-icon svg {

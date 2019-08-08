@@ -1,5 +1,6 @@
 .plan {
   position: relative;
+
   @include section-width;
   background: linear-gradient(to top, $additional-hover-color 40px, $main-background-color 40px);
 
@@ -31,6 +32,7 @@
 
 .plan__header {
   margin-bottom: 55px;
+
   @include section-header-text;
 
   @media (min-width: $tablet-width) {
@@ -121,7 +123,7 @@
       position: absolute;
       content: "";
       top: 10px;
-      left: 0px;
+      left: 0;
       width: 67px;
       height: 67px;
       background-color: $accent-background-color;
@@ -135,7 +137,7 @@
       left: 27px;
       width: 17px;
       height: 21px;
-      background-image: url(../../img/business.svg);
+      background-image: url("../../img/business.svg");
       background-repeat: no-repeat;
     }
   }

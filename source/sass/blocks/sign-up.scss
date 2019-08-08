@@ -1,5 +1,6 @@
 .sign-up {
   position: relative;
+
   @include section-width;
   background: linear-gradient(to top, $accent-color 40px, $additional-hover-color 40px);
 
@@ -62,6 +63,7 @@
 
 .sign-up__contact-us {
   width: 210px;
+
   @include main-text;
   color: $additional-background-color;
   text-align: center;
