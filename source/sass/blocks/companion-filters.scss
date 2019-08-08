@@ -10,6 +10,7 @@
 
 .companion-filters__item {
   border: none;
+
   @media (min-width: $tablet-width) {
   display: flex;
   flex-direction: row;
@@ -37,4 +38,15 @@
     background-color: $additional-background-color;
     border-radius: 4px;
   }
+}
+
+input[type='checkbox']:checked + .companion-filters__label::after {
+  position: absolute;
+    content: "";
+    top: 2px;
+    left: 5px;
+    width: 9px;
+    height: 9px;
+    background-image: url("../../img/tick.svg");
+    background-repeat: no-repeat;
 }
