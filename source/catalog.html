@@ -495,6 +495,90 @@
         <h2 class="companion-filters__header">
           Фильтр попутчиков
         </h2>
+
+      <form class="companion-filters__form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="companion-filters__item">
+            <legend class="filter-name">Стоимость</legend>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <label class="toggle toggle-min" for="min-price"></label>
+              <label class="toggle toggle-max" for="max-price"></label>
+            </div>
+            <div class="price-controls">
+              <span class="price-label price-label-min">
+                от
+                <input class="price-label-input" name="min-price" id="min-price" type="text" value="0" />
+              </span>
+              <span class="price-label price-label-max">
+                до
+                <input class="price-label-input" name="max-price" id="max-price" type="text" value="5000" /></span>
+            </div>
+          </fieldset>
+
+          <fieldset class="companion-filters__item">
+            <legend class="companion-filters__name">Хобби:</legend>
+
+            <input type="checkbox" class="visually-hidden" name="color" id="color-black" value="black" checked />
+            <label class="companion-filters__label" for="color-black">
+              Спортзал
+            </label>
+
+            <input type="checkbox" class="visually-hidden" name="color" id="color-white" value="white" />
+            <label class="companion-filters__label" for="color-white">
+              Кальян
+            </label>
+
+            <input type="checkbox" class="visually-hidden" name="color" id="color-blue" value="blue" checked />
+            <label class="companion-filters__label" for="color-blue">
+              Диван
+            </label>
+          </fieldset>
+
+          <fieldset class="companion-filters__item">
+            <legend class="companion-filters__name">Музыка:</legend>
+
+            <input type="checkbox" class="visually-hidden" name="color" id="color-black" value="black" checked />
+            <label class="companion-filters__label" for="color-black">
+              Тяжелый рок
+            </label>
+
+            <input type="checkbox" class="visually-hidden" name="color" id="color-white" value="white" />
+            <label class="companion-filters__label" for="color-white">
+              Русский рэп
+            </label>
+
+            <input type="checkbox" class="visually-hidden" name="color" id="color-blue" value="blue" checked />
+            <label class="companion-filters__label" for="color-blue">
+              Евровидение
+            </label>
+          </fieldset>
+
+          <fieldset class="companion-filters__item">
+            <legend class="companion-filters__name">Еда:</legend>
+
+            <input type="checkbox" class="visually-hidden" name="color" id="color-black" value="black" checked />
+            <label class="companion-filters__label" for="color-black">
+              Мясоед
+            </label>
+
+            <input type="checkbox" class="visually-hidden" name="color" id="color-white" value="white" />
+            <label class="companion-filters__label" for="color-white">
+              Сидит на ПП
+            </label>
+
+            <input type="checkbox" class="visually-hidden" name="color" id="color-blue" value="blue" checked />
+            <label class="companion-filters__label" for="color-blue">
+              Веган-сыроед
+            </label>
+          </fieldset>
+          
+          <button type="submit" class="button companion-filters__button">
+            Показать
+          </button>
+        </form>
+
       </section>
 
       <section class="inner found-companions">

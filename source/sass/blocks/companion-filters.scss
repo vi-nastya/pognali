@@ -7,3 +7,34 @@
   background-color: $accent-color;
   border-radius: 20px;
 }
+
+.companion-filters__item {
+  border: none;
+  @media (min-width: $tablet-width) {
+  display: flex;
+  flex-direction: row;
+  }
+}
+
+.companion-filters__name {
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+.companion-filters__label {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 15px;
+  padding-left: 25px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -3px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: $additional-background-color;
+    border-radius: 4px;
+  }
+}
