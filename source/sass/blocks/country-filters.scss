@@ -56,3 +56,32 @@
   border-radius: 20px;
   background-color: $detail-color;
 }
+
+.country-filters__region-list {
+
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.country-filters__region-item {
+  margin-bottom: 10px;
+  opacity: 0.3;
+
+  &--selected {
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+}
+
+.country-filters__region-link {
+  font-weight: $bold;
+  text-transform: uppercase;
+}
