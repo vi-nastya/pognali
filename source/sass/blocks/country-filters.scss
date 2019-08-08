@@ -3,6 +3,7 @@
   position: relative;
   min-height: 200px; // remove later
   background: linear-gradient(to top, $main-background-color 40px, $accent-background-color 40px);
+  border-radius: 0 0 20px 20px;
 }
 
 .country-filters::after {
