@@ -38,3 +38,20 @@
     padding-right: 60px;
   }
 }
+
+.country-filters__hide-button {
+  display: block;
+  width: 270px;
+  min-height: 40px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+
+  color: $additional-accent-color;
+  font-size: 16.5px;
+  font-weight: $bold;
+  line-height: 1.79;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: $detail-color;
+}
