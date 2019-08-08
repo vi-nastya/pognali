@@ -1,8 +1,10 @@
 .intro {
   position: relative;
+  z-index: 2;
   @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
+  //background: linear-gradient(to top, $additional-hover-color 40px, $additional-accent-color 40px);
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0px 10px;
