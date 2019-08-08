@@ -1,0 +1,55 @@
+.country-letters {
+  box-sizing: border-box;
+
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  width: 226px;
+  margin-bottom: 300px;
+
+  color: $accent-title-color;
+
+  border-right: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+}
+
+.country-letters__item {
+  width: 45px;
+  height: 42px;
+  padding-top: 15px;
+
+  font-size: $detail-fsize-mobile;
+  font-weight: $medium;
+  text-align: center;
+
+  background-color: $additional-background-color;
+  border-left: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  &--selected {
+    color: $additional-background-color;
+    background-color: $accent-title-color;
+    border: 1px solid $accent-title-color;
+  }
+}
+
+
+.country-letters__counry-list {
+  display: none;
+
+  @include reset-list;
+
+  font-size: $main-fsize-mobile;
+  font-weight: $normal;
+  text-align: left;
+}
+
+.country-letters__item--selected .country-letters__counry-list {
+  display: block;
+  width: 150px;
+  position: relative;
+  top: 250px;
+  margin-bottom: 30px;
+
+  color: $accent-title-color;
+}
