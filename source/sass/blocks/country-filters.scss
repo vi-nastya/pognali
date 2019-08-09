@@ -1,5 +1,6 @@
 .country-filters {
   @include section-width;
+  margin-bottom: 24px;
   position: relative;
   min-height: 200px; // remove later
   background: linear-gradient(to top, $main-background-color 40px, $accent-background-color 40px);

@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    width: 950px;
+  }
 }
 
 .found-companions__button-more {
@@ -20,6 +24,5 @@
 }
 
 .found-companions__item {
-  margin: 0 auto;
   margin-bottom: 10px;
 }
