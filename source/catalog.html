@@ -493,14 +493,14 @@
 
       <section class="inner companion-filters">
         <h2 class="companion-filters__header">
-          Фильтр попутчиков
+          Подберите идеального попутчика
         </h2>
 
       <form class="companion-filters__form" action="https://echo.htmlacademy.ru" method="GET">
 
-          <fieldset class="companion-filters__item">
+          <fieldset class="companion-filters__item companion-filters__item--hidden">
             <legend class="companion-filters__name">Хобби:</legend>
-
+<div class="companion-filters__item-inner">
             <input type="checkbox" class="visually-hidden" name="color" id="color-black" value="black" checked />
             <label class="companion-filters__label" for="color-black">
               Спортзал
@@ -515,11 +515,12 @@
             <label class="companion-filters__label" for="color-blue">
               Диван
             </label>
+            </div>
           </fieldset>
 
           <fieldset class="companion-filters__item">
             <legend class="companion-filters__name">Музыка:</legend>
-
+<div class="companion-filters__item-inner">
             <input type="checkbox" class="visually-hidden" name="color" id="color-black" value="black" checked />
             <label class="companion-filters__label" for="color-black">
               Тяжелый рок
@@ -534,11 +535,12 @@
             <label class="companion-filters__label" for="color-blue">
               Евровидение
             </label>
+            </div>
           </fieldset>
 
           <fieldset class="companion-filters__item">
             <legend class="companion-filters__name">Еда:</legend>
-
+<div class="companion-filters__item-inner">
             <input type="checkbox" class="visually-hidden" name="color" id="color-black" value="black" checked />
             <label class="companion-filters__label" for="color-black">
               Мясоед
@@ -553,11 +555,12 @@
             <label class="companion-filters__label" for="color-blue">
               Веган-сыроед
             </label>
+            </div>
           </fieldset>
 
           <fieldset class="companion-filters__item">
             <legend class="companion-filters__name">Транспорт:</legend>
-
+<div class="companion-filters__item-inner">
             <input type="checkbox" class="visually-hidden" name="color" id="color-black" value="black" checked />
             <label class="companion-filters__label" for="color-black">
               Самолет
@@ -577,10 +580,12 @@
             <label class="companion-filters__label" for="color-blue">
               Пешком
             </label>
+            </div>
           </fieldset>
 
           <fieldset class="companion-filters__item">
             <legend class="companion-filters__name">Левел:</legend>
+            <div class="companion-filters__item-inner">
             <div class="range-controls">
               <div class="scale">
                 <div class="bar"></div>
@@ -594,6 +599,7 @@
               </span>
               <span class="price-label price-label-max">
                 <input class="price-label-input" name="max-price" id="max-price" type="text" value="100" /></span>
+            </div>
             </div>
           </fieldset>
           

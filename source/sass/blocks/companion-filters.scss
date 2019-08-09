@@ -35,6 +35,20 @@
   text-transform: uppercase;
 }
 
+.companion-filters__item--hidden .companion-filters__item-inner {
+  display: none;
+}
+
+.companion-filters__item-inner {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+  display: flex;
+  flex-direction: row;
+  }
+}
+
 .companion-filters__label {
   position: relative;
   margin-bottom: 15px;
