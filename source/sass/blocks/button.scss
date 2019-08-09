@@ -73,6 +73,18 @@
   text-align: center;
   background-color: $accent-color;
 
+  &--wide {
+    width: 230px;
+  }
+
+  &--white {
+    background-color: $additional-background-color;
+  }
+
+  &--blue {
+    background-color: $additinal-detail-color;
+  }
+
   @media (min-width: $tablet-width) {
     height: 50px;
   }
