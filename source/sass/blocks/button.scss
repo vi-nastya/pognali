@@ -20,6 +20,7 @@
 
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 
     &::before {
       position: absolute;
@@ -55,6 +56,14 @@
     border-left: 14px solid $additional-background-color;
   }
 
+&--outline:active {
+    color: rgba(255,255,255,0.3);
+  }
+
+   &--outline:active::before {
+    border-left: 14px solid rgba(255,255,255,0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 618px;
     height: 81px;
@@ -81,6 +90,8 @@
   text-transform: uppercase;
   text-align: center;
   background-color: $accent-color;
+
+  cursor: pointer;
 
   &--wide {
     width: 230px;

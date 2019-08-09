@@ -9,7 +9,20 @@
 }
 
 .companion-filters__item {
+  position: relative;
   border: none;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: 0;
+    width: 220px;
+    height: 1px;
+    background-color: $accent-detail-color;
+  }
 
   @media (min-width: $tablet-width) {
   display: flex;
