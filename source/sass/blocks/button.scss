@@ -1,4 +1,5 @@
-.button {
+.button-main {
+  position: relative;
   box-sizing: border-box;
   display: inline-block;
   width: 270px;
@@ -18,15 +19,12 @@
   background-color: $accent-color;
 
   border: none;
-
-  &--main {
-    position: relative;
-    border-radius: 10px;
+  border-radius: 10px;
 
     &::before {
       position: absolute;
       content: "";
-      top: 30px;
+      top: 20px;
       right: 23px;
       width: 0;
       height: 0;
@@ -34,7 +32,19 @@
       border-bottom: 10px solid transparent;
       border-left: 14px solid #1d2e5b;
     }
-  }
+
+
+&:hover, &:focus {
+  background-color: $accent-hover-color;
+}
+
+&:active {
+  color: $additional-accent-active-color;
+}
+
+&:--outline {
+  border: 3px solid $additional-accent-color;
+}
 
   @media (min-width: $tablet-width) {
     width: 618px;
@@ -49,10 +59,21 @@
   }
 }
 
-.button:hover {
-  background-color: $accent-hover-color;
-}
+.button-accent {
+  width: 189px;
+  min-height: 40px;
+  border-radius: 20px;
 
-.button:active {
-  color: $additional-accent-active-color;
+  color: $additional-accent-color;
+  font-family: $main-ffamily;
+  font-size: $additional-fsize-mobile;
+  font-weight: $bold;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $accent-color;
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
 }
