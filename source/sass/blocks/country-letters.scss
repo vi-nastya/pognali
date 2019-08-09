@@ -16,12 +16,14 @@
     width: 340px;
     border: none;
     justify-content: space-between;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1190px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
   }
 }
 
