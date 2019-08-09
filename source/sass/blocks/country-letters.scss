@@ -11,6 +11,15 @@
 
   border-right: 1px solid $border-color;
   border-top: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    border: none;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .country-letters__item {
@@ -31,6 +40,29 @@
     background-color: $accent-title-color;
     border: 1px solid $accent-title-color;
   }
+
+  @media (min-width: $tablet-width) {
+    height: 60px;
+    width: 50px;
+    
+    font-size: 60px;
+    font-weight: $bold;
+    text-align: center;
+    border: none;
+    background: none;
+
+    opacity: 0.2;
+
+    &--selected {
+    color: $accent-title-color;
+    background: none;
+    border: none;
+    opacity: 1;
+  }
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 
@@ -42,6 +74,10 @@
   font-size: $main-fsize-mobile;
   font-weight: $normal;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: $detail-fsize-tablet;
+  }
 }
 
 .country-letters__item--selected .country-letters__counry-list {
@@ -52,4 +88,9 @@
   margin-bottom: 30px;
 
   color: $accent-title-color;
+
+  @media (min-width: $tablet-width) {
+    top: -60px;
+    left: 420px;
+  }
 }
