@@ -49,6 +49,19 @@
   }
 }
 
+.companion-filters__item-button--show {
+  position: absolute;
+  content: "";
+  top: 2px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-top: 8px solid $additional-hover-color;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+
+
 .companion-filters__label {
   position: relative;
   margin-bottom: 15px;
@@ -77,3 +90,4 @@ input[type='checkbox']:checked + .companion-filters__label::after {
     background-image: url("../../img/tick.svg");
     background-repeat: no-repeat;
 }
+
