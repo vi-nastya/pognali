@@ -46,9 +46,21 @@
     border: 1px solid $accent-title-color;
   }
 
+  &--tablet-hidden {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--desktop-hidden {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     height: 60px;
-    width: 50px;
+    width: 60px;
     
     font-size: 60px;
     font-weight: $bold;
