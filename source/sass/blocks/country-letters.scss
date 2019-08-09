@@ -19,6 +19,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1190px;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -62,6 +65,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 200px;
+    height: auto;
+    opacity: 1;
+    text-align: left;
   }
 }
 
@@ -78,6 +85,12 @@
   @media (min-width: $tablet-width) {
     font-size: $detail-fsize-tablet;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 200px;
+    margin-bottom: 70px;
+  }
 }
 
 .country-letters__item--selected .country-letters__counry-list {
@@ -92,5 +105,10 @@
   @media (min-width: $tablet-width) {
     top: -60px;
     left: 420px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
   }
 }
