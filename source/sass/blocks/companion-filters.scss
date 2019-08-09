@@ -7,15 +7,18 @@
 
   @media (min-width: $tablet-width) {
     width: 688px;
+    padding: 35px;
   }
 
   @media (min-width: $desktop-width) {
     width: 285px;
+    padding: 45px;
   }
 }
 
 .companion-filters__item {
   position: relative;
+  padding: 0;
   border: none;
   display: flex;
   flex-direction: column;
@@ -37,6 +40,9 @@
 }
 
 .companion-filters__name {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 20px;
   font-weight: $bold;
   text-transform: uppercase;
 }
@@ -134,3 +140,16 @@ input[type='checkbox']:checked + .companion-filters__label::after {
     background-repeat: no-repeat;
 }
 
+.companion-filters__button {
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 196px;
+  }
+}
