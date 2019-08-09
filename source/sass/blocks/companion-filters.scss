@@ -49,16 +49,42 @@
   }
 }
 
-.companion-filters__item-button--show {
+.companion-filters__item-button {
   position: absolute;
   content: "";
   top: 2px;
   right: 10px;
   width: 0px;
   height: 0px;
-  border-top: 8px solid $additional-hover-color;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
+  cursor: pointer;
+
+  &--show {
+    border-top: 8px solid $additional-hover-color;
+  }
+
+  &--hide {
+    border-bottom: 8px solid $additional-hover-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    &--show {
+    border-top: 10px solid $additional-hover-color;
+  }
+
+  &--hide {
+    border-bottom: 10px solid $additional-hover-color;
+  }
+  }
 }
 
 
