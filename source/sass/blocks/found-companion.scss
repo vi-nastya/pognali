@@ -19,8 +19,9 @@
 }
 
 .found-companion__name {
+  position: relative;
   display: inline-block;
-  width: 140px;
+  width: 80px;
   margin: 0;
   vertical-align: top;
   font-family: $main-ffamily;
@@ -32,6 +33,24 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    left: 155px;
+    top: 5px;
+    border-radius: 50%;
+  }
+
+  &--offline::before {
+    background-color: $offline-color;
+  }
+
+  &--online::before {
+    background-color: $online-color;
   }
 }
 
