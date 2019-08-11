@@ -43,7 +43,7 @@
   @media (min-width: $desktop-width) {
     width: 285px;
     height: 285px;
-    border-radius: 0;
+    border-radius: 20px 0 0 20px;
   }
 }
 
@@ -89,7 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 110px;
+    margin-right: 70px;
     margin-bottom: 10px;
   }
 
@@ -181,7 +181,7 @@
 
   @media (min-width: $tablet-width) {
     height: 50px;
-    width: 150px;
+    width: 70px;
     padding-top: 15px;
     margin-left: 9px;
     position: relative;
@@ -259,6 +259,7 @@
     @media (min-width: $desktop-width) {
       height: 187px;
       width: 1px;
+      left: -25px;
     }
   }
 }
