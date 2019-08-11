@@ -9,9 +9,13 @@
   height: 33px;
   background-repeat: no-repeat;
 
-  &--circle {
+  &--circle-blue {
     background-color: $main-background-color;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
   }
 
   &::before {
@@ -27,27 +31,47 @@
     opacity: 1;
   }
 
-&--plane::before {
+  &--plane::before {
     width: 14px;
     height: 16px;
     background-image: url("../../img/plane.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 19px;
+      height: 21px;
+    }
   }
 
   &--bus::before {
     width: 13px;
     height: 16px;
     background-image: url("../../img/bus.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 17px;
+      height: 21px;
+    }
   }
 
   &--bike::before {
     width: 19px;
     height: 17px;
     background-image: url("../../img/bike.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 21px;
+    }
   }
 
   &--hike::before {
     width: 15px;
     height: 17px;
     background-image: url("../../img/run.svg");
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 21px;
+    }
   }
 }
