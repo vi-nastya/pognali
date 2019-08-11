@@ -15,6 +15,8 @@
 
   @media (min-width: $desktop-width) {
     width: 950px;
+    padding: 0;
+    height: 285px;
   }
 }
 
@@ -54,6 +56,13 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-left: 55px;
+  }
 }
 
 .found-companion__name {
@@ -77,6 +86,10 @@
     padding-left: 0;
     margin-bottom: 20px;
     font-size: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 110px;
   }
 
   &::before {
@@ -199,6 +212,18 @@
     order: 3;
     margin-left: -220px;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin-left: 0;
+    min-height: 140px;
+  }
+}
+
+.found-companion__countries-description {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .found-companion__countries-list {
@@ -207,6 +232,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -240,6 +269,14 @@
     right: 0;
     top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 150px;
+    order: 2;
+  }
 }
 
 .found-companion__transport-description {
@@ -255,6 +292,20 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.found-companion__level {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+}
+
+.found-companion__like-button-wrapper {
+  display: flex;
 }
 
 .found-companion__button {
@@ -268,5 +319,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+    width: 148px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
