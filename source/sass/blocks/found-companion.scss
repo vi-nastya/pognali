@@ -187,6 +187,7 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
+    margin-bottom: 45px;
   }
 }
 
@@ -196,6 +197,7 @@
 
   @media (min-width: $tablet-width) {
     order: 3;
+    margin-left: -220px;
   }
 }
 
@@ -263,4 +265,8 @@
   text-transform: uppercase;
   text-align: center;
   padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
