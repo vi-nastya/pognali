@@ -1,0 +1,53 @@
+.transport-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.transport-item {
+  position: relative;
+  width: 33px;
+  height: 33px;
+  background-repeat: no-repeat;
+
+  &--circle {
+    background-color: $main-background-color;
+    border-radius: 50%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 8px;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+  }
+
+  &--selected::before {
+    opacity: 1;
+  }
+
+&--plane::before {
+    width: 14px;
+    height: 16px;
+    background-image: url("../../img/plane.svg");
+  }
+
+  &--bus::before {
+    width: 13px;
+    height: 16px;
+    background-image: url("../../img/bus.svg");
+  }
+
+  &--bike::before {
+    width: 19px;
+    height: 17px;
+    background-image: url("../../img/bike.svg");
+  }
+
+  &--hike::before {
+    width: 15px;
+    height: 17px;
+    background-image: url("../../img/run.svg");
+  }
+}
