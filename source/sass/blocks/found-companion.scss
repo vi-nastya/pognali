@@ -57,7 +57,7 @@
     flex-direction: row;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: column;
     padding-top: 45px;
     padding-bottom: 45px;
@@ -88,8 +88,9 @@
     font-size: 30px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-right: 110px;
+    margin-bottom: 10px;
   }
 
   &::before {
@@ -142,6 +143,13 @@
     top: 10px;
     background-image: url("../../img/heart.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 17px;
+      left: 16px;
+      top: 17px;
+    }
   }
 
   &--liked::before {
@@ -152,6 +160,8 @@
     position: relative;
     top: auto;
     left: auto;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -170,10 +180,18 @@
   font-weight: $bold;
 
   @media (min-width: $tablet-width) {
+    height: 50px;
+    width: 150px;
+    padding-top: 15px;
+    margin-left: 9px;
     position: relative;
     top: auto;
     left: auto;
+
+    font-size: $detail-fsize-tablet;
   }
+
+  @media (min-width: $desktop-width) {}
 }
 
 
@@ -201,15 +219,19 @@
   @media (min-width: $tablet-width) {
     width: 230px;
     margin-bottom: 45px;
+    margin-right: 40px;
+    font-size: $detail-fsize-tablet;
   }
 }
 
 .found-companion__countries {
+  position: relative;
   width: 100%;
   padding-left: 8px;
 
   @media (min-width: $tablet-width) {
     order: 3;
+    width: 600px;
     margin-left: -220px;
   }
 
@@ -218,9 +240,41 @@
     margin-left: 0;
     min-height: 140px;
   }
+
+  &::before {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -25px;
+    width: 280px;
+    height: 2px;
+    background-color: $main-background-color;
+
+    @media (min-width: $tablet-width) {
+      width: 700px;
+      left: -45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 187px;
+      width: 1px;
+    }
+  }
 }
 
 .found-companion__countries-description {
+  position: relative;
+  z-index: 3;
+  width: 120px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: $additional-background-color;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -250,12 +304,22 @@
   text-align: left;
   text-transform: uppercase;
   color: $additional-accent-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: $detail-fsize-tablet;
+    margin-right: 25px;
+  }
 }
 
 .found-companion__country-flag {
   width: 26px;
   height: 18px;
   margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 24px;
+  }
 }
 
 .found-companion__transport {
@@ -266,14 +330,14 @@
   @media (min-width: $tablet-width) {
     width: 25px;
     position: absolute;
-    right: 0;
+    right: 50px;
     top: 0;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
     top: auto;
-    left: auto;
+    right: auto;
     width: 150px;
     order: 2;
   }
@@ -321,6 +385,7 @@
     margin-bottom: 20px;
     width: 148px;
     height: 50px;
+    padding-top: 16px;
     border-radius: 25px;
   }
 
