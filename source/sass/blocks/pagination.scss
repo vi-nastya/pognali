@@ -51,3 +51,47 @@
 
   display: flex;
 }
+
+.pagination__link {
+  width: 135px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 35px;
+  }
+
+  &--prev::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 65px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid $additional-hover-color;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+    }
+  }
+
+  &--next::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 55px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid $additional-hover-color;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+    }
+  }
+}
