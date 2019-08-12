@@ -8,19 +8,48 @@
   }
 }
 
-.found-companions__button-more {
+.found-companions__button {
+  position: relative;
+  margin-top: 25px;
+  padding-left: 30px;
+
   font-family: $main-ffamily;
   font-size: 17px;
   font-weight: $bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.76;
-  letter-spacing: normal;
   text-align: left;
   text-transform: uppercase;
-  color: $additional-accent-color;
+  color: $accent-title-color;
 
+  border: none;
   background: none;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    padding-left: 40px;
+
+    font-size: $detail-fsize-tablet;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    left: 0;
+
+    background-image: url("../../img/show-more-plus.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 27px;
+      height: 27px;
+      top: 3px;
+    }
+  }
 }
 
 .found-companions__item {
