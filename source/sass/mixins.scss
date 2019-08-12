@@ -38,16 +38,11 @@
 }
 
 @mixin accent-text {
-  display: inline-block;
-  vertical-align: middle;
   margin: 0;
   font-family: $main-ffamily;
   font-size: $main-fsize-mobile;
   font-weight: $bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.38;
-  letter-spacing: normal;
 
   @media (min-width: $tablet-width) {
     font-size: $additional-fsize-tablet;
@@ -62,9 +57,7 @@
   font-family: $main-ffamily;
   font-weight: $bold;
   font-size: $header-fsize-mobile;
-  font-stretch: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: left;
 
   @media (min-width: $tablet-width) {
