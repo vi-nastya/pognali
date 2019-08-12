@@ -22,46 +22,49 @@
   border-radius: 10px;
   cursor: pointer;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 20px;
-      right: 23px;
-      width: 0;
-      height: 0;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-left: 14px solid #1d2e5b;
-    }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 23px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 14px solid #1d2e5b;
+  }
 
 
-&:hover, &:focus {
-  background-color: $accent-hover-color;
-}
+  &:hover,
+  &:focus {
+    background-color: $accent-hover-color;
+  }
 
-&:active {
-  color: $additional-accent-active-color;
-}
+  &:active {
+    color: $additional-accent-active-color;
+  }
 
-&:--outline {
-  border: 3px solid $additional-accent-color;
-}
+  &:--outline {
+    border: 3px solid $additional-accent-color;
+  }
 
-&--outline:hover, &--outline:focus {
+  &--outline:hover,
+  &--outline:focus {
     color: $additional-background-color;
     background-color: $additional-accent-color;
   }
 
-  &--outline:hover::before, &--outline:focus::before {
+  &--outline:hover::before,
+  &--outline:focus::before {
     border-left: 14px solid $additional-background-color;
   }
 
-&--outline:active {
-    color: rgba(255,255,255,0.3);
+  &--outline:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 
-   &--outline:active::before {
-    border-left: 14px solid rgba(255,255,255,0.3);
+  &--outline:active::before {
+    border-left: 14px solid rgba(255, 255, 255, 0.3);
   }
 
   @media (min-width: $tablet-width) {

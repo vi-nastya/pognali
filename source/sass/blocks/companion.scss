@@ -98,11 +98,11 @@
     content: "";
     left: 0;
     top: 0;
-  width: 60px;
-  height: 60px;
-  background-color: black;
-  border-radius: 50%;
-  opacity: 0.3;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.3;
   }
 }
 
@@ -141,11 +141,11 @@
   }
 
   &--99::after {
-      transform: rotate(30deg);
+    transform: rotate(30deg);
   }
 
   &--80::after {
-      transform: rotate(-25deg);
+    transform: rotate(-25deg);
   }
 }
 

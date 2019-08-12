@@ -4,14 +4,13 @@
   flex-direction: column;
   margin: 0 auto;
 
-@media (min-width: $tablet-width) {
-  width: 688px;
-}
+  @media (min-width: $tablet-width) {
+    width: 688px;
+  }
 
- @media (min-width: $desktop-width) {
-   width: 1320px;
-   flex-direction: row-reverse;
-   justify-content: space-between;
- }
-
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }

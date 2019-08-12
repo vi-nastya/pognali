@@ -106,14 +106,14 @@
     margin-bottom: 0;
 
     &:nth-of-type(1) {
-    margin-right: 48px;
-  }
+      margin-right: 48px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-  &:nth-of-type(1) {
-    margin-right: 60px;
-  }
+    &:nth-of-type(1) {
+      margin-right: 60px;
+    }
   }
 }
 
