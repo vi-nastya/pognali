@@ -55,3 +55,50 @@
 .found-companions__item {
   margin-bottom: 10px;
 }
+
+.found-companions__pagination {
+  margin-top: 25px;
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 77px;
+  }
+}
+
+.pagination__link {
+  width: 35px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &--prev::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid $additional-hover-color;
+  }
+
+  &--next::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid $additional-hover-color;
+  }
+}

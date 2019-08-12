@@ -962,24 +962,40 @@
         <button type="button" class="found-companions__button">
           Показать еще
         </button>
-        <ul class="companions-navigation">
-          <li class="companions-navigation__item">
+        <div class="found-companions__pagination pagination">
+          <ul class="pagination__pages">
+            <li class="paginaion__page">
+              <a class="pagination__page-link pagination__page-link--current">1</a>
+            </li>
+            <li class="paginaion__page">
+                <a class="pagination__page-link">2</a>
+              </li>
+              <li class="paginaion__page">
+                  <a class="pagination__page-link">3</a>
+                </li>
+                <li class="paginaion__page">
+                    <a class="pagination__page-link">4</a>
+                  </li>
+          </ul>
+        <ul class="pagination__direction">
+          <li class="pagination__item">
             <a
-              class="companions-navigation__link companions-navigation__link--prev"
-              href="#"
+              class="pagination__link pagination__link--prev"
+              href="#" aria-label="Назад"
             >
-              Назад
+
             </a>
           </li>
-          <li class="companions-navigation__item">
+          <li class="pagination__item">
             <a
-              class="companions-navigation__link companions-navigation__link--next"
-              href="#"
+              class="pagination__link pagination__link--next"
+              href="#" arial-label="Вперед"
             >
-              Вперед
+
             </a>
           </li>
         </ul>
+      </div>
       </section>
       </div>
     </main>
