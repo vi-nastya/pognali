@@ -150,7 +150,7 @@
     height: 11px;
     left: 9px;
     top: 10px;
-    background-image: url("../../img/heart.svg");
+    background-image: url("/img/heart.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -162,7 +162,7 @@
   }
 
   &--liked::before {
-    background-image: url("../../img/heart-active.svg");
+    background-image: url("/img/heart-active.svg");
   }
 
   @media (min-width: $tablet-width) {
