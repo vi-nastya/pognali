@@ -82,8 +82,9 @@
   color: $additional-accent-color;
 
   @media (min-width: $tablet-width) {
-    width: 220px;
+    width: auto;
     padding-left: 0;
+    padding-right: 30px;
     margin-bottom: 20px;
     font-size: 30px;
   }
@@ -98,13 +99,21 @@
     content: "";
     width: 6px;
     height: 6px;
-    left: 155px;
+    left: 225px;
     top: 5px;
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
       left: auto;
       right: 0;
+      top: 10px;
+      width: 7px;
+      height: 7px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -25px;
+      right: auto;
       top: 10px;
       width: 7px;
       height: 7px;
