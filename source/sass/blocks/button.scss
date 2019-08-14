@@ -47,7 +47,7 @@
   }
 
   &:active {
-    color: rgba(29, 46, 91, 0.3);
+    color: $accent-title-hover-color;
     background-color: $accent-minor-color;
   }
 
@@ -72,13 +72,13 @@
   }
 
   &--outline:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: $additional-background-active-color;
     background-color: $additional-accent-color;
   }
 
   &--outline:active::before {
     opacity: 1;
-    border-left: 14px solid rgba(255, 255, 255, 0.3);
+    border-left: 14px solid $additional-background-active-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -126,6 +126,16 @@
 
   &--blue {
     background-color: $additinal-detail-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-minor-color;
+  }
+
+  &:active {
+    background-color: $accent-minor-color;
+    color: $additional-accent-active-color
   }
 
   @media (min-width: $tablet-width) {

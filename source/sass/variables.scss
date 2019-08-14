@@ -14,6 +14,8 @@ $main-background-color: #edeff6;
 $accent-background-color: #e2e5f2;
 $additional-background-color: #ffffff;
 
+$additional-background-active-color: rgba(255, 255, 255, 0.3);
+
 $main-text-color: #444444;
 $main-text-hover-color: rgba(68, 68, 68, 0.6);
 $main-text-active-color: rgba(68, 68, 68, 0.3);
@@ -22,6 +24,7 @@ $accent-title-color: #1d2e5b;
 $accent-title-hover-color: rgba(29, 46, 91, 0.7);
 
 $additional-hover-color: #192144;
+
 
 $detail-color: #d6daed;
 $additinal-detail-color: #dfe3f0;
@@ -35,7 +38,9 @@ $error-color: #f47e7e;
 $error-background-color: #ffefef;
 $error-additional-color: #f9eaea;
 
-$main-ffamily: "BloggerSans", "Arial", sans-serif;
+$main-ffamily: "BloggerSans",
+"Arial",
+sans-serif;
 
 $light: 300;
 $normal: 400;
