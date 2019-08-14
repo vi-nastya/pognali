@@ -1,11 +1,10 @@
 .intro {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 
   @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
-  //background: linear-gradient(to top, $additional-hover-color 40px, $additional-accent-color 40px);
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 10px;
@@ -18,7 +17,6 @@
     background-repeat: no-repeat;
     background-position: -370px 210px;
     background-size: auto;
-    //background-size: 800px 800px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,7 +25,7 @@
 
     background-image: url("../img/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: -200px -90px;
+    background-position: -200px -50px;
   }
 }
 
