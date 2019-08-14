@@ -84,6 +84,10 @@
   min-width: 189px;
   min-height: 40px;
   border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 17px;
+  padding-bottom: 8px;
 
   color: $additional-accent-color;
   font-family: $main-ffamily;
@@ -110,5 +114,7 @@
 
   @media (min-width: $tablet-width) {
     height: 50px;
+    border-radius: 25px;
+    font-size: $detail-fsize-tablet;
   }
 }
