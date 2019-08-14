@@ -40,8 +40,6 @@
 }
 
 .companion-filters__name {
-  display: inline-block;
-  vertical-align: middle;
   margin-bottom: 20px;
   font-weight: $bold;
   text-transform: uppercase;
@@ -129,7 +127,7 @@
   }
 }
 
-input[type="checkbox"]:checked + .companion-filters__label::after {
+input[type="checkbox"]:checked+.companion-filters__label::after {
   position: absolute;
   content: "";
   top: 2px;

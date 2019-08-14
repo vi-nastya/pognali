@@ -44,7 +44,7 @@
     color: $additional-accent-active-color;
   }
 
-  &:--outline {
+  &--outline {
     border: 3px solid $additional-accent-color;
   }
 
@@ -81,7 +81,7 @@
 }
 
 .button-accent {
-  width: 189px;
+  min-width: 189px;
   min-height: 40px;
   border-radius: 20px;
 
