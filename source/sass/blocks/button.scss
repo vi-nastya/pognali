@@ -43,11 +43,17 @@
 
   &:hover,
   &:focus {
-    background-color: $accent-hover-color;
+    background-color: $accent-minor-color;
   }
 
   &:active {
-    color: $additional-accent-active-color;
+    color: rgba(29, 46, 91, 0.3);
+    background-color: $accent-minor-color;
+  }
+
+
+  &:active::before {
+    opacity: 0.3;
   }
 
   &--outline {
@@ -67,9 +73,11 @@
 
   &--outline:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: $additional-accent-color;
   }
 
   &--outline:active::before {
+    opacity: 1;
     border-left: 14px solid rgba(255, 255, 255, 0.3);
   }
 
