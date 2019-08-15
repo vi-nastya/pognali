@@ -7,9 +7,14 @@ $accent-secondary-color: #ffa530;
 $additional-accent-color: #161c35;
 $additional-accent-active-color: rgba(22, 28, 53, 0.3);
 
+$online-color: #81e31e;
+$offline-color: #f97676;
+
 $main-background-color: #edeff6;
 $accent-background-color: #e2e5f2;
 $additional-background-color: #ffffff;
+
+$additional-background-active-color: rgba(255, 255, 255, 0.3);
 
 $main-text-color: #444444;
 $main-text-hover-color: rgba(68, 68, 68, 0.6);
@@ -20,12 +25,18 @@ $accent-title-hover-color: rgba(29, 46, 91, 0.7);
 
 $additional-hover-color: #192144;
 
+
+$detail-color: #d6daed;
+$additinal-detail-color: #dfe3f0;
+$accent-detail-color: #f3c72b;
+
 $border-color: #cbced9;
 $border-hover-color: #aeb4cb;
 $border-active-color: $additional-accent-color;
 
 $error-color: #f47e7e;
 $error-background-color: #ffefef;
+$error-additional-color: #f9eaea;
 
 $main-ffamily: "BloggerSans", "Arial", sans-serif;
 
@@ -37,6 +48,8 @@ $bold: 700;
 $main-fsize-mobile: 16px;
 $header-fsize-mobile: 24px;
 $accent-fsize-mobile: 21px;
+$additional-fsize-mobile: 18px;
+$detail-fsize-mobile: 14px;
 
 $main-fsize-tablet: 28px;
 $header-fsize-tablet: 45px;

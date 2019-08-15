@@ -1,0 +1,102 @@
+.pagination {
+  width: 270px;
+  margin: 0 auto;
+  background-color: $additional-background-color;
+  min-height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    min-height: 100px;
+    padding: 25px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 950px;
+  }
+}
+
+.pagination__pages {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include reset-list;
+
+    display: flex;
+  }
+}
+
+.pagination__page-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+
+  font-size: $detail-fsize-tablet;
+  font-weight: $bold;
+  text-align: center;
+
+  cursor: pointer;
+
+  &--current {
+    background-color: $accent-color;
+    border-radius: 50px;
+  }
+}
+
+
+.pagination__direction {
+  @include reset-list;
+
+  display: flex;
+}
+
+.pagination__link {
+  width: 135px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  cursor: pointer;
+
+
+  @media (min-width: $tablet-width) {
+    width: 35px;
+  }
+
+  &--prev::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 65px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid $additional-hover-color;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+    }
+  }
+
+  &--next::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 55px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid $additional-hover-color;
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+    }
+  }
+}

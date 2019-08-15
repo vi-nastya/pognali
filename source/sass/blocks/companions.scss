@@ -2,7 +2,7 @@
   @include section-width;
   position: relative;
   padding-bottom: 40px;
-  background: linear-gradient($additional-hover-color 98%, $main-background-color 98%);
+  background: linear-gradient(to top, $main-background-color 40px, $additional-hover-color 40px);
   color: $additional-background-color;
 }
 
@@ -19,25 +19,70 @@
 
 .companions__inner {
   position: relative;
-
   padding-top: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 0 0 40px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 220px;
+  }
 }
 
 .companions__header {
+  @include section-header-text;
   margin-bottom: 20px;
   margin-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    margin-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+    margin-left: 130px;
+  }
 }
 
 .companins__description {
+  @include main-text;
   width: 215px;
   margin-bottom: 25px;
   margin-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 425px;
+    margin-bottom: 40px;
+    margin-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+  }
 }
 
 .companions__slogan {
+  @include accent-text;
   width: 193px;
   margin-bottom: 60px;
   margin-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-bottom: 60px;
+    margin-left: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+    margin-left: 130px;
+  }
 }
 
 .companions__list {
@@ -45,11 +90,38 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 618px;
+    margin: 0 auto;
+    margin-bottom: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 60px;
+    top: 200px;
+  }
 }
 
 .companions__item {
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    &:nth-of-type(1) {
+      margin-right: 48px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-of-type(1) {
+      margin-right: 60px;
+    }
+  }
 }
 
 .companions__button {
@@ -58,81 +130,13 @@
   width: 270px;
   height: 62px;
   border-radius: 10px;
-}
 
-@media (min-width: $tablet-width) {
-  .companions__header {
-    margin-bottom: 60px;
-    margin-left: 75px;
-  }
-
-  .companins__description {
-    width: 425px;
-    margin-bottom: 40px;
-    margin-left: 75px;
-  }
-
-  .companions__slogan {
-    width: 260px;
-    margin-bottom: 60px;
-    margin-left: 75px;
-  }
-
-  .companions__list {
-    flex-direction: row;
-    align-items: center;
-    width: 618px;
-    margin: 0 auto;
-    margin-bottom: 110px;
-  }
-
-  .companions__item {
-    margin-bottom: 0;
-  }
-
-  .companions__item:nth-of-type(1) {
-    margin-right: 48px;
-  }
-
-  .companions__button {
+  @media (min-width: $tablet-width) {
     width: 618px;
     height: 81px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .companions__inner {
-    padding-top: 220px;
-  }
-
-  .companions__header {
-    margin-bottom: 60px;
-    margin-left: 130px;
-  }
-
-  .companins__description {
-    width: 425px;
-    margin-bottom: 40px;
-    margin-left: 130px;
-  }
-
-  .companions__slogan {
-    width: 260px;
-    margin-bottom: 80px;
-    margin-left: 130px;
-  }
-
-  .companions__list {
-    position: absolute;
-    right: 60px;
-    top: 200px;
-  }
-
-  .companions__item:nth-of-type(1) {
-    margin-right: 60px;
-  }
-
-  .companions__button {
+  @media (min-width: $desktop-width) {
     margin-bottom: 135px;
     margin-left: 130px;
     width: 280px;
