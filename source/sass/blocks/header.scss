@@ -5,10 +5,15 @@
 }
 
 .header__inner {
+  position: relative;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 27px;
   padding-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
@@ -24,11 +29,6 @@
     flex-direction: row;
     align-items: center;
   }
-}
-
-.header__top {
-  display: flex;
-  justify-content: space-between;
 }
 
 .header__top-login {
@@ -58,6 +58,14 @@
   }
 }
 
-.header__nav-toggle svg {
+.header__nav-toggle-icon {
   fill: $additional-background-color;
+}
+
+.header--fix .header__nav-toggle-icon {
+  fill: #cccccc;
+}
+
+.header__nav {
+  //display: none;
 }
