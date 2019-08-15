@@ -30,6 +30,7 @@
 }
 
 .companion__name {
+  position: relative;
   margin: 0;
   margin-bottom: 15px;
   font-family: $main-ffamily;
@@ -44,6 +45,31 @@
 
   @media (min-width: $tablet-width) {
     font-size: $accent-fsize-tablet;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    left: -15px;
+    top: 6px;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      left: -20px;
+      top: 6px;
+      width: 7px;
+      height: 7px;
+    }
+  }
+
+  &--offline::before {
+    background-color: $offline-color;
+  }
+
+  &--online::before {
+    background-color: $online-color;
   }
 }
 
@@ -146,24 +172,6 @@
 
   &--80::after {
     transform: rotate(-25deg);
-  }
-}
-
-
-.companion__status {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  top: 28px;
-  left: 54px;
-
-  &--offline {
-    background-color: $offline-color;
-  }
-
-  &--online {
-    background-color: $online-color;
   }
 }
 
