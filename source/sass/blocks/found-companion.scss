@@ -371,8 +371,18 @@
 }
 
 .found-companion__level {
+  position: absolute;
+  bottom: 50px;
+  right: 5px;
+
   @media (min-width: $tablet-width) {
-    position: absolute;
+    bottom: -10px;
+    right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 40px;
+    right: 50px;
   }
 }
 
