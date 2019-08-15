@@ -1,5 +1,6 @@
 .navigation {
   position: relative;
+
   @include section-width;
   padding-bottom: 40px;
   color: $additional-background-color;

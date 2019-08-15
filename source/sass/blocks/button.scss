@@ -135,7 +135,7 @@
 
   &:active {
     background-color: $accent-minor-color;
-    color: $additional-accent-active-color
+    color: $additional-accent-active-color;
   }
 
   @media (min-width: $tablet-width) {
