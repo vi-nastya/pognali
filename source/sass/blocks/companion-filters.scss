@@ -58,6 +58,8 @@
 }
 
 .companion-filters__item-inner {
+  @include reset-list;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
 
@@ -127,7 +129,7 @@
   }
 }
 
-input[type="checkbox"]:checked + .companion-filters__label::after {
+input[type="checkbox"]:checked+.companion-filters__label::after {
   position: absolute;
   content: "";
   top: 2px;
