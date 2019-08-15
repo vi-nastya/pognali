@@ -20,7 +20,14 @@
 .companions__inner {
   position: relative;
   padding-top: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
   border-radius: 0 0 40px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 220px;
