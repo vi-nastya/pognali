@@ -7,7 +7,7 @@
   min-height: 75px;
 
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 
   display: flex;
   flex-direction: column;
@@ -17,12 +17,22 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 90px;
+
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    width: 920px;
     position: relative;
+    left: auto;
+    top: auto;
+    padding: 0;
+    padding-top: 25px;
     display: flex;
+    flex-direction: row;
     margin-left: 145px;
 
     background-color: $additional-accent-color;
@@ -43,10 +53,33 @@
   width: 19px;
   height: 19px;
   background-color: $main-text-hover-color;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.nav-menu__site-list {
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 
-@media (min-width: $desktop-width) {
-  .nav-menu__close {
-    display: none;
+.nav-menu__contacts-list {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 150px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}

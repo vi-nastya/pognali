@@ -24,6 +24,11 @@
   letter-spacing: normal;
   text-align: center;
   color: $additional-hover-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1.18;
+  }
 }
 
 
