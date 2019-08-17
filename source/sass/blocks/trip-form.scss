@@ -1,0 +1,40 @@
+.trip-form__steps {
+  @include reset-list;
+}
+
+.trip-form__step {
+  min-width: 270px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 22px;
+  margin-bottom: 10px;
+
+  background-color: $additional-background-color;
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 618px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 49px;
+    padding-bottom: 55px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1320px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 100px;
+    padding-bottom: 105px;
+    margin-bottom: 44px;
+  }
+}
+
+
+.trip-form__break {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
