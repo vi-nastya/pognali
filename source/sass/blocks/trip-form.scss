@@ -39,13 +39,16 @@
   }
 }
 
+.trip-form__field {
+  border: none;
+}
+
+
 .trip-form__days {
   @include reset-list;
 
   display: flex;
 }
-
-
 
 .trip-form__day {
   width: 30px;
