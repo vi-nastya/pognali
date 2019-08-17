@@ -29,6 +29,11 @@
     font-size: 60px;
     line-height: 1.18;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+    line-height: 1.5;
+  }
 }
 
 

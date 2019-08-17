@@ -1,0 +1,16 @@
+.add-plan {
+  position: relative;
+  background-color: #d4d9eb;
+
+  &::before {
+    z-index: 3;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 40px;
+    top: -40px;
+    left: 0;
+    background-color: #d4d9eb;
+    border-radius: 40px 40px 0 0;
+  }
+}

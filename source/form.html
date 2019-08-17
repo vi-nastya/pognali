@@ -129,7 +129,123 @@
       </div>
     </header>
 
-    <main class="page-main"></main>
+    <main class="page-main">
+      <section class="navigation">
+        <div class="inner navigation__inner">
+          <h1 class="navigation__title">Направления</h1>
+          <a href="index.html" class="navigation__back-link">На главную</a>
+        </div>
+      </section>
+
+      <section class="profile">
+        <div class="profile__inner inner">
+          <div class="profile__level level"></div>
+          <div class="profile__photo-wrapper">
+            <picture>
+              <img width="99px" height="99px" />
+            </picture>
+          </div>
+          <a class="profile__button">Сменить фото</a>
+          <div class="profile__tags">
+              <h3 class="profile__tags-description">Тэги</h2>
+              <p class="profile__tags-list"></p>
+            </div>
+          <div class="profile__transport">
+            <h3 class="profile__transport-description">Транспорт</h2>
+            <ul class="profile__transport-list"></ul>
+          </div>
+        </div>
+      </section>
+
+    <section class="my-plans">
+      <div class="my-plans__inner inner">
+      <h2 class="my-plans__header">Мои планы</h2>
+      <ol class="my-plans__list">
+        <li  class="my-plans__item">
+          <h3  class="my-plans__countries">Франция, Италия</h3>
+          <span class="my-plans__companions">3 попутчика</span>
+          <span class="my-plans__dates">26 мар - 29 мар</span>
+          <a href="#" class="my-plans__change">Изменить</a>
+        </li>
+        <li  class="my-plans__item">
+            <h3  class="my-plans__countries">Тайланд, Индонезия</h3>
+            <span class="my-plans__companions">1 попутчик</span>
+            <span class="my-plans__dates">1 июл - 15 июл</span>
+            <a href="#" class="my-plans__change">Изменить</a>
+          </li>
+      </ol>
+    </div>
+    </section>
+
+    <section class="add-plan">
+        <div class="add-plan__inner inner">
+            <h2 class="add-plan__header">Добавить план</h2>
+            <form class="add-plan__form trip-form">
+              <ol class="trip-form__steps">
+                <li class="trip-form__step">
+                  <h3 class="trip-form__step-number">Шаг 1.<br>Даты пребывания</h3>
+                  <p class="trip-form__step-description">Укажите предпочтительное количество попутчиков, которых
+                      вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                  <ul class="trip-form__navigation">
+                    <li class="trip-form__navigation-item trip-form__navigation-item--current">Даты</li>
+                    <li class="trip-form__navigation-item">Маршрут</li>
+                    <li class="trip-form__navigation-item">Развлечения</li>
+                  </ul>
+
+                  <fieldset class="trip-form__field">
+                    <label class="trip-form__label" for="companions">Ищу попутчиков:</label>
+                    <input type="number" name="companions" id="companions">
+                  </fieldset>
+
+                  <fieldset class="trip-form__field">
+                      <label class="trip-form__label" for="days">Длительность:</label>
+                      <input type="number" name="days" id="days">
+                  </fieldset>
+
+                  <fieldset class="trip-form__field">
+                      <input type="checkbox" name="kids" id="kids">
+                      <label class="trip-form__label trip-form__label--kids" for="kids">Можно с детьми:</label>
+                  </fieldset>
+
+                  <div>КАЛЕНДАРЬ</div>
+
+                  <a href="#" class="trip-form__link-next button-main">Следующий шаг</a>
+                </li>
+
+                <li class="trip-form__step">
+                    <h3 class="trip-form__step-number">Шаг 2.<br>Маршрут</h3>
+                    <p class="trip-form__step-description">Укажите страны, которые вы хотели по посетить.
+                        Это может быть одна или сразу несколько.</p>
+                    <ul class="trip-form__navigation">
+                      <li class="trip-form__navigation-item">Даты</li>
+                      <li class="trip-form__navigation-item trip-form__navigation-item--current">Маршрут</li>
+                      <li class="trip-form__navigation-item">Развлечения</li>
+                    </ul>
+
+
+                    <a href="#" class="trip-form__link-next button-main">Следующий шаг</a>
+                  </li>
+
+                  <li class="trip-form__step">
+                      <h3 class="trip-form__step-number">Шаг 3.<br>Развлечения</h3>
+                      <p class="trip-form__step-description">Наконец, расскажите о своих планах времяпровождения.
+                          Можно писать в свободной форме и ставить тэги.</p>
+                      <ul class="trip-form__navigation">
+                        <li class="trip-form__navigation-item">Даты</li>
+                        <li class="trip-form__navigation-item">Маршрут</li>
+                        <li class="trip-form__navigation-item trip-form__navigation-item--current">Развлечения</li>
+                      </ul>
+
+
+                      <a href="#" class="trip-form__link-next button-main">Следующий шаг</a>
+                    </li>
+              </ol>
+
+            </form>
+
+        </div>
+    </section>
+    </main>
 
     <footer class="footer">
       <div class="inner footer__inner">
