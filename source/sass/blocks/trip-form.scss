@@ -15,8 +15,8 @@
 
   @media (min-width: $tablet-width) {
     min-width: 618px;
-    padding-left: 44px;
-    padding-right: 44px;
+    padding-left: 43px;
+    padding-right: 43px;
     padding-top: 49px;
     padding-bottom: 55px;
     margin-bottom: 40px;
@@ -36,5 +36,71 @@
 .trip-form__break {
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.trip-form__days {
+  @include reset-list;
+
+  display: flex;
+}
+
+
+
+.trip-form__day {
+  width: 30px;
+  height: 30px;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #444444;
+
+  &--weekend {
+    color: #ff5c23;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 77px;
+    height: 70px;
+
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 1.8px;
+  }
+}
+
+.trip-form__dates {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trip-form__date {
+  width: 30px;
+  height: 30px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: rgba(68, 68, 68, 0.3);
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 70px;
+
+    font-size: 20px;
+    font-weight: $medium;
+    line-height: 0.9;
+    letter-spacing: 2px;
   }
 }
