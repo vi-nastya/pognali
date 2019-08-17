@@ -4,8 +4,8 @@
 
 .trip-form__step {
   min-width: 270px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 24px;
   padding-top: 25px;
   padding-bottom: 22px;
   margin-bottom: 10px;
@@ -43,6 +43,59 @@
   border: none;
 }
 
+.trip-form__month-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 221px;
+    height: 1px;
+    background-color: #d4d9eb;
+    top: -10px;
+    left: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 221px;
+    height: 1px;
+    background-color: #d4d9eb;
+    top: 30px;
+    left: 0;
+  }
+}
+
+.trip-form__month {
+  margin: 0;
+  font-size: 20px;
+  font-weight: $bold;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
+.trip-form__month-button {
+  width: 9px;
+  height: 17px;
+  background-repeat: no-repeat;
+  border: none;
+  opacity: 0.3;
+
+  cursor: pointer;
+}
+
+.trip-form__month-button--prev {
+  margin-right: auto;
+  background-image: url("../../img/month-arrow-left.svg");
+}
+
+.trip-form__month-button--next {
+  margin-left: auto;
+  background-image: url("../../img/month-arrow-right.svg");
+}
 
 .trip-form__days {
   @include reset-list;
@@ -86,24 +139,60 @@
 
   display: flex;
   flex-wrap: wrap;
+
+  margin-bottom: 23px;
 }
 
 .trip-form__date {
   width: 30px;
   height: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
   color: rgba(68, 68, 68, 0.3);
 
+  border: 1px solid #cbced9;
+
+  &--selected {
+    color: $additional-background-color;
+    background-color: #1d2e5b;
+  }
+
   @media (min-width: $tablet-width) {
     width: 76px;
     height: 70px;
+    padding-top: 28px;
+    padding-bottom: 28px;
 
     font-size: 20px;
     font-weight: $medium;
     line-height: 0.9;
     letter-spacing: 2px;
+  }
+}
+
+.trip-form__link-next {
+  min-width: 230px;
+  min-height: 40px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  line-height: 1.76;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 20px;
+
+  &::before {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+    border-radius: 10px;
   }
 }
