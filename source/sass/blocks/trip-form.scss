@@ -221,6 +221,7 @@
 
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 
   &::before {
     content: "";
@@ -231,6 +232,24 @@
     height: 8px;
     background-color: #1d2e5b;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 15px;
+      height: 15px;
+      top: 25px;
+      right: -30px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    padding-left: 27px;
+    padding-right: 60px;
+    padding-bottom: 24px;
+
+    margin-right: 50px;
   }
 }
 
@@ -242,6 +261,11 @@
   letter-spacing: 1.4px;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
 }
 
 .trip-form__select-flag-wrapper {
@@ -251,6 +275,17 @@
   padding: 8px;
   border: 1px solid #cbced9;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 70px;
+    height: 47px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    border: none;
+
+    margin-right: 10px;
+  }
 }
 
 .trip-form__select-button {
@@ -276,7 +311,29 @@
     background-repeat: no-repeat;
     background-size: 9px 9px;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      top: auto;
+      right: auto;
+      background-color: transparent;
+      background-size: 17px 17px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 17px;
+      height: 17px;
+    }
   }
+}
+
+.trip-form__select--empty .trip-form__select-value-wrapper {
+  width: 100%;
+}
+
+.trip-form__select--empty .trip-form__select-value-wrapper::before {
+  right: 49px;
+  background-color: transparent;
+  border: 1px solid #cbced9;
 }
 
 .trip-form__add-country {
