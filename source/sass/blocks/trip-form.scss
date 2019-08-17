@@ -89,12 +89,12 @@
 
 .trip-form__month-button--prev {
   margin-right: auto;
-  background-image: url("../../img/month-arrow-left.svg");
+  background-image: url("../img/month-arrow-left.svg");
 }
 
 .trip-form__month-button--next {
   margin-left: auto;
-  background-image: url("../../img/month-arrow-right.svg");
+  background-image: url("../img/month-arrow-right.svg");
 }
 
 .trip-form__days {
@@ -156,6 +156,8 @@
 
   border: 1px solid #cbced9;
 
+  cursor: pointer;
+
   &--selected {
     color: $additional-background-color;
     background-color: #1d2e5b;
@@ -195,4 +197,106 @@
     text-transform: none;
     border-radius: 10px;
   }
+}
+
+
+/* SELECT */
+.trip-form__select {
+  position: relative;
+  display: flex;
+
+  margin-bottom: 22px;
+}
+
+.trip-form__select-value-wrapper {
+  position: relative;
+  height: 42px;
+  padding-top: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 13px;
+
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: flex-start;
+
+  &::before {
+    content: "";
+    top: 15px;
+    right: -4px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+  }
+}
+
+.trip-form__select-value {
+  padding-right: 15px;
+  font-size: 14px;
+  font-weight: $medium;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+}
+
+.trip-form__select-flag-wrapper {
+  flex-shrink: 0;
+  width: 37px + 16px;
+  height: 26px + 16px;
+  padding: 8px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+}
+
+.trip-form__select-button {
+  border: none;
+  cursor: pointer;
+
+  &--select {
+    width: 12px;
+    height: 7px;
+    background-color: red;
+  }
+
+  &--delete {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #edeff6;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-size: 9px 9px;
+    background-position: center;
+  }
+}
+
+.trip-form__add-country {
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  background-color: #edeff6;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 50px;
+
+  font-size: 14px;
+  font-weight: $medium;
+  line-height: 1.29;
+  text-transform: uppercase;
+  text-align: left;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
 }
