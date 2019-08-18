@@ -136,6 +136,7 @@
 }
 
 .trip-form__field {
+  padding: 0;
   border: none;
 }
 
@@ -521,8 +522,12 @@
 
 
 .trip-form__country-label {
-  display: inline-block;
+  width: 100%;
   margin-bottom: 15px;
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+
   color: #1d2e5b;
   font-size: 18px;
   font-weight: $medium;
@@ -530,10 +535,34 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
+    margin-top: 53px;
 
     font-size: 30px;
     font-weight: $bold;
     line-height: 0.6;
+  }
+}
+
+.trip-form__country-flag-wrapper {
+  position: relative;
+  margin-left: auto;
+  width: 35px;
+  height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 15px;
+      left: -40px;
+      width: 15px;
+      height: 15px;
+      background-color: #1d2e5b;
+      border-radius: 50%
+    }
   }
 }
 

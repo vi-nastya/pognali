@@ -1,8 +1,5 @@
 .nav-menu {
   z-index: 10;
-  position: absolute;
-  top: 70px;
-  left: 0;
   width: $mobile-width;
   min-height: 75px;
 
@@ -26,9 +23,6 @@
 
   @media (min-width: $desktop-width) {
     width: 920px;
-    position: relative;
-    left: auto;
-    top: auto;
     padding: 0;
     padding-top: 25px;
     display: flex;
