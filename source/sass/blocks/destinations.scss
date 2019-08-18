@@ -2,7 +2,7 @@
   @include section-width;
   position: relative;
   padding-bottom: 40px;
-  background: linear-gradient(to top, $additional-hover-color 40px, $main-background-color 40px);
+  background: linear-gradient($main-background-color 98%, $additional-hover-color 98%);
 }
 
 .destinations::after {
@@ -21,14 +21,6 @@
 .destinations__inner {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
-  border-radius: 0 0 40px 40px;
-
-  @media (min-width: $desktop-width) {
-    height: 750px;
-    padding-top: 160px;
-    flex-wrap: wrap;
-  }
 }
 
 .destinations__list {
@@ -36,8 +28,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  @media (min-width: $desktop-width) {
+.destinations__header {
+  margin-left: 50px;
+}
+
+.destinations__description {
+  color: $main-text-color;
+  margin-left: 50px;
+}
+
+.destinations__item {
+  margin-bottom: 10px;
+}
+
+.destinations__button {
+  width: 270px;
+  height: 62px;
+  border-radius: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .destinations__header {
+    margin-left: 75px;
+  }
+
+  .destinations__description {
+    margin-left: 75px;
+  }
+
+  .destinations__button {
+    width: 618px;
+    height: 81px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .destinations__inner {
+    height: 750px;
+    padding-top: 160px;
+    flex-wrap: wrap;
+  }
+
+  .destinations__list {
     align-items: flex-start;
     width: 560px;
     margin: 0;
@@ -46,61 +80,20 @@
     margin-bottom: 150px;
     order: -1;
   }
-}
 
-.destinations__header {
-  @include section-header-text;
-  margin-left: 50px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
+  .destinations__header {
     margin: 0;
     margin-bottom: 60px;
   }
-}
 
-.destinations__description {
-  @include main-text;
-  color: $main-text-color;
-  margin-left: 50px;
-  margin-bottom: 65px;
-  width: 200px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 110px;
-  }
-
-  @media (min-width: $desktop-width) {
+  .destinations__description {
     width: 340px;
     margin: 0;
     margin-bottom: 100px;
   }
-}
 
-.destinations__item {
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-
-.destinations__button {
-  width: 270px;
-  height: 62px;
-  margin: 0 auto;
-  margin-top: 25px;
-  border-radius: 10px;
-
-  @media (min-width: $tablet-width) {
-    width: 618px;
-    height: 81px;
-  }
-
-
-  @media (min-width: $desktop-width) {
+  .destinations__button {
     width: 274px;
     height: 81px;
-    margin-left: 0;
   }
 }

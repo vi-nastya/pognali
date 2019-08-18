@@ -1,8 +1,10 @@
 .social-list {
   @include reset-list;
   @include container;
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .social-list {
     display: none;
   }
 }

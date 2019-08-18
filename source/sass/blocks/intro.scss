@@ -1,68 +1,20 @@
 .intro {
-  position: relative;
-  z-index: 3;
-
   @include section-width;
   color: $additional-background-color;
+
   background-color: $additional-accent-color;
-  background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 10px;
-  background-size: 400px 440px;
-
-  @media (min-width: $tablet-width) {
-    background-color: $additional-hover-color;
-
-    background-image: url("../img/globe-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: -370px 210px;
-    background-size: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: $additional-accent-color;
-    border-radius: 0 0 40px 40px;
-
-    background-image: url("../img/globe-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: -200px -50px;
-  }
+  background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 80px 285px, top;
 }
 
 .intro__inner {
   min-height: 700px;
   padding-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-
-  background-image: url("../img/traveller-illustration-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 80px 200px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 40px;
-    padding-right: 40px;
-
-    background-image: url("../img/traveller-illustration-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: 280px 285px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 100px;
-
-    background-image: url("../img/traveller-illustration-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 620px 10px;
-  }
 }
 
 .intro__header {
-  width: 240px;
-  margin: 0 auto;
-  margin-bottom: 265px;
+  margin-bottom: 245px;
 
   font-family: $main-ffamily;
   font-weight: $bold;
@@ -72,326 +24,35 @@
   line-height: 1.11;
   letter-spacing: normal;
   text-align: center;
+}
 
 
-  @media (min-width: $tablet-width) {
-    width: 395px;
+@media (min-width: $tablet-width) {
+  .intro {
+    background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 280px 285px, top;
+  }
+
+  .intro__header {
     font-size: 60px;
   }
 
-  @media (min-width: $desktop-width) {
-    display: inline-block;
-    vertical-align: top;
+  .intro__contact-list {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 700px 50px, top;
+  }
+
+  .intro__header {
+    width: 395px;
     text-align: left;
-    margin-left: 65px;
-    margin-right: 570px;
-    margin-bottom: 100px;
-  }
-}
-
-.intro__review {
-  width: 160px;
-  margin-left: 24px;
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    width: 260px;
-    margin-left: 35px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: auto;
-    display: inline-block;
-    vertical-align: middle;
-  }
-}
-
-.intro__review-text {
-  margin: 0;
-  margin-bottom: 25px;
-  font-size: $main-fsize-mobile;
-  font-weight: $light;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.38;
-  letter-spacing: normal;
-  text-align: left;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
-    font-size: $main-fsize-tablet;
-    line-height: 1.18;
-  }
-}
-
-.intro__review-author {
-  font-size: $main-fsize-mobile;
-  font-weight: $bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.38;
-  letter-spacing: normal;
-  text-align: left;
-
-  @media (min-width: $tablet-width) {
-    font-size: $additional-fsize-tablet;
-    line-height: 1.19;
-  }
-}
-
-.intro__links {
-  display: flex;
-  margin-bottom: 30px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.intro__contact-list {
-  @include reset-list;
-  display: flex;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.intro__contact-link {
-  display: flex;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: $accent-hover-color;
-}
-
-.intro__contact-link--email {
-  background-color: $accent-minor-color;
-}
-
-.intro__contact-link svg {
-  margin: 0 auto;
-  fill: $additional-accent-color;
-}
-
-.intro__login {
-  width: 189px;
-  height: 40px;
-  padding-top: 10px;
-  display: inline-block;
-  vertical-align: middle;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.intro__guide {
-  @include reset-list;
-  @include container;
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-
-  counter-reset: guide;
-
-  @media (min-width: $tablet-width) {
-    width: 688px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1260px;
-    flex-wrap: nowrap;
-    margin-top: 0;
-  }
-}
-
-.intro__guide-item {
-  position: relative;
-  width: 270px;
-  min-height: 80px;
-  padding-left: 25px;
-  padding-top: 20px;
-  padding-right: 95px;
-
-  font-family: $main-ffamily;
-  font-weight: $bold;
-  font-size: $additional-fsize-mobile;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
-
-  color: $additional-accent-color;
-
-  &::after {
-    position: absolute;
-    counter-increment: guide;
-    content: counter(guide);
-    top: 23px;
-    right: 23px;
-
-    font-family: $main-ffamily;
-    font-size: $additional-fsize-mobile;
-    font-weight: $bold;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    line-height: 1;
-    text-align: center;
-    color: $additional-background-color;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 334px;
-    min-height: 140px;
-    font-size: $accent-fsize-tablet;
-
-    &::after {
-      font-size: 30px;
-      left: 34px;
-      bottom: 28px;
-      top: auto;
-      right: auto;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 315px;
-    min-height: 107px;
-
-    &::after {
-      font-size: $accent-fsize-tablet;
-      top: 29px;
-      right: 33px;
-      left: auto;
-      bottom: auto;
-    }
-  }
-}
-
-.intro__guide-item:nth-of-type(1) {
-  background-color: $accent-hover-color;
-  border-radius: 10px 10px 0 0;
-
-  @media (min-width: $tablet-width) {
-    border-radius: 10px 0 0 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    border-radius: 10px 0 0 10px;
-  }
-}
-
-.intro__guide-item:nth-of-type(2) {
-  background: linear-gradient($accent-hover-color 10px, $accent-secondary-color 10px);
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background-color: $accent-secondary-color;
-    border-radius: 10px 10px 0 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    border-radius: 0 10px 0 0;
-
-    &::before {
-      border-radius: 10px 10px 0 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    border-radius: 0;
-    background: linear-gradient(to right, $accent-hover-color 10px, $accent-secondary-color 10px);
-
-    &::before {
-      width: 10px;
-      height: 100%;
-      border-radius: 10px 0 0 10px;
-    }
-  }
-}
-
-.intro__guide-item:nth-of-type(3) {
-  background: linear-gradient($accent-secondary-color 10px, $accent-minor-color 10px);
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background-color: $accent-minor-color;
-    border-radius: 10px 10px 0 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    background: $accent-minor-color;
-    border-radius: 0 0 0 10px;
-
-    &::before {
-      width: 0;
-      height: 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    background: linear-gradient(to right, $accent-secondary-color 10px, $accent-minor-color 10px);
-    border-radius: 0;
-
-    &::before {
-      width: 10px;
-      height: 100%;
-      border-radius: 10px 0 0 10px;
-    }
-  }
-}
-
-.intro__guide-item:nth-of-type(4) {
-  background: linear-gradient($accent-minor-color 10px, $accent-color 10px);
-  border-radius: 0 0 10px 10px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background-color: $accent-color;
-    border-radius: 10px 10px 0 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    background: linear-gradient($accent-color 130px, $accent-minor-color 130px);
-    border-radius: 0 0 10px 0;
-
-    &::before {
-      top: auto;
-      bottom: 0;
-      border-radius: 0 0 10px 10px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    background: linear-gradient(to right, $accent-minor-color 10px, $accent-color 10px);
-    border-radius: 0 10px 10px 0;
-
-    &::before {
-      top: 0;
-      bottom: auto;
-      width: 10px;
-      height: 100%;
-      border-radius: 10px 0 0 10px;
-    }
+    margin-left: 130px;
   }
 }

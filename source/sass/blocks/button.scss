@@ -1,17 +1,14 @@
-.button-main {
-  position: relative;
+.button {
   box-sizing: border-box;
   display: inline-block;
   width: 270px;
   min-height: 62px;
   padding-left: 24px;
-  padding-top: 24px;
-  padding-right: 35px;
-  padding-bottom: 10px;
+  padding-top: 22px;
 
   color: $additional-accent-color;
   font-family: $main-ffamily;
-  font-size: $additional-fsize-mobile;
+  font-size: 18px;
   font-weight: $bold;
   font-style: normal;
   font-stretch: normal;
@@ -22,125 +19,12 @@
 
   border: none;
   border-radius: 10px;
-  cursor: pointer;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 20px;
-    right: 23px;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 14px solid #1d2e5b;
-
-    @media (min-width: $tablet-width) {
-      top: 30px;
-    }
-  }
-
-
-  &:hover,
-  &:focus {
-    background-color: $accent-minor-color;
-  }
-
-  &:active {
-    color: $accent-title-hover-color;
-    background-color: $accent-minor-color;
-  }
-
-
-  &:active::before {
-    opacity: 0.3;
-  }
-
-  &--outline {
-    border: 3px solid $additional-accent-color;
-  }
-
-  &--outline:hover,
-  &--outline:focus {
-    color: $additional-background-color;
-    background-color: $additional-accent-color;
-  }
-
-  &--outline:hover::before,
-  &--outline:focus::before {
-    border-left: 14px solid $additional-background-color;
-  }
-
-  &--outline:active {
-    color: $additional-background-active-color;
-    background-color: $additional-accent-color;
-  }
-
-  &--outline:active::before {
-    opacity: 1;
-    border-left: 14px solid $additional-background-active-color;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 618px;
-    min-height: 81px;
-    font-size: $accent-fsize-tablet;
-    padding-left: 34px;
-    padding-top: 30px;
-    padding-right: 50px;
-    padding-bottom: 15px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 274px;
-  }
 }
 
-.button-accent {
-  min-width: 189px;
-  min-height: 40px;
-  border-radius: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 17px;
-  padding-bottom: 8px;
+.button:hover {
+  background-color: $accent-hover-color;
+}
 
-  color: $additional-accent-color;
-  font-family: $main-ffamily;
-  font-size: $additional-fsize-mobile;
-  font-weight: $bold;
-  line-height: 1;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: $accent-color;
-
-  cursor: pointer;
-
-  &--wide {
-    width: 230px;
-  }
-
-  &--white {
-    background-color: $additional-background-color;
-  }
-
-  &--blue {
-    background-color: $additinal-detail-color;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $accent-minor-color;
-  }
-
-  &:active {
-    background-color: $accent-minor-color;
-    color: $additional-accent-active-color;
-  }
-
-  @media (min-width: $tablet-width) {
-    height: 50px;
-    border-radius: 25px;
-    font-size: $detail-fsize-tablet;
-  }
+.button:active {
+  color: $additional-accent-active-color;
 }

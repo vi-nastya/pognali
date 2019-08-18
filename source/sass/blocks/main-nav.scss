@@ -1,61 +1,42 @@
-.nav-menu {
+.main-nav {
   min-height: 75px;
   background-color: $additional-background-color;
-
-
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-    display: flex;
-    margin-left: 145px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 60px;
-      height: 2px;
-      left: -105px;
-      top: 65px;
-      background-color: $additional-background-color;
-    }
-  }
 }
 
-.nav-menu__wrapper {
+.main-nav__menu-wrap {
   box-sizing: border-box;
   min-height: 568px;
   display: flex;
   flex-direction: column;
 }
 
-.nav-menu__close {
+.main-menu__close {
   width: 19px;
   height: 19px;
   background-color: $main-text-hover-color;
 }
 
 @media (min-width: $tablet-width) {
-  .nav-menu {
+  .main-nav {
     min-height: 135px;
   }
 
-  .nav-menu__wrapper {
+  .main-nav__menu-wrap {
     min-height: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .nav-menu {
+  .main-nav {
     background-color: $additional-accent-color;
   }
 
-  .nav-menu__wrapper {
+  .main-nav__menu-wrap {
     flex-direction: row;
     min-height: 100px;
   }
 
-  .nav-menu__close {
+  .main-nav__close {
     display: none;
   }
 }
