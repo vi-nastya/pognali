@@ -147,6 +147,12 @@
   letter-spacing: 1.6px;
   text-transform: uppercase;
   color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
 }
 
 .trip-form__month-wrapper {
