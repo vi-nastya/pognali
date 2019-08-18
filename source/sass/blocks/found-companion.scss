@@ -244,6 +244,7 @@
 
   @media (min-width: $desktop-width) {
     order: 1;
+    width: 240px;
     margin-left: 0;
     min-height: 140px;
   }
@@ -382,7 +383,7 @@
 
   @media (min-width: $desktop-width) {
     bottom: 40px;
-    right: 50px;
+    right: -220px;
   }
 }
 

@@ -1,0 +1,43 @@
+.add-plan {
+  position: relative;
+  background-color: #d4d9eb;
+
+  &::before {
+    z-index: 3;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 40px;
+    top: -40px;
+    left: 0;
+    background-color: #d4d9eb;
+    border-radius: 40px 40px 0 0;
+  }
+}
+
+
+.add-plan__inner {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+.add-plan__header {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: $bold;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 1.39;
+  }
+}

@@ -1,0 +1,688 @@
+.trip-form__steps {
+  @include reset-list;
+}
+
+.trip-form__step {
+  min-width: 270px;
+  padding-left: 25px;
+  padding-right: 24px;
+  padding-top: 25px;
+  padding-bottom: 22px;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  background-color: $additional-background-color;
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 618px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 49px;
+    padding-bottom: 55px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    min-width: 1320px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 100px;
+    padding-bottom: 105px;
+    margin-bottom: 44px;
+  }
+}
+
+.trip-form__step-name {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: $bold;
+  line-height: 1;
+  color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 1.39;
+  }
+}
+
+
+.trip-form__break {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.trip-form__step-description {
+  width: 220px;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.2;
+    width: 510px;
+  }
+}
+
+.trip-form__step-description:nth-of-type(1) {
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
+}
+
+.trip-form__step-description:nth-of-type(2) {
+  @media (min-width: $tablet-width) {
+    width: 410px;
+  }
+}
+
+.trip-form__step-description:nth-of-type(3) {
+  @media (min-width: $tablet-width) {
+    width: 480px;
+  }
+}
+
+.trip-form__navigation {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 110px;
+    right: 100px;
+
+    @include reset-list;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.trip-form__navigation-item {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 26px;
+  font-size: 20px;
+  line-height: 0.69;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.6;
+
+  &--current {
+    opacity: 1;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 5px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #1d2e5b;
+  }
+}
+
+.trip-form__field {
+  padding: 0;
+  border: none;
+}
+
+.trip-form__label {
+  font-size: 16px;
+  font-weight: $medium;
+  line-height: 1;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+}
+
+.trip-form__month-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 221px;
+    height: 1px;
+    background-color: #d4d9eb;
+    top: -10px;
+    left: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 221px;
+    height: 1px;
+    background-color: #d4d9eb;
+    top: 30px;
+    left: 0;
+  }
+}
+
+.trip-form__month {
+  margin: 0;
+  font-size: 20px;
+  font-weight: $bold;
+  line-height: 1;
+  color: #1d2e5b;
+}
+
+.trip-form__month-button {
+  width: 9px;
+  height: 17px;
+  background-repeat: no-repeat;
+  border: none;
+  opacity: 0.3;
+
+  cursor: pointer;
+}
+
+.trip-form__month-button--prev {
+  margin-right: auto;
+  background-image: url("../img/month-arrow-left.svg");
+}
+
+.trip-form__month-button--next {
+  margin-left: auto;
+  background-image: url("../img/month-arrow-right.svg");
+}
+
+.trip-form__days {
+  @include reset-list;
+
+  display: flex;
+}
+
+.trip-form__day {
+  width: 30px;
+  height: 30px;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #444444;
+
+  &--weekend {
+    color: #ff5c23;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 77px;
+    height: 70px;
+
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 1.8px;
+  }
+}
+
+.trip-form__dates {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 23px;
+}
+
+.trip-form__date {
+  width: 30px;
+  height: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+
+  color: #1d2e5b;
+  background-color: #edeff6;
+  border: 1px solid #cbced9;
+
+  cursor: pointer;
+
+  &--selected {
+    color: $additional-background-color;
+    background-color: #1d2e5b;
+  }
+
+  &--disabled {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: $additional-background-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $additional-background-color;
+    background-color: #1d2e5b;
+    border: 4px solid #ff5c23;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 70px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    font-size: 20px;
+    font-weight: $medium;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 143px;
+    height: 72px;
+    padding-left: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 1.8px;
+    text-align: left;
+  }
+}
+
+/* STEP BUTTONS */
+
+.trip-form__link-next {
+  @media (max-width: $tablet-width - 1) {
+    min-width: 230px;
+    min-height: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.76;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.trip-form__link-back {
+  font-weight: $bold;
+  color: #161c35;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $tablet-width - 1) {
+    min-width: 230px;
+    min-height: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+
+    line-height: 1.76;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    position: relative;
+    min-width: 180px;
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-bottom: 28px;
+
+    font-size: 24px;
+    line-height: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 30px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-right: 14px solid #1d2e5b;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+  }
+}
+
+
+/* STEP 2 */
+
+.trip-form__select {
+  position: relative;
+  display: flex;
+
+  margin-bottom: 22px;
+}
+
+.trip-form__select-value-wrapper {
+  position: relative;
+  height: 42px;
+  padding-top: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 13px;
+
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &::before {
+    content: "";
+    top: 15px;
+    right: -4px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 15px;
+      height: 15px;
+      top: 25px;
+      right: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -50px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    padding-left: 27px;
+    padding-right: 60px;
+    padding-bottom: 24px;
+
+    margin-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    margin-right: 85px;
+  }
+}
+
+.trip-form__select-value {
+  padding-right: 15px;
+  font-size: 14px;
+  font-weight: $medium;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+}
+
+.trip-form__select-flag-wrapper {
+  flex-shrink: 0;
+  width: 37px + 16px;
+  height: 26px + 16px;
+  padding: 8px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 70px;
+    height: 47px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    border: none;
+  }
+}
+
+.trip-form__select-button {
+  border: none;
+  cursor: pointer;
+
+  &--select {
+    width: 12px;
+    height: 7px;
+    background-color: red;
+  }
+
+  &--delete {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #edeff6;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-size: 9px 9px;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      top: auto;
+      right: auto;
+      background-color: transparent;
+      background-size: 17px 17px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      width: 17px;
+      height: 17px;
+      margin-left: auto;
+    }
+  }
+}
+
+.trip-form__select--empty .trip-form__select-value-wrapper {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+}
+
+.trip-form__select--empty .trip-form__select-value-wrapper::before {
+  right: 49px;
+  background-color: transparent;
+  border: 1px solid #cbced9;
+
+  @media (min-width: $tablet-width) {
+    right: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -50px;
+  }
+}
+
+.trip-form__add-country {
+  width: 220px;
+  margin-bottom: 25px;
+  background-color: #edeff6;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 50px;
+
+  font-size: 14px;
+  font-weight: $medium;
+  line-height: 1.29;
+  text-transform: uppercase;
+  text-align: left;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 370px;
+    padding-top: 26px;
+    padding-left: 26px;
+    padding-bottom: 26px;
+    padding-right: 60px;
+
+    font-size: 20px;
+    line-height: 0.9;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 27px;
+      right: -30px;
+      width: 15px;
+      height: 15px;
+      background-color: #edeff6;
+      border: 1px solid #cbced9;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+
+    &::before {
+      right: -50px;
+    }
+  }
+}
+
+/* STEP 3*/
+
+.trip-form__country-label {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+
+  color: #1d2e5b;
+  font-size: 18px;
+  font-weight: $medium;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    margin-top: 53px;
+
+    font-size: 30px;
+    font-weight: $bold;
+    line-height: 0.6;
+  }
+}
+
+.trip-form__country-flag-wrapper {
+  position: relative;
+  margin-left: auto;
+  width: 35px;
+  height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 15px;
+      left: -40px;
+      width: 15px;
+      height: 15px;
+      background-color: #1d2e5b;
+      border-radius: 50%;
+    }
+  }
+}
+
+.trip-form__contry-plans {
+  min-width: 220px;
+  padding: 13px;
+
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+
+  border: 1px solid #cbced9;
+
+  &:hover {
+    border-color: #959bb2;
+    outline: none;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    border-color: #161c35;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 527px;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 730px;
+  }
+}

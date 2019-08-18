@@ -129,7 +129,238 @@
       </div>
     </header>
 
-    <main class="page-main"></main>
+    <main class="page-main">
+      <section class="navigation">
+        <div class="inner navigation__inner">
+          <h1 class="navigation__title">Направления</h1>
+          <a href="index.html" class="navigation__back-link">На главную</a>
+        </div>
+      </section>
+
+      <section class="profile">
+        <div class="profile__inner inner">
+          <div class="profile__level level"></div>
+          <div class="profile__photo-wrapper">
+            <picture>
+              <img width="99px" height="99px" />
+            </picture>
+          </div>
+          <a class="button-accent profile__button">Сменить фото</a>
+          <div class="profile__tags">
+              <h3 class="profile__tags-description">Тэги</h2>
+              <p class="profile__tags-list"></p>
+            </div>
+          <div class="profile__transport">
+            <h3 class="profile__transport-description">Транспорт</h2>
+            <ul class="profile__transport-list"></ul>
+          </div>
+        </div>
+      </section>
+
+    <section class="my-plans">
+      <div class="my-plans__inner inner">
+      <h2 class="my-plans__header">Мои планы</h2>
+      <ol class="my-plans__list">
+        <li  class="my-plans__item">
+          <h3  class="my-plans__countries">Франция, Италия</h3>
+          <span class="my-plans__companions">3 попутчика</span>
+          <span class="my-plans__dates">26 мар - 29 мар</span>
+          <a href="#" class="my-plans__change">Изменить</a>
+        </li>
+        <li  class="my-plans__item">
+            <h3  class="my-plans__countries">Тайланд, Индонезия</h3>
+            <span class="my-plans__companions">1 попутчик</span>
+            <span class="my-plans__dates">1 июл - 15 июл</span>
+            <a href="#" class="my-plans__change">Изменить</a>
+          </li>
+      </ol>
+    </div>
+    </section>
+
+    <section class="add-plan">
+        <div class="add-plan__inner inner">
+            <h2 class="add-plan__header">Добавить план</h2>
+            <form class="add-plan__form trip-form">
+              <ol class="trip-form__steps">
+                <li class="trip-form__step">
+                  <h3 class="trip-form__step-name">Шаг 1. <br class="trip-form__break">Даты пребывания</h3>
+                  <p class="trip-form__step-description">Укажите предпочтительное количество попутчиков, которых
+                      вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                  <ul class="trip-form__navigation">
+                    <li class="trip-form__navigation-item trip-form__navigation-item--current">Даты</li>
+                    <li class="trip-form__navigation-item">Маршрут</li>
+                    <li class="trip-form__navigation-item">Развлечения</li>
+                  </ul>
+
+                  <fieldset class="trip-form__field">
+                    <label class="trip-form__label" for="companions">Ищу попутчиков:</label>
+                    <input type="number" name="companions" id="companions">
+                  </fieldset>
+
+                  <fieldset class="trip-form__field">
+                      <label class="trip-form__label" for="days">Длительность:</label>
+                      <input type="number" name="days" id="days">
+                  </fieldset>
+
+                  <fieldset class="trip-form__field">
+                      <input type="checkbox" name="kids" id="kids">
+                      <label class="trip-form__label trip-form__label--kids" for="kids">Можно с детьми:</label>
+                  </fieldset>
+
+                  <div class="trip-form__month-wrapper">
+                  <button class="trip-form__month-button trip-form__month-button--prev" aria-label="Предыдущий месяц"></button>
+                  <p class="trip-form__month">Март 2019</p>
+                  <button class="trip-form__month-button trip-form__month-button--next" aria-label="Следующий месяц"></button>
+</div>
+
+                  <ul class="trip-form__days">
+                    <li class="trip-form__day">П<span class="trip-form__day--tablet">н</span></li>
+                    <li class="trip-form__day">В<span class="trip-form__day--tablet">т</span></li>
+                    <li class="trip-form__day">С<span class="trip-form__day--tablet">р</span></li>
+                    <li class="trip-form__day">Ч<span class="trip-form__day--tablet">т</span></li>
+                    <li class="trip-form__day">П<span class="trip-form__day--tablet">т</span></li>
+                    <li class="trip-form__day trip-form__day--weekend">С<span class="trip-form__day--tablet">б</span></li>
+                    <li class="trip-form__day trip-form__day--weekend">В<span class="trip-form__day--tablet">с</span></li>
+                  </ul>
+                  <ul class="trip-form__dates">
+                    <li class="trip-form__date trip-form__date--disabled">23</li>
+                    <li class="trip-form__date trip-form__date--disabled">24</li>
+                    <li class="trip-form__date trip-form__date--disabled">25</li>
+                    <li class="trip-form__date trip-form__date--disabled">26</li>
+                    <li class="trip-form__date trip-form__date--disabled">27</li>
+                    <li class="trip-form__date trip-form__date--disabled">28</li>
+                    <li class="trip-form__date trip-form__date--disabled">1</li>
+                    <li class="trip-form__date trip-form__date--disabled">2</li>
+                    <li class="trip-form__date trip-form__date--disabled">3</li>
+                    <li class="trip-form__date trip-form__date--disabled">4</li>
+                    <li class="trip-form__date trip-form__date--disabled">5</li>
+                    <li class="trip-form__date trip-form__date--disabled">6</li>
+                    <li class="trip-form__date trip-form__date--disabled">7</li>
+                    <li class="trip-form__date trip-form__date--disabled">8</li>
+                    <li class="trip-form__date trip-form__date--disabled">9</li>
+                    <li class="trip-form__date trip-form__date--disabled">10</li>
+                    <li class="trip-form__date trip-form__date--disabled">11</li>
+                    <li class="trip-form__date trip-form__date--disabled">12</li>
+                    <li class="trip-form__date trip-form__date--disabled">13</li>
+                    <li class="trip-form__date trip-form__date--disabled">14</li>
+                    <li class="trip-form__date trip-form__date--disabled">15</li>
+                    <li class="trip-form__date trip-form__date--disabled">16</li>
+                    <li class="trip-form__date trip-form__date--disabled">17</li>
+                    <li class="trip-form__date trip-form__date--disabled">18</li>
+                    <li class="trip-form__date trip-form__date--disabled">19</li>
+                    <li class="trip-form__date trip-form__date--disabled">20</li>
+                    <li class="trip-form__date trip-form__date--disabled">21</li>
+                    <li class="trip-form__date trip-form__date--disabled">22</li>
+                    <li class="trip-form__date trip-form__date--disabled">23</li>
+                    <li class="trip-form__date trip-form__date--disabled">24</li>
+                    <li class="trip-form__date trip-form__date--disabled">25</li>
+                    <li class="trip-form__date trip-form__date--selected">26</li>
+                    <li class="trip-form__date trip-form__date--selected">27</li>
+                    <li class="trip-form__date trip-form__date--selected">28</li>
+                    <li class="trip-form__date">29</li>
+                    <li class="trip-form__date">30</li>
+                    <li class="trip-form__date">31</li>
+                    <li class="trip-form__date">1</li>
+                    <li class="trip-form__date">2</li>
+                    <li class="trip-form__date">3</li>
+                    <li class="trip-form__date">4</li>
+                    <li class="trip-form__date">5</li>
+                  </ul>
+
+                  <a href="#" class="button-main trip-form__link-next">Следующий шаг</a>
+                </li>
+
+                <li class="trip-form__step">
+                    <h3 class="trip-form__step-name">Шаг 2. <br class="trip-form__break">Маршрут</h3>
+                    <p class="trip-form__step-description">Укажите страны, которые вы хотели по посетить.
+                        Это может быть одна или сразу несколько.</p>
+                    <ul class="trip-form__navigation">
+                      <li class="trip-form__navigation-item">Даты</li>
+                      <li class="trip-form__navigation-item trip-form__navigation-item--current">Маршрут</li>
+                      <li class="trip-form__navigation-item">Развлечения</li>
+                    </ul>
+
+
+                    <div class="trip-form__select">
+                      <div class="trip-form__select-value-wrapper">
+                        <span class="trip-form__select-value">Босния и Герцеговина</span>
+                        <button type="button" class="trip-form__select-button trip-form__select-button--select" aria-label="Выбрать страну"></button>
+                      </div>
+                      <div class="trip-form__select-flag-wrapper">
+                        <img class="trip-form__select-flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии" width="35px"
+                      height="24px">
+                      </div>
+                      <button type="button" class="trip-form__select-button trip-form__select-button--delete" aria-label="Удалить страну"></button>
+                    </div>
+
+                    <div class="trip-form__select">
+                        <div class="trip-form__select-value-wrapper">
+                          <span class="trip-form__select-value">Чехословакия</span>
+                          <button type="button" class="trip-form__select-button trip-form__select-button--select" aria-label="Выбрать страну"></button>
+                        </div>
+                        <div class="trip-form__select-flag-wrapper">
+                          <img class="trip-form__select-flag" src="./img/flag-czech.svg" alt="Флаг Чехословакии" width="35px"
+                        height="24px">
+                        </div>
+                        <button type="button" class="trip-form__select-button trip-form__select-button--delete" aria-label="Удалить страну"></button>
+                      </div>
+
+                      <div class="trip-form__select trip-form__select--empty">
+                          <div class="trip-form__select-value-wrapper">
+                            <span class="trip-form__select-value">Выберите страну</span>
+                            <button type="button" class="trip-form__select-button trip-form__select-button--select" aria-label="Выбрать страну"></button>
+                          </div>
+                          <button type="button" class="trip-form__select-button trip-form__select-button--delete" aria-label="Удалить страну"></button>
+                        </div>
+
+                      <button class="trip-form__add-country">Добавить страну</button>
+
+                    <a href="#" class="button-main trip-form__link-next">Следующий шаг</a>
+                    <a href="#" class="trip-form__link-back">На шаг назад</a>
+                  </li>
+
+                  <li class="trip-form__step">
+                      <h3 class="trip-form__step-name">Шаг 3. <br class="trip-form__break">Развлечения</h3>
+                      <p class="trip-form__step-description">Наконец, расскажите о своих планах времяпровождения.
+                          Можно писать в свободной форме и ставить тэги.</p>
+                      <ul class="trip-form__navigation">
+                        <li class="trip-form__navigation-item">Даты</li>
+                        <li class="trip-form__navigation-item">Маршрут</li>
+                        <li class="trip-form__navigation-item trip-form__navigation-item--current">Развлечения</li>
+                      </ul>
+
+                      <fieldset class="trip-form__field">
+                          <label class="trip-form__country-label" for="bosnia-notes">
+                            <span>Босния и Герцеговина</span>
+                              <div class="trip-form__country-flag-wrapper">
+                                  <img class="trip-form__country-flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины" width="35px"
+                                height="24px">
+                                </div>
+                          </label>
+                          <textarea class="trip-form__contry-plans" name="bosnia-notes" id="bosnia-notes" rows=8 placeholder="План действий"></textarea>
+                        </fieldset>
+
+                        <fieldset class="trip-form__field">
+                            <label class="trip-form__country-label" for="czech-notes">
+                                <span>Чехословакия</span>
+                                <div class="trip-form__country-flag-wrapper">
+                                    <img class="trip-form__country-flag" src="./img/flag-czech.svg" alt="Флаг Чехословакии" width="35px"
+                                  height="24px">
+                                  </div>
+                            </label>
+                            <textarea class="trip-form__contry-plans" name="czech-notes" id="czech-notes" rows=8 placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+                        </fieldset>
+
+                      <a href="#" class="button-main trip-form__link-next">Следующий шаг</a>
+                      <a href="#" class="trip-form__link-back">На шаг назад</a>
+                    </li>
+              </ol>
+
+            </form>
+
+        </div>
+    </section>
+    </main>
 
     <footer class="footer">
       <div class="inner footer__inner">

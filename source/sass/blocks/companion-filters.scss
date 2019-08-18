@@ -58,6 +58,8 @@
 }
 
 .companion-filters__item-inner {
+  @include reset-list;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
 
@@ -68,6 +70,10 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
   }
+}
+
+.companion-filters__field {
+  margin-bottom: 10px;
 }
 
 .companion-filters__item-button {
