@@ -41,12 +41,17 @@
 
   cursor: pointer;
 
-  &--current {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &--current,
+  &:active {
     background-color: $accent-color;
     border-radius: 50px;
   }
 }
-
 
 .pagination__direction {
   @include reset-list;
@@ -66,6 +71,15 @@
 
   @media (min-width: $tablet-width) {
     width: 35px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   &--prev::before {
