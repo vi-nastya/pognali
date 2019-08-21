@@ -78,3 +78,11 @@
     margin-bottom: 0;
   }
 }
+
+.nav-menu__social-list {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}

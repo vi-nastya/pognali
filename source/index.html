@@ -8,6 +8,11 @@
   </head>
   <body>
   <svg style="display:none">
+      <symbol id="icon-menu" viewBox="0 0 25 11">
+          <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
+  <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
+      </symbol>
+
       <symbol id="icon-contacts-mail" viewBox="0 0 36 26">
           <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
   c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
@@ -91,13 +96,9 @@
           </a>
 
           <button class="header__nav-toggle" type="button" aria-label="Скрыть или показать меню">
-              <svg class="header__nav-toggle-icon" width="25" height="11" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              viewBox="0 0 25 11" style="enable-background: new 0 0 25 11;" xml:space="preserve">
-            <g>
-              <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
-              <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
-            </g>
-            </svg>
+              <svg role="img" class="header__nav-toggle-icon" width="25" height="11">
+                  <use xlink:href="#icon-menu"></use>
+                </svg>
           </button>
 
           <a
@@ -147,7 +148,7 @@
               </li>
             </ul>
 
-            <ul class="nav-menu__social social-list">
+            <ul class="social-list nav-menu__social-list">
               <li class="social-list__item">
                 <a
                   class="social-list__link"

@@ -49,6 +49,8 @@
   background-color: $additional-accent-color;
   border: none;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     margin-left: 170px;
   }
