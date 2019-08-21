@@ -9,7 +9,10 @@
 .contacts-list__item {
   position: relative;
   margin-bottom: 30px;
-  padding-left: 60px;
+
+  display: flex;
+  align-items: center;
+
   font-family: $main-ffamily;
   font-size: 16px;
   font-weight: $bold;
@@ -21,34 +24,8 @@
   text-transform: uppercase;
   color: $additional-hover-color;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: -15px;
-    left: 5px;
-    width: 45px;
-    height: 45px;
-    background-color: #121936;
-    border-radius: 50%;
-  }
-
-  &--login::before {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 28px;
-    padding-left: 90px;
-
-    &::before {
-      top: -15px;
-      width: 67px;
-      height: 67px;
-    }
-
-    &--login {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -74,4 +51,21 @@
       background-color: #ff8d30;
     }
   }
+}
+
+.contacts-list__icon-wrapper {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #121936;
+  border-radius: 50%;
+}
+
+.contacts-list__icon {
+  fill: #ffd74b;
 }
