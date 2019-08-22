@@ -45,7 +45,10 @@
 }
 
 .profile__field-name {
+  position: relative;
+  z-index: 10;
   margin: 0;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -68,6 +71,7 @@
     letter-spacing: 2px;
   }
 }
+
 
 .profile__button {
   margin-bottom: 20px;
@@ -98,4 +102,99 @@
   @media (min-width: $desktop-width) {
     font-size: 0;
   }
+}
+
+.profile__tags {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    top: 6px;
+    left: 0;
+    width: 270px;
+    height: 89px;
+    border: 1px solid #cbced9;
+    border-radius: 10px;
+
+    @media (min-width: $tablet-width) {
+      width: 618px;
+      height: 94px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 730px;
+      height: 94px;
+    }
+  }
+}
+
+.profile__tags-input {
+  box-sizing: border-box;
+  width: 270px;
+  padding-left: 25px;
+  padding-right: 25px;
+  resize: none;
+
+  font-size: 16px;
+  line-height: 1.38;
+
+  background-color: $main-background-color;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+.profile__transport {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    top: 6px;
+    left: 0;
+    width: 270px;
+    height: 63px;
+    border: 1px solid #cbced9;
+    border-radius: 10px;
+
+    @media (min-width: $tablet-width) {
+      width: 308px;
+      height: 94px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 384px;
+      height: 94px;
+    }
+  }
+}
+
+.profile__transport-description {
+  width: 110px;
+}
+
+.profile__transport-list {
+  margin: 0 auto;
+  margin-top: 6px;
 }
