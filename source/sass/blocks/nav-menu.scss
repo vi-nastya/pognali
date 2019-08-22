@@ -31,16 +31,6 @@
     margin-left: 145px;
 
     background-color: $additional-accent-color;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 60px;
-      height: 2px;
-      left: -105px;
-      top: 65px;
-      background-color: $additional-background-color;
-    }
   }
 }
 
@@ -75,7 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    display: none;
   }
 }
 
