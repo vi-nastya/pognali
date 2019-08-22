@@ -2,6 +2,14 @@
   @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: $additional-hover-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $additional-accent-color;
+  }
 }
 
 .header__inner {
