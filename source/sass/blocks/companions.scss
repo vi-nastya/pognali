@@ -24,13 +24,25 @@
   padding-right: 25px;
   border-radius: 0 0 40px 40px;
 
+  background-image: url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/smolov-back-desktop@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 61px 71px, 143px 143px;
+  background-position: -20px 250px, 152px 31px;
+
   @media (min-width: $tablet-width) {
     padding-left: 25px;
     padding-right: 25px;
+
+    background-image: url("../../img/rogovaya-back-desktop@1x.png"), url("../../img/smolov-back-desktop@1x.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 285px 285px, 143px 143px;
+    background-position: 406px 70px, 40px 350px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 220px;
+
+    background-position: 190px 460px, 547px 100px;
   }
 }
 

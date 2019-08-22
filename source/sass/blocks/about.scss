@@ -41,8 +41,20 @@
 
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: 350px 450px;
-    background-position: right bottom;
+    background-size: 450px 650px;
+    background-position: right center;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      top: 90px;
+      left: -20px;
+      width: 688px;
+      height: 213px;
+      background-color: #141b3b;
+      border-radius: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
