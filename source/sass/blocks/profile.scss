@@ -3,6 +3,7 @@
 }
 
 .profile__inner {
+  position: relative;
   padding: 20px 25px 30px 25px;
 
   display: flex;
@@ -14,6 +15,31 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 124px 50px 60px;
+  }
+}
+
+.profile__level-photo-wrapper {
+  margin-bottom: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -190px;
+    right: 95px;
+  }
+}
+
+.profile__level {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 45px;
   }
 }
 
