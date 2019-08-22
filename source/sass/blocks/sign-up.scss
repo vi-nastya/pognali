@@ -35,6 +35,10 @@
   margin-bottom: 30px;
   color: $additional-background-color;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 610px;
+  }
 }
 
 .sign-up__link {
@@ -57,8 +61,21 @@
   padding: 0;
   padding-left: 24px;
 
+  font-size: $additional-fsize-mobile;
+
   border: none;
   border-radius: 10px 0 0 10px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 81px;
+    width: 536px;
+
+    font-size: $accent-fsize-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 850px;
+  }
 }
 
 .sign-up__contact-us {
@@ -74,38 +91,18 @@
 }
 
 .sign-up__button {
-  width: 62px;
-  height: 62px;
+  min-width: 62px;
+  min-height: 62px;
   border-radius: 0 10px 10px 0;
   font-size: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .sign-up__description {
-    width: 610px;
-  }
-
-  .sign-up__input {
+  @media (min-width: $tablet-width) {
+    min-width: 82px;
     min-height: 81px;
-    width: 536px;
   }
 
-  .sign-up__button {
-    width: 81px;
-    height: 81px;
-    border-radius: 0 10px 10px 0;
-    font-size: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .sign-up__input {
-    width: 850px;
-  }
-
-  .sign-up__button {
-    width: 281px;
-    height: 81px;
+  @media (min-width: $desktop-width) {
+    min-width: 281px;
     font-size: $accent-fsize-tablet;
   }
 }
