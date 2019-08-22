@@ -15,6 +15,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 124px 50px 60px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -31,7 +34,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: -190px;
-    right: 95px;
+    right: 220px;
   }
 }
 
@@ -119,8 +122,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
-    min-width: 190px;
+    margin-bottom: 65px;
+    width: 190px;
+    margin-left: 971px;
   }
 }
 
@@ -156,6 +160,10 @@
       height: 94px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+  }
 }
 
 .profile__tags-input {
@@ -165,6 +173,7 @@
   padding-right: 25px;
   resize: none;
 
+  color: #444444;
   font-size: 16px;
   line-height: 1.38;
 
@@ -213,6 +222,20 @@
       width: 384px;
       height: 94px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 60px;
+    left: 250px;
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-left: auto;
   }
 }
 
