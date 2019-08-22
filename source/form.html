@@ -139,20 +139,37 @@
 
       <section class="profile">
         <div class="profile__inner inner">
-          <div class="profile__level level"></div>
-          <div class="profile__photo-wrapper">
-            <picture>
-              <img width="99px" height="99px" />
-            </picture>
+          <div class="profile__level-photo-wrapper">
+            <div class="profile__level level"></div>
+            <div class="profile__photo-wrapper">
+              <picture>
+                <img class="profile__photo" src="./img/demin-tablet@1x.jpg" width="99" height="99" />
+              </picture>
+            </div>
           </div>
-          <a class="button-accent profile__button">Сменить фото</a>
+          <a class="button-accent profile__button"><span class="profile__text-hide-desktop">Сменить </span>фото</a>
           <div class="profile__tags">
-              <h3 class="profile__tags-description">Тэги</h2>
+              <h3 class="profile__field-name profile__tags-description">Тэги</h2>
+                <textarea rows=3></textarea>
               <p class="profile__tags-list"></p>
             </div>
           <div class="profile__transport">
-            <h3 class="profile__transport-description">Транспорт</h2>
-            <ul class="profile__transport-list"></ul>
+            <h3 class="profile__field-name profile__transport-description">Транспорт</h2>
+            <ul class="profile__transport-list transport-list">
+                    <li
+                      class="transport-item  transport-item--button transport-item--selected transport-item--plane"
+                      aria-label="plane"
+                    ></li>
+                    <li class="transport-item transport-item--button transport-item--bus" aria-label="bus"></li>
+                    <li
+                      class="transport-item transport-item--button transport-item--bike"
+                      aria-label="bike"
+                    ></li>
+                    <li
+                      class="transport-item transport-item--button transport-item--hike"
+                      aria-label="hike"
+                    ></li>
+            </ul>
           </div>
         </div>
       </section>
