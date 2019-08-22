@@ -50,6 +50,11 @@
     left: 8px;
     background-repeat: no-repeat;
     opacity: 0.15;
+
+    @media (min-width: $tablet-width) {
+      top: 11px;
+      left: 11px;
+    }
   }
 
   &--selected::before {
@@ -70,11 +75,13 @@
   &--bus::before {
     width: 13px;
     height: 16px;
+    left: 10px;
     background-image: url("../img/bus.svg");
 
     @media (min-width: $tablet-width) {
       width: 17px;
       height: 21px;
+      left: 13px;
     }
   }
 
