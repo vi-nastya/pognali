@@ -24,10 +24,18 @@
   padding-top: 40px;
   border-radius: 0 0 40px 40px;
 
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
   @media (min-width: $desktop-width) {
     height: 750px;
     padding-top: 160px;
     flex-wrap: wrap;
+
+    background-position: right center;
   }
 }
 
