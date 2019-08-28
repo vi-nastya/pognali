@@ -402,12 +402,15 @@
 }
 
 .trip-form__select-value-wrapper {
+  width: 168px;
   position: relative;
   height: 42px;
   padding-top: 13px;
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 13px;
+
+
 
   border: 1px solid #cbced9;
   border-radius: 10px;
@@ -438,6 +441,16 @@
     }
   }
 
+  &::after {
+    position: absolute;
+    content: "";
+    width: 49px;
+    height: 36px;
+    top: 0;
+    right: 15px;
+    background: linear-gradient(to left, $additional-background-color, transparent);
+  }
+
   @media (min-width: $tablet-width) {
     width: 370px;
     height: 70px;
@@ -456,12 +469,15 @@
 }
 
 .trip-form__select-value {
+  width: 133px;
   padding-right: 15px;
   font-size: 14px;
   font-weight: $medium;
   line-height: 1.29;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -493,9 +509,15 @@
   cursor: pointer;
 
   &--select {
-    width: 12px;
-    height: 7px;
-    background-color: red;
+    z-index: 3;
+    width: 15px;
+    height: 14px;
+
+    background-image: url("../../img/dropdown-form.svg");
+    background-repeat: no-repeat;
+    background-position: 1px 4px;
+
+    opacity: 0.3;
   }
 
   &--delete {
@@ -528,7 +550,7 @@
 }
 
 .trip-form__select--empty .trip-form__select-value-wrapper {
-  width: 100%;
+  width: 220px;
 
   @media (min-width: $tablet-width) {
     width: 370px;
@@ -551,6 +573,10 @@
   @media (min-width: $desktop-width) {
     right: -50px;
   }
+}
+
+.trip-form__select--empty .trip-form__select-value-wrapper::after {
+  display: none;
 }
 
 .trip-form__add-country {
