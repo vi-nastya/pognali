@@ -2,11 +2,15 @@
   position: relative;
 
   @include section-width;
-  background: linear-gradient(to top, $additional-hover-color 40px, $main-background-color 40px);
+  background: linear-gradient(
+    to top,
+    $additional-hover-color 40px,
+    $main-background-color 40px
+  );
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     left: 0;
     bottom: 0;
     width: 100%;
@@ -16,26 +20,41 @@
   }
 }
 
-
 .plan__inner {
   padding: 50px 82px 26px 35px;
   border-radius: 0 0 40px 40px;
 
+  display: flex;
+  flex-direction: column;
+
+  background-image: url('../../img/rates@1x.png');
+  background-repeat: no-repeat;
+  background-size: 99px 99px;
+  background-position: 150px 50px;
+
   @media (min-width: $tablet-width) {
-    padding: 130px 150px 40px 60px;
+    padding: 130px 40px 40px 40px;
+
+    background-position: 550px 350px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 150px 40px 185px 100px;
+    padding: 150px 130px 185px 130px;
+
+    background-size: 198px 198px;
+    background-position: 900px 450px;
   }
 }
 
 .plan__header {
+  width: 105px;
   margin-bottom: 55px;
 
   @include section-header-text;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
+    text-align: center;
     margin-bottom: 90px;
   }
 
@@ -126,7 +145,7 @@
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
       top: 0;
       left: 0;
       width: 67px;
@@ -137,12 +156,12 @@
 
     &::after {
       position: absolute;
-      content: "";
+      content: '';
       top: 20px;
       left: 27px;
       width: 17px;
       height: 21px;
-      background-image: url("../../img/business.svg");
+      background-image: url('../../img/business.svg');
       background-repeat: no-repeat;
     }
   }
