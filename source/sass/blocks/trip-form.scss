@@ -11,7 +11,7 @@
   margin-bottom: 10px;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 
   background-color: $additional-background-color;
@@ -162,6 +162,11 @@
 }
 
 .trip-form__label {
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+
   font-size: 16px;
   font-weight: $medium;
   line-height: 1;
@@ -173,6 +178,67 @@
     font-size: 20px;
     line-height: 0.9;
     letter-spacing: 2px;
+  }
+
+  &--kids {
+    margin-top: 21px;
+    position: relative;
+    padding-left: 40px;
+    font-weight: $normal;
+    font-size: 15px;
+    line-height: 1;
+    text-align: left;
+    text-transform: none;
+    color: #444444;
+  }
+
+  &--kids::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    left: 0;
+    top: -10px;
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+  }
+}
+
+.trip-form__label-units {
+  padding-right: 5px;
+  color: rgba(29, 46, 91, 0.3);
+}
+
+.trip-form__input {
+  width: 220px;
+  height: 43px;
+  margin-bottom: 21px;
+
+  font-family: $main-ffamily;
+  font-size: 15px;
+  font-weight: $medium;
+  line-height: 0.9;
+  letter-spacing: 1.5px;
+  text-align: center;
+  background-color: $additional-background-color;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.trip-form__checkbox {
+  display: none;
+}
+
+.trip-form__checkbox:checked+.trip-form__label--kids {
+  &::after {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
   }
 }
 
