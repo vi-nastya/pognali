@@ -201,7 +201,7 @@
             <h2 class="add-plan__header">Добавить план</h2>
             <form class="add-plan__form trip-form">
               <ol class="trip-form__steps">
-                <li class="trip-form__step">
+                <li class="trip-form__step  trip-form__step--dates">
                   <h3 class="trip-form__step-name">Шаг 1. <br class="trip-form__break">Даты пребывания</h3>
                   <p class="trip-form__step-description">Укажите предпочтительное количество попутчиков, которых
                       вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
@@ -226,70 +226,69 @@
                       <label class="trip-form__label trip-form__label--kids" for="kids">Можно с детьми:</label>
                   </fieldset>
 
-                  <div class="trip-form__month-wrapper">
-                  <button class="trip-form__month-button trip-form__month-button--prev" aria-label="Предыдущий месяц"></button>
-                  <p class="trip-form__month">Март 2019</p>
-                  <button class="trip-form__month-button trip-form__month-button--next" aria-label="Следующий месяц"></button>
-</div>
-
-                  <ul class="trip-form__days">
-                    <li class="trip-form__day">П<span class="trip-form__day--tablet">н</span></li>
-                    <li class="trip-form__day">В<span class="trip-form__day--tablet">т</span></li>
-                    <li class="trip-form__day">С<span class="trip-form__day--tablet">р</span></li>
-                    <li class="trip-form__day">Ч<span class="trip-form__day--tablet">т</span></li>
-                    <li class="trip-form__day">П<span class="trip-form__day--tablet">т</span></li>
-                    <li class="trip-form__day trip-form__day--weekend">С<span class="trip-form__day--tablet">б</span></li>
-                    <li class="trip-form__day trip-form__day--weekend">В<span class="trip-form__day--tablet">с</span></li>
+                  <div class="trip-form__month calendar__month-wrapper">
+                    <button class="calendar__month-button calendar__month-button--prev" aria-label="Предыдущий месяц"></button>
+                    <p class="calendar__month">Март 2019</p>
+                    <button class="calendar__month-button calendar__month-button--next" aria-label="Следующий месяц"></button>
+                  </div>
+                  <ul class="trip-form__days calendar__days">
+                    <li class="calendar__day">П<span class="calendar__day--tablet">н</span></li>
+                    <li class="calendar__day">В<span class="calendar__day--tablet">т</span></li>
+                    <li class="calendar__day">С<span class="calendar__day--tablet">р</span></li>
+                    <li class="calendar__day">Ч<span class="calendar__day--tablet">т</span></li>
+                    <li class="calendar__day">П<span class="calendar__day--tablet">т</span></li>
+                    <li class="calendar__day calendar__day--weekend">С<span class="calendar__day--tablet">б</span></li>
+                    <li class="calendar__day calendar__day--weekend">В<span class="calendar__day--tablet">с</span></li>
                   </ul>
-                  <ul class="trip-form__dates">
-                    <li class="trip-form__date trip-form__date--disabled">23</li>
-                    <li class="trip-form__date trip-form__date--disabled">24</li>
-                    <li class="trip-form__date trip-form__date--disabled">25</li>
-                    <li class="trip-form__date trip-form__date--disabled">26</li>
-                    <li class="trip-form__date trip-form__date--disabled">27</li>
-                    <li class="trip-form__date trip-form__date--disabled">28</li>
-                    <li class="trip-form__date trip-form__date--disabled">1</li>
-                    <li class="trip-form__date trip-form__date--disabled">2</li>
-                    <li class="trip-form__date trip-form__date--disabled">3</li>
-                    <li class="trip-form__date trip-form__date--disabled">4</li>
-                    <li class="trip-form__date trip-form__date--disabled">5</li>
-                    <li class="trip-form__date trip-form__date--disabled">6</li>
-                    <li class="trip-form__date trip-form__date--disabled">7</li>
-                    <li class="trip-form__date trip-form__date--disabled">8</li>
-                    <li class="trip-form__date trip-form__date--disabled">9</li>
-                    <li class="trip-form__date trip-form__date--disabled">10</li>
-                    <li class="trip-form__date trip-form__date--disabled">11</li>
-                    <li class="trip-form__date trip-form__date--disabled">12</li>
-                    <li class="trip-form__date trip-form__date--disabled">13</li>
-                    <li class="trip-form__date trip-form__date--disabled">14</li>
-                    <li class="trip-form__date trip-form__date--disabled">15</li>
-                    <li class="trip-form__date trip-form__date--disabled">16</li>
-                    <li class="trip-form__date trip-form__date--disabled">17</li>
-                    <li class="trip-form__date trip-form__date--disabled">18</li>
-                    <li class="trip-form__date trip-form__date--disabled">19</li>
-                    <li class="trip-form__date trip-form__date--disabled">20</li>
-                    <li class="trip-form__date trip-form__date--disabled">21</li>
-                    <li class="trip-form__date trip-form__date--disabled">22</li>
-                    <li class="trip-form__date trip-form__date--disabled">23</li>
-                    <li class="trip-form__date trip-form__date--disabled">24</li>
-                    <li class="trip-form__date trip-form__date--disabled">25</li>
-                    <li class="trip-form__date trip-form__date--selected">26</li>
-                    <li class="trip-form__date trip-form__date--selected">27</li>
-                    <li class="trip-form__date trip-form__date--selected">28</li>
-                    <li class="trip-form__date">29</li>
-                    <li class="trip-form__date">30</li>
-                    <li class="trip-form__date">31</li>
-                    <li class="trip-form__date">1</li>
-                    <li class="trip-form__date">2</li>
-                    <li class="trip-form__date">3</li>
-                    <li class="trip-form__date">4</li>
-                    <li class="trip-form__date">5</li>
+                  <ul class="trip-form__dates calendar__dates">
+                    <li class="calendar__date calendar__date--disabled">23</li>
+                    <li class="calendar__date calendar__date--disabled">24</li>
+                    <li class="calendar__date calendar__date--disabled">25</li>
+                    <li class="calendar__date calendar__date--disabled">26</li>
+                    <li class="calendar__date calendar__date--disabled">27</li>
+                    <li class="calendar__date calendar__date--disabled">28</li>
+                    <li class="calendar__date calendar__date--disabled">1</li>
+                    <li class="calendar__date calendar__date--disabled">2</li>
+                    <li class="calendar__date calendar__date--disabled">3</li>
+                    <li class="calendar__date calendar__date--disabled">4</li>
+                    <li class="calendar__date calendar__date--disabled">5</li>
+                    <li class="calendar__date calendar__date--disabled">6</li>
+                    <li class="calendar__date calendar__date--disabled">7</li>
+                    <li class="calendar__date calendar__date--disabled">8</li>
+                    <li class="calendar__date calendar__date--disabled">9</li>
+                    <li class="calendar__date calendar__date--disabled">10</li>
+                    <li class="calendar__date calendar__date--disabled">11</li>
+                    <li class="calendar__date calendar__date--disabled">12</li>
+                    <li class="calendar__date calendar__date--disabled">13</li>
+                    <li class="calendar__date calendar__date--disabled">14</li>
+                    <li class="calendar__date calendar__date--disabled">15</li>
+                    <li class="calendar__date calendar__date--disabled">16</li>
+                    <li class="calendar__date calendar__date--disabled">17</li>
+                    <li class="calendar__date calendar__date--disabled">18</li>
+                    <li class="calendar__date calendar__date--disabled">19</li>
+                    <li class="calendar__date calendar__date--disabled">20</li>
+                    <li class="calendar__date calendar__date--disabled">21</li>
+                    <li class="calendar__date calendar__date--disabled">22</li>
+                    <li class="calendar__date calendar__date--disabled">23</li>
+                    <li class="calendar__date calendar__date--disabled">24</li>
+                    <li class="calendar__date calendar__date--disabled">25</li>
+                    <li class="calendar__date calendar__date--selected">26</li>
+                    <li class="calendar__date calendar__date--selected">27</li>
+                    <li class="calendar__date calendar__date--selected">28</li>
+                    <li class="calendar__date">29</li>
+                    <li class="calendar__date">30</li>
+                    <li class="calendar__date">31</li>
+                    <li class="calendar__date">1</li>
+                    <li class="calendar__date">2</li>
+                    <li class="calendar__date">3</li>
+                    <li class="calendar__date">4</li>
+                    <li class="calendar__date">5</li>
                   </ul>
 
                   <a href="#" class="button-main trip-form__link-next">Следующий шаг</a>
                 </li>
 
-                <li class="trip-form__step">
+                <li class="trip-form__step trip-form__step--route">
                     <h3 class="trip-form__step-name">Шаг 2. <br class="trip-form__break">Маршрут</h3>
                     <p class="trip-form__step-description">Укажите страны, которые вы хотели по посетить.
                         Это может быть одна или сразу несколько.</p>
@@ -299,7 +298,7 @@
                       <li class="trip-form__navigation-item">Развлечения</li>
                     </ul>
 
-
+                    <div class="trip-form__selects">
                     <div class="trip-form__select">
                       <div class="trip-form__select-value-wrapper">
                         <span class="trip-form__select-value">Босния и Герцеговина</span>
@@ -333,12 +332,13 @@
                         </div>
 
                       <button class="trip-form__add-country">Добавить страну</button>
+                      </div>
 
                     <a href="#" class="button-main trip-form__link-next">Следующий шаг</a>
                     <a href="#" class="trip-form__link-back">На шаг назад</a>
                   </li>
 
-                  <li class="trip-form__step">
+                  <li class="trip-form__step trip-form__step--plans">
                       <h3 class="trip-form__step-name">Шаг 3. <br class="trip-form__break">Развлечения</h3>
                       <p class="trip-form__step-description">Наконец, расскажите о своих планах времяпровождения.
                           Можно писать в свободной форме и ставить тэги.</p>
@@ -367,7 +367,7 @@
                                   height="24px">
                                   </div>
                             </label>
-                            <textarea class="trip-form__contry-plans" name="czech-notes" id="czech-notes" rows=8 placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+                            <textarea class="trip-form__contry-plans" name="czech-notes" id="czech-notes" rows=8 placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                         </fieldset>
 
                       <a href="#" class="button-main trip-form__link-next">Следующий шаг</a>
