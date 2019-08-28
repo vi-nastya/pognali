@@ -2,11 +2,9 @@
   position: relative;
 
   @include section-width;
-  background: linear-gradient(
-    to top,
-    $additional-hover-color 40px,
-    $main-background-color 40px
-  );
+  background: linear-gradient(to top,
+      $additional-hover-color 40px,
+      $main-background-color 40px);
 
   &::after {
     position: absolute;
@@ -67,9 +65,12 @@
   @include reset-list;
   display: flex;
   flex-direction: column;
+
+  counter-reset: plan;
 }
 
 .plan__feature-item {
+  position: relative;
   display: inline-block;
   vertical-align: center;
   width: 185px;
@@ -82,11 +83,54 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    margin-bottom: 32px;
+    padding-left: 92px;
     font-size: $main-fsize-tablet;
   }
 
   @media (min-width: $desktop-width) {
     width: 812px;
+  }
+
+  &::before {
+    position: absolute;
+    counter-increment: plan;
+    content: counter(plan);
+    right: -40px;
+    top: -2px;
+    width: 34px;
+    height: 34px;
+
+    background-color: #ffa530;
+    border-radius: 50%;
+
+    font-family: $main-ffamily;
+    font-size: 16px;
+    line-height: 0.88;
+    text-align: center;
+    padding-top: 12px;
+    color: $additional-background-color;
+
+    @media (min-width: $tablet-width) {
+      width: 67px;
+      height: 67px;
+      padding-top: 22px;
+      right: auto;
+      left: 0;
+      top: -15px;
+
+      font-size: 28px;
+      line-height: 1;
+    }
+  }
+
+  &:nth-of-type(2)::before {
+    background-color: #ffbd30;
+  }
+
+  &:nth-of-type(3)::before {
+    background-color: #ffd74b;
   }
 }
 
