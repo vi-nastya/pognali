@@ -1,0 +1,294 @@
+.counry-selects {
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 358px;
+      background-color: #d4d9eb;
+      top: -40px;
+      right: 139px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 529px;
+      height: 1px;
+      background-color: #d6d9e6;
+      top: -40px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: 228px;
+    }
+
+    &::after {
+      width: 1010px
+    }
+  }
+}
+
+.counry-select {
+  width: 100%;
+  position: relative;
+  display: flex;
+
+  margin-bottom: 22px;
+}
+
+.counry-select__value-wrapper {
+  width: 168px;
+  position: relative;
+  height: 42px;
+  padding-top: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 13px;
+
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &::before {
+    content: "";
+    z-index: 10;
+    top: 15px;
+    right: -4px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 15px;
+      height: 15px;
+      top: 25px;
+      right: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -50px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 49px;
+    height: 36px;
+    top: 0;
+    right: 15px;
+    background: linear-gradient(to left, $additional-background-color, transparent);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    padding-left: 27px;
+    padding-right: 25px;
+    padding-bottom: 24px;
+
+    margin-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    margin-right: 85px;
+  }
+}
+
+.counry-select__value {
+  width: 133px;
+  padding-right: 15px;
+  font-size: 14px;
+  font-weight: $medium;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+}
+
+.counry-select__flag-wrapper {
+  flex-shrink: 0;
+  width: 37px + 16px;
+  height: 26px + 16px;
+  padding: 8px;
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 70px;
+    height: 47px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    border: none;
+  }
+}
+
+.counry-select__button {
+  border: none;
+  cursor: pointer;
+
+  &--select {
+    z-index: 3;
+    width: 15px;
+    height: 15px;
+
+    background-image: url("../../img/dropdown-form.svg");
+    background-repeat: no-repeat;
+    background-position: 1px 4px;
+    background-size: 12px 7px;
+
+    opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 20px;
+      background-size: 17px 9px;
+      background-position: 1px 3px;
+    }
+  }
+
+  &--select:hover,
+  &--select:focus {
+    opacity: 1;
+  }
+
+  &--select:active {
+    opacity: 0.1;
+  }
+
+  &--delete {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #edeff6;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-size: 9px 9px;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      top: auto;
+      right: auto;
+      background-color: transparent;
+      background-size: 17px 17px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      width: 17px;
+      height: 17px;
+      margin-left: auto;
+    }
+  }
+}
+
+.counry-select--empty .counry-select__value-wrapper {
+  width: 220px;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+}
+
+.counry-select--empty .counry-select__value-wrapper::before {
+  right: 49px;
+  background-color: $additional-background-color;
+  border: 1px solid #cbced9;
+
+  @media (min-width: $tablet-width) {
+    right: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -50px;
+  }
+}
+
+.counry-select--empty .counry-select__value-wrapper::after {
+  display: none;
+}
+
+.trip-form__add-country {
+  width: 220px;
+  margin-bottom: 25px;
+  background-color: #edeff6;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 50px;
+
+  font-size: 14px;
+  font-weight: $medium;
+  line-height: 1.29;
+  text-transform: uppercase;
+  text-align: left;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 370px;
+    padding-top: 26px;
+    padding-left: 26px;
+    padding-bottom: 26px;
+    padding-right: 60px;
+
+    font-size: 20px;
+    line-height: 0.9;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 27px;
+      right: -30px;
+      width: 15px;
+      height: 15px;
+      background-color: #edeff6;
+      border: 1px solid #cbced9;
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+
+    &::before {
+      right: -50px;
+    }
+  }
+}
