@@ -195,6 +195,14 @@
 
 .trip-form__dates {
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 /* STEP BUTTONS */
@@ -274,7 +282,17 @@
 
 /* STEP 2 */
 
+.trip-form__selects {
+  margin-bottom: 25px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+}
 
 /* STEP 3*/
 
