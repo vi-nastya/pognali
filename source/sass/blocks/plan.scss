@@ -91,6 +91,10 @@
       height: 300px;
     }
   }
+
+  &--business::before {
+    display: none;
+  }
 }
 
 .plan__feature-item {
@@ -111,6 +115,10 @@
     margin-bottom: 32px;
     padding-left: 92px;
     font-size: $main-fsize-tablet;
+
+    &--business {
+      padding-left: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -155,6 +163,10 @@
 
   &:nth-of-type(3)::before {
     background-color: #ffd74b;
+  }
+
+  &--business::before {
+    display: none;
   }
 }
 
@@ -249,6 +261,28 @@
   color: $additional-accent-color;
 }
 
-.plan--business {
-  display: none;
+.plan-business {
+  background-color: $additional-background-color;
+  padding: 30px 25px 0 25px;
+
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 92px 0 91px;
+
+    border-radius: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 59px 0 60px;
+  }
+
+  &--open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--close {
+    display: none;
+  }
 }
