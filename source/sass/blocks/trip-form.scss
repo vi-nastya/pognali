@@ -190,6 +190,17 @@
     text-align: left;
     text-transform: none;
     color: #444444;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 60px;
+
+      font-size: 20px;
+      font-weight: $medium;
+      text-transform: uppercase;
+      line-height: 0.9;
+      letter-spacing: 2px;
+      color: #1d2e5b;
+    }
   }
 
   &--kids::before {
@@ -201,6 +212,11 @@
     top: -10px;
     border: 1px solid #cbced9;
     border-radius: 4px;
+
+    @media (min-width: $tablet-width) {
+      width: 36px;
+      height: 36px;
+    }
   }
 }
 
@@ -209,20 +225,99 @@
   color: rgba(29, 46, 91, 0.3);
 }
 
-.trip-form__input {
+.trip-form__input-wrapper {
   width: 220px;
   height: 43px;
   margin-bottom: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $additional-background-color;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
 
+  @media (min-width: $tablet-width) {
+    width: 531px;
+    height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 181px;
+  }
+}
+
+.trip-form__input {
   font-family: $main-ffamily;
   font-size: 15px;
   font-weight: $medium;
   line-height: 0.9;
   letter-spacing: 1.5px;
   text-align: center;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.trip-form__input::-webkit-inner-spin-button,
+.trip-form__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.trip-form__button {
+  position: relative;
+  width: 42px;
+  height: 43px;
   background-color: $additional-background-color;
-  border: 1px solid #cbced9;
-  border-radius: 4px;
+  border: none;
+
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 2px;
+    background-color: #cbced9;
+    top: 20px;
+    left: 14px;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 2px;
+      left: 25px;
+    }
+  }
+
+  &--increase::before {
+    left: auto;
+    right: 14px;
+
+    @media (min-width: $tablet-width) {
+      right: 22px;
+    }
+  }
+
+  &--increase::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 14px;
+    background-color: #cbced9;
+    top: 14px;
+    left: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 2px;
+      height: 20px;
+      left: auto;
+      right: 31px;
+      top: 11px;
+    }
+  }
 }
 
 .trip-form__checkbox {
@@ -239,6 +334,13 @@
     height: 9px;
     background-image: url("../img/tick.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 12px;
+      height: 12px;
+      top: 3px;
+      left: 12px;
+    }
   }
 }
 
