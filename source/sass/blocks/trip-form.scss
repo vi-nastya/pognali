@@ -276,6 +276,7 @@
 
 .trip-form__selects {
   position: relative;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
 
@@ -286,7 +287,7 @@
       height: 358px;
       background-color: #d4d9eb;
       top: -40px;
-      right: 114px;
+      right: 139px;
     }
 
     &::after {
@@ -302,7 +303,7 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      right: 130px;
+      right: 228px;
     }
 
     &::after {
@@ -312,6 +313,7 @@
 }
 
 .trip-form__select {
+  width: 100%;
   position: relative;
   display: flex;
 
