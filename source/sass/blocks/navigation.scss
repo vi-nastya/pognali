@@ -52,12 +52,13 @@
     height: 5px;
     border-radius: 2.4px;
     background-color: $accent-hover-color;
-    bottom: -68px;
+    bottom: -13px;
     left: 0;
 
     @media (min-width: $tablet-width) {
       height: 8px;
       border-radius: 4px;
+      bottom: -68px;
     }
   }
 }
