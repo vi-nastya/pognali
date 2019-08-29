@@ -239,7 +239,8 @@
       </section>
       <section class="country-filters">
         <div class="inner country-filters__inner">
-          <h2 class="country-filters__header">Фильтрация по странам</h2>
+          
+          <h2 class="country-filters__header">Фильтрация по странам:</h2>
           <ul class="country-filters__region-list">
             <li class="country-filters__region-item country-filters__region-item--selected">
               <a class="country-filters__region-link">Европа</a>
@@ -254,7 +255,10 @@
               <a class="country-filters__region-link">Острова</a>
             </li>
           </ul>
-          <ul class="country-letters">
+          <button class="country-filters__button country-filters__button--show">Показать все</button>
+          <button class="country-filters__button country-filters__button--hide">Свернуть</button>
+
+          <ul class="country-filters__letters country-letters">
             <li class="country-letters__item country-letters__item--selected">
               А
               <ul class="country-letters__counry-list">
@@ -1276,6 +1280,7 @@
         </div>
       </footer>
 
+      <script src="./js/catalog.js"></script>
       <script src="./js/menu.js"></script>
   </body>
 </html>
