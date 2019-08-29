@@ -139,6 +139,16 @@
   }
 }
 
+.companion-filters__transport-label {
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
 input[type="checkbox"] {
   display: none;
 }
