@@ -51,6 +51,11 @@
 
   @include section-header-text;
 
+  &--business {
+    width: 100%;
+    text-align: center;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     text-align: center;
@@ -301,6 +306,8 @@
   padding-top: 30px;
 
   border-radius: 20px;
+
+  box-shadow: 0px 20px 50px 0 rgba(29, 46, 91, 0.1);
 
   @media (min-width: $tablet-width) {
     min-width: 688px;
