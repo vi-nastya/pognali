@@ -72,8 +72,16 @@
   margin-bottom: 10px;
   opacity: 0.3;
 
-  &--selected {
+  cursor: pointer;
+
+  &--selected,
+  &:active {
     opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 
   @media (min-width: $tablet-width) {

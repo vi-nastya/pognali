@@ -1,20 +1,13 @@
 .location {
   position: relative;
+  z-index: 8;
+  margin-top: -40px;
+  padding-top: 40px;
 
   @include section-width;
   color: $additional-hover-color;
-  background: linear-gradient(to top, transparent 40px, $accent-color 40px);
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background-color: $accent-color;
-    border-radius: 0 0 40px 40px;
-  }
+  background-color: $accent-color;
+  border-radius: 0 0 40px 40px;
 }
 
 .location__inner {

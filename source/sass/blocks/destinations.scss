@@ -1,18 +1,10 @@
 .destinations {
   @include section-width;
+  z-index: 12;
+  margin-top: -40px;
+  padding-top: 40px;
   position: relative;
   padding-bottom: 40px;
-  background: linear-gradient(to top, $additional-hover-color 40px, $main-background-color 40px);
-}
-
-.destinations::after {
-  position: absolute;
-  z-index: 2;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40px;
   background-color: $main-background-color;
   border-radius: 0 0 40px 40px;
 }
