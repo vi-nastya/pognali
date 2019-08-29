@@ -92,6 +92,31 @@
 
   counter-reset: plan;
 
+  &::after {
+    position: absolute;
+    z-index: 20;
+    content: "";
+    width: 200px;
+    height: 1px;
+    left: 0;
+    bottom: 14px;
+    background-color: #444444;
+    opacity: 0.05;
+
+    @media (min-width: $tablet-width) {
+      left: 92px;
+      width: 562px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 813px;
+    }
+  }
+
+  &--business::after {
+    left: 0;
+  }
+
   @media (min-width: $tablet-width) {
     &::before {
       position: absolute;
@@ -132,16 +157,17 @@
   &--business::before {
     display: none;
   }
+
 }
 
 .plan__feature-item {
   position: relative;
-  display: inline-block;
-  vertical-align: center;
   width: 185px;
 
   @include main-text;
   color: $main-text-color;
+
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 562px;
@@ -202,8 +228,33 @@
     background-color: #ffd74b;
   }
 
+  &::after {
+    position: absolute;
+    z-index: 20;
+    content: "";
+    width: 200px;
+    height: 1px;
+    left: 0;
+    top: -14px;
+    background-color: #444444;
+    opacity: 0.05;
+
+    @media (min-width: $tablet-width) {
+      width: 562px;
+      left: 92px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 813px;
+    }
+  }
+
   &--business::before {
     display: none;
+  }
+
+  &--business::after {
+    left: 0;
   }
 }
 
