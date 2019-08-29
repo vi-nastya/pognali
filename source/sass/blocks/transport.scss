@@ -25,6 +25,7 @@
   }
 
   &:hover::before {
+    z: index: 20;
     display: block;
     position: absolute;
     content: "";
@@ -69,6 +70,7 @@
   }
 
   &:hover::after {
+    z-index: 20;
     position: absolute;
     content: "";
     width: 0;

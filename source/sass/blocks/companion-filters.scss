@@ -133,7 +133,11 @@
   }
 }
 
-input[type="checkbox"]:checked + .companion-filters__label::after {
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked+.companion-filters__label::after {
   position: absolute;
   content: "";
   top: 2px;
@@ -143,6 +147,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
 }
+
 
 .companion-filters__button {
   width: 230px;

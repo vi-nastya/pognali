@@ -690,24 +690,32 @@
             <legend class="companion-filters__name">Транспорт:</legend>
             <a class="companion-filters__item-button companion-filters__item-button--hide" aria-label="Скрыть"></a>
 <div class="companion-filters__item-inner">
-            <input type="checkbox" class="visually-hidden" name="transport" id="transport-plane" value="black" checked />
-            <label class="companion-filters__label" for="transport-plane">
-              Самолет
+            <input class="companion-filters__transport-checkbox" type="checkbox" class="visually-hidden" name="transport" id="transport-plane" value="black" checked />
+            <label class="companion-filters__transport-label transport-item transport-item--button  transport-item--selected transport-item--plane" for="transport-plane">
+                <div  class="transport-item__icon transport-item__icon--plane">
+                    <img src="img/plane.svg" width="14" height="16">
+                  </div>
             </label>
 
-            <input type="checkbox" class="visually-hidden" name="transport" id="transport-bus" value="white" />
-            <label class="companion-filters__label" for="transport-bus">
-              Автобус
+            <input class="companion-filters__transport-checkbox" type="checkbox" class="visually-hidden" name="transport" id="transport-bus" value="white" />
+            <label class="companion-filters__transport-label transport-item transport-item--button transport-item--selected transport-item--bus" for="transport-bus">
+                <div  class="transport-item__icon transport-item__icon--bus">
+                    <img src="img/bus.svg" width="13" height="16">
+                  </div>
             </label>
 
-            <input type="checkbox" class="visually-hidden" name="transport" id="transport-bike" value="blue" />
-            <label class="companion-filters__label" for="transport-bike">
-              Велосипед
+            <input class="companion-filters__transport-checkbox" type="checkbox" class="visually-hidden" name="transport" id="transport-bike" value="blue" />
+            <label class="companion-filters__transport-label transport-item transport-item--button transport-item--bike" for="transport-bike">
+                <div class="transport-item__icon transport-item__icon--bike">
+                    <img src="img/bike.svg" width="19" height="17">
+                  </div>
             </label>
 
-            <input type="checkbox" class="visually-hidden" name="transport" id="transport-hike" value="blue" />
-            <label class="companion-filters__label" for="transport-hike">
-              Пешком
+            <input class="companion-filters__transport-checkbox" type="checkbox" class="visually-hidden" name="transport" id="transport-hike" value="blue" />
+            <label class="companion-filters__transport-label transport-item transport-item--button transport-item--selected transport-item--hike" for="transport-hike">
+                <div class="transport-item__icon transport-item__icon--hike" >
+                    <img src="img/run.svg" width="15" height="17">
+                  </div>
             </label>
             </div>
           </fieldset>
