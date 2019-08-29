@@ -136,33 +136,26 @@
   height: 31px;
   left: 70px;
   top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $main-background-color;
   border-radius: 50%;
 
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #e2e5f2;
+  }
+
   &--liked {
     background-color: $error-additional-color;
-  }
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 13px;
-    height: 11px;
-    left: 9px;
-    top: 10px;
-    background-image: url("/img/heart.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      width: 20px;
-      height: 17px;
-      left: 16px;
-      top: 17px;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #f9d8d8;
     }
-  }
-
-  &--liked::before {
-    background-image: url("/img/heart-active.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -172,6 +165,39 @@
     width: 50px;
     height: 50px;
   }
+}
+
+.found-companion__like-icon {
+  fill: #192144;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 17px;
+  }
+}
+
+.found-companion__like:hover .found-companion__like-icon,
+.found-companion__like:focus .found-companion__like-icon {
+  opacity: 0.5;
+}
+
+.found-companion__like:active .found-companion__like-icon {
+  opacity: 0.1;
+}
+
+.found-companion__like--liked .found-companion__like-icon {
+  fill: #f02323;
+  opacity: 1;
+}
+
+.found-companion__like--liked:hover .found-companion__like-icon,
+.found-companion__like--liked:focus .found-companion__like-icon {
+  opacity: 1;
+}
+
+.found-companion__like--liked:active .found-companion__like-icon {
+  opacity: 0.3;
 }
 
 .found-companion__likes {
