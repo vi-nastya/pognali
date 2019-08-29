@@ -129,3 +129,16 @@
     left: 0;
   }
 }
+
+.country-letters__country-name-link {
+  font-family: $main-ffamily;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
