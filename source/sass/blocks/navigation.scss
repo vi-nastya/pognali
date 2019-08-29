@@ -2,18 +2,7 @@
   position: relative;
 
   @include section-width;
-  padding-bottom: 40px;
   color: $additional-background-color;
-  background: linear-gradient(to top, $main-background-color 40px, $additional-accent-color 40px);
-}
-
-.navigation::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40px;
   background-color: $additional-accent-color;
   border-radius: 0 0 40px 40px;
 }
@@ -21,16 +10,18 @@
 .navigation__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding-top: 40px;
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     padding-top: 30px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,7 +52,7 @@
     height: 5px;
     border-radius: 2.4px;
     background-color: $accent-hover-color;
-    top: 146px;
+    bottom: -68px;
     left: 0;
 
     @media (min-width: $tablet-width) {
@@ -72,14 +63,29 @@
 }
 
 .navigation__back-link {
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  padding-right: 100px;
-  font-family: $main-ffamily;
-  font-weight: $bold;
-  font-size: $detail-fsize-tablet;
-  color: $additional-background-color;
-  line-height: 1.2;
-  text-transform: uppercase;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-right: 61px;
+    font-family: $main-ffamily;
+    font-weight: $bold;
+    font-size: $detail-fsize-tablet;
+    color: $additional-background-color;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 16px;
+      background-image: url("../../img/return.svg");
+      top: 2px;
+      right: -20px;
+    }
+  }
 }
