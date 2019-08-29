@@ -395,37 +395,379 @@
                       <li class="trip-form__navigation-item">Развлечения</li>
                     </ul>
 
-                    <div class="trip-form__selects counry-selects">
-                    <div class="counry-select">
-                      <div class="counry-select__value-wrapper">
-                        <span class="counry-select__value">Босния и Герцеговина</span>
-                        <button type="button" class="counry-select__button counry-select__button--select" aria-label="Выбрать страну"></button>
+                    <div class="trip-form__selects country-selects">
+                    <div class="country-select">
+                      <div class="country-select__value-wrapper">
+                        <span class="country-select__value">Босния и Герцеговина</span>
+                        <button type="button" class="country-select__button country-select__button--select" aria-label="Выбрать страну"></button>
                       </div>
-                      <div class="counry-select__flag-wrapper">
-                        <img class="counry-select__flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии" width="35px"
+                      <div class="country-select__flag-wrapper">
+                        <img class="country-select__flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии" width="35px"
                       height="24px">
                       </div>
-                      <button type="button" class="counry-select__button counry-select__button--delete" aria-label="Удалить страну"></button>
+                      <button type="button" class="country-select__button country-select__button--delete" aria-label="Удалить страну"></button>
                     </div>
 
-                    <div class="counry-select">
-                        <div class="counry-select__value-wrapper">
-                          <span class="counry-select__value">Чехословакия</span>
-                          <button type="button" class="counry-select__button counry-select__button--select" aria-label="Выбрать страну"></button>
+                    <div class="country-select">
+                        <div class="country-select__value-wrapper">
+                          <span class="country-select__value">Чехословакия</span>
+                          <button type="button" class="country-select__button country-select__button--select" aria-label="Выбрать страну"></button>
                         </div>
-                        <div class="counry-select__flag-wrapper">
-                          <img class="counry-select__flag" src="./img/flag-czech.svg" alt="Флаг Чехословакии" width="35px"
+                        <div class="country-select__flag-wrapper">
+                          <img class="country-select__flag" src="./img/flag-czech.svg" alt="Флаг Чехословакии" width="35px"
                         height="24px">
                         </div>
-                        <button type="button" class="counry-select__button counry-select__button--delete" aria-label="Удалить страну"></button>
+                        <button type="button" class="country-select__button country-select__button--delete" aria-label="Удалить страну"></button>
                       </div>
 
-                      <div class="counry-select counry-select--empty">
-                          <div class="counry-select__value-wrapper">
-                            <span class="counry-select__value">Выберите страну</span>
-                            <button type="button" class="counry-select__button counry-select__button--select" aria-label="Выбрать страну"></button>
+                      <div class="country-select country-select--empty">
+                          <div class="country-select__value-wrapper">
+                            <span class="country-select__value">Выберите страну</span>
+                            <button type="button" class="country-select__button country-select__button--select" aria-label="Выбрать страну"></button>
                           </div>
-                          <button type="button" class="counry-select__button counry-select__button--delete" aria-label="Удалить страну"></button>
+                          <div class="country-select__letters country-selector">
+                              <ul class="country-selector">
+                                  <li class="country-selector__item country-selector__item--selected">
+                                    А
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Австралия</li>
+                                      <li class="country-selector__country-name">Австрия</li>
+                                      <li class="country-selector__country-name">Азербайджан</li>
+                                      <li class="country-selector__country-name">Албания</li>
+                                      <li class="country-selector__country-name">Алжир</li>
+                                      <li class="country-selector__country-name">Ангола</li>
+                                      <li class="country-selector__country-name">Андорра</li>
+                                      <li class="country-selector__country-name">Антигуа и Барбуда</li>
+                                      <li class="country-selector__country-name">Аргентина</li>
+                                      <li class="country-selector__country-name">Армения</li>
+                                      <li class="country-selector__country-name">Афганистан</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Б
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Багамские Острова</li>
+                                      <li class="country-selector__country-name">Бангладеш</li>
+                                      <li class="country-selector__country-name">Барбадос</li>
+                                      <li class="country-selector__country-name">Бахрейн</li>
+                                      <li class="country-selector__country-name">Белоруссия</li>
+                                      <li class="country-selector__country-name">Белиз</li>
+                                      <li class="country-selector__country-name">Бельгия</li>
+                                      <li class="country-selector__country-name">Бенин</li>
+                                      <li class="country-selector__country-name">Болгария</li>
+                                      <li class="country-selector__country-name">Боливия</li>
+                                      <li class="country-selector__country-name">
+                                        Босния и Герцеговина
+                                      </li>
+                                      <li class="country-selector__country-name">Ботсвана</li>
+                                      <li class="country-selector__country-name">Бразилия</li>
+                                      <li class="country-selector__country-name">Бруней</li>
+                                      <li class="country-selector__country-name">Буркина-Фасо</li>
+                                      <li class="country-selector__country-name">Бурунди</li>
+                                      <li class="country-selector__country-name">Бутан</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    В
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Вануату</li>
+                                      <li class="country-selector__country-name">Великобритания</li>
+                                      <li class="country-selector__country-name">Венгрия</li>
+                                      <li class="country-selector__country-name">Венесуэла</li>
+                                      <li class="country-selector__country-name">Восточный Тимор</li>
+                                      <li class="country-selector__country-name">Вьетнам</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Г
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Габон</li>
+                                      <li class="country-selector__country-name">Гаити</li>
+                                      <li class="country-selector__country-name">Гайана</li>
+                                      <li class="country-selector__country-name">Гамбия</li>
+                                      <li class="country-selector__country-name">Гана</li>
+                                      <li class="country-selector__country-name">Гватемала</li>
+                                      <li class="country-selector__country-name">Гвинея</li>
+                                      <li class="country-selector__country-name">Гвинея-Бисау</li>
+                                      <li class="country-selector__country-name">Германия</li>
+                                      <li class="country-selector__country-name">Гондурас</li>
+                                      <li class="country-selector__country-name">Гренада</li>
+                                      <li class="country-selector__country-name">Греция</li>
+                                      <li class="country-selector__country-name">Грузия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Д
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Дания</li>
+                                      <li class="country-selector__country-name">Джибути</li>
+                                      <li class="country-selector__country-name">Доминика</li>
+                                      <li class="country-selector__country-name">Доминикана</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Е
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Египет</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item ">
+                                    Е
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ж
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    З
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Замбия</li>
+                                      <li class="country-selector__country-name">Зимбабве</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    И
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Израиль</li>
+                                      <li class="country-selector__country-name">Индия</li>
+                                      <li class="country-selector__country-name">Индонезия</li>
+                                      <li class="country-selector__country-name">Иордания</li>
+                                      <li class="country-selector__country-name">Ирак</li>
+                                      <li class="country-selector__country-name">Иран</li>
+                                      <li class="country-selector__country-name">Ирландия</li>
+                                      <li class="country-selector__country-name">Исландия</li>
+                                      <li class="country-selector__country-name">Испания</li>
+                                      <li class="country-selector__country-name">Италия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Й
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    К
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Кабо-Верде</li>
+                                      <li class="country-selector__country-name">Казахстан</li>
+                                      <li class="country-selector__country-name">Камбоджа</li>
+                                      <li class="country-selector__country-name">Камерун</li>
+                                      <li class="country-selector__country-name">Канада</li>
+                                      <li class="country-selector__country-name">Катар</li>
+                                      <li class="country-selector__country-name">Кения</li>
+                                      <li class="country-selector__country-name">Кипр</li>
+                                      <li class="country-selector__country-name">Киргизия</li>
+                                      <li class="country-selector__country-name">Кирибати</li>
+                                      <li class="country-selector__country-name">Китай</li>
+                                      <li class="country-selector__country-name">Колумбия</li>
+                                      <li class="country-selector__country-name">Коморы</li>
+                                      <li class="country-selector__country-name">Конго</li>
+                                      <li class="country-selector__country-name">КНДР</li>
+                                      <li class="country-selector__country-name">Республика Корея</li>
+                                      <li class="country-selector__country-name">Коста-Рика</li>
+                                      <li class="country-selector__country-name">Кот-д’Ивуар</li>
+                                      <li class="country-selector__country-name">Куба</li>
+                                      <li class="country-selector__country-name">Кувейт</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Л
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Лаос</li>
+                                      <li class="country-selector__country-name">Латвия</li>
+                                      <li class="country-selector__country-name">Лесото</li>
+                                      <li class="country-selector__country-name">Либерия</li>
+                                      <li class="country-selector__country-name">Ливан</li>
+                                      <li class="country-selector__country-name">Ливия</li>
+                                      <li class="country-selector__country-name">Литва</li>
+                                      <li class="country-selector__country-name">Лихтенштейн</li>
+                                      <li class="country-selector__country-name">Люксембург</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    М
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Маврикий</li>
+                                      <li class="country-selector__country-name">Мавритания</li>
+                                      <li class="country-selector__country-name">Мадагаскар</li>
+                                      <li class="country-selector__country-name">Малави</li>
+                                      <li class="country-selector__country-name">Малайзия</li>
+                                      <li class="country-selector__country-name">Мали</li>
+                                      <li class="country-selector__country-name">Мальдивы</li>
+                                      <li class="country-selector__country-name">Мальта</li>
+                                      <li class="country-selector__country-name">Марокко</li>
+                                      <li class="country-selector__country-name">Маршалловы Острова</li>
+                                      <li class="country-selector__country-name">Мексика</li>
+                                      <li class="country-selector__country-name">Мозамбик</li>
+                                      <li class="country-selector__country-name">Молдавия</li>
+                                      <li class="country-selector__country-name">Монако</li>
+                                      <li class="country-selector__country-name">Монголия</li>
+                                      <li class="country-selector__country-name">Мьянма</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Н
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Намибия</li>
+                                      <li class="country-selector__country-name">Науру</li>
+                                      <li class="country-selector__country-name">Непал</li>
+                                      <li class="country-selector__country-name">Нигер</li>
+                                      <li class="country-selector__country-name">Нигерия</li>
+                                      <li class="country-selector__country-name">Нидерланды</li>
+                                      <li class="country-selector__country-name">Никарагуа</li>
+                                      <li class="country-selector__country-name">Новая Зеландия</li>
+                                      <li class="country-selector__country-name">Норвегия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    О
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">ОАЭ</li>
+                                      <li class="country-selector__country-name">Оман</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    П
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Пакистан</li>
+                                      <li class="country-selector__country-name">Палау</li>
+                                      <li class="country-selector__country-name">Панама</li>
+                                      <li class="country-selector__country-name">
+                                        Папуа — Новая Гвинея
+                                      </li>
+                                      <li class="country-selector__country-name">Парагвай</li>
+                                      <li class="country-selector__country-name">Перу</li>
+                                      <li class="country-selector__country-name">Польша</li>
+                                      <li class="country-selector__country-name">Португалия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    P
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    С
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Сальвадор</li>
+                                      <li class="country-selector__country-name">Самоа</li>
+                                      <li class="country-selector__country-name">Сан-Марино</li>
+                                      <li class="country-selector__country-name">
+                                        Сан-Томе и Принсипи
+                                      </li>
+                                      <li class="country-selector__country-name">Саудовская Аравия</li>
+                                      <li class="country-selector__country-name">Северная Македония</li>
+                                      <li class="country-selector__country-name">Сейшелы</li>
+                                      <li class="country-selector__country-name">Сенегал</li>
+                                      <li class="country-selector__country-name">Сент-Люсия</li>
+                                      <li class="country-selector__country-name">Сербия</li>
+                                      <li class="country-selector__country-name">Сингапур</li>
+                                      <li class="country-selector__country-name">Сирия</li>
+                                      <li class="country-selector__country-name">Словакия</li>
+                                      <li class="country-selector__country-name">Словения</li>
+                                      <li class="country-selector__country-name">США</li>
+                                      <li class="country-selector__country-name">Сомали</li>
+                                      <li class="country-selector__country-name">Судан</li>
+                                      <li class="country-selector__country-name">Суринам</li>
+                                      <li class="country-selector__country-name">Сьерра-Леоне</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Т
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Таджикистан</li>
+                                      <li class="country-selector__country-name">Таиланд</li>
+                                      <li class="country-selector__country-name">Танзания</li>
+                                      <li class="country-selector__country-name">Того</li>
+                                      <li class="country-selector__country-name">Тонга</li>
+                                      <li class="country-selector__country-name">Тринидад и Тобаго</li>
+                                      <li class="country-selector__country-name">Тувалу</li>
+                                      <li class="country-selector__country-name">Тунис</li>
+                                      <li class="country-selector__country-name">Туркмения</li>
+                                      <li class="country-selector__country-name">Турция</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    У
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Уганда</li>
+                                      <li class="country-selector__country-name">Узбекистан</li>
+                                      <li class="country-selector__country-name">Украина</li>
+                                      <li class="country-selector__country-name">Уругвай</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ф
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Фиджи</li>
+                                      <li class="country-selector__country-name">Филиппины</li>
+                                      <li class="country-selector__country-name">Финляндия</li>
+                                      <li class="country-selector__country-name">Франция</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Х
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Хорватия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ц
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ч
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Чад</li>
+                                      <li class="country-selector__country-name">Черногория</li>
+                                      <li class="country-selector__country-name">Чехия</li>
+                                      <li class="country-selector__country-name">Чили</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ш
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Швейцария</li>
+                                      <li class="country-selector__country-name">Швеция</li>
+                                      <li class="country-selector__country-name">Шри-Ланка</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Щ
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Э
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Эквадор</li>
+                                      <li class="country-selector__country-name">Эритрея</li>
+                                      <li class="country-selector__country-name">Эсватини</li>
+                                      <li class="country-selector__country-name">Эстония</li>
+                                      <li class="country-selector__country-name">Эфиопия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ю
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">ЮАР</li>
+                                      <li class="country-selector__country-name">Южный Судан</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Я
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Ямайка</li>
+                                      <li class="country-selector__country-name">Япония</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                          </div>
+                          <button type="button" class="country-select__button country-select__button--delete" aria-label="Удалить страну"></button>
                         </div>
 
                       <button class="trip-form__add-country">Добавить страну</button>
