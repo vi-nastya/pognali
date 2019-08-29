@@ -11,6 +11,10 @@
   height: 33px;
   background-repeat: no-repeat;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &--circle-blue {
     background-color: $main-background-color;
     border-radius: 50%;
@@ -18,6 +22,62 @@
     @media (min-width: $tablet-width) {
       background-color: transparent;
     }
+  }
+
+  &:hover::before {
+    display: block;
+    position: absolute;
+    content: "";
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 19px;
+    padding-bottom: 18px;
+    background-color: #101d41;
+    bottom: -75px;
+
+    color: $additional-background-color;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &--plane {
+    &:hover::before {
+      content: "Авиаперелет";
+      left: -60px;
+    }
+  }
+
+  &--bus {
+    &:hover::before {
+      content: "Автотранспорт";
+      left: -70px;
+    }
+  }
+
+  &--bike {
+    &:hover::before {
+      content: "Велосипед";
+      left: -45px;
+    }
+  }
+
+  &--hike {
+    &:hover::before {
+      content: "Пешком";
+      left: -35px;
+    }
+  }
+
+  &:hover::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-bottom: 16px solid #101d41;
+    bottom: -17px;
+    left: 0;
   }
 
   &--button {
@@ -44,29 +104,15 @@
       height: 43px;
     }
   }
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 8px;
-    left: 8px;
-    background-repeat: no-repeat;
-    opacity: 0.15;
 
-    @media (min-width: $tablet-width) {
-      top: 11px;
-      left: 11px;
-    }
-  }
+.transport-item__icon {
+  opacity: 0.15;
 
-  &--selected::before {
-    opacity: 1;
-  }
-
-  &--plane::before {
+  &--plane {
     width: 14px;
     height: 16px;
-    background-image: url("../img/plane.svg");
 
     @media (min-width: $tablet-width) {
       width: 19px;
@@ -74,23 +120,19 @@
     }
   }
 
-  &--bus::before {
+  &--bus {
     width: 13px;
     height: 16px;
-    left: 10px;
-    background-image: url("../img/bus.svg");
 
     @media (min-width: $tablet-width) {
-      width: 17px;
+      width: 19px;
       height: 21px;
-      left: 13px;
     }
   }
 
-  &--bike::before {
+  &--bike {
     width: 19px;
     height: 17px;
-    background-image: url("../img/bike.svg");
 
     @media (min-width: $tablet-width) {
       width: 24px;
@@ -98,14 +140,17 @@
     }
   }
 
-  &--hike::before {
+  &--hike {
     width: 15px;
     height: 17px;
-    background-image: url("../img/run.svg");
 
     @media (min-width: $tablet-width) {
       width: 20px;
       height: 21px;
     }
   }
+}
+
+.transport-item--selected .transport-item__icon {
+  opacity: 1;
 }
