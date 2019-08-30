@@ -44,6 +44,8 @@
   border-left: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     width: 52px;
     height: 68px;
