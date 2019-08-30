@@ -107,14 +107,6 @@
     color: #ff5c23;
   }
 
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: inline;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     width: 77px;
 
@@ -131,7 +123,13 @@
   }
 }
 
+.calendar__letter-tablet {
+  display: none;
 
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
 
 /* DATES */
 .calendar__dates {
