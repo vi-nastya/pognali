@@ -65,7 +65,12 @@
     border-radius: 4px;
   }
 
+  &:hover,
+  &:focus {
+    border-color: #959bb2;
+  }
 
+  &:active,
   &--selected {
     background-color: #cbced9;
 
@@ -119,8 +124,19 @@
   text-align: left;
   color: #444444;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
   }
 }
