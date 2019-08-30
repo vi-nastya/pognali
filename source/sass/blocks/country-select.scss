@@ -212,6 +212,19 @@
 
 .country-select--empty .country-select__value-wrapper {
   width: 220px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: #959bb2;
+  }
+
+  &:active {
+    color: $additional-background-color;
+    background-color: #1d2e5b;
+    border-color: #1d2e5b;
+    border-radius: 4px 4px 0 0;
+  }
 
   @media (min-width: $tablet-width) {
     width: 370px;
@@ -220,6 +233,12 @@
   @media (min-width: $desktop-width) {
     width: 730px;
   }
+}
+
+.country-select--empty .country-select__value-wrapper:active .country-select__button--select {
+  background-image: url("../../img/close-white.svg");
+  background-color: transparent;
+  background-size: 17px 17px;
 }
 
 .country-select--empty .country-select__value-wrapper::before {
