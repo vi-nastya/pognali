@@ -236,17 +236,17 @@
             <div class="profile__photo-wrapper">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
-                <img class="profile__photo" src="./img/demin-tablet@1x.jpg" width="99" height="99" />
+                <img class="profile__photo" src="./img/demin-tablet@1x.jpg" width="99" height="99" alt="Аватар"/>
               </picture>
             </div>
           </div>
           <a class="button-accent profile__button"><span class="profile__text-hide-desktop">Сменить </span>фото</a>
           <div class="profile__tags">
-              <h3 class="profile__field-name profile__tags-description">Тэги</h2>
+              <h3 class="profile__field-name profile__tags-description">Тэги</h3>
                 <textarea class="profile__tags-input" rows=3 placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
             </div>
           <div class="profile__transport">
-            <h3 class="profile__field-name profile__transport-description">Транспорт</h2>
+            <h3 class="profile__field-name profile__transport-description">Транспорт</h3>
             <ul class="profile__transport-list transport-list">
                     <li
                       class="transport-item  transport-item--button transport-item--selected transport-item--plane"
@@ -404,8 +404,8 @@
                         <button type="button" class="country-select__button country-select__button--select" aria-label="Выбрать страну"></button>
                       </div>
                       <div class="country-select__flag-wrapper">
-                        <img class="country-select__flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии" width="35px"
-                      height="24px">
+                        <img class="country-select__flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии" width="35"
+                      height="24">
                       </div>
                       <button type="button" class="country-select__button country-select__button--delete" aria-label="Удалить страну"></button>
                     </div>
@@ -416,8 +416,8 @@
                           <button type="button" class="country-select__button country-select__button--select" aria-label="Выбрать страну"></button>
                         </div>
                         <div class="country-select__flag-wrapper">
-                          <img class="country-select__flag" src="./img/flag-czech.svg" alt="Флаг Чехословакии" width="35px"
-                        height="24px">
+                          <img class="country-select__flag" src="./img/flag-czech.svg" alt="Флаг Чехии" width="35"
+                        height="24">
                         </div>
                         <button type="button" class="country-select__button country-select__button--delete" aria-label="Удалить страну"></button>
                       </div>
@@ -792,10 +792,10 @@
                       <fieldset class="trip-form__field">
                           <label class="trip-form__country-label" for="bosnia-notes">
                             <span>Босния и Герцеговина</span>
-                              <div class="trip-form__country-flag-wrapper">
-                                  <img class="trip-form__country-flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины" width="35px"
-                                height="24px">
-                                </div>
+                              <span class="trip-form__country-flag-wrapper">
+                                  <img class="trip-form__country-flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины" width="35"
+                                height="24">
+                              </span>
                           </label>
                           <textarea class="trip-form__contry-plans" name="bosnia-notes" id="bosnia-notes" rows=8 placeholder="План действий"></textarea>
                         </fieldset>
@@ -803,10 +803,10 @@
                         <fieldset class="trip-form__field">
                             <label class="trip-form__country-label" for="czech-notes">
                                 <span>Чехословакия</span>
-                                <div class="trip-form__country-flag-wrapper">
-                                    <img class="trip-form__country-flag" src="./img/flag-czech.svg" alt="Флаг Чехословакии" width="35px"
-                                  height="24px">
-                                  </div>
+                                <span class="trip-form__country-flag-wrapper">
+                                    <img class="trip-form__country-flag" src="./img/flag-czech.svg" alt="Флаг Чехословакии" width="35"
+                                  height="24">
+                                </span>
                             </label>
                             <textarea class="trip-form__contry-plans" name="czech-notes" id="czech-notes" rows=8 placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                         </fieldset>
