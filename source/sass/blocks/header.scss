@@ -74,26 +74,6 @@
   }
 }
 
-// .header--white .header__logo-image--blue,
-// .header--nojs .header__logo-image--blue {
-//   display: block;
-
-//   @media (min-width: $desktop-width) {
-//     display: none;
-//   }
-// }
-
-// .header--white .header__logo-image--blue,
-// .header--nojs .header__logo-image--white {
-//   display: none;
-
-//   @media (min-width: $desktop-width) {
-//     display: block;
-//   }
-// }
-
-
-
 .header__contacts {
   @include reset-list;
 
@@ -118,7 +98,6 @@
   justify-content: center;
 
   &--phone {
-
     &:hover,
     &:focus,
     &:active {
@@ -136,7 +115,6 @@
   }
 
   &--email {
-
     &:hover,
     &:focus,
     &:active {
@@ -177,8 +155,6 @@
     display: none;
   }
 }
-
-
 
 .header__nav-toggle-icon {
   fill: $additional-background-color;

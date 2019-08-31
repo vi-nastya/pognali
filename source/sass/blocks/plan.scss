@@ -3,6 +3,7 @@
   padding-top: 40px;
   position: relative;
   z-index: 10;
+
   @include section-width;
 
   background-color: $main-background-color;
@@ -65,7 +66,7 @@
     height: 99px;
     top: -20px;
     right: -130px;
-    background-image: url('../../img/rates@1x.png');
+    background-image: url("../img/rates@1x.png");
     background-repeat: no-repeat;
     background-size: 99px 99px;
 
@@ -157,7 +158,6 @@
   &--business::before {
     display: none;
   }
-
 }
 
 .plan__feature-item {
@@ -307,7 +307,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       top: 0;
       left: 0;
       width: 67px;
@@ -318,12 +318,12 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: 20px;
       left: 27px;
       width: 17px;
       height: 21px;
-      background-image: url('../../img/business.svg');
+      background-image: url("../img/business.svg");
       background-repeat: no-repeat;
     }
   }
@@ -365,7 +365,6 @@
 
     border-radius: 0 0 30px 30px;
   }
-
 }
 
 .plan-business {
@@ -379,7 +378,7 @@
 
   border-radius: 20px;
 
-  box-shadow: 0px 20px 50px 0 rgba(29, 46, 91, 0.1);
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
 
   @media (min-width: $tablet-width) {
     min-width: 688px;
@@ -396,5 +395,4 @@
   &--closed {
     display: none;
   }
-
 }
