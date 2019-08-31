@@ -70,6 +70,10 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
   }
+
+  &--transport {
+    flex-direction: row;
+  }
 }
 
 .companion-filters__field {
@@ -133,6 +137,20 @@
   }
 }
 
+.companion-filters__transport-label {
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
 input[type="checkbox"]:checked + .companion-filters__label::after {
   position: absolute;
   content: "";
@@ -143,6 +161,7 @@ input[type="checkbox"]:checked + .companion-filters__label::after {
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
 }
+
 
 .companion-filters__button {
   width: 230px;

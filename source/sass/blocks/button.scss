@@ -114,6 +114,8 @@
   text-align: center;
   background-color: $accent-color;
 
+  border: none;
+
   cursor: pointer;
 
   &--wide {
@@ -131,6 +133,12 @@
   &:hover,
   &:focus {
     background-color: $accent-minor-color;
+  }
+
+  &--white:hover,
+  &--white:focus {
+    background-color: $additional-background-color;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
   }
 
   &:active {

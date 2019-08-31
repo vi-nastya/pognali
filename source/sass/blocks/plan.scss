@@ -1,99 +1,280 @@
 .plan {
+  margin-top: -40px;
+  padding-top: 40px;
   position: relative;
+  z-index: 10;
 
   @include section-width;
-  background: linear-gradient(to top, $additional-hover-color 40px, $main-background-color 40px);
 
-  &::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background-color: $main-background-color;
-    border-radius: 0 0 40px 40px;
-  }
+  background-color: $main-background-color;
+  border-radius: 0 0 40px 40px;
 }
-
 
 .plan__inner {
   padding: 50px 82px 26px 35px;
   border-radius: 0 0 40px 40px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   @media (min-width: $tablet-width) {
-    padding: 130px 150px 40px 60px;
+    padding: 130px 40px 40px 40px;
+
+    background-position: 550px 350px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 150px 40px 185px 100px;
+    padding: 150px 130px 185px 130px;
+
+    background-size: 198px 198px;
+    background-position: 900px 450px;
   }
 }
 
 .plan__header {
+  position: relative;
+  width: 105px;
   margin-bottom: 55px;
 
   @include section-header-text;
 
+  &--business {
+    width: 100%;
+    text-align: center;
+
+    &::before {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    width: 100%;
+    text-align: center;
     margin-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 150px;
   }
+
+  &::before {
+    position: absolute;
+    z-index: 10;
+    content: "";
+    width: 99px;
+    height: 99px;
+    top: -20px;
+    right: -130px;
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-size: 99px 99px;
+
+    @media (min-width: $tablet-width) {
+      top: 330px;
+      right: 135px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 200px;
+      right: 105px;
+      background-size: 198px 198px;
+      width: 198px;
+      height: 198px;
+    }
+  }
 }
 
 .plan__features {
   @include reset-list;
+  position: relative;
   display: flex;
   flex-direction: column;
+
+  counter-reset: plan;
+
+  &::after {
+    position: absolute;
+    z-index: 20;
+    content: "";
+    width: 200px;
+    height: 1px;
+    left: 0;
+    bottom: 14px;
+    background-color: #444444;
+    opacity: 0.05;
+
+    @media (min-width: $tablet-width) {
+      left: 92px;
+      width: 562px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 813px;
+    }
+  }
+
+  &--business::after {
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      right: -40px;
+      top: -45px;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: -180px;
+      top: -45px;
+      width: 444px;
+      height: 300px;
+    }
+  }
+
+  &--business {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 92px;
+      padding-right: 91px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 59px;
+      padding-right: 59px;
+    }
+  }
+
+  &--business::before {
+    display: none;
+  }
 }
 
 .plan__feature-item {
-  display: inline-block;
-  vertical-align: center;
+  position: relative;
   width: 185px;
 
   @include main-text;
   color: $main-text-color;
+
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 562px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    margin-bottom: 32px;
+    padding-left: 92px;
     font-size: $main-fsize-tablet;
+
+    &--business {
+      padding-left: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 812px;
+  }
+
+  &::before {
+    position: absolute;
+    counter-increment: plan;
+    content: counter(plan);
+    right: -40px;
+    top: -2px;
+    width: 34px;
+    height: 34px;
+
+    background-color: #ffa530;
+    border-radius: 50%;
+
+    font-family: $main-ffamily;
+    font-size: 16px;
+    line-height: 0.88;
+    text-align: center;
+    padding-top: 12px;
+    color: $additional-background-color;
+
+    @media (min-width: $tablet-width) {
+      width: 67px;
+      height: 67px;
+      padding-top: 22px;
+      right: auto;
+      left: 0;
+      top: -15px;
+
+      font-size: 28px;
+      line-height: 1;
+    }
+  }
+
+  &:nth-of-type(2)::before {
+    background-color: #ffbd30;
+  }
+
+  &:nth-of-type(3)::before {
+    background-color: #ffd74b;
+  }
+
+  &::after {
+    position: absolute;
+    z-index: 20;
+    content: "";
+    width: 200px;
+    height: 1px;
+    left: 0;
+    top: -14px;
+    background-color: #444444;
+    opacity: 0.05;
+
+    @media (min-width: $tablet-width) {
+      width: 562px;
+      left: 92px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 813px;
+    }
+  }
+
+  &--business::before {
+    display: none;
+  }
+
+  &--business::after {
+    left: 0;
   }
 }
 
 .plan__button {
   background: none;
   padding: 0;
+  border: none;
+
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: $detail-fsize-tablet;
   }
 }
 
-.plan__button:hover,
-.plan__button:focus {
-  background: none;
-  opacity: 0.7;
-}
-
-.plan__button:active {
-  background: none;
-  opacity: 0.3;
-}
-
 .plan__button-business {
   width: 220px;
   margin: 0 auto;
+  margin-top: 45px;
+
   font-family: $main-ffamily;
   font-size: $main-fsize-mobile;
   font-weight: $bold;
@@ -103,7 +284,6 @@
   letter-spacing: normal;
   text-align: left;
   color: $additional-hover-color;
-  border: none;
 
   &:hover,
   &:focus {
@@ -120,7 +300,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
     width: 355px;
-    margin-top: 60px;
+    margin: 0;
+    margin-top: 79px;
     margin-bottom: 30px;
     font-size: $detail-fsize-tablet;
 
@@ -142,25 +323,76 @@
       left: 27px;
       width: 17px;
       height: 21px;
-      background-image: url("../../img/business.svg");
+      background-image: url("../img/business.svg");
       background-repeat: no-repeat;
     }
   }
 }
 
 .plan__button-close {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  border-radius: 0 0 20px 20px;
+
   font-family: $main-ffamily;
   font-size: $main-fsize-mobile;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
+  font-weight: $bold;
   line-height: 1.5;
-  letter-spacing: normal;
   text-align: center;
   text-transform: uppercase;
   color: $additional-accent-color;
+
+  background-color: #f3f4f8;
+
+  &:hover,
+  &:focus {
+    background-color: #edeff6;
+    color: $additional-accent-color;
+    opacity: 1;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+    background-color: #edeff6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 44px;
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 1;
+
+    border-radius: 0 0 30px 30px;
+  }
 }
 
-.plan--business {
-  display: none;
+.plan-business {
+  min-width: 270px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  background-color: $additional-background-color;
+  padding-top: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+
+  @media (min-width: $tablet-width) {
+    min-width: 688px;
+    padding-top: 50px;
+
+    border-radius: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 750px;
+    padding-top: 50px;
+  }
+
+  &--closed {
+    display: none;
+  }
 }

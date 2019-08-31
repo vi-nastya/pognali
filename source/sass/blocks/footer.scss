@@ -66,17 +66,35 @@
   background-color: $additional-hover-color;
 }
 
-.footer__social-link:hover svg,
-.footer__social-link:focus svg {
+.footer__social-icon {
+  margin: 0 auto;
+  fill: $accent-title-color;
+
+  @media (min-width: $tablet-width) {
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--vkontakte {
+      width: 31px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.footer__social-link:hover .footer__social-icon,
+.footer__social-link:focus .footer__social-icon {
   fill: $additional-background-color;
 }
 
-.footer__social-link:active svg {
+.footer__social-link:active .footer__social-icon {
   opacity: 0.3;
-}
-
-.footer__social-link svg {
-  margin: 0 auto;
 }
 
 

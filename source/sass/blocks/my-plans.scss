@@ -1,5 +1,4 @@
 .my-plans {
-  margin-top: 300px; // REMOVE
   position: relative;
   background-color: #dfe3f0;
   color: #1d2e5b;
@@ -47,6 +46,8 @@
   @include reset-list;
   display: flex;
   flex-direction: column;
+
+  counter-reset: plans;
 }
 
 .my-plans__item {
@@ -60,6 +61,13 @@
 
   @media (min-width: $tablet-width) {
     min-width: 618px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    align-items: center;
   }
 }
 
@@ -68,16 +76,75 @@
 }
 
 .my-plans__countries {
+  position: relative;
+
+  width: 100%;
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-left: 17px;
 
   font-size: 16px;
   font-weight: $bold;
   line-height: 1;
 
+  &::before {
+    position: absolute;
+    counter-increment: plans;
+    content: counter(plans) ".";
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 13px;
+    font-family: $main-ffamily;
+    font-size: 16px;
+    font-weight: $medium;
+    line-height: 1;
+    letter-spacing: 1.6px;
+  }
+
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    padding-left: 0;
     font-size: 24px;
     line-height: 2.08;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 619px;
+      height: 1px;
+      left: -25px;
+      bottom: -34px;
+      background-color: #dfe3f0;
+    }
+
+    &::before {
+      left: auto;
+      right: 0;
+      top: 10px;
+      font-size: 20px;
+      line-height: 0.9;
+      letter-spacing: 2px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    margin-right: auto;
+    padding-left: 52px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      right: auto;
+      left: 0;
+      top: 16px;
+    }
   }
 }
 
@@ -93,6 +160,21 @@
     font-size: 20px;
     line-height: 0.9;
     letter-spacing: 2px;
+  }
+}
+
+.my-plans__dates {
+  @media (min-width: $tablet-width) {
+    width: 190px;
+  }
+}
+
+.my-plans__companions {
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 10px;
   }
 }
 
@@ -116,8 +198,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-left: auto;
+
     font-size: 20px;
     line-height: 0.9;
     letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
   }
 }

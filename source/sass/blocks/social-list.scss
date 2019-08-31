@@ -1,7 +1,53 @@
 .social-list {
   @include reset-list;
 
+  display: flex;
+  align-items: center;
+
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.social-list__item {
+  margin-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 33px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.social-list__icon {
+  fill: #cccccc;
+
+  @media (min-width: $tablet-width) {
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--vkontakte {
+      width: 31px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: #1d2e5b;
+}
+
+.social-list__link:active .social-list__icon {
+  opacity: 0.5;
 }

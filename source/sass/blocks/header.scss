@@ -2,6 +2,24 @@
   @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      background-color: $additional-hover-color;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: $additional-accent-color;
+    }
+  }
+
+  &--nojs {
+    background-color: $additional-background-color;
+  }
+
+  &--white {
+    background-color: $additional-background-color;
+  }
 }
 
 .header__inner {
@@ -28,30 +46,110 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: nowrap;
   }
 }
 
-.header__top-login {
-  display: none;
+.header__logo {
+  width: 100px;
+  height: 19px;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    width: 200px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 2px;
+      right: -115px;
+      top: 28px;
+      background-color: $additional-background-color;
+    }
   }
 }
 
-.header__nav-toggle {
-  width: 25px;
-  margin-left: auto;
-  background-color: $additional-accent-color;
-  border: none;
+.header__contacts {
+  @include reset-list;
+
+  display: none;
 
   @media (min-width: $tablet-width) {
-    margin-left: 170px;
+    display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.header__contact {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--phone {
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #f26926;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      background-color: #ff8d30;
+    }
+  }
+
+  &--email {
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ff8d30;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      background-color: #ffbd30;
+    }
+  }
+
+  &--login {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}
+
+.header__contact:active .header__contact-icon {
+  opacity: 0.3;
+}
+
+.header__nav-toggle {
+  width: 60px;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -62,10 +160,30 @@
   fill: $additional-background-color;
 }
 
-.header--fix .header__nav-toggle-icon {
+.header--white .header__nav-toggle-icon {
   fill: #cccccc;
 }
 
+// hide hamburger icon and show "close" icon when menu is open
+.header--open-menu .header__nav-toggle-icon {
+  display: none;
+}
+
+.header--open-menu .header__nav-toggle {
+  background-image: url("../../img/close.svg");
+  background-size: 19px 19px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .header__nav {
-  //display: none;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.header--open-menu .header__nav {
+  display: flex;
 }

@@ -2,13 +2,15 @@
   z-index: 10;
   width: $mobile-width;
   min-height: 75px;
+  margin-left: -25px;
 
   padding-top: 50px;
   padding-bottom: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   background-color: $additional-background-color;
 
@@ -30,16 +32,6 @@
     margin-left: 145px;
 
     background-color: $additional-accent-color;
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 60px;
-      height: 2px;
-      left: -105px;
-      top: 65px;
-      background-color: $additional-background-color;
-    }
   }
 }
 
@@ -74,6 +66,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    display: none;
+  }
+}
+
+.nav-menu__social-list {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
   }
 }

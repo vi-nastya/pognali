@@ -27,6 +27,16 @@
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
   }
+
+  &--large {
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+
+    @media (min-width: $desktop-width) {
+      color: $additional-background-color;
+    }
+  }
 }
 
 .level__description {
@@ -35,6 +45,12 @@
   font-size: 14px;
   font-weight: $normal;
   line-height: 1;
+}
+
+.level--large .level__description {
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
 }
 
 .level--white .level__description {
@@ -93,5 +109,22 @@
 
   &--50::after {
     transform: rotate(-45deg);
+  }
+}
+
+
+.level--large .level__number {
+  font-size: 38px;
+  font-weight: $bold;
+  line-height: 1;
+
+  &::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  &::after {
+    width: 100px;
+    height: 100px;
   }
 }

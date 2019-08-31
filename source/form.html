@@ -7,152 +7,261 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="inner header__inner">
-        <div class="header__top">
-          <a href="index.html" class="header__logo">
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="img/logo-desktop-white@1x.png"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="img/logo-tablet-white@1x.png"
-              />
-              <img
-                src="img/logo-mobile-white@1x.png"
-                class="header__logo-image"
-                alt="Погнали?"
-              />
-            </picture>
-          </a>
+      <svg style="display:none">
+          <symbol id="icon-menu" viewBox="0 0 25 11">
+              <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
+      <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
+          </symbol>
 
-          <button class="header__nav-toggle" type="button">
-            <svg
-              width="25px"
-              height="11px"
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 25 11"
-              style="enable-background:new 0 0 25 11;"
-              xml:space="preserve"
-            >
-              <g>
-                <path
-                  d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"
-                />
-                <path
-                  d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"
-                />
-              </g>
-            </svg>
-          </button>
+          <symbol id="icon-contacts-mail" viewBox="0 0 36 26">
+              <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+      c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+      L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+      c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+          </symbol>
 
-          <a class="button header__top-login" href="login.html">
-            Авторизация
-          </a>
-        </div>
+          <symbol id="icon-contacts-phone" viewBox="0 0 36 36">
+              <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+      c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+      c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+      c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+      M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+      c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+      c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+      c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+          </symbol>
 
-        <nav class="header__nav nav-menu">
-          <div class="nav-menu__wrapper">
-            <button
-              class="button button--close nav-menu__close"
-              aria-label="Закрыть меню"
-            >
-              Закрыть
-            </button>
-            <ul class="nav-menu__site-list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="service.html">О сервисе</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Направления</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Попутчики</a>
-              </li>
-            </ul>
+          <symbol id="icon-phone" viewBox="0 0 18 18">
+                      <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
+                        c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
+                        C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
+                        c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
+                  <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
+                  <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
+                  <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
+          </symbol>
 
-            <ul class="nav-menu__list user-list">
-              <li class="user-list__item">
-                <a
-                  class="button user-list__login button__login"
-                  href="login.html"
-                >
-                  Авторизация
-                </a>
-              </li>
-            </ul>
+        <symbol id="icon-facebook" viewBox="0 0 11 21">
+            <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
+            V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
+            C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
+        </symbol>
 
-            <ul class="nav-menu__contacts contacts-list">
-              <li class="contacts-list__item">
-                <a>8 800 555-86-28</a>
-              </li>
-              <li class="contacts-list__item">
-                <a>mail@htmlacademy.ru</a>
-              </li>
-            </ul>
+        <symbol id="icon-vk" viewBox="0 0 30 15.8">
+            <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+        c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
+        c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
+        c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
+        C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
+        c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
+        c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
+        c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
+        c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
+        c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
+        c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
+        c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
+        c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
+        c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
+        C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
+        C18.4,10.9,18.5,10.9,18.6,10.9z"/>
+        </symbol>
 
-            <ul class="nav-menu__social social-list">
-              <li class="social-list__item">
-                <a
-                  class="social-list__link social-list__link--facebook"
-                  href="https://www.facebook.com/htmlacademy"
-                >
-                  Мы в Фейсбуке
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a
-                  class="social-list__link social-list__link--vkontakte"
-                  href="https://vk.com/htmlacademy"
-                >
-                  Мы в Вконтакте
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a
-                  class="social-list__link social-list__link--instagram"
-                  href="https://www.instagram.com/htmlacademy"
-                >
-                  Мы в Инстаграме
-                </a>
-              </li>
-            </ul>
+        <symbol id="icon-instagram" viewBox="0 0 23 23">
+            <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
+      M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
+    <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
+      c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
+    <circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+        </symbol>
+      </svg>
+
+        <header class="header header--nojs header--open-menu">
+          <div class="inner header__inner">
+              <a href="index.html" class="header__logo">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x"
+                  />
+                  <img
+                    src="img/logo-mobile-white@1x.png"
+                    class="header__logo-image header__logo-image--white"
+                    alt="Погнали?"
+                  />
+                </picture>
+                <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x"
+                    />
+                    <img
+                      src="img/logo-mobile-blue@1x.png"
+                      class="header__logo-image header__logo-image--blue visually-hidden"
+                      alt="Погнали?"
+                    />
+                  </picture>
+              </a>
+
+              <button class="header__nav-toggle" type="button" aria-label="Скрыть или показать меню">
+                  <svg role="img" class="header__nav-toggle-icon" width="25" height="11">
+                      <use xlink:href="#icon-menu"></use>
+                    </svg>
+              </button>
+
+              <ul class="header__contacts">
+                <li>
+            <a class="header__contact header__contact--phone">
+              <svg role="img" class="header__contact-icon" width="18" height="18">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class=" header__contact header__contact--email">
+                <svg role="img" class="header__contact-icon" width="18" height="13">
+                    <use xlink:href="#icon-contacts-mail"></use>
+                  </svg>
+            </a>
+          </li>
+          <li>
+              <a
+                    class="button-accent header__contact--login"
+                      href="login.html"
+                    >
+                      Авторизация
+                    </a>
+                  </li>
+                  </ul>
+
+
+
+            <nav class="header__nav nav-menu header__nav--open">
+                <ul class="nav-menu__site-list site-list">
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="service.html">О сервисе</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="form.html">Направления</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a class="site-list__link" href="catalog.html">Попутчики</a>
+                  </li>
+                </ul>
+
+                <ul class="nav-menu__contacts-list contacts-list">
+                    <li class="contacts-list__item contacts-list__item--login">
+                        <a
+                          class="button-accent contacts-list__login"
+                          href="login.html"
+                        >
+                          Авторизация
+                        </a>
+                      </li>
+                  <li class="contacts-list__item contacts-list__item--phone">
+                      <div class="contacts-list__icon-wrapper">
+                    <svg role="img" class="contacts-list__icon contacts-list__icon--phone" width="18" height="18">
+                          <use xlink:href="#icon-contacts-phone"></use>
+                        </svg>
+                      </div>
+                    <a>8 800 555-86-28</a>
+                  </li>
+                  <li class="contacts-list__item contacts-list__item--email">
+                    <div class="contacts-list__icon-wrapper">
+                      <svg role="img" class="contacts-list__icon contacts-list__icon--mail" width="18" height="13">
+                          <use xlink:href="#icon-contacts-mail"></use>
+                        </svg>
+                      </div>
+                    <a>mail@htmlacademy.ru</a>
+                  </li>
+                </ul>
+
+                <ul class="social-list nav-menu__social-list">
+                  <li class="social-list__item">
+                    <a
+                      class="social-list__link"
+                      href="https://www.facebook.com/htmlacademy"  aria-label="Наш фейсбук"
+                    >
+                      <svg role="img" class="social-list__icon social-list__icon--facebook" width="11" height="21">
+                        <use xlink:href="#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      class="social-list__link"
+                      href="https://vk.com/htmlacademy"  aria-label="Наша группа Вконтакте"
+                    >
+                      <svg role="img" class="social-list__icon social-list__icon--vkontakte" width="23" height="12">
+                          <use xlink:href="#icon-vk"></use>
+                        </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a
+                      class="social-list__link"
+                      href="https://www.instagram.com/htmlacademy" aria-label="Наш инстаграм"
+                    >
+                      <svg role="img" class="social-list__icon social-list__icon--instagram" width="18" height="18">
+                          <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
           </div>
-        </nav>
-      </div>
-    </header>
+        </header>
 
     <main class="page-main">
       <section class="navigation">
         <div class="inner navigation__inner">
           <h1 class="navigation__title">Направления</h1>
-          <a href="index.html" class="navigation__back-link">На главную</a>
         </div>
       </section>
 
       <section class="profile">
         <div class="profile__inner inner">
-          <div class="profile__level level"></div>
-          <div class="profile__photo-wrapper">
-            <picture>
-              <img width="99px" height="99px" />
-            </picture>
+          <div class="profile__level-photo-wrapper">
+              <span class="profile__level level level--large">
+                  <span class="level__number level__number--80">80</span>
+                  <span class="level__description">level</span>
+                </span>
+            <div class="profile__photo-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                <img class="profile__photo" src="./img/demin-tablet@1x.jpg" width="99" height="99" alt="Аватар"/>
+              </picture>
+            </div>
           </div>
-          <a class="button-accent profile__button">Сменить фото</a>
+          <a class="button-accent profile__button"><span class="profile__text-hide-desktop">Сменить </span>фото</a>
           <div class="profile__tags">
-              <h3 class="profile__tags-description">Тэги</h2>
-              <p class="profile__tags-list"></p>
+              <h3 class="profile__field-name profile__tags-description">Тэги</h3>
+                <textarea class="profile__tags-input" rows=3 placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
             </div>
           <div class="profile__transport">
-            <h3 class="profile__transport-description">Транспорт</h2>
-            <ul class="profile__transport-list"></ul>
+            <h3 class="profile__field-name profile__transport-description">Транспорт</h3>
+            <ul class="profile__transport-list transport-list">
+                    <li
+                      class="transport-item  transport-item--button transport-item--selected transport-item--plane"
+                      aria-label="plane"
+                    ></li>
+                    <li class="transport-item transport-item--button transport-item--bus" aria-label="bus"></li>
+                    <li
+                      class="transport-item transport-item--button transport-item--bike"
+                      aria-label="bike"
+                    ></li>
+                    <li
+                      class="transport-item transport-item--button transport-item--hike"
+                      aria-label="hike"
+                    ></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -182,7 +291,7 @@
             <h2 class="add-plan__header">Добавить план</h2>
             <form class="add-plan__form trip-form">
               <ol class="trip-form__steps">
-                <li class="trip-form__step">
+                <li class="trip-form__step  trip-form__step--dates">
                   <h3 class="trip-form__step-name">Шаг 1. <br class="trip-form__break">Даты пребывания</h3>
                   <p class="trip-form__step-description">Укажите предпочтительное количество попутчиков, которых
                       вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
@@ -193,84 +302,92 @@
                   </ul>
 
                   <fieldset class="trip-form__field">
-                    <label class="trip-form__label" for="companions">Ищу попутчиков:</label>
-                    <input type="number" name="companions" id="companions">
+                    <label class="trip-form__label" for="companions"><span class="trip-form__label-name">Ищу попутчиков:</span><span class="trip-form__label-units">Чел.</span></label>
+                    <div class="trip-form__input-wrapper">
+                    <button class="trip-form__button trip-form__button--decrease" aria-label="Уменьшить"></button>
+                    <input class="trip-form__input" type="number" name="companions" id="companions" value=2>
+                    <button class="trip-form__button trip-form__button--increase" aria-label="Увеличить"></button>
+                  </div>
                   </fieldset>
 
                   <fieldset class="trip-form__field">
-                      <label class="trip-form__label" for="days">Длительность:</label>
-                      <input type="number" name="days" id="days">
+                      <label class="trip-form__label" for="companions"><span class="trip-form__label-name">Длительность:</span><span class="trip-form__label-units">Дн.</span></label>
+                      <div class="trip-form__input-wrapper">
+                      <button class="trip-form__button trip-form__button--decrease" aria-label="Уменьшить"></button>
+                      <input class="trip-form__input" type="number" name="days" id="days" value=2>
+                      <button class="trip-form__button trip-form__button--increase" aria-label="Увеличить"></button>
+                      </div>
                   </fieldset>
 
                   <fieldset class="trip-form__field">
-                      <input type="checkbox" name="kids" id="kids">
-                      <label class="trip-form__label trip-form__label--kids" for="kids">Можно с детьми:</label>
+                      <input class="trip-form__checkbox" type="checkbox" checked name="kids" id="kids">
+                      <label class="trip-form__label trip-form__label--kids" for="kids">Можно с детьми</label>
                   </fieldset>
-
-                  <div class="trip-form__month-wrapper">
-                  <button class="trip-form__month-button trip-form__month-button--prev" aria-label="Предыдущий месяц"></button>
-                  <p class="trip-form__month">Март 2019</p>
-                  <button class="trip-form__month-button trip-form__month-button--next" aria-label="Следующий месяц"></button>
-</div>
-
-                  <ul class="trip-form__days">
-                    <li class="trip-form__day">П<span class="trip-form__day--tablet">н</span></li>
-                    <li class="trip-form__day">В<span class="trip-form__day--tablet">т</span></li>
-                    <li class="trip-form__day">С<span class="trip-form__day--tablet">р</span></li>
-                    <li class="trip-form__day">Ч<span class="trip-form__day--tablet">т</span></li>
-                    <li class="trip-form__day">П<span class="trip-form__day--tablet">т</span></li>
-                    <li class="trip-form__day trip-form__day--weekend">С<span class="trip-form__day--tablet">б</span></li>
-                    <li class="trip-form__day trip-form__day--weekend">В<span class="trip-form__day--tablet">с</span></li>
+                  <div class="trip-form__calendar calendar">
+                  <div class="trip-form__month calendar__month-wrapper">
+                    <button class="calendar__month-button calendar__month-button--prev" aria-label="Предыдущий месяц"></button>
+                    <p class="calendar__month">Март 2019</p>
+                    <button class="calendar__month-button calendar__month-button--next" aria-label="Следующий месяц"></button>
+                  </div>
+                  <ul class="trip-form__days calendar__days">
+                    <li class="calendar__day">П<span class="calendar__letter-tablet">н</span></li>
+                    <li class="calendar__day">В<span class="calendar__letter-tablet">т</span></li>
+                    <li class="calendar__day">С<span class="calendar__letter-tablet">р</span></li>
+                    <li class="calendar__day">Ч<span class="calendar__letter-tablet">т</span></li>
+                    <li class="calendar__day">П<span class="calendar__letter-tablet">т</span></li>
+                    <li class="calendar__day calendar__day--weekend">С<span class="calendar__letter-tablet">б</span></li>
+                    <li class="calendar__day calendar__day--weekend">В<span class="calendar__letter-tablet">с</span></li>
                   </ul>
-                  <ul class="trip-form__dates">
-                    <li class="trip-form__date trip-form__date--disabled">23</li>
-                    <li class="trip-form__date trip-form__date--disabled">24</li>
-                    <li class="trip-form__date trip-form__date--disabled">25</li>
-                    <li class="trip-form__date trip-form__date--disabled">26</li>
-                    <li class="trip-form__date trip-form__date--disabled">27</li>
-                    <li class="trip-form__date trip-form__date--disabled">28</li>
-                    <li class="trip-form__date trip-form__date--disabled">1</li>
-                    <li class="trip-form__date trip-form__date--disabled">2</li>
-                    <li class="trip-form__date trip-form__date--disabled">3</li>
-                    <li class="trip-form__date trip-form__date--disabled">4</li>
-                    <li class="trip-form__date trip-form__date--disabled">5</li>
-                    <li class="trip-form__date trip-form__date--disabled">6</li>
-                    <li class="trip-form__date trip-form__date--disabled">7</li>
-                    <li class="trip-form__date trip-form__date--disabled">8</li>
-                    <li class="trip-form__date trip-form__date--disabled">9</li>
-                    <li class="trip-form__date trip-form__date--disabled">10</li>
-                    <li class="trip-form__date trip-form__date--disabled">11</li>
-                    <li class="trip-form__date trip-form__date--disabled">12</li>
-                    <li class="trip-form__date trip-form__date--disabled">13</li>
-                    <li class="trip-form__date trip-form__date--disabled">14</li>
-                    <li class="trip-form__date trip-form__date--disabled">15</li>
-                    <li class="trip-form__date trip-form__date--disabled">16</li>
-                    <li class="trip-form__date trip-form__date--disabled">17</li>
-                    <li class="trip-form__date trip-form__date--disabled">18</li>
-                    <li class="trip-form__date trip-form__date--disabled">19</li>
-                    <li class="trip-form__date trip-form__date--disabled">20</li>
-                    <li class="trip-form__date trip-form__date--disabled">21</li>
-                    <li class="trip-form__date trip-form__date--disabled">22</li>
-                    <li class="trip-form__date trip-form__date--disabled">23</li>
-                    <li class="trip-form__date trip-form__date--disabled">24</li>
-                    <li class="trip-form__date trip-form__date--disabled">25</li>
-                    <li class="trip-form__date trip-form__date--selected">26</li>
-                    <li class="trip-form__date trip-form__date--selected">27</li>
-                    <li class="trip-form__date trip-form__date--selected">28</li>
-                    <li class="trip-form__date">29</li>
-                    <li class="trip-form__date">30</li>
-                    <li class="trip-form__date">31</li>
-                    <li class="trip-form__date">1</li>
-                    <li class="trip-form__date">2</li>
-                    <li class="trip-form__date">3</li>
-                    <li class="trip-form__date">4</li>
-                    <li class="trip-form__date">5</li>
+                  <ul class="trip-form__dates calendar__dates">
+                    <li class="calendar__date calendar__date--disabled">23</li>
+                    <li class="calendar__date calendar__date--disabled">24</li>
+                    <li class="calendar__date calendar__date--disabled">25</li>
+                    <li class="calendar__date calendar__date--disabled">26</li>
+                    <li class="calendar__date calendar__date--disabled">27</li>
+                    <li class="calendar__date calendar__date--disabled">28</li>
+                    <li class="calendar__date calendar__date--disabled">1</li>
+                    <li class="calendar__date calendar__date--disabled">2</li>
+                    <li class="calendar__date calendar__date--disabled">3</li>
+                    <li class="calendar__date calendar__date--disabled">4</li>
+                    <li class="calendar__date calendar__date--disabled">5</li>
+                    <li class="calendar__date calendar__date--disabled">6</li>
+                    <li class="calendar__date calendar__date--disabled">7</li>
+                    <li class="calendar__date calendar__date--disabled">8</li>
+                    <li class="calendar__date calendar__date--disabled">9</li>
+                    <li class="calendar__date calendar__date--disabled">10</li>
+                    <li class="calendar__date calendar__date--disabled">11</li>
+                    <li class="calendar__date calendar__date--disabled">12</li>
+                    <li class="calendar__date calendar__date--disabled">13</li>
+                    <li class="calendar__date calendar__date--disabled">14</li>
+                    <li class="calendar__date calendar__date--disabled">15</li>
+                    <li class="calendar__date calendar__date--disabled">16</li>
+                    <li class="calendar__date calendar__date--disabled">17</li>
+                    <li class="calendar__date calendar__date--disabled">18</li>
+                    <li class="calendar__date calendar__date--disabled">19</li>
+                    <li class="calendar__date calendar__date--disabled">20</li>
+                    <li class="calendar__date calendar__date--disabled">21</li>
+                    <li class="calendar__date calendar__date--disabled">22</li>
+                    <li class="calendar__date calendar__date--disabled">23</li>
+                    <li class="calendar__date calendar__date--disabled">24</li>
+                    <li class="calendar__date calendar__date--disabled">25</li>
+                    <li class="calendar__date calendar__date--selected">26</li>
+                    <li class="calendar__date calendar__date--selected">27</li>
+                    <li class="calendar__date calendar__date--selected">28</li>
+                    <li class="calendar__date">29</li>
+                    <li class="calendar__date">30</li>
+                    <li class="calendar__date">31</li>
+                    <li class="calendar__date">1</li>
+                    <li class="calendar__date">2</li>
+                    <li class="calendar__date">3</li>
+                    <li class="calendar__date">4</li>
+                    <li class="calendar__date">5</li>
                   </ul>
+                  </div>
 
                   <a href="#" class="button-main trip-form__link-next">Следующий шаг</a>
                 </li>
 
-                <li class="trip-form__step">
+                <li class="trip-form__step trip-form__step--route">
                     <h3 class="trip-form__step-name">Шаг 2. <br class="trip-form__break">Маршрут</h3>
                     <p class="trip-form__step-description">Укажите страны, которые вы хотели по посетить.
                         Это может быть одна или сразу несколько.</p>
@@ -280,46 +397,389 @@
                       <li class="trip-form__navigation-item">Развлечения</li>
                     </ul>
 
-
-                    <div class="trip-form__select">
-                      <div class="trip-form__select-value-wrapper">
-                        <span class="trip-form__select-value">Босния и Герцеговина</span>
-                        <button type="button" class="trip-form__select-button trip-form__select-button--select" aria-label="Выбрать страну"></button>
+                    <div class="trip-form__selects country-selects">
+                    <div class="country-select">
+                      <div class="country-select__value-wrapper">
+                        <span class="country-select__value">Босния и Герцеговина</span>
+                        <button type="button" class="country-select__button country-select__button--select" aria-label="Выбрать страну"></button>
                       </div>
-                      <div class="trip-form__select-flag-wrapper">
-                        <img class="trip-form__select-flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии" width="35px"
-                      height="24px">
+                      <div class="country-select__flag-wrapper">
+                        <img class="country-select__flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии" width="35"
+                      height="24">
                       </div>
-                      <button type="button" class="trip-form__select-button trip-form__select-button--delete" aria-label="Удалить страну"></button>
+                      <button type="button" class="country-select__button country-select__button--delete" aria-label="Удалить страну"></button>
                     </div>
 
-                    <div class="trip-form__select">
-                        <div class="trip-form__select-value-wrapper">
-                          <span class="trip-form__select-value">Чехословакия</span>
-                          <button type="button" class="trip-form__select-button trip-form__select-button--select" aria-label="Выбрать страну"></button>
+                    <div class="country-select">
+                        <div class="country-select__value-wrapper">
+                          <span class="country-select__value">Чехословакия</span>
+                          <button type="button" class="country-select__button country-select__button--select" aria-label="Выбрать страну"></button>
                         </div>
-                        <div class="trip-form__select-flag-wrapper">
-                          <img class="trip-form__select-flag" src="./img/flag-czech.svg" alt="Флаг Чехословакии" width="35px"
-                        height="24px">
+                        <div class="country-select__flag-wrapper">
+                          <img class="country-select__flag" src="./img/flag-czech.svg" alt="Флаг Чехии" width="35"
+                        height="24">
                         </div>
-                        <button type="button" class="trip-form__select-button trip-form__select-button--delete" aria-label="Удалить страну"></button>
+                        <button type="button" class="country-select__button country-select__button--delete" aria-label="Удалить страну"></button>
                       </div>
 
-                      <div class="trip-form__select trip-form__select--empty">
-                          <div class="trip-form__select-value-wrapper">
-                            <span class="trip-form__select-value">Выберите страну</span>
-                            <button type="button" class="trip-form__select-button trip-form__select-button--select" aria-label="Выбрать страну"></button>
+                      <div class="country-select country-select--empty">
+                          <div class="country-select__value-wrapper">
+                            <span class="country-select__value">Выберите страну</span>
+                            <button type="button" class="country-select__button country-select__button--select" aria-label="Выбрать страну"></button>
                           </div>
-                          <button type="button" class="trip-form__select-button trip-form__select-button--delete" aria-label="Удалить страну"></button>
+                          <div class="country-select__letters country-selector">
+                              <ul class="country-selector">
+                                  <li class="country-selector__item country-selector__item--selected">
+                                    А
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Австралия</li>
+                                      <li class="country-selector__country-name">Австрия</li>
+                                      <li class="country-selector__country-name">Азербайджан</li>
+                                      <li class="country-selector__country-name">Албания</li>
+                                      <li class="country-selector__country-name">Алжир</li>
+                                      <li class="country-selector__country-name">Ангола</li>
+                                      <li class="country-selector__country-name">Андорра</li>
+                                      <li class="country-selector__country-name">Антигуа и Барбуда</li>
+                                      <li class="country-selector__country-name">Аргентина</li>
+                                      <li class="country-selector__country-name">Армения</li>
+                                      <li class="country-selector__country-name">Афганистан</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Б
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Багамские Острова</li>
+                                      <li class="country-selector__country-name">Бангладеш</li>
+                                      <li class="country-selector__country-name">Барбадос</li>
+                                      <li class="country-selector__country-name">Бахрейн</li>
+                                      <li class="country-selector__country-name">Белоруссия</li>
+                                      <li class="country-selector__country-name">Белиз</li>
+                                      <li class="country-selector__country-name">Бельгия</li>
+                                      <li class="country-selector__country-name">Бенин</li>
+                                      <li class="country-selector__country-name">Болгария</li>
+                                      <li class="country-selector__country-name">Боливия</li>
+                                      <li class="country-selector__country-name">
+                                        Босния и Герцеговина
+                                      </li>
+                                      <li class="country-selector__country-name">Ботсвана</li>
+                                      <li class="country-selector__country-name">Бразилия</li>
+                                      <li class="country-selector__country-name">Бруней</li>
+                                      <li class="country-selector__country-name">Буркина-Фасо</li>
+                                      <li class="country-selector__country-name">Бурунди</li>
+                                      <li class="country-selector__country-name">Бутан</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    В
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Вануату</li>
+                                      <li class="country-selector__country-name">Великобритания</li>
+                                      <li class="country-selector__country-name">Венгрия</li>
+                                      <li class="country-selector__country-name">Венесуэла</li>
+                                      <li class="country-selector__country-name">Восточный Тимор</li>
+                                      <li class="country-selector__country-name">Вьетнам</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Г
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Габон</li>
+                                      <li class="country-selector__country-name">Гаити</li>
+                                      <li class="country-selector__country-name">Гайана</li>
+                                      <li class="country-selector__country-name">Гамбия</li>
+                                      <li class="country-selector__country-name">Гана</li>
+                                      <li class="country-selector__country-name">Гватемала</li>
+                                      <li class="country-selector__country-name">Гвинея</li>
+                                      <li class="country-selector__country-name">Гвинея-Бисау</li>
+                                      <li class="country-selector__country-name">Германия</li>
+                                      <li class="country-selector__country-name">Гондурас</li>
+                                      <li class="country-selector__country-name">Гренада</li>
+                                      <li class="country-selector__country-name">Греция</li>
+                                      <li class="country-selector__country-name">Грузия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Д
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Дания</li>
+                                      <li class="country-selector__country-name">Джибути</li>
+                                      <li class="country-selector__country-name">Доминика</li>
+                                      <li class="country-selector__country-name">Доминикана</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Е
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Египет</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item ">
+                                    Е
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ж
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    З
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Замбия</li>
+                                      <li class="country-selector__country-name">Зимбабве</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    И
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Израиль</li>
+                                      <li class="country-selector__country-name">Индия</li>
+                                      <li class="country-selector__country-name">Индонезия</li>
+                                      <li class="country-selector__country-name">Иордания</li>
+                                      <li class="country-selector__country-name">Ирак</li>
+                                      <li class="country-selector__country-name">Иран</li>
+                                      <li class="country-selector__country-name">Ирландия</li>
+                                      <li class="country-selector__country-name">Исландия</li>
+                                      <li class="country-selector__country-name">Испания</li>
+                                      <li class="country-selector__country-name">Италия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Й
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    К
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Кабо-Верде</li>
+                                      <li class="country-selector__country-name">Казахстан</li>
+                                      <li class="country-selector__country-name">Камбоджа</li>
+                                      <li class="country-selector__country-name">Камерун</li>
+                                      <li class="country-selector__country-name">Канада</li>
+                                      <li class="country-selector__country-name">Катар</li>
+                                      <li class="country-selector__country-name">Кения</li>
+                                      <li class="country-selector__country-name">Кипр</li>
+                                      <li class="country-selector__country-name">Киргизия</li>
+                                      <li class="country-selector__country-name">Кирибати</li>
+                                      <li class="country-selector__country-name">Китай</li>
+                                      <li class="country-selector__country-name">Колумбия</li>
+                                      <li class="country-selector__country-name">Коморы</li>
+                                      <li class="country-selector__country-name">Конго</li>
+                                      <li class="country-selector__country-name">КНДР</li>
+                                      <li class="country-selector__country-name">Республика Корея</li>
+                                      <li class="country-selector__country-name">Коста-Рика</li>
+                                      <li class="country-selector__country-name">Кот-д’Ивуар</li>
+                                      <li class="country-selector__country-name">Куба</li>
+                                      <li class="country-selector__country-name">Кувейт</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Л
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Лаос</li>
+                                      <li class="country-selector__country-name">Латвия</li>
+                                      <li class="country-selector__country-name">Лесото</li>
+                                      <li class="country-selector__country-name">Либерия</li>
+                                      <li class="country-selector__country-name">Ливан</li>
+                                      <li class="country-selector__country-name">Ливия</li>
+                                      <li class="country-selector__country-name">Литва</li>
+                                      <li class="country-selector__country-name">Лихтенштейн</li>
+                                      <li class="country-selector__country-name">Люксембург</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    М
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Маврикий</li>
+                                      <li class="country-selector__country-name">Мавритания</li>
+                                      <li class="country-selector__country-name">Мадагаскар</li>
+                                      <li class="country-selector__country-name">Малави</li>
+                                      <li class="country-selector__country-name">Малайзия</li>
+                                      <li class="country-selector__country-name">Мали</li>
+                                      <li class="country-selector__country-name">Мальдивы</li>
+                                      <li class="country-selector__country-name">Мальта</li>
+                                      <li class="country-selector__country-name">Марокко</li>
+                                      <li class="country-selector__country-name">Маршалловы Острова</li>
+                                      <li class="country-selector__country-name">Мексика</li>
+                                      <li class="country-selector__country-name">Мозамбик</li>
+                                      <li class="country-selector__country-name">Молдавия</li>
+                                      <li class="country-selector__country-name">Монако</li>
+                                      <li class="country-selector__country-name">Монголия</li>
+                                      <li class="country-selector__country-name">Мьянма</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Н
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Намибия</li>
+                                      <li class="country-selector__country-name">Науру</li>
+                                      <li class="country-selector__country-name">Непал</li>
+                                      <li class="country-selector__country-name">Нигер</li>
+                                      <li class="country-selector__country-name">Нигерия</li>
+                                      <li class="country-selector__country-name">Нидерланды</li>
+                                      <li class="country-selector__country-name">Никарагуа</li>
+                                      <li class="country-selector__country-name">Новая Зеландия</li>
+                                      <li class="country-selector__country-name">Норвегия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    О
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">ОАЭ</li>
+                                      <li class="country-selector__country-name">Оман</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    П
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Пакистан</li>
+                                      <li class="country-selector__country-name">Палау</li>
+                                      <li class="country-selector__country-name">Панама</li>
+                                      <li class="country-selector__country-name">
+                                        Папуа — Новая Гвинея
+                                      </li>
+                                      <li class="country-selector__country-name">Парагвай</li>
+                                      <li class="country-selector__country-name">Перу</li>
+                                      <li class="country-selector__country-name">Польша</li>
+                                      <li class="country-selector__country-name">Португалия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    P
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    С
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Сальвадор</li>
+                                      <li class="country-selector__country-name">Самоа</li>
+                                      <li class="country-selector__country-name">Сан-Марино</li>
+                                      <li class="country-selector__country-name">
+                                        Сан-Томе и Принсипи
+                                      </li>
+                                      <li class="country-selector__country-name">Саудовская Аравия</li>
+                                      <li class="country-selector__country-name">Северная Македония</li>
+                                      <li class="country-selector__country-name">Сейшелы</li>
+                                      <li class="country-selector__country-name">Сенегал</li>
+                                      <li class="country-selector__country-name">Сент-Люсия</li>
+                                      <li class="country-selector__country-name">Сербия</li>
+                                      <li class="country-selector__country-name">Сингапур</li>
+                                      <li class="country-selector__country-name">Сирия</li>
+                                      <li class="country-selector__country-name">Словакия</li>
+                                      <li class="country-selector__country-name">Словения</li>
+                                      <li class="country-selector__country-name">США</li>
+                                      <li class="country-selector__country-name">Сомали</li>
+                                      <li class="country-selector__country-name">Судан</li>
+                                      <li class="country-selector__country-name">Суринам</li>
+                                      <li class="country-selector__country-name">Сьерра-Леоне</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Т
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Таджикистан</li>
+                                      <li class="country-selector__country-name">Таиланд</li>
+                                      <li class="country-selector__country-name">Танзания</li>
+                                      <li class="country-selector__country-name">Того</li>
+                                      <li class="country-selector__country-name">Тонга</li>
+                                      <li class="country-selector__country-name">Тринидад и Тобаго</li>
+                                      <li class="country-selector__country-name">Тувалу</li>
+                                      <li class="country-selector__country-name">Тунис</li>
+                                      <li class="country-selector__country-name">Туркмения</li>
+                                      <li class="country-selector__country-name">Турция</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    У
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Уганда</li>
+                                      <li class="country-selector__country-name">Узбекистан</li>
+                                      <li class="country-selector__country-name">Украина</li>
+                                      <li class="country-selector__country-name">Уругвай</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ф
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Фиджи</li>
+                                      <li class="country-selector__country-name">Филиппины</li>
+                                      <li class="country-selector__country-name">Финляндия</li>
+                                      <li class="country-selector__country-name">Франция</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Х
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Хорватия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ц
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ч
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Чад</li>
+                                      <li class="country-selector__country-name">Черногория</li>
+                                      <li class="country-selector__country-name">Чехия</li>
+                                      <li class="country-selector__country-name">Чили</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ш
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Швейцария</li>
+                                      <li class="country-selector__country-name">Швеция</li>
+                                      <li class="country-selector__country-name">Шри-Ланка</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Щ
+                                    <ul class="country-selector__country-list">
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Э
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Эквадор</li>
+                                      <li class="country-selector__country-name">Эритрея</li>
+                                      <li class="country-selector__country-name">Эсватини</li>
+                                      <li class="country-selector__country-name">Эстония</li>
+                                      <li class="country-selector__country-name">Эфиопия</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Ю
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">ЮАР</li>
+                                      <li class="country-selector__country-name">Южный Судан</li>
+                                    </ul>
+                                  </li>
+                                  <li class="country-selector__item">
+                                    Я
+                                    <ul class="country-selector__country-list">
+                                      <li class="country-selector__country-name">Ямайка</li>
+                                      <li class="country-selector__country-name">Япония</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                          </div>
+                          <button type="button" class="country-select__button country-select__button--delete" aria-label="Удалить страну"></button>
                         </div>
 
                       <button class="trip-form__add-country">Добавить страну</button>
+                      </div>
 
                     <a href="#" class="button-main trip-form__link-next">Следующий шаг</a>
                     <a href="#" class="trip-form__link-back">На шаг назад</a>
                   </li>
 
-                  <li class="trip-form__step">
+                  <li class="trip-form__step trip-form__step--plans">
                       <h3 class="trip-form__step-name">Шаг 3. <br class="trip-form__break">Развлечения</h3>
                       <p class="trip-form__step-description">Наконец, расскажите о своих планах времяпровождения.
                           Можно писать в свободной форме и ставить тэги.</p>
@@ -332,10 +792,10 @@
                       <fieldset class="trip-form__field">
                           <label class="trip-form__country-label" for="bosnia-notes">
                             <span>Босния и Герцеговина</span>
-                              <div class="trip-form__country-flag-wrapper">
-                                  <img class="trip-form__country-flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины" width="35px"
-                                height="24px">
-                                </div>
+                              <span class="trip-form__country-flag-wrapper">
+                                  <img class="trip-form__country-flag" src="./img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины" width="35"
+                                height="24">
+                              </span>
                           </label>
                           <textarea class="trip-form__contry-plans" name="bosnia-notes" id="bosnia-notes" rows=8 placeholder="План действий"></textarea>
                         </fieldset>
@@ -343,12 +803,12 @@
                         <fieldset class="trip-form__field">
                             <label class="trip-form__country-label" for="czech-notes">
                                 <span>Чехословакия</span>
-                                <div class="trip-form__country-flag-wrapper">
-                                    <img class="trip-form__country-flag" src="./img/flag-czech.svg" alt="Флаг Чехословакии" width="35px"
-                                  height="24px">
-                                  </div>
+                                <span class="trip-form__country-flag-wrapper">
+                                    <img class="trip-form__country-flag" src="./img/flag-czech.svg" alt="Флаг Чехословакии" width="35"
+                                  height="24">
+                                </span>
                             </label>
-                            <textarea class="trip-form__contry-plans" name="czech-notes" id="czech-notes" rows=8 placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+                            <textarea class="trip-form__contry-plans" name="czech-notes" id="czech-notes" rows=8 placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                         </fieldset>
 
                       <a href="#" class="button-main trip-form__link-next">Следующий шаг</a>
@@ -363,156 +823,73 @@
     </main>
 
     <footer class="footer">
-      <div class="inner footer__inner">
-        <a href="index.html" class="footer__logo">
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="img/logo-desktop-blue@1x.png"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="img/logo-tablet-blue@1x.png"
-            />
-            <img
-              class="footer__logo"
-              src="img/logo-mobile-blue@1x.png"
-              alt="Погнали"
-            />
-          </picture>
-        </a>
-        <ul class="footer__social-list social">
-          <li class="footer__social-item social__item">
-            <a
-              class="footer__social-link social__link social__link--facebook"
-              href="https://www.facebook.com/htmlacademy"
-            >
-              <svg
-                width="14px"
-                height="28px"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 11 21"
-                style="enable-background:new 0 0 11 21;"
-                xml:space="preserve"
-              >
-                <g>
-                  <path
-                    d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
-              V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
-              C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"
-                  />
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item social__item">
-            <a
-              class="footer__social-link social__link social__link--vkontakte"
-              href="https://vk.com/htmlacademy"
-            >
-              <svg
-                width="31px"
-                height="16px"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 30 15.8"
-                style="enable-background:new 0 0 30 15.8;"
-                xml:space="preserve"
-              >
-                <g>
-                  <path
-                    d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
-              c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
-              c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
-              c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
-              C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
-              c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
-              c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
-              c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
-              c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
-              c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
-              c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
-              c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
-              c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
-              c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
-              C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
-              C18.4,10.9,18.5,10.9,18.6,10.9z"
-                  />
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item social__item">
-            <a
-              class="footer__social-link social__link social__link--instagram"
-              href="https://www.instagram.com/htmlacademy"
-            >
-              <svg
-                width="24px"
-                height="24px"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 23 23"
-                style="enable-background:new 0 0 23 23;"
-                xml:space="preserve"
-              >
-                <path
-                  class="st0"
-                  d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
-            M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"
-                />
-                <path
-                  class="st0"
-                  d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
-            c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"
-                />
-                <circle class="st0" cx="17.6" cy="5.4" r="1.3" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__copyright">
-          <b class="footer__copyright-text">Разработано</b>
-          <a
-            class="footer__copyright-link"
-            href="https://htmlacademy.ru/intensive/adaptive"
-            aria-label="HTML Academy"
-          >
-            <svg
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 27 34"
-              style="enable-background:new 0 0 27 34;"
-              xml:space="preserve"
-            >
-              <path
-                class="st0"
-                d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
-          l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8
-          l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9
-          L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z"
+        <div class="inner footer__inner">
+          <a href="index.html" class="footer__logo">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/logo-desktop-blue@1x.png"
               />
-            </svg>
+              <source
+                media="(min-width: 768px)"
+                srcset="img/logo-tablet-blue@1x.png"
+              />
+              <img
+                class="footer__logo"
+                src="img/logo-mobile-blue@1x.png"
+                alt="Погнали"
+              />
+            </picture>
           </a>
+          <ul class="footer__social-list social">
+            <li class="footer__social-item social__item">
+              <a
+                class="footer__social-link social__link social__link--facebook"
+                href="https://www.facebook.com/htmlacademy"
+              >
+              <svg role="img" class="footer__social-icon footer__social-icon--facebook" width="11" height="21">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item social__item">
+              <a
+                class="footer__social-link social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
+              >
+              <svg role="img" class="footer__social-icon footer__social-icon--vkontakte" width="23" height="12">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item social__item">
+              <a
+                class="footer__social-link social__link social__link--instagram"
+                href="https://www.instagram.com/htmlacademy"
+              >
+              <svg role="img" class="footer__social-icon footer__social-icon--instagram" width="18" height="18">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="footer__copyright">
+            <b class="footer__copyright-text">Разработано</b>
+            <a
+              class="footer__copyright-link"
+              href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"
+            >
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 27 34" style="enable-background: new 0 0 27 34;" xml:space="preserve">
+          <path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
+            l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8
+            l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9
+            L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z"/>
+          </svg>
+            </a>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+      <script src="./js/menu.js"></script>
   </body>
 </html>
