@@ -624,7 +624,14 @@
       </section>
       <section class="map">
         <div class="map__wrapper inner">
-          <img class="map__image" src="img/map-mobile@1x.jpg" width="320" height="546">
+          <picture>
+            <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" media="(min-width: 1440px)">
+            <source type="image/webp" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" media="(min-width: 768px)">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+            <source srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" media="(min-width: 1440px)">
+            <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="map__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
+          </picture>
       </div>
       </section>
     </main>

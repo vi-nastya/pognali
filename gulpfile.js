@@ -7,7 +7,7 @@ var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
 var csso = require("gulp-csso");
 var sass = require("gulp-sass");
-var terser = require("gulp-terser");
+var uglify = require("gulp-uglify");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var imagemin = require("gulp-imagemin");
@@ -22,26 +22,18 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/menu.js")
-    .pipe(sourcemap.init())
-    .pipe(gulp.dest("source/js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(terser())
-    .pipe(rename("script.min.js"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(server.stream());
-})
+  return gulp.src("source/js/**/*.js")
+    .pipe(gulp.dest("build/js"));
+});
 
 gulp.task("server", function () {
   server.init({
@@ -53,7 +45,6 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/js/*.js", gulp.series("js"));
   gulp.watch(("source/*.html"), gulp.series("html", "reload"));
 });
 
@@ -68,7 +59,7 @@ gulp.task("images", function () {
       }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
@@ -76,7 +67,7 @@ gulp.task("webp", function () {
     .pipe(webp({
       quality: 90
     }))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {
@@ -108,9 +99,11 @@ gulp.task("reload", function (done) {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
+  "webp",
+  "images",
   "css",
-  "js",
-  "html"
+  "html",
+  "js"
 ));
 
-gulp.task("start", gulp.series("clean", "copy", "css", "js", "html", "server"));
+gulp.task("start", gulp.series("clean", "copy", "webp", "images", "css", "js", "html", "server"));
