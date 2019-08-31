@@ -44,7 +44,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch(("source/*.html"), gulp.series("html", "reload"));
 });
 
@@ -79,8 +79,7 @@ gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
       "source/img/**",
-      "source/js/*.js",
-      "source/css/*.css"
+      "source/*.html"
     ], {
       base: "source"
     })
