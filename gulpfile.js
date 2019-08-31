@@ -106,4 +106,4 @@ gulp.task("build", gulp.series(
   "js"
 ));
 
-gulp.task("start", gulp.series("clean", "copy", "webp", "images", "css", "js", "html", "server"));
+gulp.task("start", gulp.series("build", "server"));
