@@ -142,7 +142,7 @@
   }
 }
 
-.found-companion__like {
+.found-companion__like-label {
   position: absolute;
   content: "";
   width: 31px;
@@ -161,16 +161,6 @@
     background-color: #e2e5f2;
   }
 
-  &--liked {
-    background-color: $error-additional-color;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: #f9d8d8;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     position: relative;
     top: auto;
@@ -180,36 +170,53 @@
   }
 }
 
-.found-companion__like-icon {
-  fill: #192144;
+.found-companion__like-image {
+  z-index: 100;
+  width: 13px;
+  height: 11px;
+  background-image: url("../img/heart.svg");
+  background-size: 13px 11px;
+  background-repeat: no-repeat;
+
   opacity: 0.3;
 
   @media (min-width: $tablet-width) {
     width: 20px;
     height: 17px;
+    background-size: 20px 17px;
   }
 }
 
-.found-companion__like:hover .found-companion__like-icon,
-.found-companion__like:focus .found-companion__like-icon {
+.found-companion__like-label:hover .found-companion__like-image,
+.found-companion__like-label:focus .found-companion__like-image {
   opacity: 0.5;
 }
 
-.found-companion__like:active .found-companion__like-icon {
+.found-companion__like-label:active .found-companion__like-image {
   opacity: 0.1;
 }
 
-.found-companion__like--liked .found-companion__like-icon {
-  fill: #f02323;
+.found-companion__like-checkbox:checked+.found-companion__like-label {
+  background-color: $error-additional-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #f9d8d8;
+  }
+}
+
+.found-companion__like-checkbox:checked+.found-companion__like-label .found-companion__like-image {
+  background-image: url("../img/heart-active.svg");
   opacity: 1;
 }
 
-.found-companion__like--liked:hover .found-companion__like-icon,
-.found-companion__like--liked:focus .found-companion__like-icon {
+.found-companion__like-checkbox:checked+.found-companion__like-label:hover .found-companion__like-image,
+.found-companion__like-checkbox:checked+.found-companion__like-label:focus .found-companion__like-image {
   opacity: 1;
 }
 
-.found-companion__like--liked:active .found-companion__like-icon {
+.found-companion__like-checkbox:checked+.found-companion__like-label:active .found-companion__like-image {
   opacity: 0.3;
 }
 
