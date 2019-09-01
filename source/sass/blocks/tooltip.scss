@@ -1,0 +1,38 @@
+.tooltip {
+  position: relative;
+
+  &:hover::before {
+    z-index: 100;
+    position: absolute;
+    display: block;
+    content: attr(aria-labelledby);
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 19px;
+    padding-bottom: 18px;
+    background-color: #101d41;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+
+    color: $additional-background-color;
+    font-size: 20px;
+    line-height: 1.2;
+
+  }
+
+  &:hover::after {
+    z-index: 100;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-bottom: 16px solid #101d41;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
