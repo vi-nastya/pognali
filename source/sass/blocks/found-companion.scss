@@ -341,6 +341,11 @@
   }
 }
 
+.found-companion__countries-item {
+  display: flex;
+  align-items: flex-start;
+}
+
 .found-companion__country-name {
   font-family: $main-ffamily;
   font-size: 15px;
