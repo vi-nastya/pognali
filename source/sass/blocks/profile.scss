@@ -164,7 +164,7 @@
   }
 }
 
-.profile__tags-input {
+.profile__tags-textarea {
   box-sizing: border-box;
   width: 270px;
   height: 89px;
@@ -180,6 +180,8 @@
   background-color: $main-background-color;
   border: 1px solid #cbced9;
   border-radius: 10px;
+
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 618px;

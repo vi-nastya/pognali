@@ -4,6 +4,7 @@
   "private": true,
   "description": "Личный проект «Погнали» от HTML Academy",
   "devDependencies": {
+    "del": "^5.1.0",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
     "del": "^5.0.0",
@@ -47,7 +48,6 @@
     "node": "8.16"
   },
   "dependencies": {
-    "bem-validate": "^1.1.2",
-    "del": "^5.1.0"
+    "bem-validate": "^1.1.2"
   }
 }

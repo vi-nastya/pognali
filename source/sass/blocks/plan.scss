@@ -368,6 +368,10 @@
 }
 
 .plan-business {
+  z-index: 100;
+  position: fixed;
+  top: 100px;
+
   min-width: 270px;
   margin: 0 auto;
   display: flex;
