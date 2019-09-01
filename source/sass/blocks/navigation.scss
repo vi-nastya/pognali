@@ -1,6 +1,6 @@
 .navigation {
   position: relative;
-  z-index: 10;
+  z-index: 3;
   @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
