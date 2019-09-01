@@ -241,7 +241,13 @@
                 </span>
             <div class="profile__photo-wrapper">
               <picture>
+                  <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x"
+                  type="image/webp">
+                <source srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
                 <img class="profile__photo" src="./img/demin-tablet@1x.jpg" width="99" height="99" alt="Аватар"/>
               </picture>
             </div>
