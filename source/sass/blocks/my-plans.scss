@@ -1,19 +1,9 @@
 .my-plans {
   position: relative;
+  margin-top: -40px;
   background-color: #dfe3f0;
+  border-radius: 40px 40px 0 0;
   color: #1d2e5b;
-
-  &::before {
-    z-index: 3;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 40px;
-    top: -40px;
-    left: 0;
-    background-color: #dfe3f0;
-    border-radius: 40px 40px 0 0;
-  }
 }
 
 .my-plans__inner {
