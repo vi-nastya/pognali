@@ -149,6 +149,7 @@
 
 .country-select__button {
   border: none;
+  background: transparent;
   cursor: pointer;
 
   &--select {
@@ -234,7 +235,15 @@
   }
 }
 
-.country-select--empty .country-select__value-wrapper:active .country-select__button--select {
+.country-select--active .country-select__value-wrapper {
+  color: $additional-background-color;
+  background-color: #1d2e5b;
+  border-color: #1d2e5b;
+  border-radius: 4px 4px 0 0;
+}
+
+.country-select--empty .country-select__value-wrapper:active .country-select__button--select,
+.country-select--active .country-select__button--select {
   background-image: url("../../img/close-white.svg");
   background-color: transparent;
   background-size: 17px 17px;
