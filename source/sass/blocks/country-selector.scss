@@ -11,10 +11,6 @@
   border-right: 1px solid $border-color;
   border-top: 1px solid $border-color;
 
-  &--hidden {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     width: 314px;
     justify-content: space-between;
@@ -28,9 +24,16 @@
     margin-bottom: 20px;
 
     border: none;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &--hidden {
+    display: none;
   }
 }
-
 
 .country-selector__item {
   width: 43px;
