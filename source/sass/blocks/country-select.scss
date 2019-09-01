@@ -268,9 +268,10 @@
 }
 
 .trip-form__add-country {
+  position: relative;
   width: 220px;
   margin-bottom: 25px;
-  background-color: #edeff6;
+
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 12px;
@@ -287,8 +288,29 @@
 
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+    background-color: #edeff6;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 14px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../../img/qty-plus.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
   @media (min-width: $tablet-width) {
-    position: relative;
     width: 370px;
     padding-top: 26px;
     padding-left: 26px;
@@ -309,6 +331,13 @@
       border: 1px solid #cbced9;
       border-radius: 50%;
     }
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      right: 26px;
+      top: 25px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -316,6 +345,13 @@
 
     &::before {
       right: -50px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      right: 27px;
+      top: 26px;
     }
   }
 }
