@@ -24,6 +24,7 @@
     padding-top: 49px;
     padding-bottom: 55px;
     margin-bottom: 40px;
+    flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
@@ -344,7 +345,7 @@
   display: none;
 }
 
-.trip-form__checkbox:checked + .trip-form__label--kids {
+.trip-form__checkbox:checked+.trip-form__label--kids {
   &::after {
     position: absolute;
     content: "";
