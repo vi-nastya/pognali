@@ -1,6 +1,6 @@
 .navigation {
   position: relative;
-
+  z-index: 10;
   @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
@@ -78,6 +78,17 @@
     color: $additional-background-color;
     line-height: 1.2;
     text-transform: uppercase;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     &::after {
       position: absolute;
