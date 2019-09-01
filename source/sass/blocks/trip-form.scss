@@ -486,6 +486,7 @@
 /* STEP 3*/
 
 .trip-form__country-label {
+  position: relative;
   width: 100%;
   margin-bottom: 15px;
   margin-top: 27px;
@@ -497,6 +498,28 @@
   font-weight: $medium;
   line-height: 1;
 
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+    left: -10px;
+    top: 8px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #1d2e5b;
+    border-radius: 1px;
+    left: -18px;
+    top: 10px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
     margin-top: 53px;
@@ -504,6 +527,11 @@
     font-size: 30px;
     font-weight: $bold;
     line-height: 0.6;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -528,7 +556,48 @@
       border-radius: 50%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: -155px;
+  }
 }
+
+.trip-form__field--country:nth-of-type(1) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 281px;
+    background-color: #1d2e5b;
+    left: -18px;
+    top: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
+
+}
+
+.trip-form__field--country:nth-of-type(1) .trip-form__country-flag-wrapper {
+  @media (min-width: $desktop-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: -35px;
+      width: 3px;
+      height: 261px;
+      background-color: #1d2e5b;
+    }
+  }
+}
+
 
 .trip-form__contry-plans {
   min-width: 220px;
