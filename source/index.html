@@ -301,12 +301,13 @@
             <li class="destinations__item country">
               <div class="country__photo-wrapper">
                 <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="img/thailand-desktop@1x.jpg"
-                  />
+                  <<source media="(min-width: 1440px)"
+                  srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x" type="image/webp">
+                <source srcset="img/thailand-mobile@1x.jpg 1x, img/thailand-mobile@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1440px)"
+                  srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
                   <img
-                    src="img/thailand-mobile@1x.jpg"
+                    src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x"
                     class="country__photo"
                     width="270"
                     height="110"
@@ -333,12 +334,13 @@
             <li class="destinations__item country">
               <div class="country__photo-wrapper">
                 <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="img/france-desktop@1x.jpg"
-                  />
+                    <source media="(min-width: 1440px)"
+                    srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x" type="image/webp">
+                  <source srcset="img/france-mobile@1x.webp 1x, img/france-mobile@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1440px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
                   <img
                     src="img/france-mobile@1x.jpg"
+                    srcset="img/france-mobile@2x.jpg 2x"
                     class="country__photo"
                     width="270"
                     height="110"
@@ -365,12 +367,13 @@
             <li class="destinations__item country">
               <div class="country__photo-wrapper">
                 <picture>
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="img/czech-desktop@1x.jpg"
-                  />
+                    <source media="(min-width: 1440px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <source srcset="img/czech-mobile@1x.webp 1x, img/czech-mobile@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 1440px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
                   <img
                     src="img/czech-mobile@1x.jpg"
+                    srcset="img/czech-mobile@2x.jpg 2x"
                     class="country__photo"
                     width="270"
                     height="110"
@@ -417,13 +420,17 @@
                 <span class="level__description">level</span>
               </span>
               <div class="companion__photo-wrapper">
+                <picture>
+                    <source srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x" type="image/webp">
                 <img
                   src="img/firsova-desktop@1x.jpg"
+                  srcset="img/firsova-desktop@2x.jpg 2x"
                   class="companion__photo"
                   width="270"
                   height="270"
                   alt="Фото попутчика"
                 />
+                </picture>
               </div>
               <div class="companion__details">
                 <ul class="companion__countries">
@@ -499,13 +506,17 @@
                 <span class="level__description">level</span>
               </span>
               <div class="companion__photo-wrapper">
+                  <picture>
+                      <source srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x" type="image/webp">
                 <img
                   src="img/demin-desktop@1x.jpg"
+                  srcset="img/demin-desktop@2x.jpg 2x"
                   class="companion__photo"
                   width="270"
                   height="270"
                   alt="Фото попутчика"
                 />
+                </picture>
               </div>
               <div class="companion__details">
                 <ul class="companion__countries">
