@@ -41,6 +41,8 @@
   border-left: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
 
+  cursor: pointer;
+
   &--selected {
     color: $additional-background-color;
     background-color: $accent-title-color;
@@ -57,6 +59,16 @@
     @media (min-width: $desktop-width) {
       display: none;
     }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+    background-color: #edeff6;
   }
 
   @media (min-width: $tablet-width) {
@@ -76,6 +88,19 @@
       background: none;
       border: none;
       opacity: 1;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      color: rgba(29, 46, 91, 0.7);
+      background-color: transparent;
+    }
+
+    &:active {
+      opacity: 1;
+      color: rgba(29, 46, 91, 0.3);
+      background-color: transparent;
     }
   }
 
@@ -140,5 +165,15 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: #1d2e5b;
+    opacity: 0.3;
   }
 }
