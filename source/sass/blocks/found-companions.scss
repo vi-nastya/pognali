@@ -10,7 +10,7 @@
 
 .found-companions__button {
   position: relative;
-  margin-top: 25px;
+  margin-top: 10px;
   padding-left: 30px;
 
   font-family: $main-ffamily;
@@ -66,8 +66,8 @@
 }
 
 .found-companions__pagination {
-  margin-top: 25px;
-  margin-bottom: 46px;
+  margin-top: 20px;
+  margin-bottom: 90px;
 
   @media (min-width: $tablet-width) {
     margin-top: 50px;
