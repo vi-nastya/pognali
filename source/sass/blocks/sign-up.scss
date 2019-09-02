@@ -28,6 +28,13 @@
     padding-bottom: 167px; // CHANGE LATER
     border-radius: 0 0 60px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 105px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 173px; // CHANGE LATER
+  }
 }
 
 .sign-up__header {
@@ -119,7 +126,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 281px;
+    min-width: 325px;
     font-size: $accent-fsize-tablet;
   }
 }

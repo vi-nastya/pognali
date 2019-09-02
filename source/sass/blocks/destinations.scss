@@ -2,7 +2,7 @@
   @include section-width;
   z-index: 12;
   margin-top: -60px;
-  padding-top: 92px;
+  padding-top: 60px;
   position: relative;
   background-color: $main-background-color;
   border-radius: 0 0 30px 30px;
@@ -34,8 +34,9 @@
     height: 750px;
     padding-top: 160px;
     flex-wrap: wrap;
+    align-content: flex-start;
 
-    background-position: right center;
+    background-position: 1090px 90px;
   }
 }
 
@@ -99,7 +100,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 62px;
   }
 }
 
