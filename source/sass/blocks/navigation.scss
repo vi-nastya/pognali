@@ -4,7 +4,11 @@
   @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .navigation__inner {
@@ -12,10 +16,10 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-top: 40px;
+  padding-top: 22px;
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     padding-top: 30px;

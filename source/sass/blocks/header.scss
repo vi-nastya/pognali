@@ -42,7 +42,8 @@
   @media (min-width: $desktop-width) {
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 10px;
+    padding-top: 35px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,7 +67,7 @@
 
     &::after {
       position: absolute;
-      content: "";
+      content: '';
       width: 60px;
       height: 2px;
       right: -115px;
@@ -100,7 +101,6 @@
   justify-content: center;
 
   &--phone {
-
     &:hover,
     &:focus,
     &:active {
@@ -118,7 +118,6 @@
   }
 
   &--email {
-
     &:hover,
     &:focus,
     &:active {
@@ -175,7 +174,7 @@
 }
 
 .header--open-menu .header__nav-toggle {
-  background-image: url("../../img/close.svg");
+  background-image: url('../../img/close.svg');
   background-size: 19px 19px;
   background-position: center;
   background-repeat: no-repeat;
