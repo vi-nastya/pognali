@@ -19,6 +19,7 @@
     width: 950px;
     padding: 0;
     height: 285px;
+    margin-bottom: 30px;
   }
 }
 
@@ -65,7 +66,7 @@
     flex-direction: column;
     padding-top: 45px;
     padding-bottom: 45px;
-    margin-left: 55px;
+    margin-left: 25px;
   }
 }
 
@@ -105,8 +106,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 250px;
     margin-right: 70px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   &::before {
@@ -353,6 +355,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin-bottom: 35px;
   }
 }
 
@@ -421,6 +424,7 @@
     right: auto;
     width: 150px;
     order: 2;
+    margin-bottom: 0;
   }
 }
 
@@ -457,7 +461,7 @@
 
   @media (min-width: $desktop-width) {
     bottom: 40px;
-    right: -220px;
+    right: -246px;
   }
 }
 
@@ -484,5 +488,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    min-width: 140px;
   }
 }

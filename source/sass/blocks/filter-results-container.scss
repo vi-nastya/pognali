@@ -11,6 +11,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1320px;
+    padding-top: 32px;
     flex-direction: row-reverse;
     justify-content: space-between;
   }

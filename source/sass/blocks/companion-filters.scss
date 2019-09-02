@@ -10,6 +10,7 @@
   @media (min-width: $tablet-width) {
     width: 688px;
     padding: 35px;
+    padding-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +24,17 @@
   margin-bottom: 35px;
   font-size: 24px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
 }
 
 .companion-filters__item {

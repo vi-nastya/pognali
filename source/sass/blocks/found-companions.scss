@@ -33,6 +33,10 @@
     font-size: $detail-fsize-tablet;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -75,7 +79,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 70px;
-    margin-bottom: 77px;
+    margin-top: 62px;
+    margin-bottom: 121px;
   }
 }

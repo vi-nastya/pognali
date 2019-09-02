@@ -9,6 +9,8 @@
 
   @media (min-width: $tablet-width) {
     border-radius: 0 0 60px 60px;
+
+    margin-bottom: 47px;
   }
 }
 
@@ -25,18 +27,21 @@
 
   background-color: $accent-background-color;
   color: $additional-hover-color;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 61px;
-    padding-bottom: 59;
+    padding-bottom: 25px;
     padding-left: 78px;
     padding-right: 77px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 125px;
+    padding-right: 25px;
+    padding-top: 58px;
+    padding-bottom: 70px;
   }
 }
 
@@ -57,7 +62,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding-left: 44px;
+    padding-left: 0;
     margin-right: 35px;
 
     font-size: 20px;
@@ -78,6 +83,7 @@
       width: 23px;
       height: 15px;
       top: 2px;
+      left: -45px;
     }
   }
 }
@@ -137,7 +143,7 @@
   }
 
   &--hide {
-    padding-right: 83px;
+    padding-right: 183px;
 
     &::before {
       position: absolute;
@@ -210,6 +216,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
