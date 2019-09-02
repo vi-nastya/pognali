@@ -1,5 +1,7 @@
 .trip-form__steps {
   @include reset-list;
+
+  margin-bottom: 32px;
 }
 
 .trip-form__step {
@@ -7,7 +9,7 @@
   padding-left: 25px;
   padding-right: 24px;
   padding-top: 25px;
-  padding-bottom: 22px;
+  padding-bottom: 11px;
   margin-bottom: 10px;
 
   display: flex;
@@ -381,9 +383,11 @@
   }
 }
 
+.trip-form__calendar {
+  margin-bottom: 22px;
+}
 
 .trip-form__dates {
-  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
@@ -400,10 +404,11 @@
   @media (max-width: $tablet-width - 1) {
     min-width: 230px;
     min-height: 40px;
+    margin-bottom: 10px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 5px;
     font-size: 17px;
     line-height: 1.76;
     text-align: center;
@@ -431,11 +436,9 @@
 
   @media (max-width: $tablet-width - 1) {
     min-width: 230px;
-    min-height: 40px;
+    min-height: 20px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 17px;
 
     line-height: 1.76;
@@ -447,6 +450,7 @@
     margin-left: auto;
     position: relative;
     min-width: 180px;
+    margin-bottom: 10px;
     padding-left: 35px;
     padding-top: 30px;
     padding-bottom: 28px;
@@ -472,7 +476,6 @@
 /* STEP 2 */
 
 .trip-form__selects {
-  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
@@ -489,7 +492,7 @@
   position: relative;
   width: 100%;
   margin-bottom: 15px;
-  margin-top: 27px;
+  padding-right: 10px;
   display: flex;
   align-items: center;
 
@@ -573,7 +576,7 @@
     height: 281px;
     background-color: #1d2e5b;
     left: -18px;
-    top: 30px;
+    top: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -600,8 +603,12 @@
 
 
 .trip-form__contry-plans {
-  min-width: 220px;
-  padding: 13px;
+  width: 220px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 8px;
+  padding-bottom: 31px;
+  margin-bottom: 20px;
 
   color: #444444;
   font-size: 16px;
@@ -622,13 +629,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 527px;
+    width: 527px;
 
     font-size: 20px;
     line-height: 1.2;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 730px;
+    width: 730px;
   }
 }

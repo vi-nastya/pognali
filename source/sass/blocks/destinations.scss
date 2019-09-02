@@ -1,5 +1,6 @@
 .destinations {
   @include section-width;
+  position: relative;
   z-index: 12;
   margin-top: -60px;
   padding-top: 60px;
@@ -21,9 +22,9 @@
   border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/flags-back@1x.png");
-    background-repeat: no-repeat;
-    background-position: 438px 47px;
+    background-image: url("../../img/flags-back@1x.png"), url("../../img/back-destinations.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 438px 47px, 100px 100px;
 
     padding-bottom: 80px;
 
