@@ -656,10 +656,26 @@
             </button>
           </form>
 
-          <p class="sign-up__contact-us">Остались вопросы? Мы&nbsp;с&nbsp;радостью на них ответим!</p>
+          <p class="sign-up__contact-us">Остались вопросы? <span class="sign-up__contact-us--desktop-hide">Мы&nbsp;с&nbsp;радостью на них ответим!</span><span class="sign-up__contact-us--desktop-show">Свяжитесь с нами удобным для вас способом:</span></p>
           <ul class="sign-up__contacts">
-            <li class="sign-up__contacts-item">Телефон</li>
-            <li class="sign-up__contacts-item">email</li>
+            <li class="sign-up__contacts-item sign-up__contacts-item--phone">
+                <a class="sign-up__contacts-link">
+              <div class="sign-up__contacts-icon-wrapper">
+            <svg role="img" class="sign-up__contacts-icon sign-up__contacts-icon--phone" width="18" height="18">
+                  <use xlink:href="#icon-contacts-phone"></use>
+                </svg>
+              </div>
+            8 800 555-86-28</a>
+          </li>
+          <li class="sign-up__contacts-item sign-up__contacts-item--email">
+              <a  class="sign-up__contacts-link">
+            <div class="sign-up__contacts-icon-wrapper">
+              <svg role="img" class="sign-up__contacts-icon sign-up__contacts-icon--mail" width="18" height="13">
+                  <use xlink:href="#icon-contacts-mail"></use>
+                </svg>
+              </div>
+            mail@htmlacademy.ru</a>
+          </li>
           </ul>
         </div>
       </section>

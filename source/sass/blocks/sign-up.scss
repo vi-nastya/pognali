@@ -108,9 +108,100 @@
   color: $additional-background-color;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-    width: 610px;
+  &--desktop-show {
+    display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 610px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 810px;
+
+    &--desktop-hide {
+      display: none;
+    }
+
+    &--desktop-show {
+      display: inline;
+    }
+  }
+}
+
+.sign-up__contacts-link {
+  font-family: $main-ffamily;
+  font-size: 16px;
+  font-weight: $bold;
+  line-height: 22px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffd74b;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #ffbd30;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.sign-up__contacts-icon-wrapper {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #121936;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 67px;
+    height: 67px;
+    margin-right: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 32px;
+  }
+}
+
+.sign-up__contacts-icon {
+  fill: #ffd74b;
+
+  @media (min-width: $tablet-width) {
+    &--phone {
+      width: 27px;
+      height: 27px;
+    }
+
+    &--mail {
+      width: 27px;
+      height: 19px;
+    }
+  }
+}
+
+.sign-up__contacts-link:hover .sign-up__contacts-icon,
+.sign-up__contacts-link:focus .sign-up__contacts-icon,
+.sign-up__contacts-link:active .sign-up__contacts-icon {
+  fill: #ffbd30;
 }
 
 .sign-up__button {
