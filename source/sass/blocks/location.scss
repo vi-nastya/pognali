@@ -7,11 +7,14 @@
   @include section-width;
   color: $additional-hover-color;
   background-color: $accent-color;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 30px 30px;
 }
 
 .location__inner {
-  padding: 35px 25px;
+  padding-top: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 35px;
 
   display: flex;
   flex-direction: column;
@@ -36,7 +39,7 @@
   position: relative;
   width: 205px;
   padding-left: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   font-size: $main-fsize-mobile;
   font-weight: $bold;

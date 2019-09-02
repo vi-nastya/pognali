@@ -98,6 +98,7 @@
   justify-content: center;
 
   &--phone {
+
     &:hover,
     &:focus,
     &:active {
@@ -115,6 +116,7 @@
   }
 
   &--email {
+
     &:hover,
     &:focus,
     &:active {
@@ -145,7 +147,8 @@
 }
 
 .header__nav-toggle {
-  width: 60px;
+  width: 30px;
+  padding: 0;
   background-color: transparent;
   border: none;
 
