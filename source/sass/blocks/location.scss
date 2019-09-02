@@ -1,13 +1,17 @@
 .location {
   position: relative;
   z-index: 8;
-  margin-top: -40px;
-  padding-top: 40px;
+  margin-top: -60px;
+  padding-top: 60px;
 
   @include section-width;
   color: $additional-hover-color;
   background-color: $accent-color;
   border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .location__inner {
@@ -22,8 +26,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 75px;
     padding-right: 75px;
-    padding-top: 69px;
+    padding-top: 43px;
     padding-bottom: 85px;
+
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,6 +59,9 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     padding-left: 93px;
+
+    margin-bottom: 63px;
+
     font-size: 28px;
     font-weight: bold;
     line-height: 1;

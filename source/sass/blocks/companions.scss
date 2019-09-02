@@ -1,12 +1,16 @@
 .companions {
   @include section-width;
   z-index: 11;
-  margin-top: -40px;
-  padding-top: 40px;
+  margin-top: -60px;
+  padding-top: 60px;
   position: relative;
   background-color: $additional-hover-color;
   border-radius: 0 0 30px 30px;
   color: $additional-background-color;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 
@@ -16,7 +20,7 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 30px;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 30px 30px;
 
   background-image: url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
@@ -24,13 +28,17 @@
   background-position: -5px 311px, 152px 40px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 140px;
+    padding-left: 73px;
+    padding-right: 72px;
+    padding-bottom: 88px;
 
     background-image: url("../../img/rogovaya-back-desktop@1x.png"), url("../../img/smolov-back-desktop@1x.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 285px 285px, 143px 143px;
-    background-position: 406px 70px, 40px 350px;
+    background-position: 408px 80px, 40px 427px;
+
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +55,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
-    margin-left: 75px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +74,7 @@
   @media (min-width: $tablet-width) {
     width: 425px;
     margin-bottom: 40px;
-    margin-left: 75px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,7 +91,7 @@
   @media (min-width: $tablet-width) {
     width: 260px;
     margin-bottom: 60px;
-    margin-left: 75px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,7 +111,7 @@
     align-items: flex-start;
     width: 618px;
     margin: 0 auto;
-    margin-bottom: 110px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {

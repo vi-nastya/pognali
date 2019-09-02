@@ -24,7 +24,7 @@
   min-height: 157px;
 
   @media (min-width: $tablet-width) {
-    min-height: 198px;
+    min-height: 195px;
     width: 285px;
   }
 }
@@ -44,6 +44,7 @@
   color: $additional-accent-color;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
     font-size: $accent-fsize-tablet;
   }
 
@@ -91,6 +92,7 @@
 
   @media (min-width: $tablet-width) {
     width: 225px;
+    margin-bottom: 20px;
     font-size: $detail-fsize-tablet;
   }
 }

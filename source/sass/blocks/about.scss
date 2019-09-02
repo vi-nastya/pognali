@@ -5,6 +5,10 @@
   background-color: $additional-hover-color;
   border-radius: 0 0 30px 30px;
 
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 40px;
     margin-top: -40px;
@@ -26,26 +30,17 @@
   border-radius: 0 0 40px 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 130px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 135px;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 48px;
 
     background-image: url("../img/about-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: 450px 650px;
-    background-position: right center;
+    background-size: 375px 545px;
+    background-position: 385px 145px;
 
-    &::before {
-      position: absolute;
-      z-index: 1;
-      content: "";
-      top: 90px;
-      left: -20px;
-      width: 688px;
-      height: 213px;
-      background-color: #141b3b;
-      border-radius: 20px;
-    }
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,6 +58,10 @@
   @include section-header-text;
 
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .about__description {
@@ -90,7 +89,7 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {

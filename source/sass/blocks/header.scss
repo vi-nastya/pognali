@@ -36,7 +36,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 43px;
+    padding-top: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,12 +55,14 @@
   height: 19px;
 
   @media (min-width: $tablet-width) {
-    width: 200px;
+    width: 167px;
     height: 52px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+
+    width: 252px;
 
     &::after {
       position: absolute;

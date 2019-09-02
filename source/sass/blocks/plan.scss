@@ -1,6 +1,6 @@
 .plan {
-  margin-top: -40px;
-  padding-top: 40px;
+  margin-top: -60px;
+  padding-top: 60px;
   position: relative;
   z-index: 10;
 
@@ -8,6 +8,10 @@
 
   background-color: $main-background-color;
   border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .plan__inner {
@@ -22,8 +26,12 @@
   align-items: flex-start;
 
   @media (min-width: $tablet-width) {
-    padding: 130px 40px 40px 40px;
+    padding-top: 75px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
 
+    border-radius: 0 0 60px 60px;
     background-position: 550px 350px;
   }
 
@@ -40,6 +48,24 @@
   position: relative;
   width: 105px;
   margin-bottom: 55px;
+
+  &::before {
+    position: absolute;
+    z-index: 10;
+    content: "";
+    width: 99px;
+    height: 99px;
+    top: -15px;
+    right: -140px;
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-size: 99px 99px;
+
+    @media (min-width: $tablet-width) {
+      top: 334px;
+      right: 47px;
+    }
+  }
 
   &--business {
     width: 100%;
@@ -58,26 +84,8 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 150px;
-  }
 
-  &::before {
-    position: absolute;
-    z-index: 10;
-    content: "";
-    width: 99px;
-    height: 99px;
-    top: -15px;
-    right: -140px;
-    background-image: url("../img/rates@1x.png");
-    background-repeat: no-repeat;
-    background-size: 99px 99px;
-
-    @media (min-width: $tablet-width) {
-      top: 330px;
-      right: 135px;
-    }
-
-    @media (min-width: $desktop-width) {
+    &::before {
       top: 200px;
       right: 105px;
       background-size: 198px 198px;
@@ -124,8 +132,8 @@
     &::before {
       position: absolute;
       content: "";
-      right: -40px;
-      top: -45px;
+      right: -36px;
+      top: -60px;
       width: 198px;
       height: 285px;
       border-radius: 20px;
@@ -171,23 +179,16 @@
 
   margin-bottom: 22px;
 
-  @media (min-width: $tablet-width) {
-    width: 562px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    margin-bottom: 32px;
-    padding-left: 92px;
-    font-size: $main-fsize-tablet;
-
-    &--business {
-      padding-left: 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 812px;
+  &::after {
+    position: absolute;
+    z-index: 20;
+    content: "";
+    width: 200px;
+    height: 1px;
+    left: 0;
+    top: -14px;
+    background-color: #444444;
+    opacity: 0.05;
   }
 
   &::before {
@@ -230,23 +231,30 @@
     background-color: #ffd74b;
   }
 
-  &::after {
-    position: absolute;
-    z-index: 20;
-    content: "";
-    width: 200px;
-    height: 1px;
-    left: 0;
-    top: -14px;
-    background-color: #444444;
-    opacity: 0.05;
+  @media (min-width: $tablet-width) {
+    width: 652px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
-    @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+    padding-left: 92px;
+    font-size: $main-fsize-tablet;
+
+    &--business {
+      padding-left: 0;
+    }
+
+    &::after {
       width: 562px;
       left: 92px;
     }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    width: 812px;
+
+    &::after {
       width: 813px;
     }
   }
@@ -297,13 +305,13 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-left: 80px;
+    padding-left: 87px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 355px;
+    min-width: 385px;
     margin: 0;
-    margin-top: 79px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 25px;
     font-size: $detail-fsize-tablet;
 
     &::before {

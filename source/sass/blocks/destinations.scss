@@ -1,11 +1,15 @@
 .destinations {
   @include section-width;
   z-index: 12;
-  margin-top: -40px;
-  padding-top: 72px;
+  margin-top: -60px;
+  padding-top: 92px;
   position: relative;
   background-color: $main-background-color;
   border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 
@@ -14,12 +18,16 @@
   flex-direction: column;
   padding-top: 40px;
   padding-bottom: 30px;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/flags-back@1x.png");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: 438px 47px;
+
+    padding-bottom: 80px;
+
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,6 +75,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 75px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,7 +93,8 @@
 
   @media (min-width: $tablet-width) {
     width: 340px;
-    margin-bottom: 110px;
+    margin-bottom: 105px;
+    margin-left: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -108,6 +118,8 @@
   @media (min-width: $tablet-width) {
     width: 618px;
     height: 81px;
+
+    margin-top: 37px;
   }
 
 

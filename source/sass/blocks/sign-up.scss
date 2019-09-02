@@ -1,12 +1,16 @@
 .sign-up {
   z-index: 9;
   position: relative;
-  margin-top: -40px;
-  padding-top: 40px;
+  margin-top: -60px;
+  padding-top: 60px;
 
   @include section-width;
   background-color: $additional-hover-color;
   border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .sign-up__inner {
@@ -16,12 +20,24 @@
   flex-direction: column;
   align-items: center;
   border-radius: 0 0 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 167px; // CHANGE LATER
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .sign-up__header {
   @include section-header-text;
 
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .sign-up__description {
@@ -33,6 +49,7 @@
 
   @media (min-width: $tablet-width) {
     width: 610px;
+    margin-bottom: 64px;
   }
 }
 
@@ -46,6 +63,10 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .sign-up__input {
@@ -86,7 +107,7 @@
 }
 
 .sign-up__button {
-  min-width: 62px;
+  width: 62px;
   min-height: 62px;
   border-radius: 0 10px 10px 0;
   font-size: 0;
@@ -94,6 +115,7 @@
   @media (min-width: $tablet-width) {
     min-width: 82px;
     min-height: 81px;
+    padding: 14px;
   }
 
   @media (min-width: $desktop-width) {
