@@ -22,16 +22,17 @@
 .companion-filters__header {
   margin: 0;
   margin-bottom: 35px;
-  font-size: 24px;
-  line-height: 22px;
+  font-size: 22.5px;
+  font-weight: $bold;
+  line-height: 22.5px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    line-height: 30px;
     margin-bottom: 80px;
   }
 
   @media (min-width: $tablet-width) {
-    line-height: 30px;
     margin-bottom: 35px;
   }
 

@@ -23,6 +23,7 @@
   line-height: 1.2;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   color: $additional-hover-color;
 
   &:hover,
@@ -40,9 +41,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 28px;
-    line-height: 1.5;
-    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
 
     &:hover,
     &:focus {
