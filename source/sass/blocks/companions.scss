@@ -4,24 +4,24 @@
   margin-top: -40px;
   padding-top: 40px;
   position: relative;
-  padding-bottom: 40px;
   background-color: $additional-hover-color;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 30px 30px;
   color: $additional-background-color;
 }
 
 
 .companions__inner {
   position: relative;
-  padding-top: 70px;
+  padding-top: 72px;
   padding-left: 25px;
   padding-right: 25px;
+  padding-bottom: 30px;
   border-radius: 0 0 40px 40px;
 
   background-image: url("../../img/rogovaya-back-mobile@1x.png"), url("../../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 61px 71px, 143px 143px;
-  background-position: -20px 250px, 152px 31px;
+  background-position: -5px 311px, 152px 40px;
 
   @media (min-width: $tablet-width) {
     padding-left: 25px;
@@ -43,7 +43,7 @@
 .companions__header {
   @include section-header-text;
   margin-bottom: 20px;
-  margin-left: 50px;
+  margin-left: 24px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -60,8 +60,8 @@
   @include main-text;
 
   width: 215px;
-  margin-bottom: 25px;
-  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 
   @media (min-width: $tablet-width) {
     width: 425px;
@@ -77,8 +77,8 @@
 .companions__slogan {
   @include accent-text;
   width: 193px;
-  margin-bottom: 60px;
-  margin-left: 50px;
+  margin-bottom: 56px;
+  margin-left: 24px;
 
   @media (min-width: $tablet-width) {
     width: 260px;
@@ -134,6 +134,7 @@
 .companions__button {
   display: block;
   margin: 0 auto;
+  margin-top: 10px;
   width: 270px;
   height: 62px;
   border-radius: 10px;

@@ -10,7 +10,7 @@
 }
 
 .sign-up__inner {
-  padding-top: 70px;
+  padding-top: 72px;
   padding-bottom: 45px;
   display: flex;
   flex-direction: column;
@@ -20,6 +20,8 @@
 
 .sign-up__header {
   @include section-header-text;
+
+  margin-bottom: 18px;
 }
 
 .sign-up__description {
@@ -72,7 +74,7 @@
 }
 
 .sign-up__contact-us {
-  width: 210px;
+  width: 220px;
 
   @include main-text;
   color: $additional-background-color;

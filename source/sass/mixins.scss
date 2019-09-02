@@ -52,7 +52,6 @@
 
 @mixin section-header-text {
   margin: 0;
-  margin-bottom: 23px;
   color: $accent-hover-color;
   font-family: $main-ffamily;
   font-weight: $bold;
@@ -61,7 +60,6 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
     font-size: $header-fsize-tablet;
   }
 }

@@ -7,12 +7,15 @@
   @include section-width;
 
   background-color: $main-background-color;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 30px 30px;
 }
 
 .plan__inner {
-  padding: 50px 82px 26px 35px;
-  border-radius: 0 0 40px 40px;
+  padding-top: 52px;
+  padding-left: 48px;
+  padding-right: 25px;
+  padding-bottom: 38px;
+  border-radius: 0 0 30px 30px;
 
   display: flex;
   flex-direction: column;
@@ -33,11 +36,10 @@
 }
 
 .plan__header {
+  @include section-header-text;
   position: relative;
   width: 105px;
   margin-bottom: 55px;
-
-  @include section-header-text;
 
   &--business {
     width: 100%;
@@ -64,8 +66,8 @@
     content: "";
     width: 99px;
     height: 99px;
-    top: -20px;
-    right: -130px;
+    top: -15px;
+    right: -140px;
     background-image: url("../img/rates@1x.png");
     background-repeat: no-repeat;
     background-size: 99px 99px;
@@ -167,7 +169,7 @@
   @include main-text;
   color: $main-text-color;
 
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 562px;
@@ -192,8 +194,8 @@
     position: absolute;
     counter-increment: plan;
     content: counter(plan);
-    right: -40px;
-    top: -2px;
+    right: -60px;
+    top: -8px;
     width: 34px;
     height: 34px;
 
@@ -272,8 +274,7 @@
 
 .plan__button-business {
   width: 220px;
-  margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 20px;
 
   font-family: $main-ffamily;
   font-size: $main-fsize-mobile;
