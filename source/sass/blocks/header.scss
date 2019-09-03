@@ -150,13 +150,13 @@
       background-color: #ffbd30;
     }
   }
+}
 
-  &--login {
-    display: none;
+.header__login {
+  display: none;
 
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 

@@ -319,14 +319,14 @@
             <h2 class="add-plan__header">Добавить план</h2>
             <form class="add-plan__form trip-form">
               <ol class="trip-form__steps">
-                <li class="trip-form__step  trip-form__step--dates">
+                <li class="trip-form__step  trip-form__step--dates" id="dates">
                   <h3 class="trip-form__step-name">Шаг 1. <br class="trip-form__break">Даты пребывания</h3>
                   <p class="trip-form__step-description">Укажите предпочтительное количество попутчиков, которых
                       вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                   <ul class="trip-form__navigation">
-                    <li class="trip-form__navigation-item trip-form__navigation-item--current">Даты</li>
-                    <li class="trip-form__navigation-item">Маршрут</li>
-                    <li class="trip-form__navigation-item">Развлечения</li>
+                    <li class="trip-form__navigation-item trip-form__navigation-item--current"><a class="trip-form__navigation-link" href="#dates">Даты</a></li>
+                    <li class="trip-form__navigation-item"><a class="trip-form__navigation-link" href="#route">Маршрут</a></li>
+                    <li class="trip-form__navigation-item"><a class="trip-form__navigation-link" href="#plans">Развлечения</a></li>
                   </ul>
 
                   <fieldset class="trip-form__field trip-form__field--companions">
@@ -412,17 +412,17 @@
                   </ul>
                   </div>
 
-                  <a href="#" class="button button-main trip-form__link-next">Следующий шаг</a>
+                  <a href="#route" class="button button-main trip-form__link-next">Следующий шаг</a>
                 </li>
 
-                <li class="trip-form__step trip-form__step--route">
+                <li class="trip-form__step trip-form__step--route" id="route">
                     <h3 class="trip-form__step-name">Шаг 2. <br class="trip-form__break">Маршрут</h3>
                     <p class="trip-form__step-description">Укажите страны, которые вы хотели по посетить.
                         Это может быть одна или сразу несколько.</p>
                     <ul class="trip-form__navigation">
-                      <li class="trip-form__navigation-item">Даты</li>
-                      <li class="trip-form__navigation-item trip-form__navigation-item--current">Маршрут</li>
-                      <li class="trip-form__navigation-item">Развлечения</li>
+                        <li class="trip-form__navigation-item"><a class="trip-form__navigation-link" href="#dates">Даты</a></li>
+                        <li class="trip-form__navigation-item trip-form__navigation-item--current"><a class="trip-form__navigation-link" href="#route">Маршрут</a></li>
+                        <li class="trip-form__navigation-item"><a class="trip-form__navigation-link" href="#plans">Развлечения</a></li>
                     </ul>
 
                     <div class="trip-form__selects country-selects">
@@ -803,18 +803,18 @@
                       <button class="trip-form__add-country">Добавить страну</button>
                       </div>
 
-                    <a href="#" class="button button-main trip-form__link-next">Следующий шаг</a>
-                    <a href="#" class="trip-form__link-back">На шаг назад</a>
+                    <a href="#plans" class="button button-main trip-form__link-next">Следующий шаг</a>
+                    <a href="#dates" class="trip-form__link-back">На шаг назад</a>
                   </li>
 
-                  <li class="trip-form__step trip-form__step--plans">
+                  <li class="trip-form__step trip-form__step--plans" id="plans">
                       <h3 class="trip-form__step-name">Шаг 3. <br class="trip-form__break">Развлечения</h3>
                       <p class="trip-form__step-description">Наконец, расскажите о своих планах времяпровождения.
                           Можно писать в свободной форме и ставить тэги.</p>
                       <ul class="trip-form__navigation">
-                        <li class="trip-form__navigation-item">Даты</li>
-                        <li class="trip-form__navigation-item">Маршрут</li>
-                        <li class="trip-form__navigation-item trip-form__navigation-item--current">Развлечения</li>
+                          <li class="trip-form__navigation-item"><a class="trip-form__navigation-link" href="#dates">Даты</a></li>
+                          <li class="trip-form__navigation-item"><a class="trip-form__navigation-link" href="#route">Маршрут</a></li>
+                          <li class="trip-form__navigation-item trip-form__navigation-item--current"><a class="trip-form__navigation-link" href="#plans">Развлечения</a></li>
                       </ul>
 
                       <fieldset class="trip-form__field trip-form__field--country">
@@ -844,7 +844,7 @@
                         </fieldset>
 
                       <button type="submit" class="button button-main trip-form__link-next">Отправить</button>
-                      <a href="#" class="trip-form__link-back">На шаг назад</a>
+                      <a href="#route" class="trip-form__link-back">На шаг назад</a>
                     </li>
               </ol>
 
