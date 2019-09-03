@@ -338,6 +338,7 @@
 }
 
 .trip-form__input {
+  width: 100px;
   font-family: $main-ffamily;
   font-size: 15px;
   font-weight: $medium;
@@ -352,7 +353,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100px;
+    width: 80px;
   }
 }
 
@@ -379,18 +380,32 @@
 
   &--increase {
     background-image: url("../../img/qty-plus.svg");
-    background-position: center left;
+    background-position: 3px 13px;
   }
 
   &--decrease {
     background-image: url("../../img/qty-minus.svg");
-    background-position: center right;
+    background-position: 20px 13px;
   }
 
   @media (min-width: $tablet-width) {
     width: 66px;
     height: 66px;
     background-size: 20px 20px;
+
+    &--increase {
+      background-position: 10px 22px;
+    }
+
+    &--decrease {
+      background-position: 30px 22px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--decrease {
+      background-position: 20px 22px;
+    }
   }
 }
 
