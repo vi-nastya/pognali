@@ -251,6 +251,7 @@
 
     &--business {
       padding-left: 0;
+      flex-direction: row;
     }
 
     &::after {
