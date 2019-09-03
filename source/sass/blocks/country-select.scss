@@ -225,176 +225,177 @@
       }
     }
   }
+}
 
-  .country-select--empty .country-select__value-wrapper {
-    width: 220px;
-    cursor: pointer;
+.country-select--empty .country-select__value-wrapper {
+  width: 220px;
+  cursor: pointer;
 
-    &:hover,
-    &:focus {
-      border-color: #959bb2;
-    }
-
-    &:active {
-      color: $additional-background-color;
-      background-color: #1d2e5b;
-      border-color: #1d2e5b;
-      border-radius: 4px 4px 0 0;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 370px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 730px;
-    }
+  &:hover,
+  &:focus {
+    border-color: #959bb2;
   }
 
-  .country-select--active .country-select__value-wrapper {
+  &:active {
     color: $additional-background-color;
     background-color: #1d2e5b;
     border-color: #1d2e5b;
     border-radius: 4px 4px 0 0;
   }
 
-  .country-select--empty .country-select__value-wrapper:active .country-select__button--select,
-  .country-select--active .country-select__button--select {
-    background-image: url("../../img/close-white.svg");
-    background-color: transparent;
-    background-size: 17px 17px;
+  @media (min-width: $tablet-width) {
+    width: 370px;
   }
 
-  .country-select--empty .country-select__value-wrapper::before {
-    right: 49px;
-    background-color: $additional-background-color;
-    border: 1px solid #cbced9;
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
+.country-select--active .country-select__value-wrapper {
+  color: $additional-background-color;
+  background-color: #1d2e5b;
+  border-color: #1d2e5b;
+  border-radius: 4px 4px 0 0;
+}
+
+.country-select--empty .country-select__value-wrapper:active .country-select__button--select,
+.country-select--active .country-select__button--select {
+  background-image: url("../../img/close-white.svg");
+  background-color: transparent;
+  background-size: 17px 17px;
+}
+
+.country-select--empty .country-select__value-wrapper::before {
+  right: 49px;
+  background-color: $additional-background-color;
+  border: 1px solid #cbced9;
+
+  @media (min-width: $tablet-width) {
+    right: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -57px;
+  }
+}
+
+.country-select--empty .country-select__value-wrapper::after {
+  display: none;
+}
+
+.trip-form__add-country {
+  position: relative;
+  width: 220px;
+  margin-bottom: 25px;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 50px;
+
+  font-size: 14px;
+  font-weight: $medium;
+  line-height: 1.29;
+  text-transform: uppercase;
+  text-align: left;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+    background-color: #edeff6;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 14px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../../img/qty-plus.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    padding-top: 26px;
+    padding-left: 26px;
+    padding-bottom: 26px;
+    padding-right: 60px;
+
+    font-size: 20px;
+    line-height: 0.9;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 27px;
       right: -30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -57px;
-    }
-  }
-
-  .country-select--empty .country-select__value-wrapper::after {
-    display: none;
-  }
-
-  .trip-form__add-country {
-    position: relative;
-    width: 220px;
-    margin-bottom: 25px;
-
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 12px;
-    padding-right: 50px;
-
-    font-size: 14px;
-    font-weight: $medium;
-    line-height: 1.29;
-    text-transform: uppercase;
-    text-align: left;
-
-    border: none;
-    border-radius: 5px;
-
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
+      width: 15px;
+      height: 15px;
       background-color: #edeff6;
-    }
-
-    &:active {
-      color: rgba(29, 46, 91, 0.3);
-      background-color: #edeff6;
+      border: 1px solid #cbced9;
+      border-radius: 50%;
     }
 
     &::after {
-      position: absolute;
-      content: "";
-      top: 14px;
-      right: 14px;
-      width: 14px;
-      height: 14px;
-      background-image: url("../../img/qty-plus.svg");
-      background-repeat: no-repeat;
-      opacity: 0.2;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 370px;
-      padding-top: 26px;
-      padding-left: 26px;
-      padding-bottom: 26px;
-      padding-right: 60px;
-
-      font-size: 20px;
-      line-height: 0.9;
-
-      &::before {
-        position: absolute;
-        content: "";
-        top: 27px;
-        right: -30px;
-        width: 15px;
-        height: 15px;
-        background-color: #edeff6;
-        border: 1px solid #cbced9;
-        border-radius: 50%;
-      }
-
-      &::after {
-        width: 20px;
-        height: 20px;
-        right: 26px;
-        top: 25px;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 730px;
-
-      &::before {
-        right: -57px;
-      }
-
-      &::after {
-        width: 18px;
-        height: 18px;
-        right: 27px;
-        top: 26px;
-      }
+      width: 20px;
+      height: 20px;
+      right: 26px;
+      top: 25px;
     }
   }
 
-  .country-select__letters {
-    position: absolute;
-    z-index: 100;
-    left: 0;
-    top: 42px;
+  @media (min-width: $desktop-width) {
+    width: 730px;
 
-    width: 220px;
+    &::before {
+      right: -57px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      right: 27px;
+      top: 26px;
+    }
+  }
+}
+
+.country-select__letters {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 42px;
+
+  width: 220px;
+  min-height: 476px;
+
+  background-color: $additional-background-color;
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+
+  @media (min-width: $tablet-width) {
+    top: 70px;
+    width: 575px;
     min-height: 476px;
-
-    background-color: $additional-background-color;
-    box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
-
-    @media (min-width: $tablet-width) {
-      top: 70px;
-      width: 575px;
-      min-height: 476px;
-      padding-top: 34px;
-      padding-left: 27px;
-      padding-right: 27px;
-      padding-bottom: 96px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 730px;
-    }
+    padding-top: 34px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 96px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+  }
+}

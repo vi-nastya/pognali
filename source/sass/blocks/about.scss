@@ -38,7 +38,7 @@
     background-image: url("../img/about-tablet@1x.png"), url("../../img/back-about.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 375px 545px, 688px 213px;
-    background-position: 385px 145px, 100px 100px;
+    background-position: 385px 145px, 40px 90px;
 
     border-radius: 0 0 60px 60px;
   }
@@ -48,10 +48,10 @@
     padding-right: 60px;
     padding-bottom: 122px;
 
-    background-image: url("../img/about-desktop@1x.png");
-    background-size: 645px 665px;
-    background-position: 745px 85px;
-    background-repeat: no-repeat;
+    background-image: url("../img/about-desktop@1x.png"), url("../../img/back-about.png");
+    background-size: 645px 665px, 213px 213px;
+    background-position: 745px 85px, 60px 60px;
+    background-repeat: no-repeat, no-repeat;
   }
 }
 

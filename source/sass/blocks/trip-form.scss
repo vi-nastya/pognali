@@ -676,6 +676,7 @@
   padding-bottom: 31px;
   margin-bottom: 20px;
 
+  font-family: $main-ffamily;
   color: #444444;
   font-size: 16px;
   line-height: 1.38;
@@ -710,5 +711,26 @@
     margin-bottom: 52px;
     padding-top: 20px;
     padding-left: 25px;
+  }
+}
+
+
+.trip-form__country-plans--error {
+  border: 1px solid #f47e7e;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "Это поле должно быть заполнено";
+    height: 57px;
+    width: 100%;
+    left: 0;
+    bottom: 57px;
+    padding-left: 24px;
+    background-color: #ffefef;
+    font-family: $main-ffamily;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ff0000;
   }
 }
