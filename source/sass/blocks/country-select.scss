@@ -41,6 +41,10 @@
   display: flex;
 
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .country-select__value-wrapper {
