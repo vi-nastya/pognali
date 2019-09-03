@@ -61,6 +61,7 @@
   width: 9px;
   height: 17px;
   background-repeat: no-repeat;
+  background-color: $additional-background-color;
   border: none;
   opacity: 0.3;
 
@@ -96,7 +97,7 @@
 }
 
 .calendar__day {
-  width: 32px;
+  width: 31px;
 
   text-align: center;
   font-size: 14px;
@@ -116,7 +117,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 143px;
+    width: 142px;
     padding-left: 17px;
 
     text-align: left;
@@ -140,7 +141,7 @@
 }
 
 .calendar__date {
-  width: 32px;
+  width: 31px;
   height: 31px;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -179,7 +180,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    width: 143px;
+    width: 142px;
     height: 71px;
     padding-left: 16px;
     padding-top: 8px;

@@ -93,7 +93,7 @@
     height: 36px;
     top: 0;
     right: 15px;
-    background: linear-gradient(to left, $additional-background-color, transparent);
+    background: linear-gradient(to left, $additional-background-color, rgba(255, 255, 255, 0));
   }
 
   @media (min-width: $tablet-width) {
@@ -153,7 +153,7 @@
 
 .country-select__button {
   border: none;
-  background: transparent;
+  background: $additional-background-color;
   cursor: pointer;
 
   &--select {
@@ -261,9 +261,24 @@
 
 .country-select--empty .country-select__value-wrapper:active .country-select__button--select,
 .country-select--active .country-select__button--select {
+
   background-image: url("../../img/close-white.svg");
-  background-color: transparent;
-  background-size: 17px 17px;
+  background-color: #1d2e5b;
+  background-size: 9px 9px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 17px 17px;
+  }
+}
+
+.country-select--active .country-select__value-wrapper {
+  &::before {
+    display: none;
+  }
+}
+
+.country-select--active .country-select__button--delete {
+  display: none;
 }
 
 .country-select--empty .country-select__value-wrapper::before {
