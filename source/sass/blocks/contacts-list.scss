@@ -7,6 +7,22 @@
 }
 
 .contacts-list__item {
+  &--login {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+
+    &--login {
+      display: none;
+    }
+  }
+}
+
+.contacts-list__link {
   position: relative;
 
   display: flex;
@@ -33,16 +49,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
-
-    &--login {
-      display: none;
-    }
   }
+
 }
 
 .contacts-list__login {
   min-width: 270px;
-  margin-bottom: 50px;
 }
 
 .contacts-list__icon-wrapper {
