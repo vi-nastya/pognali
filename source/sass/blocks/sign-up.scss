@@ -234,19 +234,18 @@
 
 .sign-up__button {
   min-width: 62px;
-  min-height: 62px;
   border-radius: 0 10px 10px 0;
   font-size: 0;
 
   @media (min-width: $tablet-width) {
     min-width: 82px;
     width: 82px;
-    min-height: 81px;
     padding: 14px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 325px;
+    padding-left: 35px;
     font-size: $accent-fsize-tablet;
   }
 }

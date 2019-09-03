@@ -150,17 +150,14 @@
   margin: 0 auto;
   margin-top: 10px;
   width: 270px;
-  height: 62px;
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
     width: 618px;
-    height: 81px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
     width: 280px;
-    height: 81px;
   }
 }
