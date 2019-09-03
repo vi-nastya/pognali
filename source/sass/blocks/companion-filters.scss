@@ -9,8 +9,12 @@
 
   @media (min-width: $tablet-width) {
     width: 688px;
-    padding: 35px;
-    padding-top: 40px;
+    padding-left: 35px;
+    padding-top: 36px;
+    padding-right: 20px;
+    padding-bottom: 38px;
+
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,13 +33,30 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 71px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 35px;
   }
+}
 
+
+.companion-filters__form {
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -34px;
+      left: 0;
+      width: 618px;
+      height: 1px;
+      background-color: $accent-detail-color;
+    }
+  }
 }
 
 .companion-filters__item {
@@ -59,13 +80,36 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 6px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
 .companion-filters__name {
+  margin: 0;
   margin-bottom: 14px;
   font-weight: $bold;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 110px;
+    margin-right: 18px;
+    overflow: hidden;
+
+    font-weight: $medium;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 150px;
+  }
+
 }
 
 .companion-filters__item--hidden .companion-filters__item-inner {
@@ -86,14 +130,6 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: column;
-  }
-
   &--transport {
     flex-direction: row;
     margin-left: 2px;
@@ -103,10 +139,30 @@
   &--level {
     padding-bottom: 5px;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-top: 6px;
+
+    &--transport {
+      padding-top: 0;
+      margin-left: -7px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .companion-filters__field {
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .companion-filters__item-button {
@@ -153,6 +209,7 @@
   position: relative;
   margin-bottom: 15px;
   font-size: 15px;
+  line-height: 15px;
   padding-left: 25px;
 
   &::before {
@@ -165,11 +222,18 @@
     background-color: $additional-background-color;
     border-radius: 4px;
   }
-}
 
-.companion-filters__transport-label {
   @media (min-width: $tablet-width) {
     margin-right: 13px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 34px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      top: -7px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -190,6 +254,12 @@ input[type="checkbox"]:checked+.companion-filters__label::after {
   height: 9px;
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 12px;
+    height: 12px;
+    top: -1px;
+  }
 }
 
 
@@ -200,6 +270,18 @@ input[type="checkbox"]:checked+.companion-filters__label::after {
 
   @media (min-width: $tablet-width) {
     width: 618px;
+    position: relative;
+    margin-top: 45px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -36px;
+      left: 0;
+      width: 618px;
+      height: 1px;
+      background-color: $accent-detail-color;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -220,6 +302,9 @@ input[type="checkbox"]:checked+.companion-filters__label::after {
   @media (min-width: $tablet-width) {
     width: 150px;
     height: 46px;
+
+    order: 2;
+    margin-left: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -271,6 +356,12 @@ input[type="checkbox"]:checked+.companion-filters__label::after {
 
 .companion-filters__level-range-controls {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+
+    order: 1;
+  }
 }
 
 .companion-filters__level-scale {
@@ -327,12 +418,12 @@ input[type="checkbox"]:checked+.companion-filters__label::after {
   }
 
   &--max {
-    right: 0px;
+    right: -3px;
   }
 
   @media (min-width: $tablet-width) {
     width: 13px;
     height: 13px;
-    top: -6px;
+    top: 15px;
   }
 }
