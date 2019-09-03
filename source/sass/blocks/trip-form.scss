@@ -348,63 +348,44 @@
   }
 }
 
-.trip-form__input::-webkit-inner-spin-button,
-.trip-form__input::-webkit-outer-spin-button {
-  margin: 0;
-}
-
 .trip-form__button {
-  position: relative;
   width: 42px;
   height: 43px;
   background-color: $additional-background-color;
   border: none;
 
+  opacity: 0.2;
+
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
   cursor: pointer;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 2px;
-    background-color: #cbced9;
-    top: 20px;
-    left: 14px;
-
-    @media (min-width: $tablet-width) {
-      width: 20px;
-      height: 2px;
-      left: 25px;
-    }
+  &:hover,
+  &:focus {
+    opacity: 0.4;
   }
 
-  &--increase::before {
-    left: auto;
-    right: 14px;
-
-    @media (min-width: $tablet-width) {
-      right: 22px;
-    }
+  &:active {
+    opacity: 0.1;
   }
 
-  &--increase::after {
-    position: absolute;
-    content: "";
-    width: 2px;
-    height: 14px;
-    background-color: #cbced9;
-    top: 14px;
-    left: 20px;
+  &--increase {
+    background-image: url("../../img/qty-plus.svg");
+    background-position: center left;
+  }
 
-    @media (min-width: $tablet-width) {
-      width: 2px;
-      height: 20px;
-      left: auto;
-      right: 31px;
-      top: 11px;
-    }
+  &--decrease {
+    background-image: url("../../img/qty-minus.svg");
+    background-position: center right;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 66px;
+    height: 66px;
+    background-size: 20px 20px;
   }
 }
+
 
 .trip-form__checkbox {
   display: none;
