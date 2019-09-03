@@ -27,6 +27,12 @@
 
     border-radius: 60px 60px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 125px;
+    padding-right: 60px;
+    padding-bottom: 62px;
+  }
 }
 
 .my-plans__header {
@@ -74,11 +80,18 @@
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     align-items: center;
+
+    padding-top: 25px;
+    padding-bottom: 23px;
   }
 }
 
 .my-plans__item:nth-of-type(1) {
   margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .my-plans__countries {
@@ -175,6 +188,10 @@
   @media (min-width: $tablet-width) {
     width: 190px;
     margin-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
