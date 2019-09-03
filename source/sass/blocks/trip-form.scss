@@ -2,6 +2,10 @@
   @include reset-list;
 
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .trip-form__step {
@@ -548,7 +552,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 29px;
 
     font-size: 30px;
     font-weight: $bold;
@@ -570,12 +574,13 @@
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
+    margin-right: -5px;
 
     &::before {
       position: absolute;
       content: "";
-      top: 15px;
-      left: -40px;
+      top: 17px;
+      right: -36px;
       width: 15px;
       height: 15px;
       background-color: #1d2e5b;
@@ -611,12 +616,12 @@
 }
 
 .trip-form__field--country:nth-of-type(1) .trip-form__country-flag-wrapper {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     &::after {
       position: absolute;
       content: "";
       top: 18px;
-      left: -35px;
+      right: -30px;
       width: 3px;
       height: 261px;
       background-color: #1d2e5b;
@@ -625,7 +630,7 @@
 }
 
 
-.trip-form__contry-plans {
+.trip-form__country-plans {
   width: 220px;
   padding-left: 13px;
   padding-right: 13px;
@@ -652,7 +657,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 527px;
+    width: 500px;
+    height: 142px;
+    overflow: hidden;
+    padding-top: 15px;
+    margin-bottom: 40px;
 
     font-size: 20px;
     line-height: 1.2;
