@@ -128,8 +128,17 @@
     }
   }
 
+
   &--business::after {
-    left: 0;
+    left: 25px;
+
+    @media (min-width: $tablet-width) {
+      width: 506px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 630px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -262,6 +271,10 @@
       width: 562px;
       left: 92px;
     }
+
+    &--business::after {
+      width: 506px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -274,6 +287,10 @@
 
     &::after {
       width: 813px;
+    }
+
+    &--business::after {
+      width: 630px;
     }
   }
 
