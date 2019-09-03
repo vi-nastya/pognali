@@ -64,6 +64,7 @@
 .header__logo {
   width: 100px;
   height: 19px;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     width: 167px;
@@ -243,10 +244,18 @@
 /* OPEN MENU STATE */
 .header--open-menu .header__logo-image--white {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .header--open-menu .header__logo-image--blue {
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .header--open-menu .header__nav {
