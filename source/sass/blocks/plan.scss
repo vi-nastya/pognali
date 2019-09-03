@@ -250,8 +250,11 @@
     font-size: $main-fsize-tablet;
 
     &--business {
+      width: 505px;
       padding-left: 0;
       flex-direction: row;
+      font-size: 22px;
+      line-height: 28px;
     }
 
     &::after {
@@ -262,6 +265,11 @@
 
   @media (min-width: $desktop-width) {
     width: 910px;
+
+
+    &--business {
+      width: 632px;
+    }
 
     &::after {
       width: 813px;
@@ -389,8 +397,9 @@
   z-index: 100;
   position: absolute;
   top: 100px;
+  left: 25px;
 
-  min-width: 270px;
+  width: 270px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -403,14 +412,16 @@
   box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
 
   @media (min-width: $tablet-width) {
-    min-width: 688px;
+    width: 688px;
+    left: 40px;
     padding-top: 50px;
 
     border-radius: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 750px;
+    width: 750px;
+    left: 345px;
     padding-top: 50px;
   }
 
