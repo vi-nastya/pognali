@@ -39,6 +39,27 @@
   }
 }
 
+.level--small {
+  @media (max-width: $tablet-width - 1) {
+    width: 45px;
+    height: 45px;
+
+    .level__description {
+      display: none;
+    }
+
+    .level__number::before {
+      width: 45px;
+      height: 45px;
+    }
+
+    .level__number::after {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
 .level__description {
   z-index: 4;
   font-family: $main-ffamily;

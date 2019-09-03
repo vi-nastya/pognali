@@ -2,7 +2,7 @@
   width: 270px;
   padding: 25px;
   padding-top: 25px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   margin-bottom: 28px;
   background-color: $accent-color;
   border-radius: 20px;
@@ -62,7 +62,7 @@
 .companion-filters__item {
   position: relative;
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: -10px;
+    top: -14px;
     left: 0;
     width: 220px;
     height: 1px;
@@ -95,6 +95,12 @@
   margin-bottom: 14px;
   font-weight: $bold;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+
+  &--level {
+    margin-bottom: 10px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 110px;
@@ -104,6 +110,10 @@
     font-weight: $medium;
     font-size: 20px;
     line-height: 30px;
+
+    &--level {
+      margin-bottom: 14px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -266,7 +276,7 @@ input[type="checkbox"]:checked+.companion-filters__label::after {
 .companion-filters__button {
   width: 230px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 12px;
 
   @media (min-width: $tablet-width) {
     width: 618px;
