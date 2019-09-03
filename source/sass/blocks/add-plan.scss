@@ -12,6 +12,7 @@
 
 
 .add-plan__inner {
+  position: relative;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 25px;
@@ -46,5 +47,46 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 70px;
+  }
+}
+
+.add-plan__progress {
+  @include reset-list;
+
+  position: absolute;
+  right: 35px;
+  top: 42px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    top: 65px;
+    right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.add-plan__progress-item {
+  display: flex;
+}
+
+.add-plan__progress-link {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1d2e5b;
+  margin-left: 15px;
+  opacity: 0.2;
+
+  &--current {
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 5px;
+    height: 5px;
+    margin-left: 29px;
   }
 }
