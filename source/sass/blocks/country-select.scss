@@ -294,11 +294,14 @@
   padding-left: 12px;
   padding-right: 50px;
 
+  font-family: $main-ffamily;
   font-size: 14px;
   font-weight: $medium;
   line-height: 1.29;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
   text-align: left;
+  color: #1d2e5b;
 
   border: none;
   border-radius: 5px;
@@ -329,13 +332,14 @@
 
   @media (min-width: $tablet-width) {
     width: 370px;
-    padding-top: 26px;
+    padding-top: 36px;
     padding-left: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 20px;
     padding-right: 60px;
 
     font-size: 20px;
     line-height: 0.9;
+    letter-spacing: 2px;
 
     &::before {
       position: absolute;

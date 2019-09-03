@@ -99,6 +99,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
