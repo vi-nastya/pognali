@@ -24,6 +24,11 @@
     padding-right: 75px;
     padding-top: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .add-plan__header {
@@ -37,5 +42,9 @@
     margin-bottom: 48px;
     font-size: 36px;
     line-height: 1.39;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
   }
 }
