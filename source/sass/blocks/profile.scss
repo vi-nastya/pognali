@@ -110,8 +110,12 @@
   }
 }
 
+.profile__upload {
+  display: none;
+}
 
-.profile__button {
+
+.profile__upload-label {
   margin-bottom: 15px;
   background-color: #dfe3f0;
 
