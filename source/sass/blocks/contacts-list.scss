@@ -8,7 +8,6 @@
 
 .contacts-list__item {
   position: relative;
-  margin-bottom: 30px;
 
   display: flex;
   align-items: center;
@@ -43,6 +42,7 @@
 
 .contacts-list__login {
   min-width: 270px;
+  margin-bottom: 50px;
 }
 
 .contacts-list__icon-wrapper {
@@ -56,8 +56,25 @@
 
   background-color: #121936;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 67px;
+    height: 67px;
+  }
 }
 
 .contacts-list__icon {
   fill: #ffd74b;
+
+  @media (min-width: $tablet-width) {
+    &--phone {
+      width: 27px;
+      height: 27px;
+    }
+
+    &--mail {
+      width: 27px;
+      height: 19px;
+    }
+  }
 }
