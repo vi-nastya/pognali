@@ -234,6 +234,11 @@
     background-color: #ffd74b;
   }
 
+  &--business {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media (min-width: $tablet-width) {
     width: 652px;
     display: flex;

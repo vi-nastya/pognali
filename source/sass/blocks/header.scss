@@ -13,12 +13,13 @@
     }
   }
 
-  &--nojs {
+  &--nojs,
+  &--open-menu {
     background-color: $additional-background-color;
-  }
 
-  &--white {
-    background-color: $additional-background-color;
+    @media (min-width: $desktop-width) {
+      background-color: $additional-accent-color;
+    }
   }
 
   &--scroll {
@@ -179,21 +180,6 @@
   fill: $additional-background-color;
 }
 
-.header--white .header__nav-toggle-icon {
-  fill: #cccccc;
-}
-
-// hide hamburger icon and show "close" icon when menu is open
-.header--open-menu .header__nav-toggle-icon {
-  display: none;
-}
-
-.header--open-menu .header__nav-toggle {
-  background-image: url('../../img/close.svg');
-  background-size: 19px 19px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .header__nav {
   display: none;
@@ -201,10 +187,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
   }
-}
-
-.header--open-menu .header__nav {
-  display: flex;
 }
 
 
@@ -219,4 +201,65 @@
 
 .header--scroll .header__logo-image--blue {
   display: flex;
+}
+
+.header--scroll .header__nav-toggle-icon {
+  fill: #cccccc;
+}
+
+.header--scroll .header__nav {
+  @media (min-width: $desktop-width) {
+    background-color: $additional-background-color;
+
+    a {
+      color: $additional-hover-color;
+    }
+  }
+}
+
+
+/* NO JS STATE */
+.header--nojs .header__logo-image--white {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.header--nojs .header__logo-image--blue {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header--nojs .header__nav {
+  display: flex;
+}
+
+
+/* OPEN MENU STATE */
+.header--open-menu .header__logo-image--white {
+  display: none;
+}
+
+.header--open-menu .header__logo-image--blue {
+  display: flex;
+}
+
+.header--open-menu .header__nav {
+  display: flex;
+}
+
+.header--open-menu .header__nav-toggle-icon {
+  display: none;
+}
+
+.header--open-menu .header__nav-toggle {
+  background-image: url('../../img/close.svg');
+  background-size: 19px 19px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
