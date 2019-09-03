@@ -7,7 +7,7 @@
   background-color: $additional-accent-color;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 10px;
+  background-position: -75px -33px;
   background-size: 400px 440px;
 
   @media (min-width: $tablet-width) {
@@ -188,12 +188,6 @@
 
 .intro__contact-link:active .intro__contact-icon {
   opacity: 0.3;
-}
-
-.intro__login {
-  width: 189px;
-  height: 40px;
-  border-radius: 20px;
 }
 
 .intro__guide {
