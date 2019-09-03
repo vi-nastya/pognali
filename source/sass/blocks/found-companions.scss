@@ -27,8 +27,8 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
-    padding-left: 40px;
+    margin-top: 5px;
+    padding-left: 50px;
 
     font-size: $detail-fsize-tablet;
   }
@@ -75,7 +75,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 50px;
-    margin-bottom: 62px;
+    margin-bottom: 112px;
   }
 
   @media (min-width: $desktop-width) {
