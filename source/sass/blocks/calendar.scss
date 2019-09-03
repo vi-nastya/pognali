@@ -178,17 +178,46 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     width: 143px;
     height: 71px;
     padding-left: 16px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 8px;
+    padding-bottom: 20px;
     padding-right: 16px;
 
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 1.8px;
     text-align: left;
+
+    &--current {
+      &::before {
+        position: absolute;
+        content: "Заезд";
+        top: 30px;
+        left: 15px;
+        font-family: $main-ffamily;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 1.8px;
+        color: $additional-background-color;
+      }
+    }
+
+    &--last {
+      &::before {
+        position: absolute;
+        content: "Выезд";
+        top: 30px;
+        left: 15px;
+        font-family: $main-ffamily;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 1.8px;
+        color: $additional-background-color;
+      }
+    }
   }
 
   &:hover,
@@ -206,8 +235,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 4px;
+      padding-bottom: 16px;
+      padding-left: 12px;
     }
   }
 }
