@@ -33,7 +33,7 @@
     padding-top: 105px;
     padding-left: 130px;
     padding-right: 130px;
-    padding-bottom: 173px; // CHANGE LATER
+    padding-bottom: 113px;
   }
 }
 
@@ -58,6 +58,10 @@
     width: 610px;
     margin-bottom: 64px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .sign-up__link {
@@ -72,6 +76,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
   }
 }
 
@@ -119,6 +127,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 810px;
+    margin-bottom: 60px;
 
     &--desktop-hide {
       display: none;
@@ -134,7 +143,19 @@
   @include reset-list;
   align-self: flex-start;
 
-  @media (min-width: $tablet-width) {}
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+}
+
+.sign-up__contacts-item {
+  @media (min-width: $desktop-width) {
+    &:nth-of-type(1) {
+      margin-right: 135px;
+    }
+  }
 }
 
 .sign-up__contacts-link {
