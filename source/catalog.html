@@ -723,20 +723,21 @@
             <legend class="companion-filters__name">Левел:</legend>
             <a class="companion-filters__item-button companion-filters__item-button--hide" aria-label="Скрыть"></a>
             <div class="companion-filters__item-inner companion-filters__item-inner--level">
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+                <div class="companion-filters__level-controls">
+                    <label class="companion-filters__level-label companion-filters__level-label--min">
+                      <input class="companion-filters__level-input" name="min-level" id="min-level" type="text" value="30" />
+                    </label>
+                    <label class="companion-filters__level-label companion-filters__level-label--max">
+                      <input class="companion-filters__level-input" name="max-level" id="max-level" type="text" value="100" /></label>
+                  </div>
+              <div class="companion-filters__level-range-controls">
+              <div class="companion-filters__level-scale">
+                <div class="companion-filters__level-bar"></div>
               </div>
-              <label class="toggle toggle-min" for="min-price"></label>
-              <label class="toggle toggle-max" for="max-price"></label>
+              <label class="companion-filters__level-toggle companion-filters__level-toggle--min" for="min-level"></label>
+              <label class="companion-filters__level-toggle companion-filters__level-toggle--max" for="max-level"></label>
             </div>
-            <div class="price-controls">
-              <span class="price-label price-label-min">
-                <input class="price-label-input" name="min-price" id="min-price" type="text" value="0" />
-              </span>
-              <span class="price-label price-label-max">
-                <input class="price-label-input" name="max-price" id="max-price" type="text" value="100" /></span>
-            </div>
+
             </div>
           </fieldset>
 

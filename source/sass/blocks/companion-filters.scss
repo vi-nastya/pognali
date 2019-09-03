@@ -206,3 +206,133 @@ input[type="checkbox"]:checked+.companion-filters__label::after {
     width: 196px;
   }
 }
+
+/* LEVEL */
+.companion-filters__level-controls {
+  width: 222px;
+  height: 35px;
+  margin-bottom: 23px;
+
+  display: flex;
+  border: 1px solid #cbced9;
+  background-color: $additional-background-color;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 192px;
+  }
+}
+
+.companion-filters__level-label {
+  width: 111px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 96px;
+  }
+}
+
+.companion-filters__level-input {
+  width: 40px;
+  height: 30px;
+  font-family: $main-ffamily;
+  font-size: 15px;
+  color: #1d2e5b;
+  font-weight: $medium;
+  line-height: 13.5px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 45px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+.companion-filters__level-range-controls {
+  position: relative;
+}
+
+.companion-filters__level-scale {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  background-color: rgba(22, 49, 91, 0.2);
+  border-radius: 0.5px;
+
+  @media (min-width: $tablet-width) {
+    width: 277px;
+    height: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 191px;
+  }
+}
+
+.companion-filters__level-bar {
+  position: absolute;
+  content: "";
+  width: 144px;
+  top: 0;
+  left: 72px;
+  height: 2px;
+  background-color: #1d2e5b;
+  border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 201px;
+    height: 3px;
+    border-radius: 1.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 125px;
+  }
+}
+
+.companion-filters__level-toggle {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+  top: -4px;
+
+  cursor: pointer;
+
+  &--min {
+    left: 68px;
+  }
+
+  &--max {
+    right: 0px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+    top: -6px;
+  }
+}
