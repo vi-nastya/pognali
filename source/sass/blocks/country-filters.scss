@@ -143,7 +143,14 @@
   }
 
   &--hide {
-    padding-right: 183px;
+    @media (min-width: $tablet-width) {
+      padding-right: 43px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 83px;
+      margin-right: 97px;
+    }
 
     &::before {
       position: absolute;
