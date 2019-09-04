@@ -128,7 +128,6 @@
     }
   }
 
-
   &--business::after {
     left: 25px;
 
@@ -244,6 +243,12 @@
     background-color: #ffd74b;
   }
 
+  .plan__feature-price {
+    @media (min-width: $tablet-width) {
+      margin-left: auto;
+    }
+  }
+
   &--business {
     display: flex;
     flex-direction: column;
@@ -252,7 +257,7 @@
   @media (min-width: $tablet-width) {
     width: 652px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
 
     margin-bottom: 34px;

@@ -168,7 +168,8 @@
 
 .profile__tags-description {
   top: 10px;
-  min-width: 50px;
+  width: 50px;
+  background-color: #edeff6;
 
   @media (min-width: $tablet-width) {
     top: auto;
