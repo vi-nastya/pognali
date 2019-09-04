@@ -22,7 +22,7 @@
   border-radius: 0 0 30px 30px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/flags-back@1x.png"), url("../../img/back-destinations.png");
+    background-image: url("../img/flags-back@1x.png"), url("../img/back-destinations.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 289px 575px, 141px 141px;
     background-position: 438px 47px, 40px 410px;
@@ -39,7 +39,7 @@
     flex-wrap: wrap;
     align-content: flex-start;
 
-    background-image: url("../../img/flags-back@1x.png"), url("../../img/back-destinations.png");
+    background-image: url("../img/flags-back@1x.png"), url("../img/back-destinations.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 289px 575px, 141px 141px;
     background-position: 1090px 90px, 58px 90px;

@@ -2,14 +2,14 @@
   margin-top: -40px;
   min-height: 352px;
 
-  background-image: url("../../img/map-with-marker-mobile.png");
+  background-image: url("../img/map-with-marker-mobile.png");
   background-position: center;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     min-height: 541px;
 
-    background-image: url("../../img/map-with-marker-tablet.png");
+    background-image: url("../img/map-with-marker-tablet.png");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -17,7 +17,7 @@
   @media (min-width: $desktop-width) {
     min-height: 476px;
 
-    background-image: url("../../img/map-with-marker-desktop.png");
+    background-image: url("../img/map-with-marker-desktop.png");
     background-position: center;
     background-repeat: no-repeat;
   }

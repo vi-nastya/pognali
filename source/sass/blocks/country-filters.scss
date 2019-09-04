@@ -76,7 +76,7 @@
     height: 10px;
     top: 5px;
     left: 0;
-    background-image: url("../../img/filter.svg");
+    background-image: url("../img/filter.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $desktop-width) {
@@ -132,7 +132,7 @@
       height: 3px;
       top: 6px;
       right: 5px;
-      background-image: url("../../img/dots.svg");
+      background-image: url("../img/dots.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
@@ -159,7 +159,7 @@
       height: 12px;
       top: 2px;
       right: 2px;
-      background-image: url("../../img/filter-close.svg");
+      background-image: url("../img/filter-close.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
