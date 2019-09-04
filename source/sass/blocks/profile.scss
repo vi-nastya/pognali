@@ -168,6 +168,7 @@
 
 .profile__tags-description {
   top: 10px;
+  min-width: 50px;
 
   @media (min-width: $tablet-width) {
     top: auto;
@@ -245,8 +246,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    padding-top: 40px;
-    padding-bottom: 25px;
+    padding-top: 30px;
     top: 63px;
     left: 230px;
     width: 308px;
@@ -257,6 +257,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    padding-top: 20px;
     top: auto;
     left: auto;
     margin-left: auto;

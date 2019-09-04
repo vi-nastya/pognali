@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     width: 560px;
-    height: 140px;
+    min-height: 140px;
   }
 }
 

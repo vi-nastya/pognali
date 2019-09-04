@@ -623,7 +623,6 @@
 
     font-size: 30px;
     font-weight: $bold;
-    line-height: 0.6;
 
     &::before,
     &::after {
@@ -645,7 +644,6 @@
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
-    margin-right: -5px;
 
     &::before {
       position: absolute;
