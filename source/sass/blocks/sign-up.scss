@@ -91,15 +91,32 @@
   padding: 0;
   padding-left: 24px;
 
+  font-family: $main-ffamily;
   font-size: $additional-fsize-mobile;
+  color: rgba(68, 68, 68, 0.3);
+  font-weight: $bold;
+  line-height: 18px;
 
   border: none;
   border-radius: 10px 0 0 10px;
 
+  &:hover {
+    background-color: $main-background-color;
+    color: rgba(68, 68, 68, 0.5);
+  }
+
+  &:active,
+  &:focus {
+    background-color: $additional-hover-color;
+    color: $additional-background-color;
+    border: 4px solid $additional-background-color;
+    border-right-color: $additional-hover-color;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 81px;
     width: 536px;
-
+    line-height: 24px;
     font-size: $accent-fsize-tablet;
   }
 

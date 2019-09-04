@@ -26,7 +26,7 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      right: 220px;
+      right: 219px;
     }
 
     &::after {
@@ -134,7 +134,7 @@
 }
 
 .country-select__flag-wrapper {
-  flex-shrink: 0;
+  display: flex;
   width: 37px + 16px;
   height: 26px + 16px;
   padding: 8px;
@@ -145,8 +145,7 @@
     padding: 0;
     width: 70px;
     height: 47px;
-    padding-top: 12px;
-    padding-bottom: 11px;
+    margin-top: 12px;
     border: none;
   }
 }
@@ -199,7 +198,6 @@
     background-size: 9px 9px;
     background-position: center;
 
-    opacity: 0.2;
 
     @media (min-width: $tablet-width) {
       position: relative;
@@ -272,8 +270,10 @@
 }
 
 .country-select--active .country-select__value-wrapper {
-  &::before {
-    display: none;
+  @media (max-width: $tablet-width - 1) {
+    &::before {
+      display: none;
+    }
   }
 }
 
