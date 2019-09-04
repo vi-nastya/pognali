@@ -130,7 +130,7 @@
 
     @media (min-width: $desktop-width) {
       display: flex;
-      background-color: #ff8d30;
+      background-color: $accent-hover-color;
     }
   }
 
@@ -139,7 +139,7 @@
     &:hover,
     &:focus,
     &:active {
-      background-color: #ff8d30;
+      background-color: $accent-hover-color;
     }
 
     @media (min-width: $tablet-width) {
@@ -148,7 +148,7 @@
 
     @media (min-width: $desktop-width) {
       display: flex;
-      background-color: #ffbd30;
+      background-color: $accent-minor-color;
     }
   }
 }

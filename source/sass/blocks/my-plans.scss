@@ -1,9 +1,9 @@
 .my-plans {
   position: relative;
   margin-top: -60px;
-  background-color: #dfe3f0;
+  background-color: $additinal-detail-color;
   border-radius: 30px 30px 0 0;
-  color: #1d2e5b;
+  color: $accent-title-color;
   padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
@@ -38,7 +38,7 @@
 .my-plans__header {
   margin: 0;
   margin-bottom: 28px;
-  font-size: 24px;
+  font-size: $header-fsize-mobile;
   font-weight: $bold;
   line-height: 1;
 
@@ -102,7 +102,7 @@
   margin-bottom: 20px;
   padding-left: 17px;
 
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   font-weight: $bold;
   line-height: 1;
 
@@ -115,7 +115,7 @@
     width: 12px;
     height: 13px;
     font-family: $main-ffamily;
-    font-size: 16px;
+    font-size: $main-fsize-mobile;
     font-weight: $medium;
     line-height: 1;
     letter-spacing: 1.6px;
@@ -124,7 +124,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     padding-left: 0;
-    font-size: 24px;
+    font-size: $header-fsize-mobile;
     line-height: 2.08;
 
     &::after {
@@ -134,14 +134,14 @@
       height: 1px;
       left: -25px;
       bottom: -34px;
-      background-color: #dfe3f0;
+      background-color: $additinal-detail-color;
     }
 
     &::before {
       left: auto;
       right: 0;
       top: 10px;
-      font-size: 20px;
+      font-size: $detail-fsize-tablet;
       line-height: 0.9;
       letter-spacing: 2px;
     }
@@ -169,14 +169,14 @@
 
 .my-plans__companions,
 .my-plans__dates {
-  font-size: 14px;
+  font-size: $detail-fsize-mobile;
   font-weight: $medium;
   line-height: 1;
   letter-spacing: 1.4px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 0.9;
     letter-spacing: 2px;
   }
@@ -208,7 +208,7 @@
 }
 
 .my-plans__change {
-  font-size: 14px;
+  font-size: $detail-fsize-mobile;
   font-weight: $medium;
   line-height: 1.29;
   letter-spacing: 1.4px;
@@ -228,7 +228,7 @@
     margin-top: 0;
     margin-left: auto;
 
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 0.9;
     letter-spacing: 2px;
   }

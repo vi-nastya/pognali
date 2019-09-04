@@ -166,7 +166,7 @@
   background-color: $accent-hover-color;
 
   &--phone {
-    background-color: #ff8d30;
+    background-color: $accent-hover-color;
 
     &:hover,
     &:focus,
@@ -176,12 +176,12 @@
   }
 
   &--email {
-    background-color: #ffbd30;
+    background-color: $accent-minor-color;
 
     &:hover,
     &:focus,
     &:active {
-      background-color: #ff8d30;
+      background-color: $accent-hover-color;
     }
   }
 }

@@ -160,26 +160,26 @@
 
 .sign-up__contacts-link {
   font-family: $main-ffamily;
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   font-weight: $bold;
   line-height: 22px;
   text-align: left;
   text-transform: uppercase;
-  color: #ffd74b;
+  color: $accent-color;
 
   display: flex;
   align-items: center;
   justify-content: left;
 
   @media (min-width: $tablet-width) {
-    font-size: 28px;
+    font-size: $main-fsize-tablet;
     line-height: 28px;
   }
 
   &:hover,
   &:focus,
   &:active {
-    color: #ffbd30;
+    color: $accent-minor-color;
   }
 
   &:active {
@@ -211,7 +211,7 @@
 }
 
 .sign-up__contacts-icon {
-  fill: #ffd74b;
+  fill: $accent-color;
 
   @media (min-width: $tablet-width) {
     &--phone {
@@ -229,7 +229,7 @@
 .sign-up__contacts-link:hover .sign-up__contacts-icon,
 .sign-up__contacts-link:focus .sign-up__contacts-icon,
 .sign-up__contacts-link:active .sign-up__contacts-icon {
-  fill: #ffbd30;
+  fill: $accent-minor-color;
 }
 
 .sign-up__button {

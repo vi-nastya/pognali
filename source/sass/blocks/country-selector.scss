@@ -57,7 +57,7 @@
     width: 52px;
     height: 68px;
 
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 18px;
     letter-spacing: 2px;
 
@@ -81,12 +81,12 @@
 
   &:active,
   &--selected {
-    background-color: #cbced9;
+    background-color: $border-color;
 
     @media (min-width: $tablet-width) {
-      background-color: #1d2e5b;
+      background-color: $accent-title-color;
       color: $additional-background-color;
-      border: 1px solid #1d2e5b;
+      border: 1px solid $accent-title-color;
     }
   }
 }
@@ -128,21 +128,21 @@
 
 .country-selector__country-name {
   font-family: $main-ffamily;
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   line-height: 22px;
   text-align: left;
-  color: #444444;
+  color: $main-text-color;
 
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 30px;
   }
 
   &:hover,
   &:focus {
-    color: #1d2e5b;
+    color: $accent-title-color;
   }
 
   &:active {

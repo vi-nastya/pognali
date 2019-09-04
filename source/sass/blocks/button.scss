@@ -34,7 +34,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 14px solid #1d2e5b;
+    border-left: 14px solid $accent-title-color;
 
     @media (min-width: $tablet-width) {
       top: 30px;

@@ -115,7 +115,7 @@
     height: 1px;
     left: 0;
     bottom: 14px;
-    background-color: #444444;
+    background-color: $main-text-color;
     opacity: 0.05;
 
     @media (min-width: $tablet-width) {
@@ -149,7 +149,7 @@
       width: 198px;
       height: 285px;
       border-radius: 20px;
-      background-color: #e2e5f2;
+      background-color: $accent-background-color;
     }
   }
 
@@ -199,7 +199,7 @@
     height: 1px;
     left: 0;
     top: -14px;
-    background-color: #444444;
+    background-color: $main-text-color;
     opacity: 0.05;
   }
 
@@ -212,11 +212,11 @@
     width: 34px;
     height: 34px;
 
-    background-color: #ffa530;
+    background-color: $accent-secondary-color;
     border-radius: 50%;
 
     font-family: $main-ffamily;
-    font-size: 16px;
+    font-size: $main-fsize-mobile;
     line-height: 0.88;
     text-align: center;
     padding-top: 12px;
@@ -230,17 +230,17 @@
       left: 0;
       top: -15px;
 
-      font-size: 28px;
+      font-size: $main-fsize-tablet;
       line-height: 1;
     }
   }
 
   &:nth-of-type(2)::before {
-    background-color: #ffbd30;
+    background-color: $accent-minor-color;
   }
 
   &:nth-of-type(3)::before {
-    background-color: #ffd74b;
+    background-color: $accent-color;
   }
 
   .plan__feature-price {
@@ -395,21 +395,21 @@
 
   &:hover,
   &:focus {
-    background-color: #edeff6;
+    background-color: $main-background-color;
     color: $additional-accent-color;
     opacity: 1;
   }
 
   &:active {
     color: rgba(29, 46, 91, 0.3);
-    background-color: #edeff6;
+    background-color: $main-background-color;
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 41px;
     padding-bottom: 44px;
     text-transform: capitalize;
-    font-size: 24px;
+    font-size: $header-fsize-mobile;
     line-height: 1;
 
     border-radius: 0 0 30px 30px;

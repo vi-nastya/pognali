@@ -5,6 +5,14 @@
   display: flex;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    width: 533px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1000px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -46,10 +54,10 @@
 
 .calendar__month {
   margin: 0;
-  font-size: 20px;
+  font-size: $detail-fsize-tablet;
   font-weight: $bold;
   line-height: 1;
-  color: #1d2e5b;
+  color: $accent-title-color;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -100,9 +108,9 @@
   width: 31px;
 
   text-align: center;
-  font-size: 14px;
+  font-size: $detail-fsize-mobile;
   line-height: 1.29;
-  color: #444444;
+  color: $main-text-color;
 
   &--weekend {
     color: #ff5c23;
@@ -111,7 +119,7 @@
   @media (min-width: $tablet-width) {
     width: 76px;
 
-    font-size: 18px;
+    font-size: $additional-fsize-mobile;
     line-height: 1.67;
     letter-spacing: 1.8px;
   }
@@ -146,19 +154,19 @@
   padding-top: 7px;
   padding-bottom: 7px;
 
-  font-size: 14px;
+  font-size: $detail-fsize-mobile;
   line-height: 1.29;
   text-align: center;
 
-  color: #1d2e5b;
-  background-color: #edeff6;
-  border: 1px solid #cbced9;
+  color: $accent-title-color;
+  background-color: $main-background-color;
+  border: 1px solid $border-color;
 
   cursor: pointer;
 
   &--selected {
     color: $additional-background-color;
-    background-color: #1d2e5b;
+    background-color: $accent-title-color;
   }
 
   &--disabled {
@@ -172,7 +180,7 @@
     padding-top: 28px;
     padding-bottom: 28px;
 
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     font-weight: $medium;
     line-height: 0.9;
     letter-spacing: 2px;
@@ -187,7 +195,7 @@
     padding-bottom: 20px;
     padding-right: 16px;
 
-    font-size: 18px;
+    font-size: $additional-fsize-mobile;
     line-height: 1.67;
     letter-spacing: 1.8px;
     text-align: left;
@@ -199,7 +207,7 @@
         top: 30px;
         left: 15px;
         font-family: $main-ffamily;
-        font-size: 18px;
+        font-size: $additional-fsize-mobile;
         line-height: 30px;
         letter-spacing: 1.8px;
         color: $additional-background-color;
@@ -213,7 +221,7 @@
         top: 30px;
         left: 15px;
         font-family: $main-ffamily;
-        font-size: 18px;
+        font-size: $additional-fsize-mobile;
         line-height: 30px;
         letter-spacing: 1.8px;
         color: $additional-background-color;
@@ -227,7 +235,7 @@
     color: $additional-background-color;
     padding-top: 3px;
     padding-bottom: 3px;
-    background-color: #1d2e5b;
+    background-color: $accent-title-color;
     border: 4px solid #ff5c23;
 
     @media (min-width: $tablet-width) {

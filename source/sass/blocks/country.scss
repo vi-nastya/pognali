@@ -80,7 +80,7 @@
   margin: 0;
   margin-right: auto;
   order: -2;
-  font-size: 21px;
+  font-size: $accent-fsize-mobile;
   font-weight: $bold;
   font-style: normal;
   font-stretch: normal;
@@ -89,7 +89,7 @@
   color: $additional-accent-color;
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
+    font-size: $header-fsize-mobile;
   }
 }
 

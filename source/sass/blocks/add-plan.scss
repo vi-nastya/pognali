@@ -35,7 +35,7 @@
 .add-plan__header {
   margin: 0;
   margin-bottom: 29px;
-  font-size: 24px;
+  font-size: $header-fsize-mobile;
   font-weight: $bold;
   line-height: 1;
 
@@ -76,7 +76,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #1d2e5b;
+  background-color: $accent-title-color;
   margin-left: 15px;
   opacity: 0.2;
 

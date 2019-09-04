@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 28px;
+    font-size: $main-fsize-tablet;
 
     &--login {
       display: none;
@@ -29,7 +29,7 @@
   align-items: center;
 
   font-family: $main-ffamily;
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   font-weight: $bold;
   line-height: 1.38;
   text-align: left;
@@ -48,7 +48,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 28px;
+    font-size: $main-fsize-tablet;
   }
 
 }
@@ -76,7 +76,7 @@
 }
 
 .contacts-list__icon {
-  fill: #ffd74b;
+  fill: $accent-color;
 
   @media (min-width: $tablet-width) {
     &--phone {

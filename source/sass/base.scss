@@ -71,7 +71,7 @@ body {
   margin: 0;
   font-family: $main-ffamily;
   font-weight: $normal;
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
 
   color: $additional-accent-color;
   background-color: $main-background-color;

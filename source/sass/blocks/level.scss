@@ -63,13 +63,13 @@
 .level__description {
   z-index: 4;
   font-family: $main-ffamily;
-  font-size: 14px;
+  font-size: $detail-fsize-mobile;
   font-weight: $normal;
   line-height: 1;
 }
 
 .level--large .level__description {
-  font-size: 18px;
+  font-size: $additional-fsize-mobile;
   line-height: 1.22;
   text-align: center;
 }
@@ -80,7 +80,7 @@
 
 .level__number {
   z-index: 3;
-  font-size: 24px;
+  font-size: $header-fsize-mobile;
   font-weight: $bold;
 
   &::before {

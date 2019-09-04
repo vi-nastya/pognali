@@ -51,7 +51,7 @@
   margin: 0;
   order: -1;
   font-family: $main-ffamily;
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   font-weight: $bold;
   line-height: 22px;
   text-transform: uppercase;
@@ -65,7 +65,7 @@
     padding-left: 0;
     margin-right: 35px;
 
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 24px;
   }
 
@@ -113,12 +113,12 @@
     order: 0;
     height: 24px;
     font-family: $main-ffamily;
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     font-weight: $bold;
     line-height: 24px;
     text-align: left;
     text-transform: uppercase;
-    color: #192144;
+    color: $additional-hover-color;
   }
 
   &--show {
@@ -204,7 +204,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 30px;
   }
 
@@ -247,7 +247,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 25px;
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 24px;
   }
 }

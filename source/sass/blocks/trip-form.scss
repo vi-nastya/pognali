@@ -67,10 +67,10 @@
 .trip-form__step-name {
   margin: 0;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: $detail-fsize-tablet;
   font-weight: $bold;
   line-height: 1;
-  color: #1d2e5b;
+  color: $accent-title-color;
 
 
   @media (min-width: $tablet-width) {
@@ -96,12 +96,12 @@
   width: 220px;
   margin: 0;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   line-height: 1.38;
-  color: #444444;
+  color: $main-text-color;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 1.2;
     width: 510px;
   }
@@ -180,7 +180,7 @@
   position: relative;
   padding-left: 45px;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: $detail-fsize-tablet;
   line-height: 0.69;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -199,12 +199,12 @@
     top: 0;
     left: 0;
     border-radius: 50%;
-    background-color: #1d2e5b;
+    background-color: $accent-title-color;
   }
 }
 
 .trip-form__navigation-link {
-  font-size: 20px;
+  font-size: $detail-fsize-tablet;
   line-height: 0.69;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -262,16 +262,16 @@
   display: flex;
   justify-content: space-between;
 
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   font-weight: $medium;
   line-height: 1;
   letter-spacing: 1.6px;
   text-transform: uppercase;
-  color: #1d2e5b;
+  color: $accent-title-color;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 0.9;
     letter-spacing: 2px;
   }
@@ -290,17 +290,17 @@
     line-height: 1;
     text-align: left;
     text-transform: none;
-    color: #444444;
+    color: $main-text-color;
 
     @media (min-width: $tablet-width) {
       padding-left: 60px;
 
-      font-size: 20px;
+      font-size: $detail-fsize-tablet;
       font-weight: $medium;
       text-transform: uppercase;
       line-height: 0.9;
       letter-spacing: 2px;
-      color: #1d2e5b;
+      color: $accent-title-color;
     }
   }
 
@@ -311,7 +311,7 @@
     height: 26px;
     left: 0;
     top: -10px;
-    border: 1px solid #cbced9;
+    border: 1px solid $border-color;
     border-radius: 4px;
 
     @media (min-width: $tablet-width) {
@@ -326,7 +326,7 @@
   color: rgba(29, 46, 91, 0.3);
 
   @media (min-width: $desktop-width) {
-    color: #1d2e5b;
+    color: $accent-title-color;
   }
 }
 
@@ -338,7 +338,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: $additional-background-color;
-  border: 1px solid #cbced9;
+  border: 1px solid $border-color;
   border-radius: 4px;
 
   @media (min-width: $tablet-width) {
@@ -366,7 +366,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
   }
 
   @media (min-width: $desktop-width) {
@@ -470,8 +470,15 @@
 .trip-form__calendar {
   margin-bottom: 22px;
 
+  @media (min-width: $tablet-width) {
+    width: 533px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    width: 1000px;
   }
 }
 
@@ -533,7 +540,7 @@
 
 .trip-form__link-back {
   font-weight: $bold;
-  color: #161c35;
+  color: $additional-accent-color;
 
   &:hover,
   &:focus {
@@ -564,7 +571,7 @@
     padding-left: 35px;
     padding-top: 29px;
 
-    font-size: 24px;
+    font-size: $header-fsize-mobile;
     line-height: 1;
 
     &::before {
@@ -574,7 +581,7 @@
       left: 0;
       width: 0;
       height: 0;
-      border-right: 14px solid #1d2e5b;
+      border-right: 14px solid $accent-title-color;
       border-top: 10px solid transparent;
       border-bottom: 10px solid transparent;
     }
@@ -595,6 +602,101 @@
   }
 }
 
+.trip-form__add-country {
+  position: relative;
+  width: 220px;
+  margin-bottom: 25px;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 50px;
+
+  font-family: $main-ffamily;
+  font-size: $detail-fsize-mobile;
+  font-weight: $medium;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  text-align: left;
+  color: $accent-title-color;
+
+  background: $additional-background-color;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $main-background-color;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+    background-color: $main-background-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 14px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/qty-plus.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    padding-top: 36px;
+    padding-left: 26px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+
+    font-size: $detail-fsize-tablet;
+    line-height: 1;
+    letter-spacing: 2px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 27px;
+      right: -30px;
+      width: 15px;
+      height: 15px;
+      background-color: $main-background-color;
+      border: 1px solid $border-color;
+      border-radius: 50%;
+    }
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      right: 26px;
+      top: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+
+    &::before {
+      right: -57px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      right: 27px;
+      top: 26px;
+    }
+  }
+}
+
 /* STEP 3*/
 
 .trip-form__country-label {
@@ -607,8 +709,8 @@
   overflow: hidden;
   white-space: nowrap;
 
-  color: #1d2e5b;
-  font-size: 18px;
+  color: $accent-title-color;
+  font-size: $additional-fsize-mobile;
   font-weight: $medium;
   line-height: 1;
 
@@ -617,7 +719,7 @@
     content: "";
     width: 6px;
     height: 6px;
-    background-color: #1d2e5b;
+    background-color: $accent-title-color;
     border-radius: 50%;
     left: -10px;
     top: 8px;
@@ -628,7 +730,7 @@
     content: "";
     width: 15px;
     height: 2px;
-    background-color: #1d2e5b;
+    background-color: $accent-title-color;
     border-radius: 1px;
     left: -18px;
     top: 10px;
@@ -669,7 +771,7 @@
       right: -36px;
       width: 15px;
       height: 15px;
-      background-color: #1d2e5b;
+      background-color: $accent-title-color;
       border-radius: 50%;
     }
   }
@@ -692,7 +794,7 @@
     content: "";
     width: 2px;
     height: 281px;
-    background-color: #1d2e5b;
+    background-color: $accent-title-color;
     left: -18px;
     top: 10px;
   }
@@ -714,7 +816,7 @@
       right: -30px;
       width: 3px;
       height: 261px;
-      background-color: #1d2e5b;
+      background-color: $accent-title-color;
     }
   }
 
@@ -749,12 +851,12 @@
 
 
   font-family: $main-ffamily;
-  color: #444444;
-  font-size: 16px;
+  color: $main-text-color;
+  font-size: $main-fsize-mobile;
   line-height: 1.38;
   text-align: left;
 
-  border: 1px solid #cbced9;
+  border: 1px solid $border-color;
 
   &:hover {
     border-color: #959bb2;
@@ -764,7 +866,7 @@
   &:active,
   &:focus {
     outline: none;
-    border-color: #161c35;
+    border-color: $additional-accent-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -774,7 +876,7 @@
     padding-top: 15px;
 
 
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 1.2;
   }
 
@@ -798,16 +900,16 @@
     bottom: 0;
     padding-left: 10px;
     padding-top: 16px;
-    background-color: #ffefef;
+    background-color: $error-background-color;
     font-family: $main-ffamily;
-    font-size: 14px;
+    font-size: $detail-fsize-mobile;
     line-height: 16px;
     color: #ff0000;
-    border: 1px solid #f47e7e;
+    border: 1px solid $error-color;
     border-top-color: transparent;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
+      font-size: $detail-fsize-tablet;
       line-height: 24px;
       padding-left: 24px;
     }
@@ -815,5 +917,5 @@
 }
 
 .trip-form__country-plans-wrapper--error .trip-form__country-plans {
-  border: 1px solid #f47e7e;
+  border: 1px solid $error-color;
 }

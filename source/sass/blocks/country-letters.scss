@@ -63,12 +63,12 @@
 
   &:hover,
   &:focus {
-    background-color: #edeff6;
+    background-color: $main-background-color;
   }
 
   &:active {
     color: rgba(29, 46, 91, 0.3);
-    background-color: #edeff6;
+    background-color: $main-background-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -160,23 +160,23 @@
 
 .country-letters__country-name-link {
   font-family: $main-ffamily;
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   line-height: 22px;
   text-align: left;
-  color: #444444;
+  color: $main-text-color;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 30px;
   }
 
   &:hover,
   &:focus {
-    color: #1d2e5b;
+    color: $accent-title-color;
   }
 
   &:active {
-    color: #1d2e5b;
+    color: $accent-title-color;
     opacity: 0.3;
   }
 }

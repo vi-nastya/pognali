@@ -117,13 +117,13 @@
 
 
 .footer__copyright-link {
-  color: #444444;
+  color: $main-text-color;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  font-size: 16px;
+  font-size: $main-fsize-mobile;
   line-height: 22px;
 
   &:hover,
@@ -136,7 +136,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    font-size: $detail-fsize-tablet;
     line-height: 24px;
   }
 
