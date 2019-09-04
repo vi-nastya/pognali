@@ -31,6 +31,11 @@
     padding-bottom: 80px;
 
     border-radius: 0 0 60px 60px;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/flags-back@2x.png"), url("../img/back-destinations.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -43,6 +48,11 @@
     background-repeat: no-repeat, no-repeat;
     background-size: 289px 575px, 141px 141px;
     background-position: 1090px 90px, 58px 90px;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/flags-back@2x.png"), url("../img/back-destinations.png");
+    }
   }
 }
 
