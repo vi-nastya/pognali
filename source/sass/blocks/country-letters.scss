@@ -16,12 +16,13 @@
     width: 340px;
     border: none;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1250px;
+    width: 1320px;
     display: flex;
+    padding-left: 60px;
     flex-direction: row;
     margin-bottom: 20px;
   }
@@ -147,7 +148,7 @@
   color: $accent-title-color;
 
   @media (min-width: $tablet-width) {
-    top: -60px;
+    top: -65px;
     left: 420px;
   }
 
@@ -161,7 +162,7 @@
 .country-letters__country-name-link {
   font-family: $main-ffamily;
   font-size: $main-fsize-mobile;
-  line-height: 22px;
+  line-height: 20px;
   text-align: left;
   color: $main-text-color;
 

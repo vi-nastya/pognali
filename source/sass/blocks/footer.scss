@@ -51,6 +51,10 @@
   align-items: center;
   margin: 0 auto;
   margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
 }
 
 .footer__social-link {
