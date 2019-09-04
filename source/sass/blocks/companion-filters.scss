@@ -344,6 +344,29 @@ input[type="checkbox"]:checked+.companion-filters__label::after {
   display: flex;
   border: 1px solid $border-color;
   background-color: $additional-background-color;
+  border-radius: 5px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 111px;
+    content: "";
+    height: 35px;
+    width: 1px;
+    background-color: $border-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 103px;
+    width: 16px;
+    height: 11px;
+    background-color: $border-color;
+    border-top: 5px solid $additional-background-color;
+    border-bottom: 5px solid $additional-background-color;
+  }
 
   @media (min-width: $tablet-width) {
     width: 150px;
@@ -351,12 +374,35 @@ input[type="checkbox"]:checked+.companion-filters__label::after {
 
     order: 2;
     margin-left: 65px;
+
+    &::before {
+      width: 1px;
+      height: 45px;
+      left: 75px;
+    }
+
+    &::after {
+      height: 15px;
+      width: 21px;
+      left: 65px;
+      top: 15px;
+      border-top: 7px solid $additional-background-color;
+      border-bottom: 7px solid $additional-background-color;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 192px;
     order: 1;
     margin-left: 0;
+
+    &::before {
+      left: 96px;
+    }
+
+    &::after {
+      left: 85px;
+    }
   }
 }
 
