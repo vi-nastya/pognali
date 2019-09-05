@@ -27,8 +27,7 @@
   background-size: 61px 71px, 143px 143px;
   background-position: -5px 311px, 152px 40px;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/rogovaya-back-mobile@2x.png"), url("../img/smolov-back-desktop@2x.png");
   }
 
@@ -45,8 +44,7 @@
 
     border-radius: 0 0 60px 60px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/rogovaya-back-desktop@1x.png"), url("../img/smolov-back-desktop@2x.png"), url("../img/back-companions.png");
     }
   }
@@ -62,8 +60,7 @@
     background-size: 285px 285px, 143px 143px, 213px 213px;
     background-position: 190px 385px, 547px 135px, 40px 80px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/rogovaya-back-desktop@2x.png"), url("../img/smolov-back-desktop@2x.png"), url("../img/back-companions.png");
     }
   }

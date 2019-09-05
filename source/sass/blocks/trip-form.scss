@@ -430,7 +430,7 @@
   display: none;
 }
 
-.trip-form__checkbox:checked+.trip-form__label--kids {
+.trip-form__checkbox:checked + .trip-form__label--kids {
   &::after {
     position: absolute;
     content: "";

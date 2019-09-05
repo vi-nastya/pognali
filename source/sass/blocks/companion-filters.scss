@@ -112,6 +112,17 @@
     margin-bottom: 10px;
   }
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     width: 110px;
     margin-right: 18px;
@@ -284,7 +295,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]:checked+.companion-filters__label::after {
+input[type="checkbox"]:checked + .companion-filters__label::after {
   position: absolute;
   content: "";
   top: 2px;

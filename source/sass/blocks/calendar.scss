@@ -3,11 +3,10 @@
 .calendar__month-wrapper {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
   @media (min-width: $tablet-width) {
     width: 533px;
-    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
