@@ -255,6 +255,12 @@
   background-color: $accent-title-color;
   border-color: $accent-title-color;
   border-radius: 4px 4px 0 0;
+
+  @media (max-width: $tablet-width - 1) {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .country-select--empty .country-select__value-wrapper:active .country-select__button--select,
@@ -266,14 +272,6 @@
 
   @media (min-width: $tablet-width) {
     background-size: 17px 17px;
-  }
-}
-
-.country-select--active .country-select__value-wrapper {
-  @media (max-width: $tablet-width - 1) {
-    &::before {
-      display: none;
-    }
   }
 }
 

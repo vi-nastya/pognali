@@ -1,6 +1,7 @@
 .navigation {
   position: relative;
   z-index: 3;
+
   @include section-width;
   color: $additional-background-color;
   background-color: $additional-accent-color;
@@ -64,7 +65,7 @@
     @media (min-width: $tablet-width) {
       height: 8px;
       border-radius: 4px;
-      bottom: -68px;
+      bottom: -67px;
     }
   }
 }

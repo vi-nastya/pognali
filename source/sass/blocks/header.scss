@@ -78,7 +78,7 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       width: 60px;
       height: 2px;
       right: -115px;
@@ -205,10 +205,6 @@
   display: flex;
 }
 
-.header--scroll .header__nav-toggle-icon {
-  fill: #cccccc;
-}
-
 .header--scroll .header__nav {
   @media (min-width: $desktop-width) {
     background-color: $additional-background-color;
@@ -268,7 +264,7 @@
 }
 
 .header--open-menu .header__nav-toggle {
-  background-image: url('../img/close.svg');
+  background-image: url("../img/close.svg");
   background-size: 19px 19px;
   background-position: center;
   background-repeat: no-repeat;

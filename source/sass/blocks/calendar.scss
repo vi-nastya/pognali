@@ -75,6 +75,20 @@
   opacity: 0.3;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 15px;
+    height: 28px;
+  }
 }
 
 .calendar__month-button--prev {
