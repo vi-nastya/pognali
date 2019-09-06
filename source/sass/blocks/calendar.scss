@@ -93,11 +93,19 @@
 .calendar__month-button--prev {
   margin-right: auto;
   background-image: url("../img/month-arrow-left.svg");
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
 }
 
 .calendar__month-button--next {
   margin-left: auto;
   background-image: url("../img/month-arrow-right.svg");
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 

@@ -281,7 +281,8 @@
   }
 
   &--kids {
-    margin-top: 21px;
+    margin-top: 8px;
+    margin-bottom: 21px;
     position: relative;
     padding-left: 40px;
     font-weight: $normal;
@@ -293,6 +294,7 @@
 
     @media (min-width: $tablet-width) {
       padding-left: 60px;
+      margin-top: 22px;
 
       font-size: $detail-fsize-tablet;
       font-weight: $medium;
@@ -430,7 +432,7 @@
   display: none;
 }
 
-.trip-form__checkbox:checked + .trip-form__label--kids {
+.trip-form__checkbox:checked+.trip-form__label--kids {
   &::after {
     position: absolute;
     content: "";
@@ -531,6 +533,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 285px;
     padding-top: 29px;
     padding-bottom: 20px;
   }
@@ -618,7 +621,7 @@
   text-align: left;
   color: $accent-title-color;
 
-  background: $additional-background-color;
+  background: $main-background-color;
 
   border: none;
   border-radius: 5px;
@@ -649,7 +652,7 @@
 
   @media (min-width: $tablet-width) {
     width: 370px;
-    padding-top: 36px;
+    padding-top: 30px;
     padding-left: 26px;
     padding-bottom: 20px;
     padding-right: 60px;
@@ -757,6 +760,11 @@
   margin-left: auto;
   width: 35px;
   height: 24px;
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
 
   @media (min-width: $tablet-width) {
     width: 70px;

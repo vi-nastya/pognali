@@ -123,9 +123,11 @@
 
 .location__button {
   min-width: 270px;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     min-width: 618px;
+    padding-top: 28px;
   }
 
   @media (min-width: $desktop-width) {

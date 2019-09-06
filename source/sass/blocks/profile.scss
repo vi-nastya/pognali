@@ -174,10 +174,12 @@
   @media (min-width: $tablet-width) {
     top: auto;
     bottom: 10px;
+    padding-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 15px;
+    padding-right: 0;
   }
 }
 

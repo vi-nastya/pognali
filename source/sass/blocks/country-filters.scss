@@ -83,7 +83,7 @@
       width: 23px;
       height: 15px;
       top: 2px;
-      left: -20px;
+      left: 20px;
     }
   }
 }
@@ -222,7 +222,7 @@
   @media (min-width: $tablet-width) {
     width: 618px;
     height: 100px;
-    padding-top: 40px;
+    padding-top: 36px;
     padding-bottom: 40px;
 
     font-size: $detail-fsize-tablet;
@@ -238,9 +238,10 @@
 
   @media (min-width: $desktop-width) {
     width: 1320px;
+    padding-left: 25px;
 
     &::before {
-      left: 565px;
+      left: 592px;
     }
   }
 }

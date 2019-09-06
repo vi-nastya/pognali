@@ -64,6 +64,11 @@
   width: 35px;
   height: 24px;
 
+  svg {
+    width: 100%;
+    height: auto;
+  }
+
   @media (min-width: $tablet-width) {
     top: 15px;
     left: auto;
