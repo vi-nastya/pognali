@@ -135,6 +135,11 @@
     &--level {
       margin-bottom: 14px;
     }
+
+    &--transport {
+      padding-top: 6px;
+      margin-bottom: 10px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -142,6 +147,7 @@
     margin-bottom: 10px;
   }
 }
+
 
 .companion-filters__item--hidden .companion-filters__item-inner {
   display: none;
