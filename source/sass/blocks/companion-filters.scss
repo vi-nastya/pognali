@@ -145,14 +145,10 @@
 
 .companion-filters__item--hidden .companion-filters__item-inner {
   display: none;
+}
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+.companion-filters--nojs .companion-filters__item--hidden .companion-filters__item-inner {
+  display: flex;
 }
 
 .companion-filters__item-inner {
@@ -295,7 +291,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]:checked + .companion-filters__label::after {
+input[type="checkbox"]:checked+.companion-filters__label::after {
   position: absolute;
   content: "";
   top: 2px;
