@@ -42,6 +42,18 @@
 
   margin-bottom: 22px;
 
+  &::before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 10px;
+    background-image: url("../img/small-arrow.svg");
+    background-repeat: no-repeat;
+    bottom: -15px;
+    left: 165px;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 15px;
   }
