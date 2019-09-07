@@ -61,6 +61,8 @@
 
   display: flex;
 
+
+
   @media (min-width: $desktop-width) {
     margin-right: 10px;
   }
@@ -103,6 +105,16 @@
     @media (min-width: $tablet-width) {
       left: 0;
     }
+  }
+
+  &--prev::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 50px;
+    background-color: $main-background-color;
+    top: 0;
+    right: 0;
   }
 
   &--next::before {
