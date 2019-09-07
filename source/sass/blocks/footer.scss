@@ -36,6 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 55px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -43,6 +44,14 @@
 
 .footer__logo {
   padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .footer__social-list {
@@ -113,10 +122,26 @@
 
 .footer__copyright {
   width: 100%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 270px;
+    height: 1px;
+    opacity: 0.5;
+    left: 0;
+    top: -12px;
+    background-color: $main-background-color;
+  }
 
   @media (min-width: $tablet-width) {
     width: 155px;
     margin-top: 10px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 

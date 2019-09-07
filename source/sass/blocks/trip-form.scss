@@ -156,7 +156,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 132px;
+    margin-bottom: 135px;
   }
 }
 
@@ -743,7 +743,18 @@
     font-size: 30px;
     font-weight: $bold;
 
-    &::before,
+    &::before {
+      position: absolute;
+      content: "";
+      left: auto;
+      top: 17px;
+      right: -36px;
+      width: 15px;
+      height: 15px;
+      background-color: $accent-title-color;
+      border-radius: 50%;
+    }
+
     &::after {
       display: none;
     }
@@ -751,6 +762,32 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 37px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.trip-form__field--country:first-of-type .trip-form__country-label {
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      display: block;
+      left: auto;
+      content: "";
+      top: 18px;
+      right: -30px;
+      width: 3px;
+      height: 261px;
+      background-color: $accent-title-color;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -769,17 +806,6 @@
   @media (min-width: $tablet-width) {
     width: 70px;
     height: 47px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 17px;
-      right: -36px;
-      width: 15px;
-      height: 15px;
-      background-color: $accent-title-color;
-      border-radius: 50%;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -787,7 +813,31 @@
     right: -155px;
 
     &::before {
+      position: absolute;
+      content: "";
+      left: auto;
+      top: 17px;
+      width: 15px;
+      height: 15px;
+      background-color: $accent-title-color;
+      border-radius: 50%;
       right: 106px;
+    }
+  }
+}
+
+.trip-form__field--country:first-of-type .trip-form__country-flag-wrapper {
+  @media (min-width: $desktop-width) {
+    &::after {
+      position: absolute;
+      display: block;
+      left: auto;
+      content: "";
+      top: 18px;
+      width: 3px;
+      height: 261px;
+      background-color: $accent-title-color;
+      right: 112px;
     }
   }
 }
@@ -808,26 +858,6 @@
   @media (min-width: $tablet-width) {
     &::after {
       display: none;
-    }
-  }
-}
-
-.trip-form__field--country:nth-of-type(1) .trip-form__country-flag-wrapper {
-  @media (min-width: $tablet-width) {
-    &::after {
-      position: absolute;
-      content: "";
-      top: 18px;
-      right: -30px;
-      width: 3px;
-      height: 261px;
-      background-color: $accent-title-color;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      right: 112px;
     }
   }
 }
