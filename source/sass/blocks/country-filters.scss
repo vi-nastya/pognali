@@ -134,13 +134,15 @@
       content: "";
       width: 17px;
       height: 3px;
-      top: 6px;
+      top: -12px;
       right: 5px;
       background-image: url("../img/dots.svg");
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
         width: 27px;
+        top: 6px;
+        right: -15px;
         height: 5px;
         padding-right: 45px;
       }

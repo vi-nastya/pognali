@@ -60,6 +60,10 @@
   @include reset-list;
 
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+  }
 }
 
 .pagination__link {

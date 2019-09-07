@@ -364,6 +364,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     margin-bottom: 35px;
+    margin-top: 7px;
   }
 }
 
@@ -377,7 +378,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
   }
 
   &:nth-of-type(3) {
@@ -417,6 +418,10 @@
   @media (min-width: $tablet-width) {
     width: 35px;
     height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
   }
 }
 
