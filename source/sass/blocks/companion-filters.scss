@@ -305,7 +305,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]:checked+.companion-filters__label::after {
+input[type="checkbox"]:checked + .companion-filters__label::after {
   position: absolute;
   content: "";
   top: 2px;
@@ -353,7 +353,7 @@ input[type="checkbox"]:checked+.companion-filters__label::after {
   }
 }
 
-.companion-filters__transport-checkbox:checked+.companion-filters__transport-label .companion-filters__transport-icon {
+.companion-filters__transport-checkbox:checked + .companion-filters__transport-label .companion-filters__transport-icon {
   opacity: 1;
 }
 

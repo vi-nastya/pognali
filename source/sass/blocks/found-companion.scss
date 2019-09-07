@@ -206,7 +206,7 @@
   opacity: 0.1;
 }
 
-.found-companion__like-checkbox:checked+.found-companion__like-label {
+.found-companion__like-checkbox:checked + .found-companion__like-label {
   background-color: $error-additional-color;
 
   &:hover,
@@ -216,17 +216,17 @@
   }
 }
 
-.found-companion__like-checkbox:checked+.found-companion__like-label .found-companion__like-image {
+.found-companion__like-checkbox:checked + .found-companion__like-label .found-companion__like-image {
   background-image: url("../img/heart-active.svg");
   opacity: 1;
 }
 
-.found-companion__like-checkbox:checked+.found-companion__like-label:hover .found-companion__like-image,
-.found-companion__like-checkbox:checked+.found-companion__like-label:focus .found-companion__like-image {
+.found-companion__like-checkbox:checked + .found-companion__like-label:hover .found-companion__like-image,
+.found-companion__like-checkbox:checked + .found-companion__like-label:focus .found-companion__like-image {
   opacity: 1;
 }
 
-.found-companion__like-checkbox:checked+.found-companion__like-label:active .found-companion__like-image {
+.found-companion__like-checkbox:checked + .found-companion__like-label:active .found-companion__like-image {
   opacity: 0.3;
 }
 
