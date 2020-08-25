@@ -1,3 +1,5 @@
-# Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Responsive website
 
-Учебный проект, выполнен в рамках интенсива "HTML и CSS, уровень 2" HTML Academy.
+Built with HTML, Sass, Gulp and JavaScript.
+
+Course work at HTML Academy course "Advanced HTML and CSS"
